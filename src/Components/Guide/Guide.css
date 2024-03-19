@@ -1,0 +1,31 @@
+#Guide-section{
+    background-color: black;
+
+}
+.section-heading{
+    text-align: center;
+    color: #D4F604;
+    font-size: 30px;
+}
+.box{
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px 0px;
+}
+.box .box-title{
+    color: #D4F604;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.box .paragraph{
+    color: rgb(231, 231, 231);
+}
+.Guide-section .row{
+    padding: 0rem 8rem;
+}
+@media (max-width:600px){
+    .Guide-section .row{
+        padding: 0rem 0rem;
+    }
+}

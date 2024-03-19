@@ -4,6 +4,7 @@ import "../../Components/globalcontent.css"
 import homeCard from "../pictures/home-card-img.png"
 import homeMobile from "../pictures/Rectangle.png"
 import Founder from '../Founder/Founder';
+import Guide from '../Guide/Guide';
 function Home() {
     return (
         <>
@@ -125,6 +126,7 @@ function Home() {
                
             </div>
             <Founder/>
+            <Guide/>
 
         </>
     )
