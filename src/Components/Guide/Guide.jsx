@@ -6,7 +6,7 @@ function Guide() {
     <>
       <section className='Guide-section'>
         <div className="container">
-          <h1 className='section-heading'>A step guide to being a digital landlord</h1>
+          <h1 className='section-heading' style={{color:"#D4F604"}}>A step guide to being a digital landlord</h1>
           <div className="row">
             {GuideData.map((item, index) => (
               <div className="col-lg-6">
