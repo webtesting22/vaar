@@ -38,3 +38,30 @@
     font-size: 20px;
     font-weight: 700;  
 }
+.founder-info{
+    background-color: #000000;
+    border-radius: 20px;
+    /* height: 60vh; */
+    width: 100%;
+
+}
+.quote-icon{
+    color: #D4F604;
+    font-size: 3rem;
+}
+.content-founder{
+    position: absolute;
+    bottom: 0;
+   /* margin-top: 7rem; */
+}
+.content-founder p,
+.content-founder span {
+    color: white;
+}
+@media (max-width:800px){
+    .content-founder{
+        position: static;
+        bottom: 0;
+       /* margin-top: 7rem; */
+    }
+}

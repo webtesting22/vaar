@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import "./Founder.css";
 import animatedGirl from "../pictures/animatedgirl.png";
-
+import founderPicture from "../pictures/owner.jpg"
 function Founder() {
 
     return (
@@ -17,7 +17,7 @@ function Founder() {
                         <div className="col-lg-6">
                             <img src={animatedGirl} className='w-100' alt="" />
                         </div>
-                        <div className="col-lg-6" style={{display:"flex", alignItems:"center"}}>
+                        <div className="col-lg-6" style={{ display: "flex", alignItems: "center" }}>
                             <div className='right-side-container'>
                                 <div>
                                     <h2>Seamless Platform</h2>
@@ -34,6 +34,24 @@ function Founder() {
                             </div>
                         </div>
 
+                    </div>
+                    <div className='founder-info'>
+                        <div className="row p-4">
+                            <div className="col-lg-6" style={{display:"flex", justifyContent:"center", position:"relative"}}>
+                                <div className='content-founder'>
+                                    <i class="bi bi-quote quote-icon"></i>
+                                    <div>
+
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        <br />
+                                        <span>Note For Founder</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="col-lg-6" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                <img src={founderPicture} className='w-100' style={{borderRadius:"20px"}} alt="" />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
