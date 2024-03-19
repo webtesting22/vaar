@@ -13,6 +13,7 @@ function Guide() {
                 <div className='box'>
 
                   <h3 className='box-title'>{item.title}</h3>
+                  <hr />
                   <p className='paragraph'>{item.description}</p>
 
                 </div>

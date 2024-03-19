@@ -12,6 +12,15 @@
     padding: 30px;
     border-radius: 20px;
     margin: 20px 0px;
+    transition: .5s;
+}
+.box:hover{
+    transform: translatey(-10px);
+    transition: .5s;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 20px 0px;
 }
 .box .box-title{
     color: #D4F604;
@@ -28,4 +37,21 @@
     .Guide-section .row{
         padding: 0rem 0rem;
     }
+}
+
+.box hr{
+    height: 2px ;
+    background-color: #D4F604;
+    /* opacity: 1; */
+    width: 30px;
+    opacity: 0;
+    transition: .5s;
+}
+.box:hover hr{
+    height: 2px ;
+    background-color: #D4F604;
+    /* opacity: 1; */
+    width: 50px;
+    opacity: 1;
+    transition: .5s;
 }
