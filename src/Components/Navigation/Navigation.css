@@ -1,0 +1,49 @@
+#navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation .navigation_ul{
+    display: flex;
+
+}
+#navigation .navigation_ul li{
+    list-style: none;
+    margin: 0px 10px;
+    
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 2rem 0rem;
+    /* border-radius: 4px; */
+    /* background-color: rgb(220, 220, 220); */
+    padding: 0px 20px;
+    transition: .5s;
+    z-index: 500;
+  }
+    
+.sticky {
+    margin: 0;
+    transition: .5s;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.5rem 0rem;
+  
+  }
+
+  .sign-in-btn{
+    background-color: #D4F604;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 8px 30px;
+    
+  }
+  .sign-in-btn:hover{
+    background-color: #D4F604;
+    color: rgb(0, 0, 0);
+    border: none;
+    
+    
+  }
