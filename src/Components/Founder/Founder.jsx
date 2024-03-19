@@ -17,7 +17,7 @@ function Founder() {
                         <div className="col-lg-6">
                             <img src={animatedGirl} className='w-100' alt="" />
                         </div>
-                        <div className="col-lg-6">
+                        <div className="col-lg-6" style={{display:"flex", alignItems:"center"}}>
                             <div className='right-side-container'>
                                 <div>
                                     <h2>Seamless Platform</h2>
