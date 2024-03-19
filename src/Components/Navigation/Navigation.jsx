@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navigation.css";
+import varrimg from "../pictures/vaar.png"
 
 function Navigation() {
     const [show, setShow] = useState(false);
@@ -45,16 +46,16 @@ function Navigation() {
         <>
         <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
             <div>
-                <h1>Logo</h1>
+                <Link to="/"><img src={varrimg} alt="" /></Link>
             </div>
             <div>
             {isDesktop ? (
                 <nav >
                     <ul className='navigation_ul'>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/contact">AboutUs</Link></li>
+                        <li><Link to="/">Resources</Link></li>
+                        <li><Link to="/about">Blog</Link></li>
+                        <li><Link to="/services">Team</Link></li>
                     </ul>
                 </nav>
             ) : (
