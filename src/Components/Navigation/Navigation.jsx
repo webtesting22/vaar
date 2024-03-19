@@ -46,12 +46,12 @@ function Navigation() {
         <>
         <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
             <div>
-                <Link to="/"><img src={varrimg} alt="" /></Link>
+                <Link to="/"><img src={varrimg} alt=" " style={{width:"70px"}} /></Link>
             </div>
             <div>
             {isDesktop ? (
                 <nav >
-                    <ul className='navigation_ul'>
+                    <ul className='navigation_ul m-0'>
                         <li><Link to="/contact">AboutUs</Link></li>
                         <li><Link to="/">Resources</Link></li>
                         <li><Link to="/about">Blog</Link></li>

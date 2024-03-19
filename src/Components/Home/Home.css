@@ -1,8 +1,12 @@
-#Home_section{
-    height: 100vh;
-    width: 100%;
+.parent-section{
+    height: 100%;
     background-color: #000000;
-    /* padding-top: 15rem; */
+}
+#Home_section{
+    /* height: 100vh; */
+    width: 100%;
+    /* background-color: #000000; */
+    padding-top: 15rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,4 +64,83 @@
         color: white;
         margin-top: 10rem;
     }
+}
+#second-part-section .row .col-lg-4{
+    /* background-color: white; */
+    margin-top: 5rem;
+    padding: 0px;
+    /* height: 50vh; */
+}
+#second-part-section .row .col-lg-4 .parent-section .child-first,
+#second-part-section .row .col-lg-4 .parent-section .child-second{
+    background-color: rgb(255, 255, 255);
+    height: 34vh;
+    margin: 10px 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.inside-container{
+    /* margin: 2px; */
+    background-color: rgb(255, 255, 255);
+    height: 70vh;
+    margin: 10px 10px;
+    border-radius: 20px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#second-part-section .top-header .card-title{
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+#second-part-section .top-header span{
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    color: #000000;
+}
+#second-part-section .top-header h5{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+#second-part-section .top-header h6{
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-align: start;
+    margin-top: 10px ;
+    margin-bottom: 0px;
+    /* color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: start; */
+}
+#second-part-section .top-header .connect span{
+    font-size: 0.6rem;
+    /* font-weight: 600;
+    text-align: center;
+    color: #000000;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: start; */
+}
+.parent-content-container{
+    display: flex;
+    justify-content: space-between;
+}
+.child-content-container{
+    padding: 20px 0px;
+}
+.child-content-container span{
+    font-size: 0.8rem;
 }
