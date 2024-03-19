@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navigation.css";
-import varrimg from "../pictures/vaar.png"
+import varrimg from "../pictures/vaarblacklogo.png"
+import varrimg1 from "../pictures/vaarwhitelogo.jpeg"
 
 function Navigation() {
     const [show, setShow] = useState(false);
@@ -42,17 +43,21 @@ function Navigation() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+    
     return (
         <>
         <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
-            <div>
-                <Link to="/"><img src={varrimg} alt=" " style={{width:"70px"}} /></Link>
-            </div>
+        <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
+        <Link to="/"><img src={varrimg} alt=" " style={{ width: "70px" }} /></Link>
+      </div>
+      <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
+        <Link to="/"><img src={varrimg1} alt=" " style={{ width: "70px" }} /></Link>
+      </div>
             <div>
             {isDesktop ? (
                 <nav >
                     <ul className='navigation_ul m-0'>
-                        <li><Link to="/contact">AboutUs</Link></li>
+                        <li><Link to="/contact" className="hover-this">AboutUs</Link></li>
                         <li><Link to="/">Resources</Link></li>
                         <li><Link to="/about">Blog</Link></li>
                         <li><Link to="/services">Team</Link></li>
