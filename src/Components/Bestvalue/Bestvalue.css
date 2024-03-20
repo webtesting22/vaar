@@ -32,6 +32,13 @@
     height: 28vh;
     position: relative;
 }
+@media (min-width:1300px) and (max-width:3000px){
+    .cards-section .footer-card{
+        padding: 30px 20px;
+        height: 20vh;
+        position: relative;
+    }
+}
 .cards-section .footer-card a{
     font-size: 12px;
     text-decoration: none;
