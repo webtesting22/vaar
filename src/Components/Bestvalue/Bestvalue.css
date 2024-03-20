@@ -1,0 +1,75 @@
+.cards-section .row .col-lg-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* background-color: white; */
+    margin: 20px 0px;
+    
+    
+}
+
+.cards-section .row .col-lg-3 img{
+    width: 100%;
+}
+
+.cards-section .footer-card  h3{
+    text-align: start;
+}
+.cards-section .row .col-lg-3 .content-section{
+    background-color: white;
+    /* height: 70vh; */
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   
+}
+.Card-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cards-section .footer-card{
+    padding: 30px 20px;
+    height: 28vh;
+    position: relative;
+}
+.cards-section .footer-card a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.cards-section .footer-card a{
+
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+    font-weight: 600;
+    z-index: 22;
+}
+.cards-section .footer-card .button-animation span{
+    height: 40px;
+    width: 20px;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: #d6f60428;
+    border-radius: 20px;
+    transition: .5s;
+    /* width: 100%; */
+}
+.cards-section .footer-card:hover .button-animation span{
+    height: 40px;
+    width: 83px;
+    transition: .5s;
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    background-color: #d6f6045c;
+    border-radius: 20px;
+    /* width: 100%; */
+}

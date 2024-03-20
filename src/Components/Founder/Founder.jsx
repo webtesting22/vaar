@@ -37,7 +37,7 @@ function Founder() {
                     </div>
                     <div className='founder-info'>
                         <div className="row p-4">
-                            <div className="col-lg-6" style={{display:"flex", justifyContent:"center", position:"relative"}}>
+                            <div className="col-lg-6" style={{ display: "flex", justifyContent: "center", position: "relative" }}>
                                 <div className='content-founder'>
                                     <i class="bi bi-quote quote-icon"></i>
                                     <div>
@@ -49,7 +49,7 @@ function Founder() {
                                 </div>
                             </div>
                             <div className="col-lg-6" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                <img src={founderPicture} className='w-100' style={{borderRadius:"20px"}} alt="" />
+                                <img src={founderPicture} className='w-100' style={{ borderRadius: "20px" }} alt="" />
                             </div>
                         </div>
                     </div>

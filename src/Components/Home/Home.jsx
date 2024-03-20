@@ -2,9 +2,10 @@ import React from 'react';
 import "./Home.css"
 import "../../Components/globalcontent.css"
 import homeCard from "../pictures/home-card-img.png"
-import homeMobile from "../pictures/Rectangle.png"
+// import homeMobile from "../pictures/Rectangle.png"
 import Founder from '../Founder/Founder';
 import Guide from '../Guide/Guide';
+import Bestvalue from '../Bestvalue/Bestvalue';
 function Home() {
     return (
         <>
@@ -66,7 +67,7 @@ function Home() {
                                         </div>
                                     </div>
                                     <div className='child-second'>
-                                        <img src={homeMobile} alt="" className='w-100 h-100' />
+                                        {/* <img src={homeMobile} alt="" className='w-100 h-100' /> */}
                                     </div>
                                 </div>
                             </div>
@@ -127,6 +128,7 @@ function Home() {
             </div>
             <Founder/>
             <Guide/>
+            <Bestvalue/>
 
         </>
     )
