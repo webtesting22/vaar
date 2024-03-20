@@ -123,6 +123,13 @@
     padding: 0rem 3rem;
     color: white;
 }
+@media (max-width:680px){
+    .owner-quote .inside-content2 .parent-div div {
+        width: 100%;
+        padding: 3rem 1rem;
+        color: white;
+    }
+}
 .owner-quote .inside-content2 .parent-div div span{
     font-weight: 500;
     margin-bottom: 3rem;
