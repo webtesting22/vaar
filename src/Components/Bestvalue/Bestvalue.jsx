@@ -45,10 +45,13 @@ function Bestvalue() {
                             <div className="col-lg-8 col-md-8" id='Owner_info-content'>
                                 <div className='inside-content2'>
                                     <div className='parent-div'>
-                                        <div>
+                                        <div style={{ position: "relative" }}>
                                             <span>Vidhi Kanaria</span>
                                             <h1>Beyond the Walls: Keeping Up the Potential with Real Estate Management</h1>
-                                            <a href="">Read More</a>
+                                            <div className='button-animation-without-absolute p-0'>
+                                                <a href="">Read More</a>
+                                                <span className='m-0'></span>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -61,11 +64,16 @@ function Bestvalue() {
                     <div className='Infomation-cards'>
                         <div className="row m-auto">
                             {BestValueCardsData.map((item, index) => (
-                                <div className="col-lg-4 col-md-6">
-                                        <div>
-                                            <h5>{item.title}</h5>
-                                            <p>{item.description}</p>
+                                <div className="col-lg-6 col-md-6">
+                                    <div>
+                                        <h5>{item.title}</h5>
+                                        <p>{item.description}</p>
+                                        <br />
+                                        <div className='m-0 p-0 read-more-btn'>
+                                            <a href="">Read More</a>
+                                            <span></span>
                                         </div>
+                                    </div>
                                 </div>
 
                             ))}

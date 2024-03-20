@@ -1,0 +1,24 @@
+.Sign-up-btns .col-lg-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Sign-up-btns .col-lg-6 a{
+    margin: 0px 20px;
+    padding: 8px 30px;
+    border-radius: 5px;
+    color: black;
+}
+.Sign-up-btns .col-lg-6 a:nth-child(1){
+    background-color: #D4F604;
+}
+.Sign-up-btns .col-lg-6 a:nth-child(2){
+    border: 1px solid black;
+    background-color: transparent;
+    transition: .5s;
+}
+.Sign-up-btns .col-lg-6 a:nth-child(2):hover{
+    background-color: #D4F604;
+    border: 1px solid transparent;
+    transition: .5s;
+}

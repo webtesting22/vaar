@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
@@ -43,50 +43,50 @@ function Navigation() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
-    
+
     return (
         <>
-        <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
-        <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
-        <Link to="/"><img src={varrimg} alt=" " style={{ width: "70px" }} /></Link>
-      </div>
-      <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
-        <Link to="/"><img src={varrimg1} alt=" " style={{ width: "70px" }} /></Link>
-      </div>
-            <div>
-            {isDesktop ? (
-                <nav >
-                    <ul className='navigation_ul m-0'>
-                        <li><Link to="/contact" className="hover-this">AboutUs</Link></li>
-                        <li><Link to="/">Resources</Link></li>
-                        <li><Link to="/about">Blog</Link></li>
-                        <li><Link to="/services">Team</Link></li>
-                    </ul>
-                </nav>
-            ) : (
-                <Button variant="primary" onClick={handleShow}>
-                    Open Menu
-                </Button>
-            )}
+            <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
+                <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
+                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "70px" }} /></Link>
+                </div>
+                <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
+                    <Link to="/"><img src={varrimg1} alt=" " style={{ width: "70px" }} /></Link>
+                </div>
+                <div>
+                    {isDesktop ? (
+                        <nav >
+                            <ul className='navigation_ul m-0'>
+                                <li><Link to="/contact" className="hover-this">AboutUs</Link></li>
+                                <li><Link to="/">Resources</Link></li>
+                                <li><Link to="/about">Blog</Link></li>
+                                <li><Link to="/services">Team</Link></li>
+                            </ul>
+                        </nav>
+                    ) : (
+                        <Button variant="primary" onClick={handleShow}>
+                            Open Menu
+                        </Button>
+                    )}
 
-            <Offcanvas show={show} onHide={handleClose} placement="end">
-                <Offcanvas.Header closeButton>
-                    <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                </Offcanvas.Header>
-                <Offcanvas.Body>
-                    <ul>
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/about">About</Link></li>
-                        <li><Link to="/services">Services</Link></li>
-                        <li><Link to="/contact">Contact</Link></li>
-                    </ul>
-                </Offcanvas.Body>
-            </Offcanvas>
+                    <Offcanvas show={show} onHide={handleClose} placement="end">
+                        <Offcanvas.Header closeButton>
+                            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                        </Offcanvas.Header>
+                        <Offcanvas.Body>
+                            <ul>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/services">Services</Link></li>
+                                <li><Link to="/contact">Contact</Link></li>
+                            </ul>
+                        </Offcanvas.Body>
+                    </Offcanvas>
+                </div>
+                <div className='sign-in-container'>
+                    <Button className='sign-in-btn'>Sign In</Button>
+                </div>
             </div>
-            <div>
-                <Button className='sign-in-btn'>Sign In</Button>
-            </div>
-        </div>
         </>
     );
 }

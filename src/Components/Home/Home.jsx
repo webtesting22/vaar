@@ -6,6 +6,7 @@ import homeCard from "../pictures/home-card-img.png"
 import Founder from '../Founder/Founder';
 import Guide from '../Guide/Guide';
 import Bestvalue from '../Bestvalue/Bestvalue';
+import SignupSection from '../SignUp/SignupSection';
 function Home() {
     return (
         <>
@@ -129,6 +130,7 @@ function Home() {
             <Founder/>
             <Guide/>
             <Bestvalue/>
+            <SignupSection/>
 
         </>
     )
