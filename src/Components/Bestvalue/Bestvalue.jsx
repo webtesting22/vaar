@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Bestvalue.css"
 import BestvalueData from './BestvalueData';
+import ownerQuoteimg from "../pictures/ownerQuote.png"
 
 function Bestvalue() {
     return (
@@ -30,6 +31,29 @@ function Bestvalue() {
 
                                 </div>
                             ))}
+                        </div>
+
+                    </div>
+                    <br /><br /><br /><br /><br />
+                    <div className='owner-quote'>
+                        <div className="row m-auto">
+                            <div className="col-lg-4 col-md-4">
+                                <div className='inside-content1'>
+                                    <img src={ownerQuoteimg} className='w-100' alt="" />
+                                </div>
+                            </div>
+                            <div className="col-lg-8 col-md-8" id='Owner_info-content'>
+                                <div className='inside-content2'>
+                                    <div className='parent-div'>
+                                        <div>
+                                            <span>Vidhi Kanaria</span>
+                                            <h1>Beyond the Walls: Keeping Up the Potential with Real Estate Management</h1>
+                                            <a href="">Read More</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
 
                     </div>
