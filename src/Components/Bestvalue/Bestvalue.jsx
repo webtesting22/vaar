@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Bestvalue.css"
-import BestvalueData from './BestvalueData';
+import { BestvalueData, BestValueCardsData } from './BestvalueData';
 import ownerQuoteimg from "../pictures/ownerQuote.png"
 
 function Bestvalue() {
@@ -34,7 +34,7 @@ function Bestvalue() {
                         </div>
 
                     </div>
-                    <br /><br /><br /><br /><br />
+                    <div className="section-padding"></div>
                     <div className='owner-quote'>
                         <div className="row m-auto">
                             <div className="col-lg-4 col-md-4">
@@ -54,6 +54,21 @@ function Bestvalue() {
 
                                 </div>
                             </div>
+                        </div>
+
+                    </div>
+                    <div className="section-padding"></div>
+                    <div className='Infomation-cards'>
+                        <div className="row m-auto">
+                            {BestValueCardsData.map((item, index) => (
+                                <div className="col-lg-4 col-md-6">
+                                        <div>
+                                            <h5>{item.title}</h5>
+                                            <p>{item.description}</p>
+                                        </div>
+                                </div>
+
+                            ))}
                         </div>
 
                     </div>

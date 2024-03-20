@@ -167,3 +167,11 @@
     justify-content: center;
     align-items: center;
 } */
+.section-padding{
+    padding: 3rem 0rem;
+}
+.Infomation-cards .row .col-lg-4 div{
+    background-color: white;
+    padding: 20px 30px;
+    margin: 20px 0px;
+}
