@@ -49,19 +49,43 @@
     color: #D4F604;
     font-size: 3rem;
 }
+
+.content-founder p,
+.content-founder span {
+    color: white;
+}
+.founder-img{
+    width: 70%;
+}
+.owner-picture{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.founder-info .row{
+    padding: 3rem;
+}
 .content-founder{
     position: absolute;
     bottom: 0;
    /* margin-top: 7rem; */
 }
-.content-founder p,
-.content-founder span {
-    color: white;
-}
-@media (max-width:800px){
+@media (max-width:990px){
     .content-founder{
         position: static;
         bottom: 0;
        /* margin-top: 7rem; */
+    }
+    .founder-img{
+        width: 100%;
+    }
+    .owner-picture{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .founder-info .row{
+        padding: 1rem;
     }
 }
