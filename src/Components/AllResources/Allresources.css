@@ -1,0 +1,42 @@
+.form-select{
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+ @media (max-width:600px){
+    .form-select{
+        width: 100%;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+ }
+ .moduls-data hr{
+    height: 8px;
+    width: 100px;
+    border-radius: 20px;
+    opacity: 1;
+    background-color: #D4F604;
+    border: none;
+ }
+ .module-box{
+    /* border: 1px solid red; */
+    width: 100%;
+ }
+ .module-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+ }
+ .module-box h6{
+    font-size: 18px;
+    color: #606060;
+    margin: 20px 0px;
+ }
+ .module-box h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+ }

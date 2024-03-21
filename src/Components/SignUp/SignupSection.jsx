@@ -9,8 +9,8 @@ function SignupSection() {
                     <div className="row m-auto">
                         <div className="col-lg-6">
                             <div>
-                                <h2><b>Ready to get started?</b></h2>
-                                <span>Sign up or contact us</span>
+                                <h2 style={{ fontSize: "32px" }}><b>Ready to get started?</b></h2>
+                                <span style={{ fontSize: "32px" }}>Sign up or contact us</span>
                             </div>
                         </div>
                         <div className="col-lg-6">

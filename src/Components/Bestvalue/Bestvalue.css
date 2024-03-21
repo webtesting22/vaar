@@ -29,7 +29,7 @@
 }
 
 .Card-title {
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -135,6 +135,7 @@
     margin-bottom: 3rem;
 }
 .owner-quote .inside-content2 .parent-div div h1{
+    font-size: 48px;
     font-weight: 600;
     margin-bottom: 3rem;
 }
@@ -235,4 +236,8 @@
     border-radius: 20px;
     left: -10px;
     transition: .5s;
+}
+.section-heading-best-value{
+    font-size: 32px;
+    text-align: center;
 }

@@ -2,10 +2,10 @@
     background-color: black;
 
 }
-.section-heading{
+.section-heading-big{
     text-align: center;
     /* color: #D4F604; */
-    font-size: 30px;
+    font-size: 55px;
 }
 .box{
     border: 1px solid rgba(255, 255, 255, 0.6);

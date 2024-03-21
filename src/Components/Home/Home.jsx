@@ -13,11 +13,12 @@ function Home() {
             <div className='parent-section'>
                 <section id='Home_section'>
                     <div className='container text-center'>
+                        <h1 className='main-global-heading'>Real-estate, simplified</h1>
                         <div className='content-container-responsive'>
-                            <h1 className='main-global-heading'>Real-estate, simplified</h1>
+
                             <p>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                             <div className='email-collect'>
-                                <input type="text" placeholder='Enter Your Email' />
+                                <input type="text" placeholder="What's your email" />
                                 <button className='input-btn'>Sign&nbsp;Up</button>
                             </div>
                         </div>
@@ -123,14 +124,14 @@ function Home() {
                     </div>
                 </div>
                 <br />
-                <marquee behavior="scroll" direction="left" ><h4 style={{ color: "white", fontWeight:"300", fontSize:"0.9rem" }}><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></h4> </marquee>
+                <marquee behavior="scroll" direction="left" ><h4 style={{ color: "white", fontWeight: "300", fontSize: "0.9rem" }}><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></h4> </marquee>
                 <br />
-               
+
             </div>
-            <Founder/>
-            <Guide/>
-            <Bestvalue/>
-            <SignupSection/>
+            <Founder />
+            <Guide />
+            <Bestvalue />
+            <SignupSection />
 
         </>
     )

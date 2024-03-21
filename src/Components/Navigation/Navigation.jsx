@@ -57,8 +57,8 @@ function Navigation() {
                     {isDesktop ? (
                         <nav >
                             <ul className='navigation_ul m-0'>
-                                <li><Link to="/contact" className="hover-this">AboutUs</Link></li>
-                                <li><Link to="/">Resources</Link></li>
+                                <li><Link to="/Aboutus" className="hover-this">AboutUs</Link></li>
+                                <li><Link to="/AllResources">Resources</Link></li>
                                 <li><Link to="/about">Blog</Link></li>
                                 <li><Link to="/services">Team</Link></li>
                             </ul>
@@ -76,7 +76,7 @@ function Navigation() {
                         <Offcanvas.Body>
                             <ul>
                                 <li><Link to="/">Home</Link></li>
-                                <li><Link to="/about">About</Link></li>
+                                <li><Link to="/AllResources">About</Link></li>
                                 <li><Link to="/services">Services</Link></li>
                                 <li><Link to="/contact">Contact</Link></li>
                             </ul>

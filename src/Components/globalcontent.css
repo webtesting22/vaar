@@ -1,18 +1,29 @@
 .section-heading{
-    font-size: 3rem ;
+    font-size: 20px;
     font-weight: 600;
     color: #000000;
     text-align: center;
     padding: 20px 0px;
 }
 .section-para{
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 500;
     color: #000000;
+    width: 70%;
+    text-align: center;
+    margin: auto;
 }
 section{
     padding: 3rem 0rem;
 }
 a{
     text-decoration: none;
+}
+@media (max-width:700px){
+    .section-para{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+    }
 }

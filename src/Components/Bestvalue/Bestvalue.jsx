@@ -9,7 +9,7 @@ function Bestvalue() {
             <section style={{ backgroundColor: "#F2F2F2" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <h1 className='section-heading'>Your Best Value Proposition</h1>
+                        <h1 className='section-heading-best-value'>Your Best Value Proposition</h1>
                         <p className='section-para text-center'>Learn more about the real-estate industry through our quick courses</p>
 
                     </div>
@@ -66,8 +66,8 @@ function Bestvalue() {
                             {BestValueCardsData.map((item, index) => (
                                 <div className="col-lg-6 col-md-6">
                                     <div>
-                                        <h5>{item.title}</h5>
-                                        <p>{item.description}</p>
+                                        <h5 style={{fontSize:"24px"}}>{item.title}</h5>
+                                        <p style={{fontSize:"18px"}}>{item.description}</p>
                                         <br />
                                         <div className='m-0 p-0 read-more-btn'>
                                             <a href="">Read More</a>

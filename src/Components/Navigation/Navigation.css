@@ -50,6 +50,7 @@
   .navigation_ul li a{
     color: white;
     text-decoration: none;
+    font-size: 14px;
   }
   .sticky .navigation_ul li a{
     color: rgb(0, 0, 0);

@@ -10,8 +10,8 @@ function Founder() {
                 <div className="container">
                     <div className='text-center'>
                         <hr />
-                        <h1 className='section-heading'>VAAR is the start</h1>
-                        <p className='section-para'>In a world that constantly builds and breaks itself down through disruption, confusion, and<br /> warfare, we offer a store of value that stands the tests of time.</p>
+                        <h1 className='section-heading-big'>VAAR is the start</h1>
+                        <p className='section-para'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="row w-100">
                         <div className="col-lg-6">
