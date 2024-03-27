@@ -18,7 +18,7 @@ const BestvalueData = [
     },
     {
         img: img4,
-        title: "REITs & Discreit"
+        title: "REITs & Vaar"
     },
 ]
 // export default BestvalueData;

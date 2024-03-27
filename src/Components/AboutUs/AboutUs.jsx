@@ -36,7 +36,7 @@ function AboutUs() {
                     <div className='top-about-section'>
                         <div>
                             <h1>Vaar is your gateway to the world of real estate</h1>
-                            <p>The platform enables you to invest in prime, income-generating real estate through fractional ownership, eliminating the need for substantial upfront capital. Through Discreit, you can create a diversified portfolio of residential assets that vary in their risk and return profile.</p>
+                            <p>The platform enables you to invest in prime, income-generating real estate through fractional ownership, eliminating the need for substantial upfront capital. Through Vaar, you can create a diversified portfolio of residential assets that vary in their risk and return profile.</p>
                             <br />
                             <a href="" className='btn-styling'>Get Started</a>
                         </div>

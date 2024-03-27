@@ -64,22 +64,22 @@ const Module4 = [
     {
         img: img9,
         subtitle: "CONCEPT 1 - 15 MINUTE READ",
-        title: "Fractionalization & Discreit"
+        title: "Fractionalization & Vaar"
     },
     {
         img: img10,
         subtitle: "CONCEPT 2 - 15 MINUTE READ",
-        title: "Risk Mitigation and Discreit"
+        title: "Risk Mitigation and Vaar"
     },
     {
         img: img11,
         subtitle: "CONCEPT 3 - 15 MINUTE READ",
-        title: "REITs & Discreit"
+        title: "REITs & Vaar"
     },
     {
         img: img12,
         subtitle: "CONCEPT 4 - 15 MINUTE READ",
-        title: "Risk-Return Analysis & Discreit"
+        title: "Risk-Return Analysis & Vaar"
     },
     {
         img: img13,
@@ -89,7 +89,7 @@ const Module4 = [
     {
         img: img14,
         subtitle: "CONCEPT 6 - 15 MINUTE READ",
-        title: "Technology & Discreit"
+        title: "Technology & Vaar"
     },
 
 ]
