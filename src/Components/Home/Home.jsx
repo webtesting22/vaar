@@ -21,6 +21,9 @@ function Home() {
                                 <input type="text" placeholder="What's your email" />
                                 <button className='input-btn'>Sign&nbsp;Up</button>
                             </div>
+                            <div className='mobile-view-home'>
+                                <button><a href="">Sign up</a></button>
+                            </div>
                         </div>
 
                     </div>

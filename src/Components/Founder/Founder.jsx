@@ -15,7 +15,7 @@ function Founder() {
                     </div>
                     <div className="row w-100">
                         <div className="col-lg-6">
-                            <img src={animatedGirl} className='w-100' alt="" />
+                            <img src={animatedGirl} className='w-100 animated-girl-pick'  alt="" />
                         </div>
                         <div className="col-lg-6" style={{ display: "flex", alignItems: "center" }}>
                             <div className='right-side-container'>

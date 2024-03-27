@@ -65,7 +65,7 @@ function Navigation() {
                             </ul>
                         </nav>
                     ) : (
-                        <i class='bx bx-menu' onClick={handleShow} style={{fontSize:"40px"}}></i>
+                        <i class='bx bx-menu' onClick={handleShow} style={{fontSize:"40px",color:"#D4F604"}}></i>
                         // <Button variant="primary" >
                         //     Open Menu
                         // </Button>

@@ -89,3 +89,19 @@
         padding: 1rem;
     }
 }
+
+.animated-girl-pick{
+    display: block;
+}
+@media (max-width:600px){
+    .animated-girl-pick{
+        display: none;
+    }
+    .right-side-container div{
+        text-align: center;
+        border: none;
+    }
+    .right-side-container div{
+        padding-left: 0px;
+    }
+}

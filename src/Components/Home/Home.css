@@ -1,8 +1,9 @@
-.parent-section{
+.parent-section {
     height: 100%;
     background-color: #000000;
 }
-#Home_section{
+
+#Home_section {
     /* height: 100vh; */
     width: 100%;
     /* background-color: #000000; */
@@ -11,31 +12,36 @@
     justify-content: center;
     align-items: center;
 }
-.main-global-heading{
+
+.main-global-heading {
     font-weight: 600;
     font-size: 60px;
     color: white;
     margin-bottom: 20px;
 }
+
 .content-container-responsive {
     width: 50%;
     margin: auto;
     text-align: center;
     color: white;
 }
-.content-container-responsive p{
+
+.content-container-responsive p {
     font-size: 18px;
 }
 
-.content-container-responsive span{
+.content-container-responsive span {
     color: #D4F604;
-    
+
 }
-.email-collect input::placeholder{
+
+.email-collect input::placeholder {
     color: black;
     font-weight: 400;
 }
-.email-collect{
+
+.email-collect {
     padding: 8px 16px;
     margin-top: 3rem;
     display: flex;
@@ -43,27 +49,30 @@
     width: 100%;
     border-radius: 10px;
 }
-.email-collect input{
+
+.email-collect input {
     border: none;
     width: 100%;
     outline: none;
     box-shadow: none;
 }
-.email-collect input:focus{
+
+.email-collect input:focus {
     border: none;
     width: 100%;
     outline: none;
     box-shadow: none;
 }
-.input-btn{
-    
+
+.input-btn {
+
     border: none;
     background-color: #D4F604;
     padding: 6px 20px;
     border-radius: 5px;
 }
 
-@media (max-width:800px){
+@media (max-width:800px) {
     .content-container-responsive {
         width: 100%;
         margin: auto;
@@ -72,14 +81,16 @@
         /* margin-top: 10rem; */
     }
 }
-#second-part-section .row .col-lg-4{
+
+#second-part-section .row .col-lg-4 {
     /* background-color: white; */
     margin-top: 5rem;
     padding: 0px;
     /* height: 50vh; */
 }
+
 #second-part-section .row .col-lg-4 .parent-section .child-first,
-#second-part-section .row .col-lg-4 .parent-section .child-second{
+#second-part-section .row .col-lg-4 .parent-section .child-second {
     background-color: rgb(255, 255, 255);
     height: 34vh;
     margin: 10px 0px;
@@ -87,10 +98,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-   
+
 }
 
-.inside-container{
+.inside-container {
     /* margin: 2px; */
     background-color: rgb(255, 255, 255);
     height: 70vh;
@@ -101,18 +112,21 @@
     justify-content: center;
     align-items: center;
 }
-#second-part-section .top-header .card-title{
+
+#second-part-section .top-header .card-title {
     font-size: 1.3rem;
     font-weight: 600;
     text-align: center;
 }
-#second-part-section .top-header span{
+
+#second-part-section .top-header span {
     font-size: 0.9rem;
     font-weight: 500;
     text-align: center;
     color: #000000;
 }
-#second-part-section .top-header h5{
+
+#second-part-section .top-header h5 {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
@@ -121,18 +135,20 @@
     margin-bottom: 0.5rem;
     text-align: start;
 }
-#second-part-section .top-header h6{
+
+#second-part-section .top-header h6 {
     font-size: 0.7rem;
     font-weight: 600;
     text-align: start;
-    margin-top: 10px ;
+    margin-top: 10px;
     margin-bottom: 0px;
     /* color: #000000;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     text-align: start; */
 }
-#second-part-section .top-header .connect span{
+
+#second-part-section .top-header .connect span {
     font-size: 0.6rem;
     /* font-weight: 600;
     text-align: center;
@@ -141,13 +157,46 @@
     margin-bottom: 0.5rem;
     text-align: start; */
 }
-.parent-content-container{
+
+.parent-content-container {
     display: flex;
     justify-content: space-between;
 }
-.child-content-container{
+
+.child-content-container {
     padding: 20px 0px;
 }
-.child-content-container span{
+
+.child-content-container span {
     font-size: 0.8rem;
+}
+.mobile-view-home{
+    display: none;
+}
+@media (max-width:600px){
+    .mobile-view-home {
+        width: 100%;
+        display: block;   
+          transition: .4s;
+       
+    }
+    
+    .mobile-view-home button {
+        width: 100%;
+        height: 48px;
+        width: 100%;
+        background-color: #D4F604;
+        border: none;
+        border-radius: 8px;
+        margin-top: 2rem;
+    }
+    .mobile-view-home button a{
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .email-collect{
+        display: none;
+        transition: .4s;
+    }
 }
