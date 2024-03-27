@@ -69,3 +69,24 @@
     margin-right: 15px;
 
 }
+@media (max-width:600px){
+    .box-top-header img{
+        background-color: #D4F604;
+        width: 27px;
+        height: 27px;
+        padding: 4px;
+        aspect-ratio: 3/2;
+        border-radius: 50%;
+        object-fit: contain;
+        margin: 10px auto;
+
+    
+    }
+    .box-top-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    }
+}
