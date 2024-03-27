@@ -12,6 +12,7 @@ function Navigation() {
     const [isSticky, setIsSticky] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    
 
     const isDesktop = window.innerWidth > 768; // Assuming tablet breakpoint is at 768px
     const scrollToTop = () => {
@@ -57,8 +58,8 @@ function Navigation() {
                     {isDesktop ? (
                         <nav >
                             <ul className='navigation_ul m-0'>
-                                <li><Link to="/Aboutus" className="hover-this">AboutUs</Link></li>
-                                <li><Link to="/AllResources">Resources</Link></li>
+                                <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
+                                <li><Link to="/AllResources" >Resources</Link></li>
                                 <li><Link to="/about">Blog</Link></li>
                                 <li><Link to="/services">Team</Link></li>
                             </ul>
