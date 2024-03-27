@@ -25,7 +25,7 @@
 .box .box-title{
     color: #D4F604;
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
 }
 .box .paragraph{
     color: rgb(231, 231, 231);
@@ -54,4 +54,18 @@
     width: 50px;
     opacity: 1;
     transition: .5s;
+}
+.box-top-header{
+    display: flex;
+}
+.box-top-header img{
+    background-color: #D4F604;
+    width: 27px;
+    height: 27px;
+    padding: 4px;
+    aspect-ratio: 3/2;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-right: 15px;
+
 }

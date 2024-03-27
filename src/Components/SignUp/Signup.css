@@ -1,24 +1,81 @@
-.Sign-up-btns .col-lg-6 {
+.Sign-up-btns .row .col-lg-6 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Sign-up-btns .col-lg-6 a{
-    margin: 0px 20px;
-    padding: 8px 30px;
-    border-radius: 5px;
+.Sign-up-btns .row .col-lg-6 a{
+    font-size: 18px;
     color: black;
+    /* font-weight: 600; */
+ 
 }
-.Sign-up-btns .col-lg-6 a:nth-child(1){
+.Sign-up-btns .row .col-lg-6 button:nth-child(1){
+    font-size: 18px;
+    color: black;
     background-color: #D4F604;
+    margin: 20px;
+    width: 200px;
+    height: 48px;
+    border: none;
+    border-radius:5px;
 }
-.Sign-up-btns .col-lg-6 a:nth-child(2){
+.Sign-up-btns .row .col-lg-6 button:nth-child(2){
+    font-size: 18px;
+    color: black;
     border: 1px solid black;
     background-color: transparent;
-    transition: .5s;
+    margin: 20px;
+    width: 200px;
+    height: 48px;
+    border-radius:5px;
 }
-.Sign-up-btns .col-lg-6 a:nth-child(2):hover{
-    background-color: #D4F604;
-    border: 1px solid transparent;
-    transition: .5s;
+.sign-up-tagline{
+    font-size: 32px;
+}
+.sign-up-title{
+    font-size: 32px;
+}
+@media (max-width:600px){
+    .Sign-up-btns .row .col-lg-6 button:nth-child(1){
+        font-size: 18px;
+        color: black;
+        background-color: #D4F604;
+        box-shadow: rgba(99, 99, 99, 0.121) 0px 2px 8px 0px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+        margin-right: 0px;
+        margin-left: 0px;
+        width: 100%;
+        /* height: 48px; */
+        border: none;
+        border-radius:5px;
+    }
+    .Sign-up-btns .row .col-lg-6 button:nth-child(2){
+        font-size: 18px;
+        color: black;
+        border: 1px solid transparent;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        background-color: transparent;
+        margin: 0px 0px ;
+        width: 100%;
+        /* height: 48px; */
+        border-radius:5px;
+    }
+    .Sign-up-btns .row .col-lg-6 a{
+        font-size: 16px;
+        color: black;
+        font-weight: 600;
+     
+    }
+    .Sign-up-btns .row .col-lg-6 div{
+        width: 100%;
+        text-align: center;
+    }
+    .sign-up-tagline{
+        font-size: 18px;
+        color: #667085;
+    }
+    .sign-up-title{
+        font-size: 30px;
+    }
 }
