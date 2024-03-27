@@ -2,7 +2,30 @@ import React from 'react';
 import "./About.css"
 import AboutCard from './AboutCardData';
 import { Container, Row, Col } from 'react-bootstrap';
+import Accordion from 'react-bootstrap/Accordion';
 function AboutUs() {
+    const accordionData = [
+        {
+            id: 1,
+            title: 'Who can invest in VAAR?',
+            content: 'VAAR was built for anybody that wants to participate in the wealth creation by investing in income-generating real estate. VARR makes investment in real estate accessible to all investors - both retail and accredited.',
+        },
+        {
+            id: 2,
+            title: 'How much money do I need to invest with VAAR?',
+            content: 'second accordion item content goes here.',
+        },
+        {
+            id: 3,
+            title: 'Why should I invest in real estate?',
+            content: 'Third accordion item content goes here.',
+        },
+        {
+            id: 4,
+            title: 'How much do I make?',
+            content: 'Fourth accordion item content goes here.',
+        },
+    ];
     return (
         <>
 
@@ -48,7 +71,21 @@ function AboutUs() {
                     </div>
 
                 </section>
+                <section>
+                    <div className='container'>
 
+                        <Accordion defaultActiveKey="0" id='accordion'>
+                            <h1>Frequently Asked Questions</h1>
+                            {accordionData.map(item => (
+                                <Accordion.Item key={item.id} eventKey={item.id.toString()}>
+                                    <Accordion.Header>{item.title}</Accordion.Header>
+                                    <Accordion.Body>{item.content}</Accordion.Body>
+                                </Accordion.Item>
+                            ))}
+                        </Accordion>
+
+                    </div>
+                </section>
             </section>
 
         </>
