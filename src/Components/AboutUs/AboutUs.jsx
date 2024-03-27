@@ -1,5 +1,7 @@
 import React from 'react';
 import "./About.css"
+import AboutCard from './AboutCardData';
+import { Container, Row, Col } from 'react-bootstrap';
 function AboutUs() {
     return (
         <>
@@ -10,7 +12,7 @@ function AboutUs() {
                 <div className="container">
                     <div className='top-about-section'>
                         <div>
-                            <h1>Vaar is your gatewayto the world of real estate</h1>
+                            <h1>Vaar is your gateway to the world of real estate</h1>
                             <p>The platform enables you to invest in prime, income-generating real estate through fractional ownership, eliminating the need for substantial upfront capital. Through Discreit, you can create a diversified portfolio of residential assets that vary in their risk and return profile.</p>
                             <br />
                             <a href="" className='btn-styling'>Get Started</a>
@@ -27,11 +29,21 @@ function AboutUs() {
                             <div className='about-tagline'><p>Our shared values keep us connected and guide us as one team.</p></div>
                         </div>
                         <div className="section-padding"></div>
-                        <div className="row w-100">
-                            <div className="col-lg-4">
+                        <div className="container">
+                            <Row>
+                                {AboutCard.map((item, index) => (
+                                    <Col key={index} lg={6} md={6} sm={12}>
+                                        <div className="about-card text-center">
+                                            <div className='about-icon-container'>
+                                                <img src={item.image} alt={item.title} width={100} />
 
-                            </div>
-
+                                            </div>
+                                            <h3>{item.title}</h3>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    </Col>
+                                ))}
+                            </Row>
                         </div>
                     </div>
 

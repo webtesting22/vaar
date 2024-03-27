@@ -1,40 +1,86 @@
-#About-section{
+#About-section {
     background-color: #f2f2f2;
     height: 100%;
     width: 100%;
 }
-.top-about-section{
+
+.top-about-section {
     height: 70vh;
     width: 100%;
     /* background-color: #f2f2f2; */
-    padding: 0rem 15rem;
+    /* padding: 0rem 15rem; */
     text-align: center;
+
+}
+@media (min-width:900px) and (max-width:3000px){
+    .top-about-section {
+        height: 70vh;
+        width: 100%;
+        /* background-color: #f2f2f2; */
+        padding: 0rem 7rem;
+        text-align: center;
     
+    }
 }
-@media (min-width:500px) and (max-width:900px){
+
+/* @media (min-width:500px) and (max-width:900px) {
     .top-about-section {
         padding: 0rem 1rem;
         text-align: center;
     }
 }
-@media(max-width:499px){
+
+@media(max-width:499px) {
     .top-about-section {
         padding: 0rem 1rem;
         text-align: center;
     }
-}
-.section-top-content{
+} */
+
+.section-top-content {
     text-align: center;
 }
-.section-top-content .top-span{
+
+.section-top-content .top-span {
     font-size: 16px;
     font-weight: 600;
-   
+
 }
-.section-top-content h2{
+
+.section-top-content h2 {
     font-size: 40px;
 }
-.section-top-content .about-tagline p{
+
+.section-top-content .about-tagline p {
     font-size: 20px;
     color: #606060;
+}
+
+.about-card .about-icon-container img {
+    width: 40px;
+    height: 40px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    background-color: #D4F604;
+    border-radius: 50%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.about-card h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.about-card p {
+    font-size: 18px;
+    color: #606060;
+}
+.about-card{
+    padding: 40px;
+}
+@media (max-width:1000px){
+    .about-card{
+        padding: 0px;
+    }
 }

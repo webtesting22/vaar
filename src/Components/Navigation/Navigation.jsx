@@ -65,9 +65,10 @@ function Navigation() {
                             </ul>
                         </nav>
                     ) : (
-                        <Button variant="primary" onClick={handleShow}>
-                            Open Menu
-                        </Button>
+                        <i class='bx bx-menu' onClick={handleShow} style={{fontSize:"40px"}}></i>
+                        // <Button variant="primary" >
+                        //     Open Menu
+                        // </Button>
                     )}
 
                     <Offcanvas show={show} onHide={handleClose} placement="end">
