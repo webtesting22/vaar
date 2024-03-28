@@ -4,7 +4,7 @@ import "./Signup.css"
 function SignupSection() {
     return (
         <>
-            <section className='bg-white Sign-up-btns'>
+            <section className=' Sign-up-btns'>
                 <div className="container">
                     <div className="row m-auto">
                         <div className="col-lg-6 ">

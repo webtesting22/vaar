@@ -1,3 +1,4 @@
+
 .Sign-up-btns .row .col-lg-6 {
     display: flex;
     justify-content: center;
@@ -35,7 +36,13 @@
 .sign-up-title{
     font-size: 32px;
 }
+.Sign-up-btns{
+    background-color: #FFFFFF;
+}
 @media (max-width:600px){
+    .Sign-up-btns{
+        background-color: #F9FAFB;
+    }
     .Sign-up-btns .row .col-lg-6 button:nth-child(1){
         font-size: 18px;
         color: black;
