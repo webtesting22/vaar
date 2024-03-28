@@ -49,7 +49,7 @@ function Navigation() {
         <>
             <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`}>
                 <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
-                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "70px" }} /></Link>
+                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
                 </div>
                 <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
                     <Link to="/"><img src={varrimg1} alt=" " style={{ width: "50px" }} /></Link>
