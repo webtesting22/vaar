@@ -7,6 +7,7 @@ import Founder from '../Founder/Founder';
 import Guide from '../Guide/Guide';
 import Bestvalue from '../Bestvalue/Bestvalue';
 import SignupSection from '../SignUp/SignupSection';
+import img1 from "../pictures/About-icons/homePageMobile.svg"
 function Home() {
     return (
         <>
@@ -125,6 +126,10 @@ function Home() {
 
                         </div>
                     </div>
+                </div>
+                <div className='mobile-show-img'>
+                    <img src={img1} alt="" />
+
                 </div>
                 <br />
                 <marquee behavior="scroll" direction="left" ><h4 style={{ color: "white", fontWeight: "300", fontSize: "0.9rem" }}><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></h4> </marquee>
