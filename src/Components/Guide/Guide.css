@@ -52,14 +52,14 @@
     .blob-mobile-img {
         display: block;
         position: relative;
-        padding: 25vh 0vh;
+        padding: 28vh 0vh;
     }
 }
 @media (min-width:501px) and (max-width:600px){
     .blob-mobile-img {
         display: block;
         position: relative;
-        padding: 26vh 0vh;
+        padding: 28vh 0vh;
     }
 }
 @media (max-width:600px) {
