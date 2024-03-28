@@ -1,9 +1,9 @@
-import img7 from "../pictures/About-icons/Icon.png"
-import img2 from "../pictures/About-icons/usericon.png";
-import img3 from "../pictures/About-icons/key.png";
-import img4 from "../pictures/About-icons/navigation.png";
-import img5 from "../pictures/About-icons/home.png";
-import img6 from "../pictures/About-icons/dollar-sign.png";
+import img7 from "../pictures/About-icons/rocket.svg"
+import img2 from "../pictures/About-icons/user.svg";
+import img3 from "../pictures/About-icons/key.svg";
+import img4 from "../pictures/About-icons/offer.svg";
+import img5 from "../pictures/About-icons/rent.svg";
+import img6 from "../pictures/About-icons/earn.svg";
 
 
 const GuideData = [

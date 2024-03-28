@@ -18,7 +18,7 @@ function AllResources() {
                             <option value="3">Three</option>
                         </select>
                     </div>
-                    <div className="section-heading"></div>
+                    {/* <div className="section-heading"></div> */}
                     <div className='moduls-data'>
                         <div>
                             <h4>Module 1</h4>
