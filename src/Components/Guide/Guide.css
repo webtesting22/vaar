@@ -44,9 +44,11 @@
 .guide-container-mobile-para {
     display: none;
 }
-.blob-mobile-img{
+
+.blob-mobile-img {
     display: none;
 }
+
 @media (max-width:600px) {
     .Guide-section .row {
         padding: 0rem 0rem;
@@ -82,30 +84,39 @@
     /* .Guide-section .container {
         padding: 0px;
     } */
-    .blob-mobile-img{
+    .blob-mobile-img {
         display: block;
-        /* position: relative; */
+        position: relative;
+        height: 100vh;
     }
+
     .blob-container {
         width: 100%;
         position: absolute;
         right: 0px;
         left: 0px;
-        /* top: 0; */
+        bottom: 0;
         display: block;
         z-index: -1;
     }
-    .blob-container img{
+
+    .blob-container img {
         width: 100%;
     }
-    .mobile-image img{
-        width: 70%;
+
+    .mobile-image img {
+        width: 230px;
         margin: auto;
-    }
-    .mobile-image{
-        display: block;
         display: flex;
     }
+
+    .mobile-image {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+  
 
 
 }
