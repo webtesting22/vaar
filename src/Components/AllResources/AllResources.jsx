@@ -20,13 +20,13 @@ function AllResources() {
                     </div>
                     {/* <div className="section-heading"></div> */}
                     <div className='moduls-data'>
-                        <div>
+                        <div className='mb-4 mt-5'>
                             <h4>Module 1</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module1.map((item, index) => (
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 mb-5">
                                             <div className='module-box'>
                                                 <img src={item.img} alt="" />
                                                 <h6>{item.subtitle}</h6>
@@ -40,14 +40,14 @@ function AllResources() {
                             </div>
 
                         </div>
-                        <div className="section-padding"></div>
-                        <div>
+                        {/* <div className="section-padding"></div> */}
+                        <div className='mb-4 mt-5'>
                             <h4>Module 2</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module2.map((item, index) => (
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 mb-5">
                                             <div className='module-box'>
                                                 <img src={item.img} alt="" />
                                                 <h6>{item.subtitle}</h6>
@@ -60,15 +60,15 @@ function AllResources() {
 
                             </div>
                         </div>
-                        <div className="section-padding"></div>
+                        {/* <div className="section-padding"></div> */}
 
-                        <div>
+                        <div className='mb-4 mt-5'>
                             <h4>Module 3</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module3.map((item, index) => (
-                                        <div className="col-lg-4">
+                                        <div className="col-lg-4 mb-5">
                                             <div className='module-box'>
                                                 <img src={item.img} alt="" />
                                                 <h6>{item.subtitle}</h6>
@@ -81,9 +81,9 @@ function AllResources() {
 
                             </div>
                         </div>
-                        <div className="section-padding"></div>
+                        {/* <div className="section-padding"></div> */}
 
-                        <div>
+                        <div className='mb-4 mt-5'>
                             <h4>Module 4</h4>
                             <hr />
                             <div className='all-resources-box'>
