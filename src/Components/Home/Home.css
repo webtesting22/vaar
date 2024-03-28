@@ -188,7 +188,7 @@
 @media (max-width:600px){
     .mobile-view-home {
         width: 100%;
-        display: block;   
+        display: none;   
           transition: .4s;
        
     }
@@ -207,10 +207,10 @@
         font-size: 16px;
         font-weight: 600;
     }
-    .email-collect{
+    /* .email-collect{
         display: none;
         transition: .4s;
-    }
+    } */
     #second-part-section{
         display: none;
     }

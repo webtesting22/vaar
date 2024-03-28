@@ -52,7 +52,7 @@ function Navigation() {
                     <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
                 </div>
                 <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
-                    <Link to="/"><img src={varrimg1} alt=" " style={{ width: "50px" }} /></Link>
+                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
                 </div>
                 <div>
                     {isDesktop ? (
