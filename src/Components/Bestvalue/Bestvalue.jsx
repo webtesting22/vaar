@@ -90,6 +90,7 @@ function Bestvalue() {
 
                     <div className='blogs-section-pc'>
                         <div className="section-padding"></div>
+                        <div className="section-padding"></div>
                         <div className='owner-quote'>
                             <div className="row m-auto">
                                 <div className="col-lg-4 col-md-4">
