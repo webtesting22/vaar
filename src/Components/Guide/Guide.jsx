@@ -3,6 +3,7 @@ import "./Guide.css"
 import GuideData from './GuideData';
 import blobData from "../pictures/About-icons/Blob.svg"
 import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
+
 function Guide() {
   return (
     <>
