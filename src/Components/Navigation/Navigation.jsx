@@ -12,7 +12,7 @@ function Navigation() {
     const [isSticky, setIsSticky] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
-    
+
 
     const isDesktop = window.innerWidth > 768; // Assuming tablet breakpoint is at 768px
     const scrollToTop = () => {
@@ -65,7 +65,7 @@ function Navigation() {
                             </ul>
                         </nav>
                     ) : (
-                        <i class='bx bx-menu' onClick={handleShow} style={{fontSize:"40px",color:"#D4F604"}}></i>
+                        <i class='bx bx-menu' onClick={handleShow} style={{ fontSize: "40px", color: "#D4F604" }}></i>
                         // <Button variant="primary" >
                         //     Open Menu
                         // </Button>
@@ -77,10 +77,10 @@ function Navigation() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/AllResources">About</Link></li>
-                                <li><Link to="/services">Services</Link></li>
-                                <li><Link to="/contact">Contact</Link></li>
+                                <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
+                                <li><Link to="/AllResources" >Resources</Link></li>
+                                <li><Link to="/about">Blog</Link></li>
+                                <li><Link to="/VaarTeam">Team</Link></li>
                             </ul>
                         </Offcanvas.Body>
                     </Offcanvas>
