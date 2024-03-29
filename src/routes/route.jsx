@@ -14,16 +14,16 @@ import ScreenLayout from "../ScreenLayout/ScreenLayout";
 
 const route = createBrowserRouter(
     createRoutesFromElements(
-        
-                <Route path="/Ab" element={<ScreenLayout />}>
 
-                    <Route index element={<Home />} />
-                    <Route path="AboutUs" element={<AboutUs />} />
-                    <Route path="AllResources" element={<AllResources />} />
-                    <Route path="VaarTeam" element={<VaarTeam />} />
+        <Route path="/" element={<ScreenLayout />}>
 
-                </Route>
-         
+            <Route index element={<Home />} />
+            <Route path="AboutUs" element={<AboutUs />} />
+            <Route path="AllResources" element={<AllResources />} />
+            <Route path="VaarTeam" element={<VaarTeam />} />
+
+        </Route>
+
     )
 );
 
