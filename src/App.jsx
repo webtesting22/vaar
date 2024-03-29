@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Navigation from './Components/Navigation/Navigation';
@@ -6,28 +7,21 @@ import AllResources from './Components/AllResources/AllResources';
 import SignupSection from './Components/SignUp/SignupSection';
 import AboutUs from './Components/AboutUs/AboutUs';
 import VaarTeam from './Components/VaarTeam/VaarTeam';
+
 function App() {
-
-
   return (
-    
-      <Router>
-        <Navigation/>
-
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/AboutUs" element={<AboutUs />} />
-          <Route exact path="/AllResources" element={<AllResources />} />
-          <Route exact path="/footer" element={<Footer />} />
-          <Route exact path="/VaarTeam" element={<VaarTeam />} />
-
-
-        </Routes>
-        <SignupSection/>
-        <Footer/>
-      </Router>
-   
-  )
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/AllResources" element={<AllResources />} />
+        <Route path="/VaarTeam" element={<VaarTeam />} />
+      </Routes>
+      <SignupSection />
+      <Footer />
+    </Router>
+  );
 }
 
-export default App
+export default App;
