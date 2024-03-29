@@ -12,7 +12,12 @@ function Navigation() {
     const [isSticky, setIsSticky] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+    const [offcanvasOpen, setOffcanvasOpen] = useState(false);
 
+    const handleCloseOffcanvas = () => {
+        setOffcanvasOpen(false);
+        handleClose();
+    };
 
     const isDesktop = window.innerWidth > 768; // Assuming tablet breakpoint is at 768px
     const scrollToTop = () => {
@@ -77,10 +82,22 @@ function Navigation() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul>
-                                <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
-                                <li><Link to="/AllResources" >Resources</Link></li>
-                                <li><Link to="/about">Blog</Link></li>
-                                <li><Link to="/VaarTeam">Team</Link></li>
+                                <li><Link to="/AboutUs" className="hover-this" onClick={() => {
+                                    console.log("click")
+                                    handleCloseOffcanvas();
+                                }}>AboutUs</Link></li>
+                                <li><Link to="/AllResources" onClick={() => {
+                                    console.log("click")
+                                    handleCloseOffcanvas();
+                                }}>Resources</Link></li>
+                                <li><Link to="/about" onClick={() => {
+                                    console.log("click")
+                                    handleCloseOffcanvas();
+                                }}>Blog</Link></li>
+                                <li><Link to="/VaarTeam" onClick={() => {
+                                    console.log("click")
+                                    handleCloseOffcanvas();
+                                }}>Team</Link></li>
                             </ul>
                         </Offcanvas.Body>
                     </Offcanvas>
