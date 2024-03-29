@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import AllResources from './Components/AllResources/AllResources';
 import SignupSection from './Components/SignUp/SignupSection';
 import AboutUs from './Components/AboutUs/AboutUs';
+import VaarTeam from './Components/VaarTeam/VaarTeam';
 function App() {
 
 
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/AboutUs" element={<AboutUs />} />
           <Route exact path="/AllResources" element={<AllResources />} />
           <Route exact path="/footer" element={<Footer />} />
+          <Route exact path="/VaarTeam" element={<VaarTeam />} />
 
 
         </Routes>

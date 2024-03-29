@@ -15,6 +15,10 @@ function VaarBlogs() {
                         pagination={{
                             clickable: true,
                         }}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: true,
+                        }}
                         // modules={[Pagination]}
                         className="mySwiper"
                     >

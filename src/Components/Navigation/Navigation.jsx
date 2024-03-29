@@ -61,7 +61,7 @@ function Navigation() {
                                 <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
                                 <li><Link to="/AllResources" >Resources</Link></li>
                                 <li><Link to="/about">Blog</Link></li>
-                                <li><Link to="/services">Team</Link></li>
+                                <li><Link to="/VaarTeam">Team</Link></li>
                             </ul>
                         </nav>
                     ) : (
