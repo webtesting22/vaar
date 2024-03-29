@@ -173,13 +173,156 @@
     background-color: transparent;
     border-radius: 0px;
 }
-.accordion-item:first-of-type{
+
+.accordion-item:first-of-type {
     border-top: 1px solid black;
 }
-#accordion h1{
+
+#accordion h1 {
     margin-bottom: 30px;
     font-size: 40px;
 }
-.accordion-button:not(.collapsed){
+
+.accordion-button:not(.collapsed) {
     color: black;
+}
+
+.first {
+    display: block;
+}
+
+.second {
+    display: none;
+}
+
+.padding-section {
+    display: block;
+}
+.count-show{
+    display: none;
+}
+.accordion-title button{
+    font-size: 18px;
+    font-weight: 500;
+}
+.FAQS-tagline-mobile{
+    display: none;
+}
+.FAQS-heading-mobile{
+    display: none;
+
+}
+#accordion .input-group{
+    display: none;
+}
+@media (max-width:700px) {
+ #FAQS-heading-pc{
+    text-align: center;
+    font-size: 36px;
+ }
+   
+    .FAQS-tagline-mobile{
+        display: block;
+        text-align: center;
+        font-size: 18px;
+    }
+    .FAQS-heading-mobile{
+        display: block;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .count-show{
+        display: block;
+    }
+    .first {
+        display: none;
+    }
+
+    .padding-section {
+        display: none;
+    }
+
+    .second {
+        margin-top: 50px;
+        display: block;
+    }
+
+    .section-top-content h2 {
+        font-size: 25px;
+    }
+
+    .section-top-content .about-tagline p {
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+
+    .section-top-content .top-span {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    /* Open accordion icon */
+    .accordion-button:not(.collapsed)::after {
+        background-image: url("../pictures/About-icons/close.png");
+        /* Add styles for the open icon as needed */
+        position: absolute;
+        margin-top: -8rem;
+        right: 0;
+    }
+
+
+    /* Closed accordion icon */
+    .accordion-button.collapsed::after {
+        background-image: url("../pictures/About-icons/remove.png");
+        /* background-size: 30px; */
+        /* Add styles for the closed icon as needed */
+        position: absolute;
+        margin-top: -8rem;
+        right: 0;
+    }
+    .accordion-title button{
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .accordion-body {
+        /* background-color: #F2F2F2; */
+        border: none;
+        padding: 0px;
+        font-size: 16px;
+        padding: 20px 0px;
+        color: #333333;
+    }
+    #accordion .input-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+        border: 1px solid #D0D5DD;
+        background-color: white;
+        border-radius: 8px;
+    }
+    #accordion .input-group i{
+        width: 10%;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #606060;
+        
+    }
+   
+    #accordion .input-group input{
+        border: none;
+        width: 90%;
+        height: 44px;
+        background-color: transparent;
+    }
+    #accordion .input-group input:focus,
+    #accordion .input-group input:active{
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
 }

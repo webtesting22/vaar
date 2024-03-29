@@ -3,6 +3,11 @@ import "./About.css"
 import AboutCard from './AboutCardData';
 import { Container, Row, Col } from 'react-bootstrap';
 import Accordion from 'react-bootstrap/Accordion';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 function AboutUs() {
     const accordionData = [
         {
@@ -51,8 +56,8 @@ function AboutUs() {
                             <div><h2>How we work at VAAR</h2></div>
                             <div className='about-tagline'><p>Our shared values keep us connected and guide us as one team.</p></div>
                         </div>
-                        <div className="section-padding"></div>
-                        <div className="container">
+                        {/* <div className="section-padding padding-section"></div> */}
+                        <div className="container first">
                             <Row>
                                 {AboutCard.map((item, index) => (
                                     <Col key={index} lg={6} md={6} sm={12}>
@@ -68,6 +73,33 @@ function AboutUs() {
                                 ))}
                             </Row>
                         </div>
+                        <div className="container second">
+                            <Swiper
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                autoplay={{
+                                    delay: 2500,
+                                    disableOnInteraction: true,
+                                }}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            >
+                                {AboutCard.map((item, index) => (
+                                    <SwiperSlide>
+                                        <div className="about-card text-center">
+                                            <div className='about-icon-container'>
+                                                <img src={item.image} alt={item.title} width={100} />
+
+                                            </div>
+                                            <h3>{item.title}</h3>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    </SwiperSlide>
+                                ))}
+                            </Swiper>
+                        </div>
                     </div>
 
                 </section>
@@ -75,13 +107,21 @@ function AboutUs() {
                     <div className='container'>
 
                         <Accordion defaultActiveKey="0" id='accordion'>
-                            <h1>Frequently Asked Questions</h1>
-                            {accordionData.map(item => (
+                            <h6 className='FAQS-heading-mobile'>FAQs</h6>
+                            <h1 id='FAQS-heading-pc'>Frequently Asked Questions</h1>
+                            <span className='FAQS-tagline-mobile'>Have questions? We’re here to help.</span>
+                            <div className='input-group'>
+                                <i class='bx bx-search'></i>
+                                <input type="text"  placeholder='Search'/>
+                            </div>
+                            {accordionData.map((item, index) => (
                                 <Accordion.Item key={item.id} eventKey={item.id.toString()}>
-                                    <Accordion.Header>{item.title}</Accordion.Header>
+                                    <h1 style={{ fontSize: "30px", fontWeight: "700" }} className='count-show'>0{index + 1}</h1>
+                                    <Accordion.Header className='accordion-title'>{item.title}</Accordion.Header>
                                     <Accordion.Body>{item.content}</Accordion.Body>
                                 </Accordion.Item>
                             ))}
+
                         </Accordion>
 
                     </div>
