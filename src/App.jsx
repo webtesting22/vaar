@@ -6,6 +6,7 @@ import Home from './Components/Home/Home';
 import AllResources from './Components/AllResources/AllResources';
 import AboutUs from './Components/AboutUs/AboutUs';
 import VaarTeam from './Components/VaarTeam/VaarTeam';
+import SignupSection from './Components/SignUp/SignupSection';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/VaarTeam" element={<VaarTeam />} />
       </Routes>
+      <SignupSection/>
 
       <Footer />
     </Router>
