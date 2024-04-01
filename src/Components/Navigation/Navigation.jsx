@@ -65,7 +65,7 @@ function Navigation() {
                             <ul className='navigation_ul m-0'>
                                 <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
                                 <li><Link to="/AllResources" >Resources</Link></li>
-                                <li><Link to="/about">Blog</Link></li>
+                                <li><Link to="/VaarBlogs">Blog</Link></li>
                                 <li><Link to="/VaarTeam">Team</Link></li>
                             </ul>
                         </nav>
@@ -90,7 +90,7 @@ function Navigation() {
                                     console.log("click")
                                     handleCloseOffcanvas();
                                 }}>Resources</Link></li>
-                                <li><Link to="/about" onClick={() => {
+                                <li><Link to="/VaarBlog" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
                                 }}>Blog</Link></li>

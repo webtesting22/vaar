@@ -8,7 +8,6 @@ import Guide from '../Guide/Guide';
 import Bestvalue from '../Bestvalue/Bestvalue';
 import SignupSection from '../SignUp/SignupSection';
 import img1 from "../pictures/About-icons/homePageMobile.svg"
-import VaarBlogs from '../VaarBlogs/VaarBlogs';
 function Home() {
     return (
         <>
@@ -140,6 +139,7 @@ function Home() {
             <Founder />
             <Guide />
             <Bestvalue />
+           
             {/* <VaarBlogs/> */}
             {/* <SignupSection /> */}
 
