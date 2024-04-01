@@ -7,7 +7,7 @@ import AllResources from './Components/AllResources/AllResources';
 import AboutUs from './Components/AboutUs/AboutUs';
 import VaarTeam from './Components/VaarTeam/VaarTeam';
 import SignupSection from './Components/SignUp/SignupSection';
-import VaarBlogs from './Components/VaarBlogs.jsx/VaarBlogs';
+import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
 function App() {
   return (
     <Router>
@@ -18,7 +18,7 @@ function App() {
         <Route exact path="/AllResources" element={<AllResources />} />
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/VaarTeam" element={<VaarTeam />} />
-        <Route exact path="/VaarBlogs" element={ <VaarBlogs/> } />
+        <Route exact path="/VaarBlogs" element={ <VaarBlogsmain/> } />
       </Routes>
       <SignupSection/>
 
