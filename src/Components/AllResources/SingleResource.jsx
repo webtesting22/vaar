@@ -20,7 +20,7 @@ function SingleResource() {
                                         <img src={img1} alt="" />
                                     </div>
                                     <div>
-                                        <p>Stephanie Gordon, Content Manager, Discreit</p>
+                                        <p>Stephanie Gordon, Content Manager, Vaar</p>
                                     </div>
                                 </div>
                             </div>
