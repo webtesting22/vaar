@@ -9,6 +9,7 @@ import VaarTeam from './Components/VaarTeam/VaarTeam';
 import SignupSection from './Components/SignUp/SignupSection';
 import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
 import ContactUs from './Components/ContactUs/ContactUs';
+import SingleResource from './Components/AllResources/SingleResource';
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/VaarTeam" element={<VaarTeam />} />
         <Route exact path="/VaarBlogs" element={ <VaarBlogsmain/> } />
         <Route exact path="/ContactUs" element={ <ContactUs/> } />
+        <Route exact path="/SingleResource" element={ <SingleResource/> } />
       </Routes>
       
 

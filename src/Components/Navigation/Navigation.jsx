@@ -67,6 +67,7 @@ function Navigation() {
                                 <li><Link to="/AllResources" >Resources</Link></li>
                                 <li><Link to="/VaarBlogs">Blog</Link></li>
                                 <li><Link to="/VaarTeam">Team</Link></li>
+                                <li><Link to="/ContactUs">Contact</Link></li>
                             </ul>
                         </nav>
                     ) : (
