@@ -2,6 +2,7 @@ import React from 'react';
 import { Select } from 'antd';
 import "./Allresources.css"
 import { Module1, Module2,Module3,Module4 } from './AllResourcesData';
+import SignupSection from '../SignUp/SignupSection';
 function AllResources() {
 
     return (
@@ -106,6 +107,7 @@ function AllResources() {
                 </div>
 
             </section>
+            <SignupSection/>
         </>
     );
 }

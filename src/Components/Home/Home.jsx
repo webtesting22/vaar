@@ -141,7 +141,7 @@ function Home() {
             <Bestvalue />
            
             {/* <VaarBlogs/> */}
-            {/* <SignupSection /> */}
+            <SignupSection />
 
         </>
     )

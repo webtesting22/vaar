@@ -8,6 +8,7 @@ import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import SignupSection from '../SignUp/SignupSection';
 function AboutUs() {
     const accordionData = [
         {
@@ -124,6 +125,7 @@ function AboutUs() {
                     </div>
                 </section>
             </section>
+            <SignupSection />
 
         </>
     );

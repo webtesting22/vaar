@@ -13,6 +13,7 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
+import SignupSection from '../SignUp/SignupSection';
 function VaarBlogs() {
     return (
         <>
@@ -135,6 +136,7 @@ function VaarBlogs() {
 
                 </div>
             </section>
+            <SignupSection/>
         </>
     );
 }

@@ -14,7 +14,7 @@ import teamMemberimg2 from "../pictures/team2.svg"
 import teamMemberimg3 from "../pictures/team3.svg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import SignupSection from '../SignUp/SignupSection';
 function VaarTeam() {
     const teamMembers = [
         {
@@ -144,7 +144,7 @@ function VaarTeam() {
                     </div>
                 </div>
             </section>
-
+            <SignupSection/>
         </>
     );
 }

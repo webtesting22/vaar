@@ -1,0 +1,90 @@
+.top-heading-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.form-field {
+    margin-top: 4rem;
+}
+
+.Form-container .first-name {
+    margin-right: 5px;
+}
+
+.Form-container .second-name {
+    margin-left: 5px;
+}
+
+.top-two-field {
+    display: flex;
+
+}
+
+.top-two-field div {
+    width: 100%;
+}
+
+.Form-container {
+    padding: 0rem 17rem;
+}
+
+.Form-container label {
+    font-size: 14px;
+    color: black;
+    font-weight: 600;
+}
+
+.contact-us-details-info h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact-us-details-info h1 {
+    font-size: 55px;
+}
+
+.contact-us-details-info p {
+    font-size: 20px;
+    color: #475467;
+}
+@media (max-width:1000px){
+    .Form-container {
+        padding: 0rem 0rem;
+    }
+    .top-two-field {
+        display: block;
+    
+    }
+    .Form-container .first-name {
+        margin-bottom: 25px;
+    }
+    
+    .Form-container .second-name {
+        margin-left: 0px;
+    }
+    .top-heading-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        padding-top: 4em;
+    }
+    
+}
+.contact-us-btn{
+    width: 100%;
+    border: none;
+    padding: 10px 0px;
+    border-radius: 8px;
+    background-color: #D4F604;
+}
+.contact-us-btn a{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}

@@ -8,6 +8,7 @@ import AboutUs from './Components/AboutUs/AboutUs';
 import VaarTeam from './Components/VaarTeam/VaarTeam';
 import SignupSection from './Components/SignUp/SignupSection';
 import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
+import ContactUs from './Components/ContactUs/ContactUs';
 function App() {
   return (
     <Router>
@@ -19,8 +20,9 @@ function App() {
         <Route exact path="/AboutUs" element={<AboutUs />} />
         <Route exact path="/VaarTeam" element={<VaarTeam />} />
         <Route exact path="/VaarBlogs" element={ <VaarBlogsmain/> } />
+        <Route exact path="/ContactUs" element={ <ContactUs/> } />
       </Routes>
-      <SignupSection/>
+      
 
       <Footer />
     </Router>
