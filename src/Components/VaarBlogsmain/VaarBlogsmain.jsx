@@ -5,18 +5,26 @@ import "./VaarBlogsmain.css"
 import blogimage from "../pictures/blogHomeBaneer.svg"
 import { Row, Col } from "antd"
 import BlogDatamain from './VaarBlogData';
+import { BestValueCardsData } from '../Bestvalue/BestvalueData';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper React components
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import blogArrow from "../pictures/About-icons/blogarrow.svg"
 function VaarBlogs() {
     return (
         <>
-            <section style={{ paddingTop: "6rem", backgroundColor: "#f2f2f2" }}>
+            <section className='blog-section-change-back'>
                 <div className='container blog-section-adjust'>
-                    <Row>
-                        <Col lg={8}>
-                            <div>
-                                <img src={blogimage} alt="" style={{ width: "100%" }} />
+                    <Row className='row-for-pc'>
+                        <Col lg={8} md={8}>
+                            <div className='blog-top-img'>
+                                <img src={blogimage} alt=""/>
                             </div>
                         </Col>
-                        <Col lg={16}>
+                        <Col lg={16} md={16}>
                             <div className='content-parent-container'>
                                 <div className='blog-inside-container'>
                                     <h6 className='owner-tagline-name'>Vidhi Kankaria</h6>
@@ -30,6 +38,45 @@ function VaarBlogs() {
                             </div>
                         </Col>
                     </Row>
+                    <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
+                        <h1 className='section-heading-best-value pb-4'>Our Blogs</h1>
+                        <div className='container'>
+
+                            {/* <Swiper
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            > */}
+                                {BestValueCardsData.map((item, index) => (
+                                    // <SwiperSlide>
+                                        <div className='blog-cards'>
+                                            <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                            <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                                <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
+                                                <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
+                                            </div>
+                                            <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
+                                            <div className='Posted'>
+                                                <div><img src={item.avtar} alt="Not Found" /></div>
+                                                <div className='ps-3'>
+                                                    <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
+                                                    <span>15 Jan 2024</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    // </SwiperSlide>
+                                ))}
+
+                            {/* </Swiper> */}
+                        </div>
+                    </div>
                 </div>
                 <div className='blogs-block bg-white '>
                     <div className='container' >
@@ -44,8 +91,8 @@ function VaarBlogs() {
                                                 <div>
                                                     <h1>{item.blogTitle}</h1>
                                                     <p>{item.blogContent}</p>
-                                                    <div style={{display:"flex", alignItems:"center"}}>
-                                                    <span style={{margin:"0px 10px",display:"flex", alignItems:"center"}}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{margin:"0px"}}> {item.authorName}</p>
+                                                    <div style={{ display: "flex", alignItems: "center" }}>
+                                                        <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -73,8 +120,8 @@ function VaarBlogs() {
                                                 <div>
                                                     <h1>{item.blogTitle}</h1>
                                                     <p>{item.blogContent}</p>
-                                                    <div style={{display:"flex"}}>
-                                                    <span style={{margin:"0px 10px",display:"flex", alignItems:"center"}}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{margin:"0px"}}> {item.authorName}</p>
+                                                    <div style={{ display: "flex", alignItems: "center" }}>
+                                                        <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
                                                     </div>
                                                 </div>
                                             </div>
