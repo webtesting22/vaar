@@ -10,7 +10,7 @@ function Footer() {
                         <div className='top-menu'>
                             <a href="">About</a>
                             <a href="">Resorces</a>
-                            <a href="">VAAR HOLDING CORP</a>
+                            <a href="">VAAR HOLDING</a>
                             {/* <a href="">About</a>
                         <a href="">Resorces</a> */}
                             <a href="">Blog</a>
