@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Home.css"
 import "../../Components/globalcontent.css"
 import homeCard from "../pictures/home-card-img.png"
@@ -9,22 +9,34 @@ import Bestvalue from '../Bestvalue/Bestvalue';
 import SignupSection from '../SignUp/SignupSection';
 import img1 from "../pictures/About-icons/homePageMobile.svg"
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
 function Home() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000, // Animation duration
+            once: true, // Whether animation should only happen once
+            easing: 'ease-out', // Easing option
+            // You can customize other options here
+        });
+    }, []);
+
     return (
         <>
             <div className='parent-section'>
                 <section id='Home_section'>
                     <div className='container text-center'>
-                        <h1 className='main-global-heading'>Real-estate, simplified</h1>
+                        <h1 className='main-global-heading' data-aos="fade-down">Real-estate, simplified</h1>
                         <div className='content-container-responsive'>
 
-                            <p>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                            <p data-aos="fade-up">Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                             <div className='email-collect'>
                                 <input type="text" placeholder="What's your email" />
-                                <button className='input-btn'><Link to="/ContactUs" style={{color:"black"}}>Sign&nbsp;Up</Link></button>
+                                <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Sign&nbsp;Up</Link></button>
                             </div>
-                            <div className='mobile-view-home'>
-                                <button><Link to="/ContactUs" style={{color:"black"}}>Sign&nbsp;Up</Link></button>
+                            <div className='mobile-view-home' data-aos="fade-up"
+                                data-aos-anchor-placement="bottom-center">
+                                <button><Link to="/ContactUs" style={{ color: "black" }}>Sign&nbsp;Up</Link></button>
                             </div>
                         </div>
 
@@ -140,7 +152,7 @@ function Home() {
             <Founder />
             <Guide />
             <Bestvalue />
-           
+
             {/* <VaarBlogs/> */}
             <SignupSection />
 

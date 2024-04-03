@@ -17,20 +17,21 @@ function Guide() {
           <div className='mobile-image'><img src={mobilePicture} alt="" /></div>
         </div>
         <div className="container">
-        <div className="row">
-          {GuideData.map((item, index) => (
-            <div key={index} className="col-lg-6">
-              <div className="box">
-                <div className='box-top-header'>
-                  <img src={item.img} alt={item.title} />
-                  <h3 className="box-title">{item.title}</h3>
+          <div className="row">
+            {GuideData.map((item, index) => (
+              <div key={index} className="col-lg-6">
+                <div className="box" data-aos="fade-up"
+                  data-aos-duration="1000">
+                  <div className='box-top-header'>
+                    <img src={item.img} alt={item.title} />
+                    <h3 className="box-title">{item.title}</h3>
+                  </div>
+                  <hr />
+                  <p className="paragraph">{item.description}</p>
                 </div>
-                <hr />
-                <p className="paragraph">{item.description}</p>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
         </div>
 
 
