@@ -10,6 +10,7 @@ import SignupSection from './Components/SignUp/SignupSection';
 import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
 import ContactUs from './Components/ContactUs/ContactUs';
 import SingleResource from './Components/AllResources/SingleResource';
+import CommonResourceComponent from './Components/AllResources/commonResourceComponent';
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
         <Route exact path="/VaarBlogs" element={ <VaarBlogsmain/> } />
         <Route exact path="/ContactUs" element={ <ContactUs/> } />
         <Route exact path="/SingleResource" element={ <SingleResource/> } />
+        <Route exact path="/CommonResourceComponent" element={ <CommonResourceComponent/> } />
       </Routes>
       
 

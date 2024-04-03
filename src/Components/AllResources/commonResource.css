@@ -1,0 +1,27 @@
+.range-module-using-props{
+    padding: 4rem 0rem;
+}
+.range-module-using-props .ant-row{
+    background-color: #F9F9F9;
+    padding: 25px;
+}
+.top-range-container span{
+    font-size: 18px;
+    color: #606060;
+}
+.resource-Date-container{
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.resourceAuthorName{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.resourceAuthorName p{
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+.left-side-content-container{
+    padding-right: 20px;
+}
