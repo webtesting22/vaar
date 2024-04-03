@@ -79,7 +79,7 @@ function Navigation() {
 
                     <Offcanvas show={show} onHide={handleClose} placement="end">
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+                            <Offcanvas.Title><Link to="/"><img src={varrimg1} alt=" " style={{ width: "50px" }} /></Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul>
