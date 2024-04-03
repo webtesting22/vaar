@@ -91,7 +91,7 @@ function Navigation() {
                                     console.log("click")
                                     handleCloseOffcanvas();
                                 }}>Resources</Link></li>
-                                <li><Link to="/VaarBlog" onClick={() => {
+                                <li><Link to="/VaarBlogs" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
                                 }}>Blog</Link></li>
