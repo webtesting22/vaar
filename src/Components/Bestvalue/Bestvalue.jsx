@@ -122,7 +122,8 @@ function Bestvalue() {
                             <div className="row m-auto">
                                 {BestValueCardsData.map((item, index) => (
                                     <div className="col-lg-6 col-md-6">
-                                        <div>
+                                        <div data-aos="fade-up"
+                                            data-aos-anchor-placement="top-bottom">
                                             <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
                                             <p style={{ fontSize: "18px" }}>{item.description}</p>
                                             <br />
@@ -160,16 +161,16 @@ function Bestvalue() {
                             {BestValueCardsData.map((item, index) => (
                                 <SwiperSlide>
                                     <div className='blog-cards'>
-                                        <img src={item.img} alt="" style={{ marginBottom: "30px",width:"100%" }} />
-                                        <div style={{position:"relative", display:"flex", justifyContent:"space-between"}}>
-                                            <h5 style={{ fontSize: "20px", color:"black", width:"80%" }}>{item.title}</h5>
-                                            <img src={blogArrow} alt="" style={{position:"absolute", top:"3px", right:"0"}} />
+                                        <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                        <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
+                                            <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                         </div>
                                         <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
                                         <div className='Posted'>
                                             <div><img src={item.avtar} alt="Not Found" /></div>
                                             <div className='ps-3'>
-                                                <h6 style={{ marginBottom: "3px",color:"black" }}>Vidhi Kanaria</h6>
+                                                <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
                                                 <span>15 Jan 2024</span>
                                             </div>
                                         </div>
