@@ -67,7 +67,7 @@ function Navigation() {
                                 <li><Link to="/AllResources" >Resources</Link></li>
                                 <li><Link to="/VaarBlogs">Blog</Link></li>
                                 <li><Link to="/VaarTeam">Team</Link></li>
-                                <li><Link to="/ContactUs">Contact</Link></li>
+                                {/* <li><Link to="/ContactUs">Contact</Link></li> */}
                             </ul>
                         </nav>
                     ) : (
@@ -104,7 +104,7 @@ function Navigation() {
                     </Offcanvas>
                 </div>
                 <div className='sign-in-container'>
-                    <Button className='sign-in-btn'>Sign In</Button>
+                    <button className='sign-in-btn'><Link to="/ContactUs" style={{color:"black"}}>Sign In</Link></button>
                 </div>
             </div>
         </>

@@ -1,6 +1,6 @@
 import React from 'react';
 import "./Signup.css"
-
+import { Link } from "react-router-dom";
 function SignupSection() {
     return (
         <>
@@ -15,7 +15,7 @@ function SignupSection() {
                         </div>
                         <div className="col-lg-6 ">
                             <div>
-                                <button><a href="">Sign Up</a></button>
+                                <button><Link to="/ContactUs">Sign Up</Link></button>
                                 <button> <a href="">Contact Us</a></button>
                             </div>
                         </div>
