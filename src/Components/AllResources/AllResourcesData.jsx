@@ -14,6 +14,7 @@ import img13 from "../pictures/module4-5.png"
 import img14 from "../pictures/module4-6.png"
 const Module1 = [
     {
+        
         img: img1,
         subtitle: "CHAPTER 1 - 15 MINUTE READ",
         title: "Real Estate Investments in the United States"

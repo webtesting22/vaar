@@ -29,13 +29,13 @@ function AllResources() {
                                 <div className="row">
                                     {Module1.map((item, index) => (
                                         <div className="col-lg-4 mb-5">
-                                            {/* <Link to="/SingleResource1"> */}
+                                            <Link to={`/SingleResource${index+1}`}>
                                             <div className='module-box'>
                                                 <img src={item.img} alt="" />
                                                 <h6>{item.subtitle}</h6>
                                                 <h4>{item.title}</h4>
                                             </div>
-                                            {/* </Link> */}
+                                            </Link>
                                         </div>
                                     ))}
 
