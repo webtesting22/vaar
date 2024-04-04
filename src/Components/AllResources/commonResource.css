@@ -1,27 +1,67 @@
-.range-module-using-props{
+.range-module-using-props {
     padding: 4rem 0rem;
 }
-.range-module-using-props .ant-row{
+
+.range-module-using-props .ant-row {
     background-color: #F9F9F9;
     padding: 25px;
 }
-.top-range-container span{
+
+.top-range-container span {
     font-size: 18px;
     color: #606060;
 }
-.resource-Date-container{
+
+.resource-Date-container {
     margin-top: 2rem;
     margin-bottom: 0.5rem;
 }
-.resourceAuthorName{
+
+.resourceAuthorName {
     display: flex;
     align-items: center;
     margin-top: 30px;
 }
-.resourceAuthorName p{
+
+.resourceAuthorName p {
     margin-bottom: 0px;
     margin-left: 15px;
 }
-.left-side-content-container{
+
+.left-side-content-container {
     padding-right: 20px;
+}
+
+.top-range-container {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 778px) {
+    .order-lg-1 {
+        order: 2;
+    }
+
+    .order-lg-2 {
+        order: 1;
+    }
+
+    .top-range-container {
+        display: none;
+    }
+
+    .range-module-using-props .ant-row {
+        padding: 0px;
+    }
+
+    .left-side-content-container {
+        padding: 20px 20px;
+    }
+
+    .range-module-using-props {
+        padding: 0rem 0rem;
+    }
+    .resource-Date-container{
+        margin-top: 0rem;
+    }
 }

@@ -9,8 +9,10 @@ import VaarTeam from './Components/VaarTeam/VaarTeam';
 import SignupSection from './Components/SignUp/SignupSection';
 import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
 import ContactUs from './Components/ContactUs/ContactUs';
-import SingleResource from './Components/AllResources/SingleResource';
+import SingleResource from './Components/AllResources/Resources1/SingleResource1';
 import CommonResourceComponent from './Components/AllResources/commonResourceComponent';
+import SingleResource1 from './Components/AllResources/Resources1/SingleResource1';
+import SingleResource2 from './Components/AllResources/Resources2/SingleResource2';
 function App() {
   return (
     <Router>
@@ -25,6 +27,8 @@ function App() {
         <Route exact path="/ContactUs" element={ <ContactUs/> } />
         <Route exact path="/SingleResource" element={ <SingleResource/> } />
         <Route exact path="/CommonResourceComponent" element={ <CommonResourceComponent/> } />
+        <Route exact path="/SingleResource1" element={ <SingleResource1/> } />
+        <Route exact path="/SingleResource2" element={ <SingleResource2/> } />
       </Routes>
       
 

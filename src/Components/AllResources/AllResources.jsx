@@ -1,5 +1,6 @@
 import React from 'react';
 import { Select } from 'antd';
+import {Link} from "react-router-dom"
 import "./Allresources.css"
 import { Module1, Module2,Module3,Module4 } from './AllResourcesData';
 import SignupSection from '../SignUp/SignupSection';
@@ -28,11 +29,13 @@ function AllResources() {
                                 <div className="row">
                                     {Module1.map((item, index) => (
                                         <div className="col-lg-4 mb-5">
+                                            {/* <Link to="/SingleResource1"> */}
                                             <div className='module-box'>
                                                 <img src={item.img} alt="" />
                                                 <h6>{item.subtitle}</h6>
                                                 <h4>{item.title}</h4>
                                             </div>
+                                            {/* </Link> */}
                                         </div>
                                     ))}
 
