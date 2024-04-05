@@ -63,10 +63,10 @@ function Navigation() {
                     {isDesktop ? (
                         <nav >
                             <ul className='navigation_ul m-0'>
-                                <li><Link to="/AboutUs" className="hover-this">AboutUs</Link></li>
-                                <li><Link to="/AllResources" >Resources</Link></li>
-                                <li><Link to="/VaarBlogs">Blog</Link></li>
-                                <li><Link to="/VaarTeam">Team</Link></li>
+                                <li><Link to="/AboutUs" className="hover-this">AboutUs</Link><hr /></li>
+                                <li><Link to="/AllResources" >Resources</Link><hr /></li>
+                                <li><Link to="/VaarBlogs">Blog</Link><hr /></li>
+                                <li><Link to="/VaarTeam">Team</Link><hr /></li>
                                 {/* <li><Link to="/ContactUs">Contact</Link></li> */}
                             </ul>
                         </nav>
