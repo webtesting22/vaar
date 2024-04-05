@@ -49,3 +49,28 @@
         display: none;
     }
 }
+
+.custom-cursor {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 2px solid #000;
+    border-radius: 50%;
+    pointer-events: none; /* Allow pointer events to pass through */
+    z-index: 9999; /* Ensure cursor stays on top of other elements */
+    transition: transform 0.2s ease; /* Add transition effect */
+  }
+  
+  .custom-cursor span {
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    pointer-events: none; /* Ensure span doesn't interfere with mouse events */
+  }
+  

@@ -80,9 +80,9 @@ function BlogCarousal() {
                         ))}
                     </Swiper>
 
-                   
+                    <div className="blog-section-spacer"></div>
                 </div>
-                <div className='Blog-section only-mobile ' style={{ padding: "1rem 0rem" }}>
+                <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
                     <h1 className='section-heading-best-value pb-4'>Our Blogs</h1>
                     <div className='container'>
 
