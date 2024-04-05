@@ -82,7 +82,7 @@ function Navigation() {
                             <Offcanvas.Title><Link to="/"><img src={varrimg1} alt=" " style={{ width: "50px" }} /></Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
-                            <ul>
+                            <ul className='mobile-offcanvas-menu'>
                                 <li><Link to="/AboutUs" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
@@ -104,7 +104,7 @@ function Navigation() {
                     </Offcanvas>
                 </div>
                 <div className='sign-in-container'>
-                    <button className='sign-in-btn'><Link to="/ContactUs" style={{color:"black"}}>Sign In</Link></button>
+                    <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Sign In</Link></button>
                 </div>
             </div>
         </>
