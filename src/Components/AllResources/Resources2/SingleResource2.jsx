@@ -5,9 +5,9 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
 import { Link } from "react-router-dom"
 import "../Resources1/SingleResources.css"
-import cardimg1 from "../Resources2/card1.svg"
-import cardimg2 from "../Resources2/card2.svg"
-import cardimg3 from "../Resources2/card3.svg"
+
+import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
+import SignupSection from "../../SignUp/SignupSection";
 function SingleResource2() {
     const contentStyle = {
         margin: 0,
@@ -59,7 +59,7 @@ function SingleResource2() {
 
 
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
     const liList = [
         {
@@ -144,23 +144,7 @@ function SingleResource2() {
         },
     ]
 
-    const DontMissThese = [
-        {
-            img: cardimg1,
-            concept: "CONCEPT 4 - 15 MINUTE READ",
-            cardTitle: "Risk-Return Analysis & Vaar"
-        },
-        {
-            img: cardimg2,
-            concept: "CONCEPT 5 - 15 MINUTE READ",
-            cardTitle: "Access the Largest Asset Class in the US"
-        },
-        {
-            img: cardimg3,
-            concept: "CONCEPT 6 - 15 MINUTE READ",
-            cardTitle: "Technology & Vaar"
-        },
-    ]
+   
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 2" Date="February 17, 2023" ResourceHeading="Understanding Asset Classes in Investment" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
@@ -192,7 +176,7 @@ function SingleResource2() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4>Basics of Asset Classes</h4>
-                                        <Carousel afterChange={onChange} ref={carouselRef} dots={false}>
+                                        <Carousel afterChange={onChange} ref={carouselRef} dots={false} autoplay>
                                             {boxContent.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
                                                     <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -247,7 +231,7 @@ function SingleResource2() {
                                         <h4>Role of Asset Classes in Investments</h4>
                                         <p>Understanding the historical milestones in the US real estate market provides crucial insights into its current structure and trends.</p>
                                         <div>
-                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false}>
+                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} autoplay>
                                                 {boxContentTwo.map((item, index) => (
                                                     <div key={index} className="RealEstate-Box">
                                                         <h6>{item.boxtitle}</h6>
@@ -283,7 +267,7 @@ function SingleResource2() {
                                     <h4>Common Asset Classes</h4>
                                     <div style={{ position: "relative" }}>
                                         <div className="carousal-container">
-                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={false}>
+                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={false} autoplay>
                                                 {CommonAssetsClasses.map((item, index) => (
                                                     <div key={index}>
                                                         <h6 style={{ fontWeight: "700" }}>{item.carousalTitle}</h6>
@@ -329,7 +313,7 @@ function SingleResource2() {
                                         <p>Real estate stands out as a unique and tangible asset class within an investment portfolio.</p>
                                         <div>
                                             <div>
-                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={false}>
+                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={false} autoplay>
                                                     {RealEstateData.map((item, index) => (
                                                         <div key={index} className="RealEstate-Box">
                                                             <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -360,27 +344,10 @@ function SingleResource2() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <div className='all-resources-box'>
-                        <div className="row m-auto w-100">
-                            <h1>Don’t miss these</h1>
-                            <div className="padding-slite"></div>
-                            {DontMissThese.map((item, index) => (
-                                <div className="col-lg-4 mb-5">
-                                    {/* <Link to="/SingleResource1"> */}
-                                        <div className='module-box'>
-                                            <img src={item.img} alt="" />
-                                            <h6>{item.concept}</h6>
-                                            <h4>{item.cardTitle}</h4>
-                                        </div>
-                                    {/* </Link> */}
-                                </div>
-                            ))}
-
-                        </div>
-
-                    </div>
+                    <DontMissBlog/>
                 </div>
             </section>
+            <SignupSection/>
         </>
     )
 }

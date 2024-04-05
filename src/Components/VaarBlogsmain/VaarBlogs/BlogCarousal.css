@@ -1,0 +1,51 @@
+.blog-carousal-card .left-side-img-blog {
+    width: 30%;
+    height: 30vh;
+    overflow: hidden;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.right-side-content-container {
+    width: 70%;
+    height: 30vh;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.right-side-content-container div {
+    padding: 0rem 1rem;
+}
+.right-side-content-container div p{
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+.right-side-content-container div h6{
+    font-size: 20px;
+    font-weight: 600;
+}
+.right-side-content-container div span{
+    font-size: 16px;
+    color: #606060;
+}
+
+.blog-carousal-card {
+    display: flex;
+
+}
+
+#blog-carousal .swiper-wrapper {
+    height: 40vh;
+    width: 100%;
+}
+
+#blog-carousal .swiper-pagination {
+    width: 6%;
+}
+@media (max-width:778px){
+    #blog-carousal{
+        display: none;
+    }
+}

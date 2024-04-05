@@ -90,7 +90,7 @@ function VaarBlogs() {
                                         <Col lg={12} md={12}>
                                             <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                 <div>
-                                                    <h1>{item.blogTitle}</h1>
+                                                    <h1><a href="./VaarBlogCommon">{item.blogTitle}</a></h1>
                                                     <p>{item.blogContent}</p>
                                                     <div style={{ display: "flex", alignItems: "center" }}>
                                                         <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>

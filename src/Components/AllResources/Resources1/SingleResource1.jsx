@@ -6,6 +6,8 @@ import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Carousel } from 'antd';
+import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
+import SignupSection from "../../SignUp/SignupSection";
 function SingleResource1() {
     const contentStyle = {
         margin: 0,
@@ -26,7 +28,7 @@ function SingleResource1() {
     };
 
     const onChange = (currentSlide) => {
-        console.log(currentSlide);
+        // console.log(currentSlide);
     };
     const liList = [
         {
@@ -190,7 +192,7 @@ function SingleResource1() {
                                     </div>
                                 </div>
                                 <div className="only-for-mobile-view">
-                                    <Carousel afterChange={onChange} ref={carouselRef}>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={false} autoplay>
                                         {boxContent.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
                                                 <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -269,7 +271,7 @@ function SingleResource1() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         {ImportanceOfRealStateData.map((item, index) => (
-                                            <Carousel key={index} afterChange={onChange} ref={carouselRef}>
+                                            <Carousel key={index} afterChange={onChange} ref={carouselRef} dots={false} autoplay>
                                                 {item.pointTitle.map((point, pointIndex) => (
                                                     <div key={pointIndex}>
                                                         <div className="RealEstate-Box">
@@ -293,9 +295,12 @@ function SingleResource1() {
                             </div>
                         </Col>
                     </Row>
-
+                    <div className="padding-slite"></div>
+                    <div className="padding-slite"></div>
+                    <DontMissBlog/>
                 </div>
             </section>
+            <SignupSection/>
 
         </>
     )
