@@ -42,7 +42,7 @@
 }
 
 #blog-carousal .swiper-pagination {
-    width: 6%;
+    width: 15%;
 }
 @media (max-width:778px){
     #blog-carousal{
