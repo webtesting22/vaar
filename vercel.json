@@ -1,12 +1,5 @@
 {
-    "routes":[
-        {
-            "src":"/",
-            "des":"/"
-        },
-        {
-            "src":"/AllResources",
-            "dest":"/"
-        }
+    "rewrites":[
+        {"source":"{.*}", "destination":"/"}
     ]
 }
