@@ -1,13 +1,7 @@
-import react from '@vitejs/plugin-react';
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  server: {
-    // Set custom MIME types for specific file extensions
-    // Ensure that JSX files are treated as JavaScript modules
-    mimeTypes: {
-      'text/jsx': ['js']
-    }
-  }
-});
+})
