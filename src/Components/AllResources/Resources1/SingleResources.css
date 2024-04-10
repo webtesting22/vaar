@@ -278,7 +278,7 @@ h6{
     margin: 20px;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    height: 20vh;
+    height: 100%;
     border-radius: 16px;
     transition: .3s;
 }
@@ -286,7 +286,7 @@ h6{
     margin: 20px;
     padding: 20px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    height: 20vh;
+    height: 100%;
     border-radius: 16px;
     transition: .3s;
 }
@@ -307,7 +307,7 @@ h6{
         margin: 20px;
         padding: 20px;
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-        height: 23vh;
+        height: 100%;
         border-radius: 16px;
         transition: .3s;
     }

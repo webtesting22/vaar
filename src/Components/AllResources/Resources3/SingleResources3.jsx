@@ -260,7 +260,7 @@ function SingleResource3() {
                                     </div>
                                     <Row>
                                         {EvalutionRealState.map((item, index) => (
-                                            <Col lg={12} md={24}>
+                                            <Col lg={12} md={24} style={{margin:"10px 0px"}}>
                                                 <div key={index} className="EvalutionCardbox">
                                                     <h6>{item.cardTitle}</h6>
                                                     <hr />

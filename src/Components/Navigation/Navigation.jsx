@@ -52,7 +52,7 @@ function Navigation() {
 
     return (
         <>
-            <div id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`} >
+            <nav id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`} >
                 <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
                     <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
                 </div>
@@ -106,7 +106,7 @@ function Navigation() {
                 <div className='sign-in-container'>
                     <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Sign In</Link></button>
                 </div>
-            </div>
+            </nav>
         </>
     );
 }
