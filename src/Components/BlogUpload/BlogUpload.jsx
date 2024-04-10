@@ -14,7 +14,7 @@ function BlogUpload() {
 
   const onFinish = async (values) => {
     try {
-      const response = await fetch('http://localhost:3001/hello', {
+      const response = await fetch('https://vaarbackend-two.vercel.app/hello', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ function BlogUpload() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/blogs', {
+        const response = await fetch('https://vaarbackend-two.vercel.app/blogs', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json'
