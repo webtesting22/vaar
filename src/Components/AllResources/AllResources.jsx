@@ -1,8 +1,8 @@
 import React from 'react';
 import { Select } from 'antd';
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./Allresources.css"
-import { Module1, Module2,Module3,Module4 } from './AllResourcesData';
+import { Module1, Module2, Module3, Module4 } from './AllResourcesData';
 import SignupSection from '../SignUp/SignupSection';
 function AllResources() {
 
@@ -13,7 +13,7 @@ function AllResources() {
                 <div className="container">
                     <div>
                         <h1 style={{ fontSize: "55px" }}>All resources</h1>
-                        <select class="form-select"  aria-label="Default select example">
+                        <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
@@ -29,12 +29,12 @@ function AllResources() {
                                 <div className="row">
                                     {Module1.map((item, index) => (
                                         <div className="col-lg-4 mb-5">
-                                            <Link to={`/SingleResource${index+1}`}>
-                                            <div className='module-box'>
-                                                <img src={item.img} alt="" />
-                                                <h6>{item.subtitle}</h6>
-                                                <h4>{item.title}</h4>
-                                            </div>
+                                            <Link to={`/SingleResource${index + 1}`}>
+                                                <div className='module-box'>
+                                                    <img src={item.img} alt="" />
+                                                    <h6>{item.subtitle}</h6>
+                                                    <h4>{item.title}</h4>
+                                                </div>
                                             </Link>
                                         </div>
                                     ))}
@@ -52,11 +52,14 @@ function AllResources() {
                                 <div className="row">
                                     {Module2.map((item, index) => (
                                         <div className="col-lg-4 mb-5">
-                                            <div className='module-box'>
-                                                <img src={item.img} alt="" />
-                                                <h6>{item.subtitle}</h6>
-                                                <h4>{item.title}</h4>
-                                            </div>
+                                            <Link to={`/SingleResource${index + 4}`}>
+                                                <div className='module-box'>
+                                                    <img src={item.img} alt="" />
+                                                    <h6>{item.subtitle}</h6>
+                                                    <h4>{item.title}</h4>
+                                                </div>
+                                            </Link>
+
                                         </div>
                                     ))}
 
@@ -73,11 +76,13 @@ function AllResources() {
                                 <div className="row">
                                     {Module3.map((item, index) => (
                                         <div className="col-lg-4 mb-5">
-                                            <div className='module-box'>
-                                                <img src={item.img} alt="" />
-                                                <h6>{item.subtitle}</h6>
-                                                <h4>{item.title}</h4>
-                                            </div>
+                                            <Link to={`/SingleResource${index + 6}`}>
+                                                <div className='module-box'>
+                                                    <img src={item.img} alt="" />
+                                                    <h6>{item.subtitle}</h6>
+                                                    <h4>{item.title}</h4>
+                                                </div>
+                                            </Link>
                                         </div>
                                     ))}
 
@@ -110,7 +115,7 @@ function AllResources() {
                 </div>
 
             </section>
-            <SignupSection/>
+            <SignupSection />
         </>
     );
 }
