@@ -5,7 +5,7 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
 import CarousalImg from "../Resources4/carousalImg.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
-
+import SignupSection from "../../SignUp/SignupSection";
 function SingleResource4() {
     const liList = [
         {
@@ -77,7 +77,7 @@ function SingleResource4() {
             mainTitle: "A. Rental Property Investment",
             subtitle: [
                 {
-                    subtitleTitle: "Passive Income vs. Responsibilities",
+                    subtitleTitle: "1. Passive Income vs. Responsibilities",
                     subtitlePoints: [
                         {
                             listPoint: "Pros of Rental Income: Owning rental properties can provide a steady stream of passive income, allowing investors to build wealth through monthly rent payments."
@@ -89,42 +89,44 @@ function SingleResource4() {
                     ]
                 },
                 {
-                    subtitleTitle: "Financing Investment Properties",
+                    subtitleTitle: "2. Financing Investment Properties",
                     mainsubtitleTitle: [
                         {
-                            mainsubtitleTitlePoint: "Different Loan Options"
+                            mainsubtitleTitlePoint: "Different Loan Options",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Traditional Mortgages: Investors often use traditional mortgages, which require a down payment and have fixed or adjustable interest rates."
+                                },
+                                {
+                                    listPoint: "Federal Housing Administration (FHA) Loans: These loans are government-backed and may have lower down payment requirements."
+                                },
+                                {
+                                    listPoint: "Private Financing: Some investors explore private financing or hard money loans for more flexible terms."
+                                },
+                            ]
+
                         }
                     ],
-                    subtitlePoints: [
-                        {
-                            listPoint: "Traditional Mortgages: Investors often use traditional mortgages, which require a down payment and have fixed or adjustable interest rates."
-                        },
-                        {
-                            listPoint: "Federal Housing Administration (FHA) Loans: These loans are government-backed and may have lower down payment requirements."
-                        },
-                        {
-                            listPoint: "Private Financing: Some investors explore private financing or hard money loans for more flexible terms."
-                        },
-                        {
-                            listPoint: "DIY Management: Investors can choose to manage properties themselves, saving on management fees but requiring more hands-on involvement."
-                        },
-                        {
-                            listPoint: "Professional Property Managers: Hiring a property management company can relieve landlords of day-to-day tasks, including tenant screening, rent collection, and property maintenance."
-                        }
-                    ]
+
                 },
                 {
-                    subtitleTitle: "Property Management",
-                    subtitlePoints: [
+                    subtitleTitle: "3. Property Management",
+                    mainsubtitleTitle: [
                         {
-                            listPoint: "DIY Management: Investors can choose to manage properties themselves, saving on management fees but requiring more hands-on involvement.",
+                            mainsubtitleTitlePoint: "DIY vs. Hiring a Property Manager",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "DIY Management: Investors can choose to manage properties themselves, saving on management fees but requiring more hands-on involvement.",
 
-                        },
-                        {
-                            listPoint: "Professional Property Managers: Hiring a property management company can relieve landlords of day-to-day tasks, including tenant screening, rent collection, and property maintenance."
+                                },
+                                {
+                                    listPoint: "Professional Property Managers: Hiring a property management company can relieve landlords of day-to-day tasks, including tenant screening, rent collection, and property maintenance."
+                                }
+
+                            ]
                         }
-
                     ]
+
                 }
             ]
 
@@ -133,7 +135,7 @@ function SingleResource4() {
             mainTitle: "B. Flipping Houses",
             subtitle: [
                 {
-                    subtitleTitle: "Buying, Renovating, and Selling for Profit",
+                    subtitleTitle: "1. Buying, Renovating, and Selling for Profit",
                     subtitlePoints: [
                         {
                             listPoint: "Acquisition: House flipping involves purchasing a property, often distressed or undervalued."
@@ -148,7 +150,7 @@ function SingleResource4() {
                     ]
                 },
                 {
-                    subtitleTitle: "Market Fluctuations, Renovation Costs",
+                    subtitleTitle: "2. Market Fluctuations, Renovation Costs",
                     subtitlePoints: [
                         {
                             listPoint: "Market Risks: House flippers face the risk of market fluctuations affecting property values during the holding period."
@@ -167,40 +169,168 @@ function SingleResource4() {
             mainTitle: "C. Investing in Student Housing",
             subtitle: [
                 {
-                    subtitleTitle: "Considerations",
+                    subtitleTitle: "1. Considerations",
                     mainsubtitleTitle: [
                         {
-                            mainsubtitleTitlePoint: "Proximity to Universities"
+                            mainsubtitleTitlePoint: "Proximity to Universities",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Location Significance: Investing in student housing often emphasizes proximity to universities, ensuring appeal to the student demographic."
+                                },
+                            ]
+                        },
+                        {
+                            mainsubtitleTitlePoint: "Lease Agreements Tied to the Academic Calendar",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Academic Schedule Alignment: Lease agreements are often tied to the academic calendar to accommodate student turnover."
+                                },
+                            ]
                         }
                     ],
-                    subtitlePoints: [
-                        {
-                            listPoint: "Location Significance: Investing in student housing often emphasizes proximity to universities, ensuring appeal to the student demographic."
-                        },
-                        {
-                            listPoint: "Academic Schedule Alignment: Lease agreements are often tied to the academic calendar to accommodate student turnover."
-                        },
 
 
-                    ]
+
+
+
                 },
                 {
-                    subtitleTitle: "Challenges",
+                    subtitleTitle: "2. Challenges",
                     mainsubtitleTitle: [
                         {
-                            mainsubtitleTitlePoint: "Student Turnover and Potential Property Damage:"
+                            mainsubtitleTitlePoint: "Student Turnover and Potential Property Damage:",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Tenant Turnover: Frequent turnover due to academic schedules can pose challenges for consistent rental income."
+                                },
+                                {
+                                    listPoint: "Property Damage: Student living may involve wear and tear or potential property damage."
+                                },
+
+                            ]
                         }
                     ],
 
-                    subtitlePoints: [
-                        {
-                            listPoint: "Tenant Turnover: Frequent turnover due to academic schedules can pose challenges for consistent rental income."
-                        },
-                        {
-                            listPoint: "Property Damage: Student living may involve wear and tear or potential property damage."
-                        },
 
-                    ]
+                },
+
+            ]
+
+        },
+        {
+            mainTitle: "D. Short-Term Rental Investments",
+            subtitle: [
+                {
+                    subtitleTitle: "1. Advantages",
+                    mainsubtitleTitle: [
+                        {
+                            mainsubtitleTitlePoint: "Higher Potential for Rental Income",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Profit Potential: Short-term rentals can yield higher rental income, especially in popular tourist destinations."
+                                },
+                            ]
+                        },
+                        {
+                            mainsubtitleTitlePoint: "Flexibility for Property Use:",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Versatility: Owners have the flexibility to use the property for personal use or short-term rentals based on demand."
+                                },
+                            ]
+                        }
+                    ],
+
+
+
+
+
+                },
+                {
+                    subtitleTitle: "2. Challenges",
+                    mainsubtitleTitle: [
+                        {
+                            mainsubtitleTitlePoint: "Regulatory Uncertainties",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Legislation Challenges: Short-term rentals may face regulatory uncertainties and evolving legislation.."
+                                },
+
+                            ]
+                        },
+                        {
+                            mainsubtitleTitlePoint: "Seasonal Demand Fluctuations",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Income Variability: Demand may fluctuate seasonally, affecting rental income."
+                                },
+
+                            ]
+                        }
+                    ],
+
+
+                },
+
+            ]
+
+        },
+        {
+            mainTitle: "E. Co-op Investments",
+            subtitle: [
+                {
+                    subtitleTitle: "1. Cooperative Structure",
+                    mainsubtitleTitle: [
+                        {
+                            mainsubtitleTitlePoint: "Share Ownership and Governance",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Collective Ownership: Co-op structures involve shared ownership, allowing residents to collectively govern the property."
+                                },
+                            ]
+                        },
+                        {
+                            mainsubtitleTitlePoint: "Monthly Fees and Responsibilities",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Financial Obligations: Residents pay monthly fees to cover shared expenses, and responsibilities are shared among co-op members."
+                                },
+                            ]
+                        }
+                    ],
+
+
+
+
+
+                },
+                {
+                    subtitleTitle: "2. Advantages and Challenges",
+                    mainsubtitleTitle: [
+                        {
+                            mainsubtitleTitlePoint: "Collective Decision-Making vs. Potential Conflicts:",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Community Decision-Making: Co-ops emphasize collective decision-making, fostering a sense of community."
+                                },
+                                {
+                                    listPoint: "Potential Conflicts: However, conflicts may arise due to differing opinions or management challenges."
+                                },
+
+                            ]
+                        },
+                        {
+                            mainsubtitleTitlePoint: "Limited Equity in the Property:",
+                            subtitlePoints: [
+                                {
+                                    listPoint: "Equity Limitations: Co-op residents have limited equity compared to traditional homeownership, as they don't own the physical property."
+                                },
+
+                            ]
+                        }
+                    ],
+
+
                 },
 
             ]
@@ -319,14 +449,27 @@ function SingleResource4() {
                                                     {/* Check if mainsubtitleTitle exists */}
                                                     {subItem.mainsubtitleTitle && (
                                                         <>
-                                                            {
-                                                                subItem.mainsubtitleTitle.map((mainSubtitle, mainIndex) => (
-                                                                    <p key={mainIndex}>{mainSubtitle.mainsubtitleTitlePoint}</p>
-                                                                ))
-                                                            }
+                                                            {subItem.mainsubtitleTitle.map((mainSubtitle, mainIndex) => (
+                                                                <div key={mainIndex}>
+                                                                    <ul style={{listStyle:"none",padding:"0px"}}>
+                                                                        <li>{mainSubtitle.mainsubtitleTitlePoint}</li>
+                                                                    </ul>
+                                                                  
+                                                                    {mainSubtitle.subtitlePoints && (
+                                                                        <ul>
+                                                                            {mainSubtitle.subtitlePoints.map(
+                                                                                (pointItem, pointIndex) => (
+                                                                                    <li key={pointIndex}>{pointItem.listPoint}</li>
+                                                                                )
+                                                                            )}
+                                                                        </ul>
+                                                                    )}
+                                                                </div>
+                                                            ))}
                                                         </>
                                                     )}
-                                                    {subItem.subtitlePoints && (
+                                                    {/* Check if subtitlePoints exists directly */}
+                                                    {!subItem.mainsubtitleTitle && subItem.subtitlePoints && (
                                                         <ul>
                                                             {subItem.subtitlePoints.map((pointItem, pointIndex) => (
                                                                 <li key={pointIndex}>{pointItem.listPoint}</li>
@@ -337,6 +480,7 @@ function SingleResource4() {
                                             ))}
                                         </div>
                                     ))}
+
 
 
 
@@ -353,6 +497,7 @@ function SingleResource4() {
                 </div>
 
             </section>
+            <SignupSection />
 
         </>
     )

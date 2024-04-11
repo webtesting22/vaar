@@ -15,8 +15,10 @@ import SingleResource1 from './Components/AllResources/Resources1/SingleResource
 import SingleResource2 from './Components/AllResources/Resources2/SingleResource2';
 import SingleResource3 from './Components/AllResources/Resources3/SingleResources3';
 import SingleResource4 from './Components/AllResources/Resources4/SingleResources4';
+import SingleResource5 from './Components/AllResources/Resources5/SingleResource5';
 import VaarBlogCommon from './Components/VaarBlogsmain/VaarBlogs/VaarBlogCommon';
 import BlogUpload from './Components/BlogUpload/BlogUpload';
+
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
         <Route exact path="/SingleResource2" element={<SingleResource2 />} />
         <Route exact path="/SingleResource3" element={<SingleResource3 />} />
         <Route exact path="/SingleResource4" element={<SingleResource4 />} />
+        <Route exact path="/SingleResource5" element={<SingleResource5 />} />
         <Route exact path="/BlogUpload" element={<BlogUpload />} />
       </Routes>
 
