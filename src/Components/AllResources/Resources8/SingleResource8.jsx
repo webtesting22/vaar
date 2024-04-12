@@ -115,72 +115,92 @@ function SingleResource8() {
             cardDescription: "Risk-averse individuals may gravitate towards stable assets like government bonds, real estate investment trusts (REITs), or blue-chip stocks with a history of consistent returns."
         }
     ]
-    const ShortTerm =[
+    const ShortTerm = [
         {
-            cardTitle:"Emergency Funds",
-            cardDescription:" Investors with short-term goals may prioritize low-risk, liquid assets. Long-term investors may embrace a diversified portfolio with a higher allocation to growth-oriented assets."
+            cardTitle: "Emergency Funds",
+            cardDescription: " Investors with short-term goals may prioritize low-risk, liquid assets. Long-term investors may embrace a diversified portfolio with a higher allocation to growth-oriented assets."
         }
     ]
-    const specificFinancial =[
+    const specificFinancial = [
         {
-            cardTitle:"Education Funds",
-            cardDescription:"Parents saving for their children's education might consider tax-advantaged accounts and stable investments to ensure capital preservation."
+            cardTitle: "Education Funds",
+            cardDescription: "Parents saving for their children's education might consider tax-advantaged accounts and stable investments to ensure capital preservation."
         },
         {
-            cardTitle:"Homeownership",
-            cardDescription:"Individuals saving for a home might explore real estate investments or low-risk securities."
+            cardTitle: "Homeownership",
+            cardDescription: "Individuals saving for a home might explore real estate investments or low-risk securities."
         }
     ]
-    const liquidVSlliquid =[
+    const liquidVSlliquid = [
         {
-            cardTitle:"Emergency Liquidity",
-            cardDescription:"Individuals with higher liquidity needs may prioritize investments that can be easily converted to cash in emergencies."
+            cardTitle: "Emergency Liquidity",
+            cardDescription: "Individuals with higher liquidity needs may prioritize investments that can be easily converted to cash in emergencies."
         },
         {
-            cardTitle:"Lock-in Investments",
-            cardDescription:"Illiquid investments like real estate or private equity may be suitable for those with a longer investment horizon."
+            cardTitle: "Lock-in Investments",
+            cardDescription: "Illiquid investments like real estate or private equity may be suitable for those with a longer investment horizon."
         }
     ]
-    const specificFinancialObjectives =[
+    const specificFinancialObjectives = [
         {
-            cardTitle:"Education Funds",
-            cardDescription:"Parents saving for their children's education might consider tax-advantaged accounts and stable investments to ensure capital preservation."
+            cardTitle: "Education Funds",
+            cardDescription: "Parents saving for their children's education might consider tax-advantaged accounts and stable investments to ensure capital preservation."
         },
         {
-            cardTitle:"Homeownership",
-            cardDescription:"Individuals saving for a home might explore real estate investments or low-risk securities."
+            cardTitle: "Homeownership",
+            cardDescription: "Individuals saving for a home might explore real estate investments or low-risk securities."
         }
     ]
-    const Entrepreneurs =[
+    const Entrepreneurs = [
         {
-            cardTitle:"Risk-Taking Ability",
-            cardDescription:"Entrepreneurs, accustomed to risk in their professional lives, may exhibit a higher risk tolerance in investments. They might explore ventures like startups or venture capital."
+            cardTitle: "Risk-Taking Ability",
+            cardDescription: "Entrepreneurs, accustomed to risk in their professional lives, may exhibit a higher risk tolerance in investments. They might explore ventures like startups or venture capital."
         },
         {
-            cardTitle:"Sector Expertise",
-            cardDescription:"Professionals in specific industries may leverage their expertise, investing in sectors they understand well."
+            cardTitle: "Sector Expertise",
+            cardDescription: "Professionals in specific industries may leverage their expertise, investing in sectors they understand well."
         }
     ]
-    const salaried =[
+    const salaried = [
         {
-            cardTitle:"Steady Income",
-            cardDescription:"Salaried individuals may prioritize stability and steady income streams. Investments may lean towards conventional options such as mutual funds, 401(k), or real estate for long-term growth."
+            cardTitle: "Steady Income",
+            cardDescription: "Salaried individuals may prioritize stability and steady income streams. Investments may lean towards conventional options such as mutual funds, 401(k), or real estate for long-term growth."
         }
     ]
-    const BusyProfessionals=[
+    const BusyProfessionals = [
         {
-            cardTitle:"Passive Investing",
-            cardDescription:"Those with demanding careers may prefer passive investing, relying on options like 401(k) plans or index funds. This approach requires less time and active involvement."
+            cardTitle: "Passive Investing",
+            cardDescription: "Those with demanding careers may prefer passive investing, relying on options like 401(k) plans or index funds. This approach requires less time and active involvement."
         },
         {
-            cardTitle:"Financial Advisors",
-            cardDescription:"Professionals may seek the guidance of financial advisors to manage their investments efficiently."
+            cardTitle: "Financial Advisors",
+            cardDescription: "Professionals may seek the guidance of financial advisors to manage their investments efficiently."
         }
     ]
-    const ActiveManagement=[
+    const ActiveManagement = [
         {
-            cardTitle:"Active Management",
-            cardDescription:"Individuals with more time and interest may engage in active management, directly trading stocks, managing a real estate portfolio, or exploring alternative investments."
+            cardTitle: "Active Management",
+            cardDescription: "Individuals with more time and interest may engage in active management, directly trading stocks, managing a real estate portfolio, or exploring alternative investments."
+        }
+    ]
+    const Geography = [
+        {
+            cardTitle: "Higher Living Costs",
+            cardDescription: "Individuals in high-cost cities like NYC may invest with the aim of wealth multiplication, seeking higher returns to offset elevated living expenses."
+        },
+        {
+            cardTitle: "Real Estate as an Investment",
+            cardDescription: "Urban residents might view real estate as both a place to live and an investment, given the potential for property value appreciation."
+        }
+    ]
+    const ruralResidents = [
+        {
+            cardTitle: "Lower Living Costs",
+            cardDescription: "Those in rural areas with lower living costs may have different investment goals, possibly focusing on more conservative options to secure their financial future."
+        },
+        {
+            cardTitle: "Local Opportunities",
+            cardDescription: "Investments might be driven by local opportunities, such as agricultural ventures or community-based projects."
         }
     ]
     return (
@@ -351,7 +371,195 @@ function SingleResource8() {
                                 </Row>
                                 <div className="padding-slite"></div>
                                 <h4>5. Financial Goals: Defining the Investment Purpose</h4>
-                                
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Short-Term vs. Long-Term Goals</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {ShortTerm.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Specific Financial Objectives</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {specificFinancial.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <h4>Liquidity Needs: Balancing Accessibility and Returns</h4>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Liquid vs. Illiquid Assets</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {liquidVSlliquid.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Specific Financial Objectives</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {specificFinancialObjectives.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <h4>Area of Work: Tailoring Investments to Profession</h4>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Entrepreneurs or Business Owners</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {Entrepreneurs.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Salaried Professionals</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {salaried.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <h4>8. Time: Active vs. Passive Investing</h4>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Busy Professionals</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {BusyProfessionals.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Investment Enthusiasts</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {ActiveManagement.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <h4>9. Geography: Cost of Living and Investment Motivation</h4>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Urban Dwellers</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {Geography.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
+                                <div className="padding-slite"></div>
+                                <div className="heading-vertical-line-edit">
+                                    <span></span>
+                                    <h6>Rural Residents</h6>
+                                    <br />
+
+                                </div>
+                                <Row>
+                                    {Geography.map((item, index) => (
+                                        <Col lg={12} md={24}>
+                                            <div key={index} className="RealEstate-Box m-2">
+                                                <h6>{item.cardTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                <p>{item.cardDescription}</p>
+                                            </div>
+                                        </Col>
+                                    ))}
+                                </Row>
 
 
                             </div>
