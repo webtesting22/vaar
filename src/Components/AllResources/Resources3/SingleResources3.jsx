@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources3/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
-import { Row, Col, Carousel } from "antd"
+import { Row, Col, Carousel, Tabs } from "antd"
 import { Link } from "react-router-dom"
 import "../Resources1/SingleResources.css"
 import cardimg1 from "../Resources2/card1.svg"
@@ -23,7 +23,7 @@ function SingleResource3() {
     const carouseltwoRef = useRef(null);
     const carousalthreeRef = useRef(null)
     const carousalfourRef = useRef(null)
-
+    const { TabPane } = Tabs;
     const liList = [
         {
             list: "What Sets Real Estate Apart"
@@ -106,7 +106,7 @@ function SingleResource3() {
             cardDescription: "Real estate investments provide a level of control and active management not often found in other asset classes. Investors can influence property value through strategic improvements, efficient management, and adaptation to market trends, allowing for a hands-on approach to investment performance."
         },
     ]
-    const EvalutionRealState = [
+    const EvalutionRealStatepros = [
         {
             cardTitle: "Stable Income",
             cardDescription: "Real estate provides a reliable income stream through rental yields, ensuring ongoing financial stability."
@@ -143,6 +143,28 @@ function SingleResource3() {
             cardTitle: "Diverse Investment Opportunities",
             cardDescription: "A wide range of real estate types allows for diverse and tailored investment opportunities."
         },
+    ]
+    const EvalutionRealStatecons = [
+        {
+            cardTitle: "Illiquidity",
+            cardDescription: "Real estate is relatively illiquid compared to some other asset classes."
+        },
+        {
+            cardTitle: "High Entry Costs",
+            cardDescription: "Acquiring real estate often requires a significant upfront investment."
+        },
+        {
+            cardTitle: "Market Sensitivity",
+            cardDescription: "Real estate values can be influenced by local market conditions and economic trends."
+        },
+        {
+            cardTitle: "Management Challenges",
+            cardDescription: "Active management is required for maintenance and property improvements."
+        },
+        {
+            cardTitle: "Market Timing",
+            cardDescription: "Real estate investments may be subject to cyclical market trends."
+        }
     ]
 
     const ComparingRealStatesPointsData = [
@@ -252,25 +274,37 @@ function SingleResource3() {
                                 <div className="padding-slite"></div>
 
 
-                                <div className="pros-cons">
+                                <div className="pros-cons" id="pros-cons">
                                     <h4>Evaluating Real Estate Investments: Pros and Cons</h4>
-                                    <div>
-                                        <button>Pros</button>
-                                        <button>Cons</button>
-                                    </div>
-                                    <Row>
-                                        {EvalutionRealState.map((item, index) => (
-                                            <Col lg={12} md={24} style={{margin:"10px 0px"}}>
-                                                <div key={index} className="EvalutionCardbox">
-                                                    <h6>{item.cardTitle}</h6>
-                                                    <hr />
-                                                    <p>{item.cardDescription}</p>
-                                                </div>
-                                            </Col>
-                                        ))}
-                                    </Row>
+                                    <Tabs defaultActiveKey="1">
+                                        <TabPane tab="Pros" key="1">
+                                            <Row>
+                                                {EvalutionRealStatepros.map((item, index) => (
+                                                    <Col lg={12} md={24} key={index} style={{ margin: "10px 0px" }}>
+                                                        <div className="EvalutionCardbox">
+                                                            <h6>{item.cardTitle}</h6>
+                                                            <hr />
+                                                            <p>{item.cardDescription}</p>
+                                                        </div>
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </TabPane>
+                                        <TabPane tab="Cons" key="2">
+                                            <Row>
+                                                {EvalutionRealStatecons.map((item, index) => (
+                                                    <Col lg={12} md={24} key={index} style={{ margin: "10px 0px" }}>
+                                                        <div className="EvalutionCardbox">
+                                                            <h6>{item.cardTitle}</h6>
+                                                            <hr />
+                                                            <p>{item.cardDescription}</p>
+                                                        </div>
+                                                    </Col>
+                                                ))}
+                                            </Row>
+                                        </TabPane>
+                                    </Tabs>
                                     <p>In conclusion, real estate's allure lies in its tangible nature, income-generating potential, and diversification benefits. Thoroughly evaluating the pros and cons, considering financial goals, risk tolerance, and investment horizon, allows investors to harness the unique advantages of real estate within a well-rounded investment strategy. When approached thoughtfully, real estate serves as a pivotal component, providing stability, income, and growth potential to an investment portfolio.</p>
-
                                 </div>
 
                                 <div className="padding-slite"></div>
@@ -324,11 +358,11 @@ function SingleResource3() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog/>
+                    <DontMissBlog />
 
                 </div>
             </section>
-            <SignupSection/>
+            <SignupSection />
         </>
     )
 }

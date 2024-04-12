@@ -116,6 +116,7 @@
     transition: .3s;
     border-radius: 16px;
 }
+
 .RealEstate-Box:hover {
     margin: 20px 0px;
     padding: 30px 20px;
@@ -148,6 +149,7 @@
     font-size: 30px;
     margin: 0px 0px;
 }
+
 .carousal-container {
     padding: 50px;
     background-color: #F2F2F2;
@@ -155,11 +157,14 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+
 @media (max-width:778px) {
+
     .resources-left-container,
-.resources-right-container {
-    padding: 0.5rem;
-}
+    .resources-right-container {
+        padding: 0.5rem;
+    }
+
     .hide-on-mobile {
         display: none;
     }
@@ -177,6 +182,7 @@
         justify-content: center;
         margin-bottom: 20px;
     }
+
     .carousal-container {
         padding: 20px;
         background-color: #F2F2F2;
@@ -184,6 +190,7 @@
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
+
     .carousal-btn-styling button {
         margin: 0px 20px;
         padding: 10px;
@@ -269,7 +276,8 @@ h4 {
     color: #000000;
     margin-top: 1rem;
 }
-h6{
+
+h6 {
     color: #000000;
     font-weight: 700;
     font-size: 18px;
@@ -292,6 +300,7 @@ h6{
     border-radius: 16px;
     transition: .3s;
 }
+
 .EvalutionCardbox:hover {
     margin: 20px;
     padding: 20px;
@@ -304,34 +313,42 @@ h6{
 .EvalutionCardbox hr {
     opacity: 1;
 }
-.EvalutionCardbox h6{
+
+.EvalutionCardbox h6 {
     color: #000000;
     font-weight: 700;
     font-size: 18px;
 }
-.pros-cons > p{
+
+.pros-cons>p {
     margin-top: 1rem;
 }
-.carousal-bottom-content-container{
+
+.carousal-bottom-content-container {
     width: 100%;
     display: flex;
     flex-direction: row;
     padding: 40px 40px;
 }
-.carousal-bottom-content-container ul{
+
+.carousal-bottom-content-container ul {
     margin: 0px 0px;
     padding: 0px;
     list-style: none;
 }
-.carousal-bottom-content-container ul li:nth-child(1){
+
+.carousal-bottom-content-container ul li:nth-child(1) {
     margin: 0px 0px;
 }
-.carousal-bottom-content-container ul li{
-    margin:10px 0px;
+
+.carousal-bottom-content-container ul li {
+    margin: 10px 0px;
 }
-.carousal-bottom-content-container p{
+
+.carousal-bottom-content-container p {
     width: 70%;
 }
+
 @media (min-width:100px) and (max-width:1200px) {
     .EvalutionCardbox {
         margin: 20px;
@@ -356,18 +373,21 @@ h6{
     .pros-cons .ant-col {
         margin: 10px 0px;
     }
-    .carousal-bottom-content-container{
+
+    .carousal-bottom-content-container {
         width: 100%;
         display: flex;
         flex-direction: column;
         padding: 40px 40px;
     }
-    .carousal-bottom-content-container ul{
+
+    .carousal-bottom-content-container ul {
         margin: 30px 0px;
         padding: 0px;
         list-style: none;
     }
-    .carousal-bottom-content-container p{
+
+    .carousal-bottom-content-container p {
         width: 100%;
     }
 }
@@ -437,11 +457,67 @@ h6{
     background-color: #D4F604;
     color: rgb(0, 0, 0);
 }
-#commonassetscontainer ul li{
+
+#commonassetscontainer ul li {
     font-size: 18px;
     color: #000000;
 }
 
-ul li{
+ul li {
     font-size: 18px;
+}
+
+.heading-vertical-line-edit {
+    display: flex;
+    align-items: center;
+}
+
+.heading-vertical-line-edit h6 {
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+.heading-vertical-line-edit span {
+    height: 10px;
+    border-radius: 4px;
+    background-color: #D4F604;
+    width: 30px;
+}
+
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    background: #D4F604;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 7px 10px;
+    color: rgb(0, 0, 0);
+
+}
+
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab {
+    /* background: #D4F604; */
+    width: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 7px 10px;
+    color: rgb(0, 0, 0);
+}
+
+#pros-cons .ant-tabs .ant-tabs-ink-bar {
+    background-color: transparent;
+}
+
+/* Custom CSS to remove tab borders */
+.ant-tabs-nav::before,
+.ant-tabs-nav::after,
+.ant-tabs-nav-wrap,
+.ant-tabs-nav-list {
+    border: none;
+}
+
+/* Optional: Remove border around active tab */
+.ant-tabs-nav .ant-tabs-tab-active {
+    border-bottom: 1px solid transparent;
 }
