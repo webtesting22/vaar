@@ -5,6 +5,8 @@ import founderPicture from "../pictures/owner.jpg"
 import img1 from "../pictures/About-icons/lightning.svg"
 import img2 from "../pictures/About-icons/graph.svg"
 import img3 from "../pictures/About-icons/command.svg"
+
+
 function Founder() {
 
     return (
@@ -12,14 +14,14 @@ function Founder() {
             <section id='Founder-section'>
                 <div className="container">
                     <div className='text-center' data-aos="fade-up"
-                        data-aos-anchor-placement="center-center">
+                        data-aos-anchor-placement="center-center" >
                         <hr />
                         <h1 className='section-heading-big'>VAAR is the start</h1>
                         <p className='section-para'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="row w-100 m-auto">
                         <div className="col-lg-6">
-                            <img src={animatedGirl} className='w-100 animated-girl-pick' alt=""  data-aos="zoom-in"/>
+                            <img src={animatedGirl} className='w-100 animated-girl-pick' alt="" data-aos="zoom-in" />
                         </div>
                         <div className="col-lg-6" style={{ display: "flex", alignItems: "center" }}>
                             <div className='right-side-container'>
@@ -62,7 +64,7 @@ function Founder() {
                                 </div>
                             </div>
                             <div className="col-lg-6 owner-picture"  >
-                                <img src={founderPicture} className='founder-img' style={{ borderRadius: "20px" }} alt=""  data-aos="zoom-in"/>
+                                <img src={founderPicture} className='founder-img' style={{ borderRadius: "20px" }} alt="" data-aos="zoom-in" />
                             </div>
                         </div>
                     </div>

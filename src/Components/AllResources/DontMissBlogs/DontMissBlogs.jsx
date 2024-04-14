@@ -29,7 +29,7 @@ function DontMissBlog() {
                     <div className="padding-slite"></div>
                     {DontMissThese.map((item, index) => (
                         <div className="col-lg-4 mb-5">
-                             {/* <Link to={`/SingleResource${index + 4}`}> */}
+                            {/* <Link to={`/SingleResource${index + 4}`}> */}
                             <div className='module-box'>
                                 <img src={item.img} alt="" />
                                 <h6>{item.concept}</h6>

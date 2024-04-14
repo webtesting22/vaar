@@ -74,17 +74,33 @@ function AllResources() {
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
-                                    {Module3.map((item, index) => (
-                                        <div className="col-lg-4 mb-5">
-                                            <Link to={`/SingleResource${index + 6}`}>
-                                                <div className='module-box'>
-                                                    <img src={item.img} alt="" />
-                                                    <h6>{item.subtitle}</h6>
-                                                    <h4>{item.title}</h4>
+                                    {Module3.map((item, index) => {
+                                        if (index == 1 || index == 2) {
+                                            return (
+                                                <div className="col-lg-4 mb-5">
+                                                    <Link to={`/SingleResource${index + 7}`}>
+                                                        <div className='module-box'>
+                                                            <img src={item.img} alt="" />
+                                                            <h6>{item.subtitle}</h6>
+                                                            <h4>{item.title}</h4>
+                                                        </div>
+                                                    </Link>
                                                 </div>
-                                            </Link>
-                                        </div>
-                                    ))}
+                                            )
+                                        } else {
+                                            return (
+                                                <div className="col-lg-4 mb-5">
+                                                    <Link to={`/SingleResource${index + 6}`}>
+                                                        <div className='module-box'>
+                                                            <img src={item.img} alt="" />
+                                                            <h6>{item.subtitle}</h6>
+                                                            <h4>{item.title}</h4>
+                                                        </div>
+                                                    </Link>
+                                                </div>
+                                            )
+                                        }
+                                    })}
 
                                 </div>
 
