@@ -494,10 +494,12 @@ ul li {
     background-color: #D4F604;
     width: 30px;
 }
-#pros-cons :where(.css-11xg00t).ant-tabs-top >.ant-tabs-nav .ant-tabs-ink-bar{
-    width: 30.7396px;
-    left: 74.224px;
-    height: 39px;
+
+#pros-cons :where(.css-11xg00t).ant-tabs-top>.ant-tabs-nav .ant-tabs-ink-bar {
+    width: 26.8542px;
+    height: 30px;
+    left: 13.4271px;
     transform: translateX(-50%);
-    height: 39px;
+    background-color: #D4F604;
+    border-radius: 10px;
 }
