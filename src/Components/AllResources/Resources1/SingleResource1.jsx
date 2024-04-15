@@ -9,6 +9,7 @@ import { Carousel } from 'antd';
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 function SingleResource1() {
+    const conclusionRef = useRef(null);
     const contentStyle = {
         margin: 0,
         height: '160px',
@@ -32,13 +33,16 @@ function SingleResource1() {
     };
     const liList = [
         {
-            list: "Definition and scope"
+            list: "Definition and scope",
+            id:"Definitionandscope"
         },
         {
-            list: "Types of real estate investments"
+            list: "Types of real estate investments",
+            id:"Typesofrealestateinvestments"
         },
         {
-            list: "Importance of real estate investments in the current day and age"
+            list: "Importance of real estate investments in the current day and age",
+            id:"importanceofrealestate"
         },
     ]
 
@@ -171,7 +175,7 @@ function SingleResource1() {
                                     context, milestones, and its paramount importance in the contemporary economic landscape.</p>
                                 <div className="padding-slite"></div>
                                 <div>
-                                    <h4>Definition and Scope</h4>
+                                    <h4 id="Definitionandscope">Definition and Scope</h4>
                                     <p>Real estate investment involves the acquisition, ownership, management, rental, or sale of real property for the purpose of generating profit.
                                         Real property includes land and any permanent improvements attached to it, such as buildings and infrastructure. The scope of real estate
                                         investments extends beyond mere ownership of residential homes; it encompasses commercial properties, industrial spaces, retail establishments,
@@ -179,7 +183,7 @@ function SingleResource1() {
                                 </div>
                                 <div className="padding-slite"></div>
                                 <div className="only-for-pc-view">
-                                    <h4>Types of Real Estate Investments</h4>
+                                    <h4 id="Typesofrealestateinvestments">Types of Real Estate Investments</h4>
                                     <div>
                                         {boxContent.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
@@ -247,7 +251,7 @@ function SingleResource1() {
                                     </div>
                                 </div>
                                 <div className="padding-slite"></div>
-                                <div>
+                                <div id="importanceofrealestate">
                                     <h4>Importance of Real Estate Investments in the Current Day and Age</h4>
                                     <h6>Real Estate as an Investment Tool </h6>
                                     <p>Real estate, as an investment tool, goes beyond the mere ownership of physical properties; it is a strategic financial instrument used to generate income, build wealth, and diversify investment portfolios. This section delves into the various dimensions of real estate as an investment tool, detailing its characteristics and how investors leverage it for financial gain.</p>

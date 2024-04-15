@@ -11,6 +11,7 @@ import cardimg3 from "../Resources2/card3.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 function SingleResource3() {
+    const conclusionRef = useRef(null);
     const contentStyle = {
         margin: 0,
         height: '160px',
@@ -26,16 +27,20 @@ function SingleResource3() {
     const { TabPane } = Tabs;
     const liList = [
         {
-            list: "What Sets Real Estate Apart"
+            list: "What Sets Real Estate Apart",
+            id:"WhatSets"
         },
         {
-            list: "Why Real Estate Investments Should Be Considered Seriously"
+            list: "Why Real Estate Investments Should Be Considered Seriously",
+            id:"WhyRealEstate"
         },
         {
-            list: "Evaluating Real Estate Investments: Pros and Cons"
+            list: "Evaluating Real Estate Investments: Pros and Cons",
+            id:"EvaluatingRealEstate"
         },
         {
-            list: "Comparing Real Estate Risks and Returns with Traditional Asset Classes"
+            list: "Comparing Real Estate Risks and Returns with Traditional Asset Classes",
+            id:"ComparingRealEstate"
         },
     ]
 
@@ -221,7 +226,7 @@ function SingleResource3() {
                                 <div className="padding-slite"></div>
                                 <div>
                                     <div className="only-for-pc-view">
-                                        <h4>What Sets Real Estate Apart</h4>
+                                        <h4 id="WhatSets">What Sets Real Estate Apart</h4>
                                         <div>
                                             {WhatSetRealStateData.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
@@ -275,7 +280,7 @@ function SingleResource3() {
 
 
                                 <div className="pros-cons" id="pros-cons">
-                                    <h4>Evaluating Real Estate Investments: Pros and Cons</h4>
+                                    <h4 id="EvaluatingRealEstate">Evaluating Real Estate Investments: Pros and Cons</h4>
                                     <Tabs defaultActiveKey="1">
                                         <TabPane tab="Pros" key="1">
                                             <Row>
@@ -310,7 +315,7 @@ function SingleResource3() {
                                 <div className="padding-slite"></div>
 
 
-                                <div>
+                                <div id="ComparingRealEstate">
                                     <h4>Comparing Real Estate Risks and Returns with Traditional Asset Classes</h4>
                                     <p>Understanding how real estate compares to traditional asset classes in terms of risks and returns is crucial for investors seeking to construct a balanced and effective investment portfolio. Let's delve into the comparative analysis of real estate against commonly considered traditional asset classes: stocks and bonds.</p>
                                     <div id="commonassetscontainer">

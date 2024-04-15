@@ -63,16 +63,20 @@ function SingleResource2() {
     };
     const liList = [
         {
-            list: "Defining Asset Classes"
+            list: "Defining Asset Classes",
+            id:"DefiningAssetClasses"
         },
         {
-            list: "Basics of Asset Classes"
+            list: "Basics of Asset Classes",
+            id:"BasicsofAssetClasses"
         },
         {
-            list: "Common Asset Classes"
+            list: "Common Asset Classes",
+            id:"CommonAssetClasses"
         },
         {
-            list: "Real Estate as an Asset Class"
+            list: "Real Estate as an Asset Class",
+            id:"RealEstateas"
         },
     ]
     const boxContent = [
@@ -157,7 +161,7 @@ function SingleResource2() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <h4>Defining Asset Classes</h4>
+                                <h4 id="DefiningAssetClasses">Defining Asset Classes</h4>
                                 <p>Asset classes are broad categories of investments that share similar characteristics, risk profiles, and behavior in the financial markets. Investors allocate their capital across various asset classes to diversify their portfolios and achieve a balance between risk and return. Each asset class has distinct features that influence its performance, making it essential for investors to comprehend the nuances of different classes to make informed investment decisions.</p>
                                 <div className="padding-slite"></div>
                                 <div>
@@ -175,7 +179,7 @@ function SingleResource2() {
                                         </div>
                                     </div>
                                     <div className="only-for-mobile-view">
-                                        <h4>Basics of Asset Classes</h4>
+                                        <h4 id="BasicsofAssetClasses">Basics of Asset Classes</h4>
                                         <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
                                             {boxContent.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
@@ -264,7 +268,7 @@ function SingleResource2() {
                                 <div className="padding-slite"></div>
 
                                 <div id="commonassetscontainer">
-                                    <h4>Common Asset Classes</h4>
+                                    <h4 id="CommonAssetClasses">Common Asset Classes</h4>
                                     <div style={{ position: "relative" }}>
                                         <div className="carousal-container">
                                             <Carousel afterChange={onChange} ref={carousalthreeRef} dots={false} autoplay>
@@ -310,7 +314,7 @@ function SingleResource2() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4 style={{ marginTop: "20px" }}>Real Estate as an Asset Class</h4>
-                                        <p>Real estate stands out as a unique and tangible asset class within an investment portfolio.</p>
+                                        <p id="RealEstateas">Real estate stands out as a unique and tangible asset class within an investment portfolio.</p>
                                         <div>
                                             <div>
                                                 <Carousel afterChange={onChange} ref={carousalfourRef} dots={false} autoplay>

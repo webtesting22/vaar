@@ -10,14 +10,17 @@ function SingleResource13() {
     const conclusionRef = useRef(null);
     const liList = [
         {
-            list: "Real Estate Investment Trusts (REITs)"
+            list: "Real Estate Investment Trusts (REITs)",
+            id:"RealEstateInvestmentTrusts(REITs)"
 
         },
         {
-            list: "Vaar"
+            list: "Vaar",
+            id:"Vaar"
         },
         {
-            list: "Similarities VS Differences"
+            list: "Similarities VS Differences",
+            id:"SimilaritiesVSDifferences"
         },
         {
             list: "Conclusion",
@@ -89,11 +92,11 @@ function SingleResource13() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <p>Real Estate Investment Trusts (REITs) and Discreit share similarities in that they both provide a way for investors to gain exposure to real estate without having to directly own and manage physical properties. However, there are key differences in their structures, investment approaches, and the level of control investors have over their investments. Let's delve into the concepts of REITs and Discreit, highlighting both their commonalities and distinctions:</p>
+                                <p id="RealEstateInvestmentTrusts(REITs)">Real Estate Investment Trusts (REITs) and Discreit share similarities in that they both provide a way for investors to gain exposure to real estate without having to directly own and manage physical properties. However, there are key differences in their structures, investment approaches, and the level of control investors have over their investments. Let's delve into the concepts of REITs and Discreit, highlighting both their commonalities and distinctions:</p>
                                 <div className="padding-slite"></div>
-                                <h4 ref={conclusionRef} id="Conclusion">Conclution</h4>
+                                
                                 {VaarData.map((item, index) => (
-                                    <div key={index} className="RealEstate-Box">
+                                    <div key={index} className="RealEstate-Box" id="Vaar">
                                         <h6>{item.cardMainTitle}</h6>
                                         <hr style={{ opacity: "1" }} />
                                         {item.cardDetails.map((card, cardIndex) => (
@@ -105,11 +108,11 @@ function SingleResource13() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>Similarities VS Differences</h4>
+                                <h4 id="SimilaritiesVSDifferences">Similarities VS Differences</h4>
                                 <div className="pros-cons" id="pros-cons">
                                     <h4>Evaluating Real Estate Investments: Pros and Cons</h4>
                                     <Tabs defaultActiveKey="1">
-                                        <TabPane tab="Prosfsdfdsafdsaf" key="1">
+                                        <TabPane tab="Pros" key="1">
                                             <Row>
                                                     
                                             </Row>
@@ -120,8 +123,11 @@ function SingleResource13() {
                                             </Row>
                                         </TabPane>
                                     </Tabs>
-                                    <p>In conclusion, real estate's allure lies in its tangible nature, income-generating potential, and diversification benefits. Thoroughly evaluating the pros and cons, considering financial goals, risk tolerance, and investment horizon, allows investors to harness the unique advantages of real estate within a well-rounded investment strategy. When approached thoughtfully, real estate serves as a pivotal component, providing stability, income, and growth potential to an investment portfolio.</p>
+
+                                   
                                 </div>
+                                <h4 id="Conclusion">Conclusion</h4>
+                                <p>In summary, both REITs and Discreit provide valuable opportunities for investors to access real estate investments with varying degrees of control, liquidity, and investment horizon. The choice between the two would depend on an investor's preferences, risk tolerance, and investment objectives. REITs may be suitable for those seeking a more liquid and diversified approach, while Discreit offers a more hands-on, direct ownership experience in specific real estate assets.</p>
                             </div>
                         </Col>
                     </Row>

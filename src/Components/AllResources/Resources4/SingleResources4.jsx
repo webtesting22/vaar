@@ -9,16 +9,20 @@ import SignupSection from "../../SignUp/SignupSection";
 function SingleResource4() {
     const liList = [
         {
-            list: "Definition of Residential Real Estate"
+            list: "Definition of Residential Real Estate",
+            id:"DefinitionofResidential"
         },
         {
-            list: "Importance of Residential Real Estate"
+            list: "Importance of Residential Real Estate",
+            id:"ImportanceofResidential"
         },
         {
-            list: "Types of Residential Real Estate"
+            list: "Types of Residential Real Estate",
+            id:"TypesofResidential"
         },
         {
-            list: "Real Estate Investment in Residential Properties"
+            list: "Real Estate Investment in Residential Properties",
+            id:"RealEstateInvestment"
         }
     ]
     const ImportanceResidencial = [
@@ -60,7 +64,7 @@ function SingleResource4() {
             Description: "Detached, standalone structures designed for one family.",
             listData: [
                 {
-                    list: "Ownership of both the structure and land."
+                    list: "Ownership of both the structure and land.",
                 },
                 {
                     list: "Private yard and outdoor space."
@@ -356,14 +360,14 @@ function SingleResource4() {
                         <Col lg={18} md={18} className="full-width-on-mobile">
 
                             <div className="resources-right-container">
-                                <h4>Definition of Residential Real Estate</h4>
+                                <h4 id="DefinitionofResidential">Definition of Residential Real Estate</h4>
                                 <div className="padding-slite"></div>
                                 <ul>
                                     <li>1. Residential real estate refers to properties designed for people to live in.</li>
                                     <li>2.  It includes single-family homes, condominiums, townhouses, multifamily properties, student housing, short-term or vacation rentals, and co-ops.</li>
                                 </ul>
                                 <div className="padding-slite"></div>
-                                <h4>Importance of Residential Real Estate</h4>
+                                <h4 id="ImportanceofResidential">Importance of Residential Real Estate</h4>
                                 {ImportanceResidencial.map((item, index) => (
                                     <div key={index}>
                                         <div className="padding-slite"></div>
@@ -391,7 +395,7 @@ function SingleResource4() {
                                 <div className="padding-slite"></div>
                                 <p>Understanding the economic and social importance of residential real estate is crucial for policymakers, urban planners, and community leaders. Balancing economic considerations with the creation of livable, inclusive communities is essential for sustainable development and a high quality of life for residents.</p>
                                 <div className="padding-slite"></div>
-                                <h4>Types of Residential Real Estate</h4>
+                                <h4 id="TypesofResidential">Types of Residential Real Estate</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container p-0">
 
@@ -426,7 +430,7 @@ function SingleResource4() {
 
                                 </div>
                                 <div className="padding-slite"></div>
-                                <h4>Real Estate Investment in Residential Properties</h4>
+                                <h4 id="RealEstateInvestment">Real Estate Investment in Residential Properties</h4>
                                 <p>Real estate investment in residential properties offers various avenues for investors, each with its own set of advantages and challenges.</p>
                                 <div>
                                     {/* {RealstateInvestmentData.map((item, index) => (
