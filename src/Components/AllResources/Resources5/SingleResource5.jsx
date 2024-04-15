@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useRef} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources5/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -6,36 +6,47 @@ import { Row, Col, Carousel } from "antd"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 function SingleResource5() {
+    // const conclusionRef = useRef(null);
     const liList = [
         {
-            list: "Overview of the Current Landscape"
+            list: "Overview of the Current Landscape",
+            id:"Overviewofthe"
         },
         {
-            list: "Economic Factors Impacting Residential Real Estate"
+            list: "Economic Factors Impacting Residential Real Estate",
+            id:"EconomicFactorsImpacting"
         },
         {
-            list: "Housing Market Trends"
+            list: "Housing Market Trends",
+            id:"HousingMarket"
         },
         {
-            list: "Financing and Mortgage Market"
+            list: "Financing and Mortgage Market",
+            id:"FinancingandMortgage"
         },
         {
-            list: "Emerging Trends in Residential Real Estate Investing"
+            list: "Emerging Trends in Residential Real Estate Investing",
+            id:"EmergingTrendsinResidential"
         },
         {
-            list: "Challenges and Opportunities"
+            list: "Challenges and Opportunities",
+            id:"Challengesand"
         },
         {
-            list: "Risk Management in Residential Real Estate Investing"
+            list: "Risk Management in Residential Real Estate Investing",
+            id:"RiskManagement"
         },
         {
-            list: "Residential Real Estate Investment Trusts (REITs) and Market Dynamics"
+            list: "Residential Real Estate Investment Trusts (REITs) and Market Dynamics",
+            id:"ResidentialRealEstate"
         },
         {
-            list: "Future Outlook and Predictions"
+            list: "Future Outlook and Predictions",
+            id:"FutureOutlook"
         },
         {
-            list: "Conclusion"
+            list: "Conclusion",
+            id:"Conclusion"
         }
     ]
     const cardData = [
@@ -189,13 +200,13 @@ function SingleResource5() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <h4>Overview of the Current Landscape</h4>
+                                <h4 id="Overviewofthe">Overview of the Current Landscape</h4>
                                 <ul>
                                     <li> As of 2023, the residential real estate market in the United States presents a nuanced picture, influenced by post-pandemic recovery, technological shifts, and evolving consumer preferences.</li>
                                     <li>This chapter aims to delve into the intricate dynamics that define the current state of residential real estate investing, including the growing role of Real Estate Investment Trusts (REITs).</li>
                                 </ul>
                                 <div className="padding-slite"></div>
-                                <h4>Economic Factors Impacting Residential Real Estate</h4>
+                                <h4 id="EconomicFactorsImpacting">Economic Factors Impacting Residential Real Estate</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -220,7 +231,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Housing Market Trends</h4>
+                                <h4 id="HousingMarket">Housing Market Trends</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -245,7 +256,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Financing and Mortgage Market</h4>
+                                <h4 id="FinancingandMortgage">Financing and Mortgage Market</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -269,7 +280,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Emerging Trends in Residential Real Estate Investing</h4>
+                                <h4 id="EmergingTrendsinResidential">Emerging Trends in Residential Real Estate Investing</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -293,7 +304,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Challenges and Opportunities</h4>
+                                <h4 id="Challengesand">Challenges and Opportunities</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -318,7 +329,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Risk Management in Residential Real Estate Investing</h4>
+                                <h4 id="RiskManagement">Risk Management in Residential Real Estate Investing</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -343,7 +354,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Residential Real Estate Investment Trusts (REITs) and Market Dynamics</h4>
+                                <h4 id="ResidentialRealEstate">Residential Real Estate Investment Trusts (REITs) and Market Dynamics</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -369,7 +380,7 @@ function SingleResource5() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Future Outlook and Predictions</h4>
+                                <h4 id="FutureOutlook">Future Outlook and Predictions</h4>
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
@@ -391,7 +402,7 @@ function SingleResource5() {
                                     </Carousel>
                                 </div>
                                 <div className="padding-slite"></div>
-                                <h4>Conclusion</h4>
+                                <h4 id="Conclusion">Conclusion</h4>
                                 <div className="padding-slite"></div>
                                 {/* <div className="carousal-container"> */}
                                     {/* Nested map for CarousalData inside Carousel */}
