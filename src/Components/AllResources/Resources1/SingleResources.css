@@ -494,3 +494,10 @@ ul li {
     background-color: #D4F604;
     width: 30px;
 }
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs-top >.ant-tabs-nav .ant-tabs-ink-bar, :where(.css-dev-only-do-not-override-11xg00t).ant-tabs-top >div>.ant-tabs-nav .ant-tabs-ink-bar{
+    width: 30.7396px;
+    left: 74.224px;
+    height: 39px;
+    transform: translateX(-50%);
+    height: 39px;
+}
