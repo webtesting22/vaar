@@ -497,7 +497,7 @@ ul li {
 
 #pros-cons .ant-tabs-ink-bar {
     width: 26.8542px;
-    height: 46px;
+    height: 30px;
     left: 13.4271px;
     transform: translateX(-50%);
     background-color: #D4F604;
@@ -516,6 +516,7 @@ ul li {
    color: rgb(255, 255, 255);
    border-radius: 10px;
    margin: 0px 20px;
+   padding: 4px 0px;
 }
 #pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
     color: rgb(0, 0, 0);
