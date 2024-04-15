@@ -18,7 +18,8 @@ import SingleResource4 from './Components/AllResources/Resources4/SingleResource
 import SingleResource5 from './Components/AllResources/Resources5/SingleResource5';
 import SingleResource6 from './Components/AllResources/Resources6/SingleResource6';
 import SingleResource8 from './Components/AllResources/Resources8/SingleResource8';
-import SingleResource10 from './Components/AllResources/Resources10/SingleResource10';
+import SingleResource9 from './Components/AllResources/Resources10/SingleResource9';
+import SingleResource11 from './Components/AllResources/Resources11/SingleResources11';
 import VaarBlogCommon from './Components/VaarBlogsmain/VaarBlogs/VaarBlogCommon';
 import BlogUpload from './Components/BlogUpload/BlogUpload';
 
@@ -45,7 +46,8 @@ function App() {
         <Route exact path="/SingleResource5" element={<SingleResource5 />} />
         <Route exact path="/SingleResource6" element={<SingleResource6 />} />
         <Route exact path="/SingleResource8" element={<SingleResource8 />} />
-        <Route exact path="/SingleResource10" element={<SingleResource10 />} />
+        <Route exact path="/SingleResource9" element={<SingleResource9 />} />
+        <Route exact path="/SingleResource11" element={<SingleResource11 />} />
         <Route exact path="/BlogUpload" element={<BlogUpload />} />
       </Routes>
 

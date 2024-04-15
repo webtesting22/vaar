@@ -75,7 +75,7 @@ function AllResources() {
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module3.map((item, index) => {
-                                        if (index == 1 || index == 2) {
+                                        if (index == 1 || index == 2 ||index) {
                                             return (
                                                 <div className="col-lg-4 mb-5">
                                                     <Link to={`/SingleResource${index + 7}`}>
