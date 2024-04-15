@@ -1,8 +1,14 @@
 import React from "react";
 import { Row, Col, Input, Button } from "antd";
 
-function CommonResourceLeftSide({ MainLeftcontainerHeading, liList,boxTitle }) {
-    console.log(liList);
+function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) {
+    const scrollToSection = (id) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div style={{ height: "100%" }} className="resources-left-container">
             <div>
@@ -10,7 +16,7 @@ function CommonResourceLeftSide({ MainLeftcontainerHeading, liList,boxTitle }) {
                 <hr style={{ opacity: "1", color: "black" }} />
                 <ul>
                     {liList.map((item, index) => (
-                        <li key={index}>{item.list}</li>
+                        <li key={index} onClick={() => scrollToSection(item.id)}>{item.list}</li>
                     ))}
                 </ul>
             </div>
