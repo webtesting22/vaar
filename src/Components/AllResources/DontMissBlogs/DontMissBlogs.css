@@ -1,0 +1,15 @@
+.for-pc{
+    display: block;
+}
+
+.for-mobile {
+    display: none;
+}
+@media (max-width:769px){
+    .for-pc{
+        display: none;
+    }
+    .for-mobile {
+        display: block;
+    }
+}

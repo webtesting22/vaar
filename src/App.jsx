@@ -22,7 +22,7 @@ import SingleResource9 from './Components/AllResources/Resources10/SingleResourc
 import SingleResource11 from './Components/AllResources/Resources11/SingleResources11';
 import VaarBlogCommon from './Components/VaarBlogsmain/VaarBlogs/VaarBlogCommon';
 import BlogUpload from './Components/BlogUpload/BlogUpload';
-
+import DontMissBlog from './Components/AllResources/DontMissBlogs/DontMissBlogs';
 
 function App() {
   return (
@@ -48,6 +48,7 @@ function App() {
         <Route exact path="/SingleResource8" element={<SingleResource8 />} />
         <Route exact path="/SingleResource9" element={<SingleResource9 />} />
         <Route exact path="/SingleResource11" element={<SingleResource11 />} />
+        <Route exact path="/DontMissBlog" element={<DontMissBlog />} />
         <Route exact path="/BlogUpload" element={<BlogUpload />} />
       </Routes>
 
