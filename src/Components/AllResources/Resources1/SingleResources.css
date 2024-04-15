@@ -309,7 +309,8 @@ h6 {
     border-radius: 16px;
     transition: .3s;
 }
-@media(max-width:700px){
+
+@media(max-width:700px) {
     .EvalutionCardbox:hover {
         margin: 20px;
         padding: 20px;
@@ -319,6 +320,7 @@ h6 {
         transition: .3s;
     }
 }
+
 .EvalutionCardbox hr {
     opacity: 1;
 }
@@ -493,40 +495,34 @@ ul li {
     width: 30px;
 }
 
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
-    background: #D4F604;
-    width: 100px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 7px 10px;
-    color: rgb(0, 0, 0);
+#pros-cons .ant-tabs-ink-bar {
+    width: 26.8542px;
+    height: 46px;
+    left: 13.4271px;
+    transform: translateX(-50%);
+    background-color: #D4F604;
+    border-radius: 10px;
+}
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+    margin: 0px;
 
 }
-
 #pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab {
     /* background: #D4F604; */
-    width: 100px;
+    width: 150px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    padding: 7px 10px;
+   display: flex;
+   justify-content: center;
+   color: rgb(255, 255, 255);
+   border-radius: 10px;
+   margin: 0px 20px;
+}
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
     color: rgb(0, 0, 0);
 }
-
-#pros-cons .ant-tabs .ant-tabs-ink-bar {
-    background-color: transparent;
+#pros-cons .ant-tabs-tab-btn{
+    z-index: 55;
 }
-
-/* Custom CSS to remove tab borders */
-.ant-tabs-nav::before,
-.ant-tabs-nav::after,
-.ant-tabs-nav-wrap,
-.ant-tabs-nav-list {
-    border: none;
-}
-
-/* Optional: Remove border around active tab */
-.ant-tabs-nav .ant-tabs-tab-active {
-    border-bottom: 1px solid transparent;
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab{
+    background-color: #606060;
 }

@@ -192,7 +192,7 @@ function SingleResource1() {
                                     </div>
                                 </div>
                                 <div className="only-for-mobile-view">
-                                    <Carousel afterChange={onChange} ref={carouselRef} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
                                         {boxContent.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
                                                 <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -201,12 +201,12 @@ function SingleResource1() {
                                             </div>
                                         ))}
                                     </Carousel>
-                                    <div>
+                                    {/* <div>
                                         <div className="carousal-btn-styling">
                                             <button onClick={handlePrev}><i class='bx bx-left-arrow-alt' ></i></button>
                                             <button onClick={handleNext}><i class='bx bx-right-arrow-alt'></i></button>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
                                 <div className="padding-slite"></div>

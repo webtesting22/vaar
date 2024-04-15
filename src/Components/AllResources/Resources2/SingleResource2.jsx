@@ -176,7 +176,7 @@ function SingleResource2() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4>Basics of Asset Classes</h4>
-                                        <Carousel afterChange={onChange} ref={carouselRef} dots={false} autoplay>
+                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
                                             {boxContent.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
                                                     <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -185,12 +185,12 @@ function SingleResource2() {
                                                 </div>
                                             ))}
                                         </Carousel>
-                                        <div>
+                                        {/* <div>
                                             <div className="carousal-btn-styling">
                                                 <button onClick={handlePrev}><i className='bx bx-left-arrow-alt'></i></button>
                                                 <button onClick={handleNext}><i className='bx bx-right-arrow-alt'></i></button>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
@@ -231,7 +231,7 @@ function SingleResource2() {
                                         <h4>Role of Asset Classes in Investments</h4>
                                         <p>Understanding the historical milestones in the US real estate market provides crucial insights into its current structure and trends.</p>
                                         <div>
-                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} autoplay>
+                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={true} autoplay>
                                                 {boxContentTwo.map((item, index) => (
                                                     <div key={index} className="RealEstate-Box">
                                                         <h6>{item.boxtitle}</h6>
@@ -249,12 +249,12 @@ function SingleResource2() {
                                                     </div>
                                                 ))}
                                             </Carousel>
-                                            <div>
+                                            {/* <div>
                                                 <div className="carousal-btn-styling">
                                                     <button onClick={handlePrevtwo}><i className='bx bx-left-arrow-alt'></i></button>
                                                     <button onClick={handleNexttwo}><i className='bx bx-right-arrow-alt'></i></button>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
 
 

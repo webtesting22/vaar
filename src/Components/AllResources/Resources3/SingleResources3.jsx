@@ -235,7 +235,7 @@ function SingleResource3() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4>Basics of Asset Classes</h4>
-                                        <Carousel afterChange={onChange} ref={carouselRef} dots={false} autoplay>
+                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
                                             {WhatSetRealStateData.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
                                                     <h6>{item.boxTitle}</h6>
@@ -244,12 +244,12 @@ function SingleResource3() {
                                                 </div>
                                             ))}
                                         </Carousel>
-                                        <div>
+                                        {/* <div>
                                             <div className="carousal-btn-styling">
                                                 <button onClick={handlePrev}><i className='bx bx-left-arrow-alt'></i></button>
                                                 <button onClick={handleNext}><i className='bx bx-right-arrow-alt'></i></button>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
 
