@@ -503,7 +503,7 @@ ul li {
     background-color: #D4F604;
     border-radius: 10px;
 }
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
     margin: 0px;
 
 }
