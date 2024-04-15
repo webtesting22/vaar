@@ -8,40 +8,53 @@ import SignupSection from "../../SignUp/SignupSection";
 function SingleResource8() {
     const liList = [
         {
-            list: "Introduction"
+            list: "Introduction",
+            id:"Introduction"
         },
         {
-            list: "Age: Balancing Risk and Responsibilities"
+            list: "Age: Balancing Risk and Responsibilities",
+            id:"AgeBalancingRisk"
         },
         {
-            list: "Income + Savings: Building a Financial Foundation"
+            list: "Income + Savings: Building a Financial Foundation",
+            id:"IncomeSavings"
         },
         {
-            list: "Psychological Factors: Understanding Investor Behavior"
+            list: "Psychological Factors: Understanding Investor Behavior",
+            id:"PsychologicalFactors"
         },
         {
-            list: "Risk-Taking Ability: Defining Investment Choices"
+            list: "Risk-Taking Ability: Defining Investment Choices",
+            id:"RiskTaking"
         },
         {
-            list: "Financial Goals: Defining the Investment Purpose"
+            list: "Financial Goals: Defining the Investment Purpose",
+            id:"FinancialGoals"
         },
         {
-            list: "Liquidity Needs: Balancing Accessibility and Returns"
+            list: "Liquidity Needs: Balancing Accessibility and Returns",
+            id:"LiquidityNeeds"
         },
         {
-            list: "Area of Work: Tailoring Investments to Profession"
+            list: "Area of Work: Tailoring Investments to Profession",
+            id:"AreaofWork"
         },
         {
-            list: "Time: Active vs. Passive Investing"
+            list: "Time: Active vs. Passive Investing",
+            id:"TimeActive"
         },
         {
-            list: "Geography: Cost of Living and Investment Motivation"
+            list: "Geography: Cost of Living and Investment Motivation",
+            id:"GeographyCost"
+
         },
         {
-            list: "Market Conditions: Adapting to Economic Environments"
+            list: "Market Conditions: Adapting to Economic Environments",
+            id:"MarketConditions"
         },
         {
-            list: "Technological Adoption: Embracing Fintech Solutions"
+            list: "Technological Adoption: Embracing Fintech Solutions",
+            id:"TechnologicalAdoption"
         }
     ]
     const AgeBalancingData = [
@@ -395,12 +408,12 @@ function SingleResource8() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <h4>Introduction</h4>
+                                <h4 id="Introduction">Introduction</h4>
                                 <p>Investing is a process shaped by a diverse set of personal, financial, and contextual factors. A thorough understanding of these elements empowers investors to navigate the complexities of financial markets and make informed decisions that align with their goals, risk tolerance, and unique circumstances. </p>
                                 <br />
                                 <p>This chapter explores a comprehensive range of factors that significantly impact investment choices, building upon the previously discussed aspects:</p>
                                 <div className="padding-slite"></div>
-                                <h4>1. Age: Balancing Risk and Responsibilities</h4>
+                                <h4 id="AgeBalancingRisk">1. Age: Balancing Risk and Responsibilities</h4>
                                 <div className="padding-slite"></div>
 
                                 {AgeBalancingData.map((item, index) => (
@@ -446,7 +459,7 @@ function SingleResource8() {
                                     ))}
                                 </Row> */}
                                 <div className="padding-slite"></div>
-                                <h4>2.Income + Savings: Building a Financial Foundation</h4>
+                                <h4 id="IncomeSavings">2.Income + Savings: Building a Financial Foundation</h4>
                                 <div className="padding-slite"></div>
 
                                 {IncomeSaving.map((item, index) => (
@@ -492,7 +505,7 @@ function SingleResource8() {
                                     ))}
                                 </Row> */}
                                 <div className="padding-slite"></div>
-                                <h4>3. Psychological Factors: Understanding Investor Behavior</h4>
+                                <h4 id="PsychologicalFactors">3. Psychological Factors: Understanding Investor Behavior</h4>
                                 <div className="padding-slite"></div>
                                 {psychological.map((item, index) => (
                                     <div key={index}>
@@ -518,7 +531,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>4. Risk-Taking Ability: Defining Investment Choices</h4>
+                                <h4 id="RiskTaking">4. Risk-Taking Ability: Defining Investment Choices</h4>
                                 <div className="padding-slite"></div>
 
                                 {riskTolerant.map((item, index) => (
@@ -545,7 +558,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>5. Financial Goals: Defining the Investment Purpose</h4>
+                                <h4 id="FinancialGoals">5. Financial Goals: Defining the Investment Purpose</h4>
                                 <div className="padding-slite"></div>
                                 {ShortTerm.map((item, index) => (
                                     <div key={index}>
@@ -571,7 +584,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>6. Liquidity Needs: Balancing Accessibility and Returns</h4>
+                                <h4 id="LiquidityNeeds">6. Liquidity Needs: Balancing Accessibility and Returns</h4>
                                 <div className="padding-slite"></div>
                                 {liquidVSlliquid.map((item, index) => (
                                     <div key={index}>
@@ -597,7 +610,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>7. Area of Work: Tailoring Investments to Profession</h4>
+                                <h4 id="AreaofWork">7. Area of Work: Tailoring Investments to Profession</h4>
                                 <div className="padding-slite"></div>
                                 {Entrepreneurs.map((item, index) => (
                                     <div key={index}>
@@ -623,7 +636,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>8. Time: Active vs. Passive Investing</h4>
+                                <h4 id="TimeActive">8. Time: Active vs. Passive Investing</h4>
                                 <div className="padding-slite"></div>
                                 {BusyProfessionals.map((item, index) => (
                                     <div key={index}>
@@ -649,7 +662,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>9. Geography: Cost of Living and Investment Motivation</h4>
+                                <h4 id="GeographyCost">9. Geography: Cost of Living and Investment Motivation</h4>
                                 <div className="padding-slite"></div>
                                 {Geography.map((item, index) => (
                                     <div key={index}>
@@ -675,7 +688,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>10. Market Conditions: Adapting to Economic Environments</h4>
+                                <h4 id="MarketConditions">10. Market Conditions: Adapting to Economic Environments</h4>
                                 <div className="padding-slite"></div>
                                 {MarketConditionAdaoting.map((item, index) => (
                                     <div key={index}>
@@ -701,7 +714,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>11. Market Knowledge and Information Sources: Staying Informed</h4>
+                                <h4 >11. Market Knowledge and Information Sources: Staying Informed</h4>
                                 <div className="padding-slite"></div>
                                 {MarketKnowledge.map((item, index) => (
                                     <div key={index}>
@@ -727,7 +740,7 @@ function SingleResource8() {
                                     </div>
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>12. Technological Adoption: Embracing Fintech Solutions</h4>
+                                <h4 id="TechnologicalAdoption">12. Technological Adoption: Embracing Fintech Solutions</h4>
                                 <div className="padding-slite"></div>
                                 {technologicalAdoptive.map((item, index) => (
                                     <div key={index}>

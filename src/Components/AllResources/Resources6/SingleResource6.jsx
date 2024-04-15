@@ -8,22 +8,28 @@ import SignupSection from "../../SignUp/SignupSection";
 function SingleResource6() {
     const liList = [
         {
-            list: "Introduction"
+            list: "Introduction",
+            id:"Introduction"
         },
         {
-            list: "Section I: Product"
+            list: "Section I: Product",
+            id:"SectionI"
         },
         {
-            list: "Section II: People"
+            list: "Section II: People",
+            id:"SectionII"
         },
         {
-            list: "Section III: External Environment"
+            list: "Section III: External Environment",
+            id:"SectionIII"
         },
         {
-            list: "Section IV: Capital Markets"
+            list: "Section IV: Capital Markets",
+            id:"SectionIV"
         },
         {
-            list: "Conclusion"
+            list: "Conclusion",
+            id:"Conclusion"
         }
     ]
     const ProductData = [
@@ -204,10 +210,10 @@ function SingleResource6() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <h4>Introduction</h4>
+                                <h4 id="Introduction">Introduction</h4>
                                 <p>Real estate investment is a multifaceted endeavor, requiring a nuanced understanding of diverse factors that can influence success or failure. Professor Arthur Segel's Real Estate Diamond Framework provides a comprehensive approach to dissecting key elements crucial for informed decision-making. The four facets of this framework—Product, People, External Environment, and Capital Markets—serve as a strategic guide for investors navigating the intricate landscape of real estate. In this chapter, we will explore each factor in detail, utilizing real-time examples to illustrate the practical application of this framework. By dissecting the nuances of each dimension, investors can gain a holistic view, enabling them to make well-informed and strategic real estate investment decisions.</p>
                                 <div className="padding-slite"></div>
-                                <h4>Section I: Product</h4>
+                                <h4 id="SectionI">Section I: Product</h4>
 
 
                                 {ProductData.map((item, index) => (
@@ -224,7 +230,7 @@ function SingleResource6() {
 
                                 ))}
                                 <div className="padding-slite"></div>
-                                <h4>Section II: People</h4>
+                                <h4 id="SectionII">Section II: People</h4>
                                 {peopleData.map((item, index) => (
                                     <div key={index} className="RealEstate-Box">
                                         <h6>{item.cardTitle}</h6>
@@ -241,7 +247,7 @@ function SingleResource6() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Section III: External Environment</h4>
+                                <h4 id="SectionIII">Section III: External Environment</h4>
                                 {ExternalEnvironmentData.map((item, index) => (
                                     <div key={index} className="RealEstate-Box">
                                         <h6>{item.cardTitle}</h6>
@@ -258,7 +264,7 @@ function SingleResource6() {
 
 
                                 <div className="padding-slite"></div>
-                                <h4>Section IV: Capital Markets</h4>
+                                <h4 id="SectionIV">Section IV: Capital Markets</h4>
                                 {ExternalEnvironmentData.map((item, index) => (
                                     <div key={index} className="RealEstate-Box">
                                         <h6>{item.cardTitle}</h6>
@@ -274,7 +280,7 @@ function SingleResource6() {
                                 ))}
 
                                 <div className="padding-slite"></div>
-                                <h4>Conclusion</h4>
+                                <h4 id="Conclusion">Conclusion</h4>
                                 <p>In the realm of real estate investment, success is predicated on a meticulous understanding of the interwoven factors that shape the market. Professor Arthur Segel's Real Estate Diamond Framework offers a strategic lens through which investors can navigate the complexities of the industry. By delving into the nuances of Product, People, External Environment, and Capital Markets, investors can make decisions rooted in a holistic understanding of the market dynamics. Real-time examples serve as illuminating beacons, guiding investors toward informed choices that align with their objectives. As the real estate landscape evolves, a nuanced and adaptable approach, informed by the Real Estate Diamond Framework, remains paramount for those seeking enduring success in the dynamic world of real estate investment.</p>
 
                             </div>

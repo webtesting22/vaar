@@ -125,7 +125,24 @@ function SingleResource2() {
         {
             carousalTitle: "Equities (Stocks)",
             carousalDescription: "Equities represent ownership in a company, entitling the shareholder to a portion of the company's assets and earnings. Investing in individual stocks allows for targeted exposure to specific industries or companies. For example, investing in technology stocks like Apple or Google provides ownership in these companies, with potential returns driven by their performance in the stock market. Equities are known for their growth potential but come with higher volatility compared to some other asset classes."
-        }
+        },
+        {
+            carousalTitle:"Fixed Income (Bonds)",
+            carousalDescription:"Bonds are debt instruments issued by governments, municipalities, or corporations to raise capital. When an investor buys a bond, they are essentially lending money to the issuer in exchange for periodic interest payments and the return of the principal at maturity. U.S. Treasury bonds, municipal bonds, and corporate bonds are common examples. Bonds are considered more conservative than stocks and are often included in portfolios to provide income and stability. Investors can choose bonds with varying maturities and credit ratings based on their risk tolerance and income needs."
+        },
+        {
+            carousalTitle:"Cash and Cash Equivalents ",
+            carousalDescription:"Cash and cash equivalents are highly liquid assets that include Treasury bills, money market funds, and short-term certificates of deposit. These assets provide stability and high liquidity, offering a safe haven for investors seeking to preserve capital. While returns on cash and cash equivalents are typically lower than those from other asset classes, they serve as a crucial component of a well-diversified portfolio, providing a buffer against market volatility and immediate access to funds."
+        },
+        {
+            carousalTitle:"Real Assets ",
+            carousalDescription:"Real assets include physical, tangible assets such as real estate, commodities, and infrastructure. Investing in real assets provides exposure to assets with intrinsic value, often serving as a hedge against inflation. Besides direct ownership of physical properties, real assets also encompass commodities like gold or oil. Commodities are traded on futures markets, allowing investors to gain exposure to the price movements of these essential resources. Real assets offer diversification benefits, as their returns may not always align with traditional financial markets."
+        },
+        {
+            carousalTitle:"Alternative Investments",
+            carousalDescription:"Alternative investments extend beyond traditional asset classes and include hedge funds, private equity, venture capital, and real assets like timberland or farmland. These investments often have lower correlation with traditional markets, providing diversification and unique risk-return profiles. Hedge funds employ various strategies, including long-short positions and derivatives, to achieve returns. Private equity involves investing in private companies, typically with longer investment horizons. Venture capital funds focus on early-stage companies with high growth potential. While alternative investments can enhance portfolio diversification, they often require a higher level of expertise and may have longer lock-up periods. "
+        },
+    
 
     ]
 
