@@ -516,8 +516,10 @@ ul li {
    border-radius: 10px;
    margin: 0px 20px;
    padding: 4px 0px;
+   background-color: #606060;
 }
 #pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab-btn{
     color: black;
     z-index: 55;
+    background-color: red;
 }
