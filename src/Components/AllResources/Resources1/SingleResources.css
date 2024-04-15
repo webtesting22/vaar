@@ -503,3 +503,17 @@ ul li {
     background-color: #D4F604;
     border-radius: 10px;
 }
+#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+    margin: 0px;
+}
+#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab {
+    /* background: #D4F604; */
+    width: 150px;
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   color: rgb(255, 255, 255);
+   border-radius: 10px;
+   margin: 0px 20px;
+   padding: 4px 0px;
+}
