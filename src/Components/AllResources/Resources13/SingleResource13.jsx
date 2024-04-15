@@ -109,7 +109,7 @@ function SingleResource13() {
                                 <div className="pros-cons" id="pros-cons">
                                     <h4>Evaluating Real Estate Investments: Pros and Cons</h4>
                                     <Tabs defaultActiveKey="1">
-                                        <TabPane tab="Pros" key="1">
+                                        <TabPane tab="Prosfsdfdsafdsaf" key="1">
                                             <Row>
                                                     
                                             </Row>
