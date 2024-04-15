@@ -494,36 +494,3 @@ ul li {
     background-color: #D4F604;
     width: 30px;
 }
-
-#pros-cons .ant-tabs-ink-bar {
-    width: 26.8542px;
-    height: 30px;
-    left: 13.4271px;
-    transform: translateX(-50%);
-    background-color: #D4F604;
-    border-radius: 10px;
-}
-#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
-    margin: 0px;
-
-}
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab {
-    /* background: #D4F604; */
-    width: 150px;
-    text-align: center;
-   display: flex;
-   justify-content: center;
-   color: rgb(255, 255, 255);
-   border-radius: 10px;
-   margin: 0px 20px;
-   padding: 4px 0px;
-}
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-    color: rgb(0, 0, 0);
-}
-#pros-cons .ant-tabs-tab-btn{
-    z-index: 55;
-}
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab{
-    background-color: #606060;
-}
