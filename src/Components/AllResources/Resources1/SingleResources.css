@@ -506,9 +506,6 @@ ul li {
 #pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
     margin: 0px;
 }
-#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab-btn {
-    color: white;
-}
 
 #pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab {
     /* background: #D4F604; */
