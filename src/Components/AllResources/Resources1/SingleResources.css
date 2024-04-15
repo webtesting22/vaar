@@ -506,7 +506,7 @@ ul li {
 #pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
     margin: 0px;
 }
-#pros-cons :where(.css-dev-only-do-not-override-11xg00t).ant-tabs .ant-tabs-tab {
+#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab {
     /* background: #D4F604; */
     width: 150px;
     text-align: center;
