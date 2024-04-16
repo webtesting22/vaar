@@ -13,16 +13,16 @@ function AllResources() {
                 <div className="container">
                     <div>
                         <h1 style={{ fontSize: "55px" }}>All resources</h1>
-                        <select class="form-select" aria-label="Default select example">
+                        {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
-                        </select>
+                        </select> */}
                     </div>
                     {/* <div className="section-heading"></div> */}
                     <div className='moduls-data'>
-                        <div className='mb-4 mt-5'>
+                        <div >
                             <h4>Module 1</h4>
                             <hr />
                             <div className='all-resources-box'>
@@ -46,7 +46,7 @@ function AllResources() {
 
                         </div>
                         {/* <div className="section-padding"></div> */}
-                        <div className='mb-4 mt-5'>
+                        <div >
                             <h4>Module 2</h4>
                             <hr />
                             <div className='all-resources-box'>
@@ -71,7 +71,7 @@ function AllResources() {
                         </div>
                         {/* <div className="section-padding"></div> */}
 
-                        <div className='mb-4 mt-5'>
+                        <div >
                             <h4>Module 3</h4>
                             <hr />
                             <div className='all-resources-box'>
@@ -112,7 +112,7 @@ function AllResources() {
                         </div>
                         {/* <div className="section-padding"></div> */}
 
-                        <div className='mb-4 mt-5'>
+                        <div >
                             <h4>Module 4</h4>
                             <hr />
                             <div className='all-resources-box'>
