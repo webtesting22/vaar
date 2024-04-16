@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 p{
     font-family: "Inter", sans-serif;
-    font-weight: lighter;
+    /* font-weight: lighter; */
 }
 .singleResource-section {
     padding: 9rem 0rem;
