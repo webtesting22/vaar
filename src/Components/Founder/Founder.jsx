@@ -60,7 +60,7 @@ function Founder() {
                                 </div>
                             </div>
                             <div className="col-lg-6 owner-picture"  >
-                                <img src={founderPicture} className='founder-img' style={{ borderRadius: "20px" }} alt="" data-aos="zoom-in" />
+                                <img src={founderPicture} className='founder-img' style={{ borderRadius: "20px" }} alt="" />
                             </div>
                         </div>
                     </div>
