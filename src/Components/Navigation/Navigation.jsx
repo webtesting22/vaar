@@ -63,7 +63,9 @@ function Navigation() {
                     {isDesktop ? (
                         <nav >
                             <ul className='navigation_ul m-0'>
-                                <li><Link to="/AboutUs" className="hover-this">ABOUT US</Link><hr /></li>
+                                
+                                <li><Link to="/" className="hover-this">HOME</Link><hr /></li>
+                                <li><Link to="/AboutUs">ABOUT US</Link><hr /></li>
                                 <li><Link to="/AllResources" >RESOURCES</Link><hr /></li>
                                 <li><Link to="/VaarBlogs">BLOG</Link><hr /></li>
                                 <li><Link to="/VaarTeam">TEAM</Link><hr /></li>
@@ -83,22 +85,26 @@ function Navigation() {
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul className='mobile-offcanvas-menu'>
+                                <li><Link to="/" className="hover-this" onClick={() => {
+                                    console.log("click")
+                                    handleCloseOffcanvas();
+                                }}>HOME</Link></li>
                                 <li><Link to="/AboutUs" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>AboutUs</Link></li>
+                                }}>ABOUT US</Link></li>
                                 <li><Link to="/AllResources" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Resources</Link></li>
+                                }}>RESOURCES</Link></li>
                                 <li><Link to="/VaarBlogs" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Blog</Link></li>
+                                }}>BLOG</Link></li>
                                 <li><Link to="/VaarTeam" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Team</Link></li>
+                                }}>TEAM</Link></li>
                             </ul>
                         </Offcanvas.Body>
                     </Offcanvas>
