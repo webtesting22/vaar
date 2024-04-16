@@ -114,7 +114,8 @@
         color: #667085;
     }
     #Footer {
-        background-color: #FFFFFF;
+        background-color: rgb(27, 27, 27);
+        color: white;
     }
     
 }
