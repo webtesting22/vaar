@@ -2,6 +2,7 @@ import React from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "./VaarBlogsmain.css"
+import { Link } from "react-router-dom"
 import blogimage from "../pictures/blogHomeBaneer.svg"
 import { Row, Col } from "antd"
 import BlogDatamain from './VaarBlogData';
@@ -22,7 +23,7 @@ function VaarBlogs() {
                     <Row className='row-for-pc'>
                         <Col lg={8} md={8}>
                             <div className='blog-top-img'>
-                                <img src={blogimage} alt=""/>
+                                <img src={blogimage} alt="" />
                             </div>
                         </Col>
                         <Col lg={16} md={16}>
@@ -55,25 +56,28 @@ function VaarBlogs() {
                                 modules={[Autoplay]}
                                 className="mySwiper"
                             > */}
-                                {BestValueCardsData.map((item, index) => (
-                                    // <SwiperSlide>
-                                        <div className='blog-cards'>
-                                            <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
-                                            <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                                <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
-                                                <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
-                                            </div>
-                                            <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
-                                            <div className='Posted'>
-                                                <div><img src={item.avtar} alt="Not Found" /></div>
-                                                <div className='ps-3'>
-                                                    <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
-                                                    <span>15 Jan 2024</span>
-                                                </div>
-                                            </div>
+                            {BestValueCardsData.map((item, index) => (
+                                // <SwiperSlide>
+                                // <Link to="/">
+
+                                <div className='blog-cards'>
+                                    <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                    <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                        <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
+                                        <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
+                                    </div>
+                                    <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
+                                    <div className='Posted'>
+                                        <div><img src={item.avtar} alt="Not Found" /></div>
+                                        <div className='ps-3'>
+                                            <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
+                                            <span>15 Jan 2024</span>
                                         </div>
-                                    // </SwiperSlide>
-                                ))}
+                                    </div>
+                                </div>
+
+                                // </SwiperSlide>
+                            ))}
 
                             {/* </Swiper> */}
                         </div>
@@ -88,44 +92,48 @@ function VaarBlogs() {
                                     <>
 
                                         <Col lg={12} md={12}>
-                                            <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-                                                <div>
-                                                    <h1><a href="./VaarBlogCommon">{item.blogTitle}</a></h1>
-                                                    <p>{item.blogContent}</p>
-                                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                                        <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
+                                            <Link to="/">
+                                                <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
+                                                    <div>
+                                                        <h1><a href="./VaarBlogCommon">{item.blogTitle}</a></h1>
+                                                        <p>{item.blogContent}</p>
+                                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </Col>
                                         <Col lg={12} md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-
-                                            <div className='img-style-container'>
-                                                <img src={item.blogImg} alt="" />
-                                            </div>
-
+                                            <Link to="/">
+                                                <div className='img-style-container'>
+                                                    <img src={item.blogImg} alt="" />
+                                                </div>
+                                            </Link>
                                         </Col>
                                     </>
                                 ) : (
                                     <>
                                         <Col lg={12} md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                                            <Link to="/">
+                                                <div className='img-style-container'>
+                                                    <img src={item.blogImg} alt="" />
+                                                </div>
 
-                                            <div className='img-style-container'>
-                                                <img src={item.blogImg} alt="" />
-                                            </div>
-
-
+                                            </Link>
                                         </Col>
                                         <Col lg={12} md={12}>
-                                            <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
-                                                <div>
-                                                    <h1>{item.blogTitle}</h1>
-                                                    <p>{item.blogContent}</p>
-                                                    <div style={{ display: "flex", alignItems: "center" }}>
-                                                        <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
+                                            <Link to="/">
+                                                <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
+                                                    <div>
+                                                        <h1>{item.blogTitle}</h1>
+                                                        <p>{item.blogContent}</p>
+                                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px" }}> {item.authorName}</p>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                            </Link>
                                         </Col>
 
                                     </>
@@ -136,7 +144,7 @@ function VaarBlogs() {
 
                 </div>
             </section>
-            <SignupSection/>
+            <SignupSection />
         </>
     );
 }

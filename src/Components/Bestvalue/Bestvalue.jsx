@@ -10,7 +10,6 @@ import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
-import { Link } from 'react-router-dom';
 
 function Bestvalue() {
     return (
@@ -46,7 +45,6 @@ function Bestvalue() {
                             {BestvalueData.map((item, index) => (
                                 <SwiperSlide>
                                     {/* <div className="col-lg-3 col-md-6"> */}
-                                    <Link to="/">
                                     <div className='content-section bg-white'>
                                         <img src={item.img} alt="" />
                                         <div className='footer-card' id='footer-card'>
@@ -57,7 +55,7 @@ function Bestvalue() {
                                             </div>
                                         </div>
                                     </div>
-                                    </Link>
+
                                     {/* </div> */}
                                 </SwiperSlide>
                             ))}
