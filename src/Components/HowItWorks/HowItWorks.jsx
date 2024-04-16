@@ -1,7 +1,6 @@
 import React from "react";
 import Guide from "../Guide/Guide";
 
-
 function HowItWorks(){
     return(
         <>

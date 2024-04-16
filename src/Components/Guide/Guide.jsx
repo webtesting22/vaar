@@ -19,7 +19,7 @@ function Guide() {
         <div className="container">
           <div className="row">
             {GuideData.map((item, index) => (
-              <div key={index} className="col-lg-6">
+              <div key={index} className="col-lg-4 col-md-6">
                 <div className="box" data-aos="fade-up"
                   data-aos-duration="1000">
                   <div className='box-top-header'>
@@ -27,7 +27,7 @@ function Guide() {
                     <h3 className="box-title">{item.title}</h3>
                   </div>
                   <hr />
-                  <p className="paragraph" style={{fontWeight:"300"}}>{item.description}</p>
+                  <p className="paragraph" style={{fontWeight:"300", fontSize:"16px"}}>{item.description}</p>
                 </div>
               </div>
             ))}
