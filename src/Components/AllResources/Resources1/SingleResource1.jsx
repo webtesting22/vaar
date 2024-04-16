@@ -275,7 +275,7 @@ function SingleResource1() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         {ImportanceOfRealStateData.map((item, index) => (
-                                            <Carousel key={index} afterChange={onChange} ref={carouselRef} dots={false} autoplay>
+                                            <Carousel key={index} afterChange={onChange} ref={carouselRef} dots={true} autoplay>
                                                 {item.pointTitle.map((point, pointIndex) => (
                                                     <div key={pointIndex}>
                                                         <div className="RealEstate-Box">

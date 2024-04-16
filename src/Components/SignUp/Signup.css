@@ -1,4 +1,6 @@
-
+.Sign-up-btns{
+    background-color: black;
+}
 .Sign-up-btns .row .col-lg-6 {
     display: flex;
     justify-content: center;

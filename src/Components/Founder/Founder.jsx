@@ -16,7 +16,7 @@ function Founder() {
                     <div className='text-center' >
                         <hr />
                         <h1 className='section-heading-big'>VAAR is the start</h1>
-                        <p className='section-para'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
+                        <p className='section-para text-white'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="row w-100 m-auto">
                         <div className="col-lg-6">
@@ -24,7 +24,7 @@ function Founder() {
                         </div>
                         <div className="col-lg-6" style={{ display: "flex", alignItems: "center" }}>
                             <div className='right-side-container'>
-                                <div >
+                                <div>
                                     <img src={img1} alt="" />
                                     <h2>Seamless Platform</h2>
                                     <span>Browse real estate at your fingertips and own it within click.</span>
