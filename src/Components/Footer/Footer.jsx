@@ -20,7 +20,8 @@ function Footer() {
                         <hr />
                         <br />
                         <div className='social-icons-btn'>
-                            <span><i class='bx bxl-instagram'></i></span>
+                            {/* <span><i class='bx bxl-instagram'></i></span> */}
+                            <span><i class='bx bxl-twitter'></i></span>
                             <span><i class='bx bxl-linkedin-square' ></i></span>
 
                         </div>
