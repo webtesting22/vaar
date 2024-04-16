@@ -137,7 +137,7 @@ section{
     padding: 0px;
     font-size: 18px;
     padding: 20px 0px;
-    color: #333333;
+    color: #ffffff;
 }
 
 .accordion-header {
@@ -151,7 +151,8 @@ section{
 
 .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed,
 .accordion-item:first-of-type>.accordion-header .accordion-button.collapsed {
-    background-color: transparent;
+    background-color: black;
+    color: white;
 }
 
 .accordion-item:last-of-type>.accordion-header .accordion-button,
@@ -303,7 +304,7 @@ section{
         padding: 0px;
         font-size: 16px;
         padding: 20px 0px;
-        color: #333333;
+        color: #ffffff;
     }
     #accordion .input-group{
         display: flex;
