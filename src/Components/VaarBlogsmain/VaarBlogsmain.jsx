@@ -92,7 +92,7 @@ function VaarBlogs() {
                                     <>
 
                                         <Col lg={12} md={12}>
-                                            <Link to="/">
+                                            <Link to="/VaarBlogCommon">
                                                 <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                     <div>
                                                         <h1><a href="./VaarBlogCommon">{item.blogTitle}</a></h1>
@@ -105,7 +105,7 @@ function VaarBlogs() {
                                             </Link>
                                         </Col>
                                         <Col lg={12} md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                            <Link to="/">
+                                            <Link to="/VaarBlogCommon">
                                                 <div className='img-style-container'>
                                                     <img src={item.blogImg} alt="" />
                                                 </div>
@@ -115,7 +115,7 @@ function VaarBlogs() {
                                 ) : (
                                     <>
                                         <Col lg={12} md={12} style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
-                                            <Link to="/">
+                                            <Link to="/VaarBlogCommon">
                                                 <div className='img-style-container'>
                                                     <img src={item.blogImg} alt="" />
                                                 </div>
@@ -123,7 +123,7 @@ function VaarBlogs() {
                                             </Link>
                                         </Col>
                                         <Col lg={12} md={12}>
-                                            <Link to="/">
+                                            <Link to="/VaarBlogCommon">
                                                 <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                     <div>
                                                         <h1>{item.blogTitle}</h1>
