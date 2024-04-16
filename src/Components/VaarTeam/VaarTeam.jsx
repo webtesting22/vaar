@@ -69,7 +69,7 @@ function VaarTeam() {
 
             <div className="section-padding"></div>
 
-            <section style={{ backgroundColor: "#F2F2F2" }}>
+            <section style={{color:"white"}}>
                 <div>
                     <div className="container">
                         <Row>
@@ -92,22 +92,22 @@ function VaarTeam() {
                 </div>
 
             </section>
-            <section className='bg-white '>
-                <div style={{ backgroundColor: "#FFFFFF" }}>
+            <section>
+                <div>
                     {/* <div className="section-padding"></div> */}
                     <div className='container only-mobile-heading'>
-                        <h1 style={{ fontSize: "18px", fontWeight: "700", }}>Our Team</h1>
+                        <h1 style={{ fontSize: "18px", fontWeight: "700",color:"white" }}>Our Team</h1>
                         <hr className='team-hr mb-4' />
                     </div>
-                    <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem" }} className='only-pc-heading'>Our Team</h1>
+                    <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem",color:"white" }} className='only-pc-heading'>Our Team</h1>
                     <div className='container only-for-pc'>
                         <Row>
                             {teamMembers.map((item, index) => (
                                 <Col key={index} lg={4} md={6} style={{ margin: "auto" }}>
                                     <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
-                                    <div className='pt-4'>
-                                        <h2 style={{ fontSize: "23px", color: "#000000" }}>{item.name}</h2>
-                                        <span style={{ fontSize: "14px", color: "#000000" }}>{item.position}</span>
+                                    <div style={{backgroundColor:"rgb(27, 27, 27)", padding:"20px 10px"}}>
+                                        <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
+                                        <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
                                     </div>
                                     <div className="team-section-padding"></div>
                                 </Col>
@@ -134,8 +134,8 @@ function VaarTeam() {
                                 <SwiperSlide>
                                     <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
                                     <div className='pt-4'>
-                                        <h2 style={{ fontSize: "23px", color: "#000000" }}>{item.name}</h2>
-                                        <span style={{ fontSize: "14px", color: "#000000" }}>{item.position}</span>
+                                        <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
+                                        <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
                                     </div>
                                     <div className="team-section-padding"></div>
                                 </SwiperSlide>
