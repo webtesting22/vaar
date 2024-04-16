@@ -18,7 +18,7 @@ import SignupSection from '../SignUp/SignupSection';
 function VaarBlogs() {
     return (
         <>
-            <section className='blog-section-change-back'>
+            <section className='blog-section-change-back bg-black'>
                 <div className='container blog-section-adjust'>
                     <Row className='row-for-pc'>
                         <Col lg={8} md={8}>
@@ -83,7 +83,7 @@ function VaarBlogs() {
                         </div>
                     </div>
                 </div>
-                <div className='blogs-block bg-white '>
+                <div className='blogs-block text-white '>
                     <div className='container' >
                         {BlogDatamain.map((item, index) => (
 

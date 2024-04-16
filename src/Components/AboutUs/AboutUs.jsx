@@ -102,7 +102,7 @@ function AboutUs() {
                     </div>
 
                 </section>
-                <section>
+                {/* <section>
                     <div className='container'>
 
                         <Accordion defaultActiveKey="0" id='accordion'>
@@ -124,7 +124,7 @@ function AboutUs() {
                         </Accordion>
 
                     </div>
-                </section>
+                </section> */}
             </section>
             <SignupSection />
 
