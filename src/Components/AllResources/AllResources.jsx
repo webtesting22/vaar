@@ -23,7 +23,7 @@ function AllResources() {
                     {/* <div className="section-heading"></div> */}
                     <div className='moduls-data'>
                         <div >
-                            <h4>Module 1</h4>
+                            <h4>MODULE 1</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
@@ -47,7 +47,7 @@ function AllResources() {
                         </div>
                         {/* <div className="section-padding"></div> */}
                         <div >
-                            <h4>Module 2</h4>
+                            <h4>MODULE 2</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
@@ -72,7 +72,7 @@ function AllResources() {
                         {/* <div className="section-padding"></div> */}
 
                         <div >
-                            <h4>Module 3</h4>
+                            <h4>MODULE 3</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
@@ -113,7 +113,7 @@ function AllResources() {
                         {/* <div className="section-padding"></div> */}
 
                         <div >
-                            <h4>Module 4</h4>
+                            <h4>CONCEPTS</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
