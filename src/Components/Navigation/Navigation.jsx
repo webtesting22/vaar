@@ -104,7 +104,7 @@ function Navigation() {
                     </Offcanvas>
                 </div>
                 <div className='sign-in-container'>
-                    <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Sign In</Link></button>
+                    <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join Our</Link></button>
                 </div>
             </nav>
         </>

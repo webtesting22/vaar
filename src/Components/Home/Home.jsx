@@ -32,11 +32,11 @@ function Home() {
                             <p data-aos="fade-up">Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                             <div className='email-collect'>
                                 <input type="text" placeholder="What's your email" />
-                                <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Sign&nbsp;Up</Link></button>
+                                <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
                             </div>
                             <div className='mobile-view-home' data-aos="fade-up"
                                 data-aos-anchor-placement="bottom-center">
-                                <button><Link to="/ContactUs" style={{ color: "black" }}>Sign&nbsp;Up</Link></button>
+                                <button><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
                             </div>
                         </div>
 
