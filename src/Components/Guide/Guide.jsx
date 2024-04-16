@@ -27,7 +27,7 @@ function Guide() {
                     <h3 className="box-title">{item.title}</h3>
                   </div>
                   <hr />
-                  <p className="paragraph">{item.description}</p>
+                  <p className="paragraph" style={{fontWeight:"300"}}>{item.description}</p>
                 </div>
               </div>
             ))}
