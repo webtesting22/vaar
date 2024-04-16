@@ -16,81 +16,95 @@ const Module1 = [
     {
         
         img: img1,
-        subtitle: "CHAPTER 1 - 15 MINUTE READ",
-        title: "Real Estate Investments in the United States"
+        subtitle: "CHAPTER 1",
+        title: "Real Estate Investments in the United States",
+        timing:"15 MINUTE READ"
     },
     {
         img: img2,
-        subtitle: "CHAPTER 2 - 15 MINUTE READ",
-        title: "Understanding Asset Classes in Investment"
+        subtitle: "CHAPTER 2",
+        title: "Understanding Asset Classes in Investment",
+        timing:"15 MINUTE READ"
     },
     {
         img: img3,
-        subtitle: "CHAPTER 3 - 15 MINUTE READ",
-        title: "The Allure of Real Estate Investment"
+        subtitle: "CHAPTER 3 ",
+        title: "The Allure of Real Estate Investment",
+        timing:"15 MINUTE READ"
     }
 ]
 
 const Module2 = [
     {
         img: img4,
-        subtitle: "CHAPTER 4 - 15 MINUTE READ",
-        title: "Up Close & Personal - Residential Real Estate"
+        subtitle: "CHAPTER 4",
+        title: "Up Close & Personal - Residential Real Estate",
+        timing:"15 MINUTE READ"
     },
     {
         img: img5,
-        subtitle: "CHAPTER 5 - 15 MINUTE READ",
-        title: "Current Market Conditions for Residential Real Estate Investing in the United States (2023)"
+        subtitle: "CHAPTER 5",
+        title: "Current Market Conditions for Residential Real Estate Investing in the United States (2023)",
+        timing:"15 MINUTE READ"
     }
 ]
 
 const Module3 = [
     {
         img: img6,
-        subtitle: "CHAPTER 6&7 - 15 MINUTE READ",
-        title: "Analyzing Real Estate Investments with the Real Estate Diamond Framework"
+        subtitle: "CHAPTER 6&7",
+        title: "Analyzing Real Estate Investments with the Real Estate Diamond Framework",
+        timing:" 15 MINUTE READ"
     },
     {
         img: img7,
-        subtitle: "CHAPTER 8 - 15 MINUTE READ",
-        title: "Comprehensive Factors Influencing Investment Decision-Making"
+        subtitle: "CHAPTER 8 ",
+        title: "Comprehensive Factors Influencing Investment Decision-Making",
+        timing:"15 MINUTE READ"
     },
     {
         img: img8,
-        subtitle: "CHAPTER 9 - 15 MINUTE READ",
-        title: "Risk and Return Analysis Across Investment Assets"
+        subtitle: "CHAPTER 9",
+        title: "Risk and Return Analysis Across Investment Assets",
+        timing:"15 MINUTE READ"
     }
 ]
 const Module4 = [
     {
         img: img9,
-        subtitle: "CONCEPT 1 - 15 MINUTE READ",
-        title: "Fractionalization & Vaar"
+        subtitle: "CONCEPT 1 ",
+        title: "Fractionalization & Vaar",
+        timing:"15 MINUTE READ",
     },
     {
         img: img10,
-        subtitle: "CONCEPT 2 - 15 MINUTE READ",
-        title: "Risk Mitigation and Vaar"
+        subtitle: "CONCEPT 2 ",
+        title: "Risk Mitigation and Vaar",
+        timing:"15 MINUTE READ",
     },
     {
         img: img11,
-        subtitle: "CONCEPT 3 - 15 MINUTE READ",
-        title: "REITs & Vaar"
+        subtitle: "CONCEPT 3 ",
+        title: "REITs & Vaar",
+        timing:"15 MINUTE READ",
     },
     {
         img: img12,
-        subtitle: "CONCEPT 4 - 15 MINUTE READ",
-        title: "Risk-Return Analysis & Vaar"
+        subtitle: "CONCEPT 4 ",
+        title: "Risk-Return Analysis & Vaar",
+        timing:"15 MINUTE READ",
     },
     {
         img: img13,
-        subtitle: "CONCEPT 5 - 15 MINUTE READ",
-        title: "Access the Largest Asset Class in the US"
+        subtitle: "CONCEPT 5 ",
+        title: "Access the Largest Asset Class in the US",
+        timing:"15 MINUTE READ",
     },
     {
         img: img14,
-        subtitle: "CONCEPT 6 - 15 MINUTE READ",
-        title: "Technology & Vaar"
+        subtitle: "CONCEPT 6 ",
+        title: "Technology & Vaar",
+        timing:"15 MINUTE READ",
     },
 
 ]

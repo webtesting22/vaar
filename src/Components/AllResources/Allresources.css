@@ -40,3 +40,12 @@
     font-weight: 600;
     color: black;
  }
+ .all-resources-box h4{
+   margin: 10px 0px;
+ }
+ .all-resources-box span{
+   font-size: 12px;
+   color: rgb(164, 164, 164);
+   margin-top: -10px;
+   font-weight: 600;
+ }

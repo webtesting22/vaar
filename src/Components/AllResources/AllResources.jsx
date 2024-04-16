@@ -34,6 +34,7 @@ function AllResources() {
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
+                                                    <span>{item.timing}</span>
                                                 </div>
                                             </Link>
                                         </div>
@@ -57,6 +58,7 @@ function AllResources() {
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
+                                                    <span>{item.timing}</span>
                                                 </div>
                                             </Link>
 
@@ -83,6 +85,7 @@ function AllResources() {
                                                             <img src={item.img} alt="" />
                                                             <h6>{item.subtitle}</h6>
                                                             <h4>{item.title}</h4>
+                                                            <span>{item.timing}</span>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -95,6 +98,7 @@ function AllResources() {
                                                             <img src={item.img} alt="" />
                                                             <h6>{item.subtitle}</h6>
                                                             <h4>{item.title}</h4>
+                                                            <span>{item.timing}</span>
                                                         </div>
                                                     </Link>
                                                 </div>
@@ -120,6 +124,7 @@ function AllResources() {
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
+                                                    <span>{item.timing}</span>
                                                 </div>
                                             </Link>
                                         </div>
