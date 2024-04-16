@@ -16,7 +16,7 @@ function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) 
                 <hr style={{ opacity: "1", color: "black" }} />
                 <ul>
                     {liList.map((item, index) => (
-                        <li key={index} style={{cursor:"pointer"}} onClick={() => scrollToSection(item.id)}>{item.list}</li>
+                        <li key={index} style={{cursor:"pointer", fontWeight:"600"}} onClick={() => scrollToSection(item.id)}>{item.list}</li>
                     ))}
                 </ul>
             </div>
