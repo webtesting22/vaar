@@ -48,7 +48,7 @@ function DontMissBlog() {
         <>
             <div className='all-resources-box for-pc'>
                 <div className="row m-auto w-100">
-                    <h1>Don’t miss these</h1>
+                    <h1 className="text-white">Don’t miss these</h1>
                     <div className="padding-slite"></div>
                     {DontMissThese.map((item, index) => (
                         <div className="col-lg-4 mb-5">
@@ -69,7 +69,7 @@ function DontMissBlog() {
             </div>
             <div className='all-resources-box for-mobile'>
                 <div className="row m-auto w-100">
-                    <h1>Don’t miss these</h1>
+                    <h1 className="text-white">Don’t miss these</h1>
                     <div className="padding-slite"></div>
 
                     <Carousel afterChange={onChange} ref={carouselRef} dots={true} >

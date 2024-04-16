@@ -202,7 +202,7 @@ function SingleResource6() {
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 6&7" Date="February 17, 2023" ResourceHeading="ANALYZING REAL ESTATE INVESTMENTS WITH THE REAL ESTATE DIAMOND FRAMEWORK" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
-            <section style={{ backgroundColor: "white" }}>
+            <section >
                 <div className="container p-0">
                     <Row>
                         <Col lg={6} md={6} className="hide-on-mobile">

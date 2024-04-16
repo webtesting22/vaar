@@ -11,12 +11,12 @@ function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) 
 
     return (
         <div style={{ height: "100%" }} className="resources-left-container">
-            <div>
+            <div >
                 <h6>{MainLeftcontainerHeading}</h6>
                 <hr style={{ opacity: "1", color: "black" }} />
-                <ul>
+                <ul style={{border:"2px solid rgb(51 51 51)", padding:"10px ", borderRadius:"20px"}}>
                     {liList.map((item, index) => (
-                        <li key={index} style={{cursor:"pointer", fontWeight:"600",fontSize:"14px"}} onClick={() => scrollToSection(item.id)}>{item.list}</li>
+                        <li key={index} style={{cursor:"pointer", fontWeight:"600",fontSize:"14px", color:"white"}} onClick={() => scrollToSection(item.id)}>{item.list}</li>
                     ))}
                 </ul>
             </div>

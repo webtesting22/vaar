@@ -4,7 +4,10 @@ p{
     /* font-weight: lighter; */
     /* color: white; */
 }
-
+h4{
+    margin-bottom: 20px;
+    color: white;
+}
 .singleResource-section {
     padding: 9rem 0rem;
     background-color: white;
@@ -60,7 +63,7 @@ p{
 
 .Botom-body-edit h4 {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     padding-bottom: 40px;
     text-align: center;
 }
@@ -160,10 +163,15 @@ p{
 
 .carousal-container {
     padding: 50px;
-    background-color: #F2F2F2;
+    background-color: rgb(27, 27, 27);
     border-radius: 20px;
     margin-top: 1rem;
     margin-bottom: 1rem;
+}
+.carousal-container hr{
+    background-color: white;
+    opacity: 1;
+    border: 1px solid rgb(85, 85, 85);
 }
 
 @media (max-width:778px) {
@@ -537,6 +545,3 @@ ul li {
     /* background-color: red; */
 }
 
-h4{
-    margin-bottom: 20px;
-}

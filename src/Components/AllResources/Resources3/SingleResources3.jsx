@@ -213,7 +213,7 @@ function SingleResource3() {
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 3" Date="February 17, 2023" ResourceHeading="THE ALLURE OF REAL ESTATE INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
 
-            <section style={{ backgroundColor: "white" }}>
+            <section>
                 <div className="container p-0 resourcestwo">
                     <Row>
                         <Col lg={6} md={6} className="hide-on-mobile">
