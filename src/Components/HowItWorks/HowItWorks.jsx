@@ -1,7 +1,7 @@
 import React from "react";
 import Guide from "../Guide/Guide";
 import { Accordion } from "react-bootstrap";
-function HowItWorks(){
+function HowItWorks() {
     const accordionData = [
         {
             id: 1,
@@ -24,33 +24,33 @@ function HowItWorks(){
             content: 'Fourth accordion item content goes here.',
         },
     ];
-    return(
+    return (
         <>
-        <div className="section-padding"></div>
-        <Guide/>
-        <section>
-                    <div className='container'>
+            <div className="section-padding"></div>
+            <Guide />
+            <section>
+                <div className='container'>
 
-                        <Accordion defaultActiveKey="0" id='accordion'>
-                            <h6 className='FAQS-heading-mobile'>FAQs</h6>
-                            <h1 id='FAQS-heading-pc' className="text-white">Frequently Asked Questions</h1>
-                            <span className='FAQS-tagline-mobile'>Have questions? We’re here to help.</span>
-                            <div className='input-group'>
-                                <i class='bx bx-search'></i>
-                                <input type="text"  placeholder='Search'/>
-                            </div>
-                            {accordionData.map((item, index) => (
-                                <Accordion.Item key={item.id} eventKey={item.id.toString()}>
-                                    <h1 style={{ fontSize: "30px", fontWeight: "700" }} className='count-show'>0{index + 1}</h1>
-                                    <Accordion.Header className='accordion-title'>{item.title}</Accordion.Header>
-                                    <Accordion.Body>{item.content}</Accordion.Body>
-                                </Accordion.Item>
-                            ))}
+                    <Accordion defaultActiveKey="0" id='accordion'>
+                        <h6 className='FAQS-heading-mobile'>FAQs</h6>
+                        <h1 id='FAQS-heading-pc' className="text-white">Frequently Asked Questions</h1>
+                        <span className='FAQS-tagline-mobile'>Have questions? We’re here to help.</span>
+                        <div className='input-group'>
+                            <i class='bx bx-search'></i>
+                            <input type="text" placeholder='Search' />
+                        </div>
+                        {accordionData.map((item, index) => (
+                            <Accordion.Item key={item.id} eventKey={item.id.toString()}>
+                                <h1 style={{ fontSize: "30px", fontWeight: "700" }} className='count-show'>0{index + 1}</h1>
+                                <Accordion.Header className='accordion-title'>{item.title}</Accordion.Header>
+                                <Accordion.Body>{item.content}</Accordion.Body>
+                            </Accordion.Item>
+                        ))}
 
-                        </Accordion>
+                    </Accordion>
 
-                    </div>
-                </section>
+                </div>
+            </section>
         </>
     )
 }

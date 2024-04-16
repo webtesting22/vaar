@@ -69,7 +69,7 @@ function VaarTeam() {
 
             <div className="section-padding"></div>
 
-            <section style={{color:"white"}}>
+            <section style={{ color: "white" }}>
                 <div>
                     <div className="container">
                         <Row>
@@ -96,12 +96,12 @@ function VaarTeam() {
                 <div>
                     {/* <div className="section-padding"></div> */}
                     <div className='container only-mobile-heading'>
-                        <h1 style={{ fontSize: "18px", fontWeight: "700",color:"white" }}>Our Team</h1>
+                        <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Team</h1>
                         <hr className='team-hr mb-4' />
                     </div>
-                    <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem",color:"white" }} className='only-pc-heading'>Our Team</h1>
+                    <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>
                     <div className='container only-for-pc'>
-                        <Row>
+                        {/* <Row>
                             {teamMembers.map((item, index) => (
                                 <Col key={index} lg={4} md={6} style={{ margin: "auto" }}>
                                     <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
@@ -114,8 +114,38 @@ function VaarTeam() {
 
                             ))}
 
-                        </Row>
+                        </Row> */}
+                        <Swiper
+                            slidesPerView={4}
+                            spaceBetween={30}
+                            pagination={{
+                                clickable: true,
+                            }}
+                            modules={[Pagination]}
+                            className="mySwiper"
+                        >
+                            {teamMembers.map((item, index) => (
+                                <SwiperSlide>
+                                    <Row>
+
+                                        <Col key={index} lg={24} md={24} style={{ margin: "auto" }}>
+                                            <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
+                                            <div style={{ backgroundColor: "rgb(27, 27, 27)", padding: "20px 10px" }}>
+                                                <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
+                                                <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
+                                            </div>
+                                            <div className="team-section-padding"></div>
+                                        </Col>
+
+
+                                    </Row>
+                                </SwiperSlide>
+
+                            ))}
+                        </Swiper>
                     </div>
+
+
                     <div className='container only-for-mobile'>
 
                         <Swiper
@@ -144,7 +174,7 @@ function VaarTeam() {
                     </div>
                 </div>
             </section>
-            <SignupSection/>
+            <SignupSection />
         </>
     );
 }
