@@ -118,9 +118,9 @@ function VaarTeam() {
                         <Swiper
                             slidesPerView={4}
                             spaceBetween={30}
-                            pagination={{
-                                clickable: true,
-                            }}
+                            // pagination={{
+                            //     clickable: true,
+                            // }}
                             modules={[Pagination]}
                             className="mySwiper"
                         >
