@@ -9,10 +9,10 @@ function AllResources() {
     return (
         <>
             <div className="section-padding "></div>
-            <section className='bg-white'>
+            <section>
                 <div className="container">
                     <div>
-                        <h1 style={{ fontSize: "55px" }}>All resources</h1>
+                        <h1 style={{ fontSize: "55px",color:"white" }}>All resources</h1>
                         {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>
