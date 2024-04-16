@@ -5,7 +5,7 @@ import Navigation from './Components/Navigation/Navigation';
 import Home from './Components/Home/Home';
 import AllResources from './Components/AllResources/AllResources';
 import AboutUs from './Components/AboutUs/AboutUs';
-import VaarTeam from './Components/VaarTeam/VaarTeam';
+// import VaarTeam from './Components/VaarTeam/VaarTeam';
 import SignupSection from './Components/SignUp/SignupSection';
 import VaarBlogsmain from './Components/VaarBlogsmain/VaarBlogsmain';
 import ContactUs from './Components/ContactUs/ContactUs';
@@ -25,7 +25,8 @@ import SingleResource13 from './Components/AllResources/Resources13/SingleResour
 import VaarBlogCommon from './Components/VaarBlogsmain/VaarBlogs/VaarBlogCommon';
 import BlogUpload from './Components/BlogUpload/BlogUpload';
 import DontMissBlog from './Components/AllResources/DontMissBlogs/DontMissBlogs';
-
+import Vaar from './Components/Vaar/Vaar';
+import HowItWorks from './Components/HowItWorks/HowItWorks';
 function App() {
   return (
     <Router>
@@ -35,7 +36,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/AllResources" element={<AllResources />} />
         <Route exact path="/AboutUs" element={<AboutUs />} />
-        <Route exact path="/VaarTeam" element={<VaarTeam />} />
+        {/* <Route exact path="/VaarTeam" element={<VaarTeam />} /> */}
         <Route exact path="/VaarBlogs" element={<VaarBlogsmain />} />
         <Route exact path="/VaarBlogCommon" element={<VaarBlogCommon />} />
         <Route exact path="/ContactUs" element={<ContactUs />} />
@@ -54,6 +55,8 @@ function App() {
         <Route exact path="/SingleResource13" element={<SingleResource13 />} />
         <Route exact path="/DontMissBlog" element={<DontMissBlog />} />
         <Route exact path="/BlogUpload" element={<BlogUpload />} />
+        <Route exact path="/Vaar" element={<Vaar />} />
+        <Route exact path="/HowItWorks" element={<HowItWorks />} />
       </Routes>
 
 

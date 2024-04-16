@@ -65,11 +65,11 @@ function Navigation() {
                             <ul className='navigation_ul m-0'>
                                 
                                 <li><Link to="/" className="hover-this">HOME</Link><hr /></li>
-                                <li><Link to="/">HOW IT WORKS</Link><hr /></li>
+                                <li><Link to="/HowItWorks">HOW IT WORKS</Link><hr /></li>
                                 {/* <li><Link to="/AboutUs">ABOUT US</Link><hr /></li> */}
                                 <li><Link to="/AllResources" >LEARN</Link><hr /></li>
                                 <li><Link to="/VaarBlogs">BLOG</Link><hr /></li>
-                                <li><Link to="/VaarBlogs">VAAR</Link><hr /></li>
+                                <li><Link to="/Vaar">VAAR</Link><hr /></li>
                                 {/* <li><Link to="/VaarTeam">TEAM</Link><hr /></li> */}
                                 {/* <li><Link to="/ContactUs">Contact</Link></li> */}
                             </ul>

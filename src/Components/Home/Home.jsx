@@ -155,7 +155,7 @@ function Home() {
 
             </div>
             <Founder />
-            <Guide />
+            {/* <Guide /> */}
             <Bestvalue />
 
             {/* <VaarBlogs/> */}
