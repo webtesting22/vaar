@@ -20,8 +20,8 @@ function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) 
                     ))}
                 </ul>
             </div>
-            <div className="Botom-body-edit">
-                <h4>{boxTitle}</h4>
+            <div className="Botom-body-edit bg-dark">
+                <h4 className="text-white">{boxTitle}</h4>
                 <Input placeholder="What’s your email?" />
                 <Button>Start free trial</Button>
             </div>

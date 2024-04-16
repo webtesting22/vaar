@@ -160,7 +160,7 @@ function SingleResource1() {
 
 
 
-            <section style={{ backgroundColor: "white" }}>
+            <section style={{ backgroundColor: "black", color:"white" }}>
                 <div className="container p-0">
                     <Row>
                         <Col lg={6} md={6} className="hide-on-mobile">

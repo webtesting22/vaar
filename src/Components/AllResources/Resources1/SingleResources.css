@@ -2,7 +2,9 @@
 p{
     font-family: "Inter", sans-serif;
     /* font-weight: lighter; */
+    /* color: white; */
 }
+
 .singleResource-section {
     padding: 9rem 0rem;
     background-color: white;
@@ -105,7 +107,7 @@ p{
 
 .resources-right-container p {
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 300;
     margin: 0px;
     font-family: "Inter", sans-serif;
@@ -279,14 +281,14 @@ p{
 
 h4 {
     font-size: 23px;
-    color: #000000;
+    color: #ffffff;
     margin-top: 1rem;
     font-family: "Inter", sans-serif;
     font-weight: bold;
 }
 
 h6 {
-    color: #000000;
+    color: #ffffff;
     font-weight: 600;
     /* font-weight: bold; */
     font-size: 18px;

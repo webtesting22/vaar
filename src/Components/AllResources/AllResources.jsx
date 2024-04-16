@@ -8,7 +8,7 @@ function AllResources() {
 
     return (
         <>
-            <div className="section-padding bg-white"></div>
+            <div className="section-padding "></div>
             <section className='bg-white'>
                 <div className="container">
                     <div>

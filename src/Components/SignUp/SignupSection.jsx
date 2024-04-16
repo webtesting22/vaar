@@ -16,7 +16,7 @@ function SignupSection() {
                         <div className="col-lg-6 ">
                             <div>
                                 <button><Link to="/ContactUs">Sign Up</Link></button>
-                                <button> <a href="">Contact Us</a></button>
+                                <button> <a href="" className='text-white'>Contact Us</a></button>
                             </div>
                         </div>
                     </div>

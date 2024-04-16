@@ -47,13 +47,14 @@ function AboutUs() {
                     </div>
 
                 </div>
-                <section className='bg-white'>
+                <section>
                     <div className="container">
                         <div className='section-top-content'>
                             <div className="top-span">Our values</div>
                             <div><h2>How we work at VAAR</h2></div>
                             <div className='about-tagline'><p>Our shared values keep us connected and guide us as one team.</p></div>
                         </div>
+                        <div className="padding-slite"></div>
                         {/* <div className="section-padding padding-section"></div> */}
                         <div className="container first">
                             <Row>

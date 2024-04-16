@@ -1,5 +1,6 @@
 #Footer {
-    background-color: #F2F2F2;
+    background-color: rgb(27, 27, 27);
+    color: white;
 }
 
 #Footer .top-menu {
@@ -9,7 +10,7 @@
 }
 
 #Footer .top-menu a {
-    color: rgb(0, 0, 0);
+    color:white;
     font-weight: 600;
     font-size: 14px;
 }

@@ -48,7 +48,7 @@ function Bestvalue() {
                                     <div className='content-section bg-white'>
                                         <img src={item.img} alt="" />
                                         <div className='footer-card' id='footer-card'>
-                                            <h3 className='Card-title text-dark'>{item.title}</h3>
+                                            <h3 className='Card-title text-white'>{item.title}</h3>
                                             <div className='button-animation'>
                                                 <a href="">See More <i class='bx bx-chevron-right'></i></a>
                                                 <span></span>
@@ -124,8 +124,8 @@ function Bestvalue() {
                                     <div className="col-lg-6 col-md-6">
                                         <div data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
-                                            <h5 style={{ fontSize: "24px",color:"black" }}>{item.title}</h5>
-                                            <p style={{ fontSize: "18px",color:"black" }}>{item.description}</p>
+                                            <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
+                                            <p style={{ fontSize: "18px" }}>{item.description}</p>
                                             <br />
                                             <div className='m-0 p-0 read-more-btn'>
                                                 <a href="">Read More</a>

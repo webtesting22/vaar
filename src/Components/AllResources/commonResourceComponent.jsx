@@ -6,7 +6,7 @@ import ReactangleTopImage from "./Rectangle.svg"
 function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHeading, AuthorInfo, topResourceImg }) {
     return (
         <>
-            <section style={{ paddingTop: "6rem", paddingBottom: "0rem", backgroundColor: "white" }}>
+            <section style={{ paddingTop: "6rem", paddingBottom: "0rem", backgroundColor: "black" }}>
                 <div className="range-module-using-props container">
                     <Row>
                         <Col lg={12} md={12} className="order-lg-1 order-md-1">

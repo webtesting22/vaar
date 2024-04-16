@@ -4,8 +4,9 @@
 }
 
 .range-module-using-props .ant-row {
-    background-color: #F9F9F9;
+    background-color: #000000;
     padding: 25px;
+    color: white;
 }
 
 .top-range-container span {

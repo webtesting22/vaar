@@ -21,6 +21,8 @@
     padding: 30px 20px;
     height: 28vh;
     position: relative;
+    background-color: rgb(27, 27, 27);
+    color: white;
 }
 
 @media (min-width:1300px) and (max-width:3000px) {
@@ -53,7 +55,7 @@
 
     font-size: 14px;
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     position: absolute;
     bottom: 30px;
     left: 20px;
@@ -73,6 +75,7 @@
     border-radius: 20px;
     transition: .5s;
     /* width: 100%; */
+    color: white;
 }
 
 .content-section:hover .button-animation span {
@@ -84,6 +87,7 @@
     left: 10px;
     background-color: #d6f6045c;
     border-radius: 20px;
+    color: white;
     /* width: 100%; */
 }
 @media (max-width:778px){
@@ -171,10 +175,11 @@
     padding: 3rem 0rem;
 }
 .Infomation-cards .row .col-lg-6 div{
-    background-color: white;
+    background-color: rgb(27, 27, 27);
     padding: 20px 30px;
     margin: 20px 0px;
     position: relative;
+    color: white;
 }
 .Infomation-cards .row .col-lg-6 div h5{
     font-weight: 700;
@@ -188,14 +193,14 @@
     left: -10px;
     bottom: -10px;
     transition: .5s;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .Infomation-cards .row .col-lg-6 .read-more-btn a{
-    color: black;
+    color: rgb(255, 255, 255);
     z-index: 22;
 }
 .Infomation-cards .row .col-lg-6 .read-more-btn:hover a{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 .Infomation-cards .row .col-lg-6 .read-more-btn:hover span{
     position: absolute;
@@ -205,7 +210,7 @@
     border-radius: 20px;
     left: -10px;
     bottom: -10px;
-    color: black;
+    color: rgb(255, 255, 255);
     transition: .5s;
 }
 
