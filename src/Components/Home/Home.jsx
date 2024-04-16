@@ -11,6 +11,11 @@ import img1 from "../pictures/About-icons/homePageMobile.svg"
 import { Link } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // Import AOS CSS
+import first from "../Home/first1.jpeg"
+import second from "../Home/second2.jpeg"
+// import third from "../Home/third.jpeg"
+// import four from "../Home/four.png"
+import { Row, Col } from "antd";
 function Home() {
     useEffect(() => {
         AOS.init({
@@ -24,25 +29,50 @@ function Home() {
     return (
         <>
             <div className='parent-section'>
-                <section id='Home_section'>
-                    <div className='container text-center'>
-                        <h1 className='main-global-heading' data-aos="fade-down">Real-estate, simplified</h1>
-                        <div className='content-container-responsive'>
+                <Row>
+                    <Col lg={12} md={12}>
+                        <section id='Home_section'>
+                            <div className='container text-center'>
+                                <h1 className='main-global-heading' style={{ fontWeight: "300",fontSize:"50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                                <div className='content-container-responsive'>
 
-                            <p data-aos="fade-up">Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
-                            <div className='email-collect'>
-                                <input type="text" placeholder="What's your email" />
-                                <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
-                            </div>
-                            <div className='mobile-view-home' data-aos="fade-up"
-                                data-aos-anchor-placement="bottom-center">
-                                <button><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
-                            </div>
-                        </div>
+                                    <p data-aos="fade-up" style={{fontWeight:"200"}}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                    <div className='email-collect'>
+                                        <input type="text" placeholder="What's your email" />
+                                        <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                    </div>
+                                    <div className='mobile-view-home' data-aos="fade-up"
+                                        data-aos-anchor-placement="bottom-center">
+                                        <button><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                    </div>
+                                </div>
 
+                            </div>
+                        </section>
+                    </Col>
+                    <Col lg={12} md={12} style={{display:"flex", alignItems:"center"}}>
+                    <div className='grid-images'>
+                        <Row>
+                            <Col lg={24} md={24} sm={8} style={{display:"flex"}}>
+                                <div><img src={second} alt="" /></div>
+                                <div><img src={first} alt="" /></div>
+                            </Col>
+                            {/* <Col lg={12} md={12} sm={8}>
+                              
+                            </Col> */}
+
+                            {/* <Col lg={4} md={12} sm={8}>
+                                <div><img src={third} alt="" /></div>
+                            </Col> */}
+                            {/* <Col lg={6} md={12}>
+                            <div><img src={four} alt="" /></div>
+                        </Col> */}
+
+                        </Row>
                     </div>
-                </section>
-                <div id='second-part-section'>
+                    </Col>
+                </Row>
+                {/* <div id='second-part-section'>
                     <div className="container">
                         <div className="row w-100 m-auto">
                             <div className="col-lg-4">
@@ -55,7 +85,7 @@ function Home() {
                                         <div className='middle-body'>
                                             <img src={homeCard} alt="" className='w-100 h-100' />
                                         </div>
-                                        {/* <div className='botton-footer d-flex justify-content-between'>
+                                        <div className='botton-footer d-flex justify-content-between'>
                                         <div>
                                             <span>NewYork, NY</span>
                                             <p>75 wall St, New York, NY 10005</p>
@@ -64,7 +94,7 @@ function Home() {
                                         <div>
                                             img
                                         </div>
-                                </div> */}
+                                </div>
                                     </div>
                                 </div>
                             </div>
@@ -86,7 +116,7 @@ function Home() {
                                         </div>
                                     </div>
                                     <div className='child-second'>
-                                        {/* <img src={homeMobile} alt="" className='w-100 h-100' /> */}
+                                        <img src={homeMobile} alt="" className='w-100 h-100' />
                                     </div>
                                 </div>
                             </div>
@@ -123,7 +153,7 @@ function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        {/* <div className='botton-footer d-flex justify-content-between'>
+                                        <div className='botton-footer d-flex justify-content-between'>
                                         <div>
                                             <span>NewYork, NY</span>
                                             <p>75 wall St, New York, NY 10005</p>
@@ -132,14 +162,14 @@ function Home() {
                                         <div>
                                             img
                                         </div>
-                                </div> */}
+                                </div>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <div className='mobile-show-img'>
                     <img src={img1} alt="" />
 

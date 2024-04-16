@@ -30,7 +30,7 @@
 }
 
 .content-container-responsive {
-    width: 50%;
+    width: 70%;
     margin: auto;
     text-align: center;
     color: white;
@@ -229,7 +229,7 @@
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: 120px;
+    height: 50px;
     overflow-x: hidden;
     font-size: 30px;
     color: rgba(255, 255, 255, 0.384);
@@ -247,3 +247,10 @@
     to { transform: translateX(-50%); }
   }
   
+  .grid-images img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .grid-images div{
+    padding: 2px;
+  }

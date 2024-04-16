@@ -15,7 +15,7 @@ function Founder() {
                 <div className="container">
                     <div className='text-center' >
                         <hr />
-                        <h1 className='section-heading-big'>Value Proposition</h1>
+                        <h1 className='section-heading-big' style={{fontWeight:"300", fontSize:"50px"}}>Value Proposition</h1>
                         <p className='section-para text-white'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="row w-100 m-auto">

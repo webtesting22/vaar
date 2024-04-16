@@ -106,9 +106,9 @@ a:hover:visited{
     height: 100%;
 }
 
-.blog-title-container h1 {
+/* .blog-title-container h1 {
     font-size: 32px;
-}
+} */
 
 @media (max-width:700px) {
     .blog-title-container {
@@ -146,6 +146,7 @@ a:hover:visited{
 .blog-title-container h1 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: white;
 }
 
 .blog-title-container p {
