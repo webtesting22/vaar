@@ -63,7 +63,7 @@
     align-items: center;
 }
 
-#footer-card .button-animation span {
+.content-section .button-animation span {
     height: 40px;
     width: 20px;
     position: absolute;
@@ -75,7 +75,7 @@
     /* width: 100%; */
 }
 
-#footer-card:hover .button-animation span {
+.content-section:hover .button-animation span {
     height: 40px;
     width: 92px;
     transition: .5s;
