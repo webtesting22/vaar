@@ -163,10 +163,10 @@ function Bestvalue() {
                                     <div className='blog-cards'>
                                         <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                         <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
+                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%",color:"white" }}>{item.title}</h5>
                                             <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                         </div>
-                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
+                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px",color:"white" }}>{item.description}</p>
                                         <div className='Posted'>
                                             <div><img src={item.avtar} alt="Not Found" /></div>
                                             <div className='ps-3'>

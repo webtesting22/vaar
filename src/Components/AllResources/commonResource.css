@@ -8,10 +8,16 @@
     padding: 25px;
     color: white;
 }
-
-.top-range-container span {
+.top-range-container div:nth-child(1) a{
+    color: #D4F604;
+}
+.top-range-container span a {
     font-size: 18px;
     color: #606060;
+}
+.top-range-container span a:hover {
+    font-size: 18px;
+    color: #D4F604;
 }
 
 .resource-Date-container {

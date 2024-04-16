@@ -63,14 +63,14 @@ function VaarBlogs() {
                                 <div className='blog-cards'>
                                     <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                     <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                        <h5 style={{ fontSize: "20px", color: "black", width: "80%" }}>{item.title}</h5>
+                                        <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
                                         <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                     </div>
-                                    <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px" }}>{item.description}</p>
+                                    <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
                                     <div className='Posted'>
                                         <div><img src={item.avtar} alt="Not Found" /></div>
                                         <div className='ps-3'>
-                                            <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
+                                            <h6 style={{ marginBottom: "3px", color: "white" }}>Vidhi Kanaria</h6>
                                             <span>15 Jan 2024</span>
                                         </div>
                                     </div>
@@ -98,7 +98,7 @@ function VaarBlogs() {
                                                         <h1 className='main-blog-heading'><a href="./VaarBlogCommon" className='text-white'>{item.blogTitle}</a></h1>
                                                         <p className='text-white'>{item.blogContent}</p>
                                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px",color:"white", fontSize: "14px" }}> {item.authorName}</p>
+                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", color: "white", fontSize: "14px" }}> {item.authorName}</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -129,7 +129,7 @@ function VaarBlogs() {
                                                         <h1 className='main-blog-heading'>{item.blogTitle}</h1>
                                                         <p className='text-white'>{item.blogContent}</p>
                                                         <div style={{ display: "flex", alignItems: "center" }}>
-                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px", color:"white" }}> {item.authorName}</p>
+                                                            <span style={{ margin: "0px 10px", display: "flex", alignItems: "center" }}><i class="bi bi-person-circle fs-5"></i> </span> <p style={{ margin: "0px", fontSize: "14px", color: "white" }}> {item.authorName}</p>
                                                         </div>
                                                     </div>
                                                 </div>
