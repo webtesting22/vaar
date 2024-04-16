@@ -207,7 +207,7 @@ function SingleResource5() {
                                 </ul>
                                 <div className="padding-slite"></div>
                                 <h4 id="EconomicFactorsImpacting">Economic Factors Impacting Residential Real Estate</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -232,7 +232,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="HousingMarket">Housing Market Trends</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -257,7 +257,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="FinancingandMortgage">Financing and Mortgage Market</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -281,7 +281,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="EmergingTrendsinResidential">Emerging Trends in Residential Real Estate Investing</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -305,7 +305,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="Challengesand">Challenges and Opportunities</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -330,7 +330,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="RiskManagement">Risk Management in Residential Real Estate Investing</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -355,7 +355,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="ResidentialRealEstate">Residential Real Estate Investment Trusts (REITs) and Market Dynamics</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -381,7 +381,7 @@ function SingleResource5() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="FutureOutlook">Future Outlook and Predictions</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
                                     <Carousel afterChange={onChange} dots={false} autoplay>
@@ -403,7 +403,7 @@ function SingleResource5() {
                                 </div>
                                 <div className="padding-slite"></div>
                                 <h4 id="Conclusion">Conclusion</h4>
-                                <div className="padding-slite"></div>
+                                {/* <div className="padding-slite"></div> */}
                                 {/* <div className="carousal-container"> */}
                                     {/* Nested map for CarousalData inside Carousel */}
                                     {/* <Carousel afterChange={onChange} dots={false} autoplay> */}
