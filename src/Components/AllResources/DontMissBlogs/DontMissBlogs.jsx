@@ -72,7 +72,7 @@ function DontMissBlog() {
                     <h1>Don’t miss these</h1>
                     <div className="padding-slite"></div>
 
-                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
+                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
                         {DontMissThese.map((item, index) => (
                             <div className="col-lg-4 mb-5">
                                
