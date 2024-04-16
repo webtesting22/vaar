@@ -350,7 +350,7 @@ function SingleResource4() {
     };
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 4" Date="February 17, 2023" ResourceHeading="Up Close & Personal - Residential Real Estate" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 4" Date="February 17, 2023" ResourceHeading="UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>

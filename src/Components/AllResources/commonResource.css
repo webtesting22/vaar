@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .range-module-using-props {
     padding: 4rem 0rem;
 }
@@ -64,4 +65,10 @@
     .resource-Date-container{
         margin-top: 0rem;
     }
+}
+.main-resource-heading h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
 }

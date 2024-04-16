@@ -191,7 +191,7 @@ function SingleResource5() {
     };
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="Current Market Conditions for Residential Real Estate Investing in the US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="CURRENT MARKET CONDITIONS FOR RESIDENTIAL REAL ESTATE INVESTING IN THE US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>

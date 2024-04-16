@@ -201,7 +201,7 @@ function SingleResource6() {
 
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 6&7" Date="February 17, 2023" ResourceHeading="Analyzing Real Estate Investments with the Real Estate Diamond Framework" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 6&7" Date="February 17, 2023" ResourceHeading="ANALYZING REAL ESTATE INVESTMENTS WITH THE REAL ESTATE DIAMOND FRAMEWORK" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>

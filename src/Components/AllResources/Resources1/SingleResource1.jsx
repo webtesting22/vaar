@@ -156,7 +156,7 @@ function SingleResource1() {
     ]
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 1" Date="February 17, 2023" ResourceHeading="Real Estate Investments in the United States" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 1" Date="February 17, 2023" ResourceHeading="REAL ESTATE INVESTMENTS IN THE UNITED STATES" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
 
 
 

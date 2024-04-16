@@ -299,7 +299,7 @@ function SingleResource9() {
     ]
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 9" Date="February 17, 2023" ResourceHeading="Risk and Return Analysis Across Investment Assets" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 9" Date="February 17, 2023" ResourceHeading="RISK AND RETURN ANALYSIS ACROSS INVESTMENT ASSETS" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>

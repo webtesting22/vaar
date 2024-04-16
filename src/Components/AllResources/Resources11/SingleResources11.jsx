@@ -31,7 +31,7 @@ function SingleResource11() {
     ]
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="Fractionalization & Vaar " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>

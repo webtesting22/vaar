@@ -168,7 +168,7 @@ function SingleResource2() {
    
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 2" Date="February 17, 2023" ResourceHeading="Understanding Asset Classes in Investment" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 2" Date="February 17, 2023" ResourceHeading="UNDERSTANDING ASSET CLASSES IN INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
 
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0 resourcestwo">

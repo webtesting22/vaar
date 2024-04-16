@@ -399,7 +399,7 @@ function SingleResource8() {
     ]
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 8" Date="February 17, 2023" ResourceHeading="Comprehensive Factors Influencing Investment Decision-Making" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 8" Date="February 17, 2023" ResourceHeading="COMPREHENSIVE FACTORS INFLUENCING INVESTMENT DECISION-MAKING" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
             <section style={{ backgroundColor: "white" }}>
                 <div className="container p-0">
                     <Row>
