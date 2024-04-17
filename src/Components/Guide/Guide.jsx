@@ -6,18 +6,19 @@ import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
 import { Row, Col } from "antd"
 import teamposter from "../pictures/teamheroimage.png"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
+import HowItWorks from "../Guide/HowitWorks.jpeg"
 function Guide() {
   return (
     <>
-      <section style={{ color: "white" }}>
+      <section style={{ color: "white", backgroundColor:"rgb(27, 27, 27)" }}>
         <div>
           <div className="container">
             <Row>
               
               <Col lg={12} md={12}>
                 <div className='team-section-hero2'>
-                  <img src={teamposter} alt="" />
-                  <img src={teamheroimage2} alt="" />
+                  <img src={HowItWorks} alt="" />
+                  <img src={HowItWorks} alt="" />
                 </div>
               </Col>
               <Col lg={12} md={12}>

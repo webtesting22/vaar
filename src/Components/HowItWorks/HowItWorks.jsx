@@ -1,6 +1,7 @@
 import React,{useEffect} from "react";
 import Guide from "../Guide/Guide";
 import { Accordion } from "react-bootstrap";
+
 function HowItWorks() {
     const accordionData = [
         {

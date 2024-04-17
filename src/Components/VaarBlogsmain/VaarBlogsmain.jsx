@@ -22,7 +22,7 @@ function VaarBlogs() {
     return (
         <>
             <section className='blog-section-change-back bg-black'>
-                <div className='container blog-section-adjust'>
+                <div className='container blog-section-adjust' >
                     <Row className='row-for-pc'>
                         <Col lg={8} md={8}>
                             <div className='blog-top-img'>

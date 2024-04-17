@@ -72,7 +72,7 @@ function Vaar() {
         <>
             <div className="section-padding"></div>
 
-            <section style={{ color: "white" }}>
+            <section style={{ color: "white", backgroundColor:"rgb(27, 27, 27)" }}>
                 <div>
                     <div className="container">
                         <Row>
