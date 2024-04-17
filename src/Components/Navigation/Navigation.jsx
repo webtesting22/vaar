@@ -63,7 +63,7 @@ function Navigation() {
                     {isDesktop ? (
                         <nav >
                             <ul className='navigation_ul m-0'>
-                                
+
                                 <li><Link to="/" className="hover-this">HOME</Link><hr /></li>
                                 <li><Link to="/HowItWorks">HOW IT WORKS</Link><hr /></li>
                                 {/* <li><Link to="/AboutUs">ABOUT US</Link><hr /></li> */}
@@ -112,7 +112,9 @@ function Navigation() {
                     </Offcanvas>
                 </div>
                 <div className='sign-in-container'>
-                    <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join Our</Link></button>
+                    {/* <div className='input-group'> */}
+                        <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join Our</Link></button>
+                    {/* </div> */}
                 </div>
             </nav>
         </>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Input, Button } from "antd";
 
+
 function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) {
     const scrollToSection = (id) => {
         const element = document.getElementById(id);
@@ -25,7 +26,7 @@ function CommonResourceLeftSide({ MainLeftcontainerHeading, liList, boxTitle }) 
             <div className="Botom-body-edit bg-dark">
                 <h4 className="text-white">{boxTitle}</h4>
                 <Input placeholder="What’s your email?" />
-                <Button>Start free trial</Button>
+                <button>Start free trial</button>
             </div>
         </div>
     );

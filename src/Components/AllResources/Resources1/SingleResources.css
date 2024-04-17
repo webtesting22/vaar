@@ -83,9 +83,18 @@ h4{
 
 }
 
-.Botom-body-edit .ant-btn {
+.Botom-body-edit button {
     width: 100%;
     background-color: #D4F604;
+    border: none;
+    padding: 10px 20px;
+    height: 42px;
+    border-radius: 5px;
+}
+.Botom-body-edit button:hover {
+    width: 100%;
+    background-color: white;
+    color: black;
     border: none;
     padding: 10px 20px;
     height: 42px;
