@@ -10,13 +10,13 @@ import HowItWorks from "../Guide/HowitWorks.jpeg"
 function Guide() {
   return (
     <>
-      <section style={{ color: "white", backgroundColor:"rgb(27, 27, 27)" }}>
+      <section style={{ color: "white" }}>
         <div>
           <div className="container">
             <Row>
               
               <Col lg={12} md={12}>
-                <div className='team-section-hero2'>
+                <div className='team-section-hero2' style={{padding:"0px"}}>
                   <img src={HowItWorks} alt="" />
                   <img src={HowItWorks} alt="" />
                 </div>

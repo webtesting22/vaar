@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import cardimg1 from "../Resources2/card1.svg"
 import cardimg2 from "../Resources2/card2.svg"
 import cardimg3 from "../Resources2/card3.svg"
@@ -27,43 +27,52 @@ function DontMissBlog() {
     const handleNext = () => {
         carouselRef.current.next();
     };
+    const [currentIndex, setCurrentIndex] = useState();
+
+    const handleNextClick = () => {
+        setCurrentIndex(currentIndex + 1);
+        console.log(currentIndex + 1);
+    };
+
     const DontMissThese = [
         {
             img: cardimg1,
             concept: "CONCEPT 4 - 15 MINUTE READ",
             cardTitle: "Risk-Return Analysis & Vaar"
         },
-        {
-            img: cardimg2,
-            concept: "CONCEPT 5 - 15 MINUTE READ",
-            cardTitle: "Access the Largest Asset Class in the US"
-        },
-        {
-            img: cardimg3,
-            concept: "CONCEPT 6 - 15 MINUTE READ",
-            cardTitle: "Technology & Vaar"
-        },
+
+        // {
+        //     img: cardimg2,
+        //     concept: "CONCEPT 5 - 15 MINUTE READ",
+        //     cardTitle: "Access the Largest Asset Class in the US"
+        // },
+        // {
+        //     img: cardimg3,
+        //     concept: "CONCEPT 6 - 15 MINUTE READ",
+        //     cardTitle: "Technology & Vaar"
+        // },
     ]
     return (
         <>
             <div className='all-resources-box for-pc'>
-                <div className="row m-auto w-100">
-                    <h1 className="text-white">Don’t miss these</h1>
+                <div className="row m-auto w-100" style={{ display: "flex", justifyContent: "center" }}>
+                    <h1 className="text-white text-center">Don’t miss these</h1>
                     <div className="padding-slite"></div>
-                    {DontMissThese.map((item, index) => (
-                        <div className="col-lg-4 mb-5">
-                            {/* <Link to={`/SingleResource${index + 4}`}> */}
-                            <div className='module-box'>
-                                <img src={item.img} alt="" />
-                                <h6>{item.concept}</h6>
-                                <h4>{item.cardTitle}</h4>
+                    <div style={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
+                        <button style={{padding:"2px 30px",margin:"0px 20px"}}>Prev</button>
+                        {DontMissThese.map((item, index) => (
+                            <div className="col-lg-4 mb-5" key={index}>
+
+                                <div className='module-box'>
+                                    <img src={item.img} alt="" />
+                                    <h6>{item.concept}</h6>
+                                    <h4>{item.cardTitle}</h4>
+                                </div>
+
                             </div>
-                            {/* </Link> */}
-                        </div>
-                    ))}
-
-
-
+                        ))}
+                        <button style={{padding:"2px 30px",margin:"0px 20px"}}>Next</button>
+                    </div>
                 </div>
 
             </div>
@@ -75,13 +84,13 @@ function DontMissBlog() {
                     <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
                         {DontMissThese.map((item, index) => (
                             <div className="col-lg-4 mb-5">
-                               
+
                                 <div className='module-box'>
                                     <img src={item.img} alt="" />
                                     <h6>{item.concept}</h6>
                                     <h4>{item.cardTitle}</h4>
                                 </div>
-                           
+
                             </div>
                         ))}
                     </Carousel>

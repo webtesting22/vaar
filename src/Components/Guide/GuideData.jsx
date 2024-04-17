@@ -10,27 +10,27 @@ const GuideData = [
     {
         img: img7,
         title: "Research",
-        description: "Using historic data and current trend research, we target assets that are timeless and poised for steady growth. A key factor we look at is the level of economic activity in the area."
+        description: "Using historic data and current research, we target assets that are poised for growth. A key factor we look at is the level of economic activity and demographic changes in the area. "
     },
     {
         img: img2,
         title: "Identify",
-        description: "We work with experienced brokers to keep an eye on neighborhood specific trends and check for property specific parameters to stay clear of negative surprises."
+        description: "We work with experienced brokers to keep an eye on neighborhood specific trends and check for property-related parameters to stay clear of negative surprises."
     },
     {
         img: img3,
         title: "Securitize",
-        description: "Upon identifying an asset suitable for investments, we file with the SEC seeking qualifications to be able to offer shares to our investors."
+        description: "Upon identifying an asset suitable for investments, we file with the SEC seeking necessary qualifications to be able to offer shares in the chosen asset."
     },
     {
         img: img4,
         title: "Offer",
-        description: "Next, we the asset is offered for investment on the Vaar app. The accompanying documents outline the asset's return profile and strengths in detail to assist investors in making a value decision."
+        description: "Next, the asset is offered for investment on Vaar. It is accompanied with documents that outline the asset's return profile, strengths and risks in detail. If the asset aligns with the investor's thesis for investment, the platform can accept an investment within few clicks. "
     },
     {
         img: img5,
         title: "Rent",
-        description: "Finally, we maintain and lease the property to earn rental income, which gets passed in to the investor in proportion of their ownership. The payout is released in the form of quarterly dividends."
+        description: "Finally, Vaar maintains and leases the property earning rent, which gets passed on to the investor in proportion of their ownership. This payout is released in the form of semiannual dividends."
     },
     {
         img: img6,

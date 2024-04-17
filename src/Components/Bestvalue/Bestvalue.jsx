@@ -14,14 +14,15 @@ import blogArrow from "../pictures/About-icons/blogarrow.svg"
 function Bestvalue() {
     return (
         <>
-            <section style={{ backgroundColor: "#000000", color:"white" }}>
+            <section style={{ backgroundColor: "#000000", color: "white" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <h1 className='section-heading-best-value' style={{fontWeight:"300", fontSize:"50px"}}>Visit Our Courses</h1>
-                        <p className='section-para text-center text-white'>Learn more about the real-estate industry through our quick courses</p>
+                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px" }}>Visit Our Courses</h1>
+                        <br /><br />
+                        <p className=' text-start text-white'>Learn more about the real-estate industry through our quick courses</p>
 
                     </div>
-                    <br /><br />
+                    <br />
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={30}
@@ -89,11 +90,16 @@ function Bestvalue() {
                     </div> */}
 
                     <div className='blogs-section-pc' style={{}}>
-                        <div className="section-padding"></div>
+
+                        {/* <div className="section-padding"></div> */}
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
+
                         <div className="section-padding"></div>
+                        <p className=' text-start text-white'>Learn more about the real-estate industry through our quick courses</p>
+                        <hr />
+                        <br />
                         <div className='owner-quote'>
-                            
+
                             <div className="row m-auto">
                                 <div className="col-lg-4 col-md-4">
                                     <div className='inside-content1 h-100'>
@@ -118,8 +124,9 @@ function Bestvalue() {
                             </div>
 
                         </div>
-                       
+
                         <div className='Infomation-cards'>
+
                             <div className="section-padding"></div>
                             <div className="row m-auto">
                                 {BestValueCardsData.map((item, index) => (
@@ -144,7 +151,7 @@ function Bestvalue() {
 
 
                 </div>
-               
+
                 <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
                     <h1 className='section-heading-best-value pb-4'>Our Blogs</h1>
                     <div className='container'>
@@ -166,10 +173,10 @@ function Bestvalue() {
                                     <div className='blog-cards'>
                                         <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                         <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%",color:"white" }}>{item.title}</h5>
+                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
                                             <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                         </div>
-                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px",color:"white" }}>{item.description}</p>
+                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
                                         <div className='Posted'>
                                             <div><img src={item.avtar} alt="Not Found" /></div>
                                             <div className='ps-3'>
@@ -184,7 +191,7 @@ function Bestvalue() {
                         </Swiper>
                     </div>
                 </div>
-               
+
             </section>
         </>
     );
