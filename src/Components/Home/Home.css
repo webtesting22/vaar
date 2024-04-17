@@ -79,6 +79,7 @@
     background-color: #D4F604;
     padding: 6px 20px;
     border-radius: 5px;
+    transition: .5s;
 }
 
 .input-btn:hover {
@@ -89,6 +90,7 @@
     padding: 6px 20px;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: .5s;
 }
 
 @media (max-width:800px) {

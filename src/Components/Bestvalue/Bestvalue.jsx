@@ -17,9 +17,9 @@ function Bestvalue() {
             <section style={{ backgroundColor: "#000000", color: "white" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px" }}>Visit Our Courses</h1>
+                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px" }}>Resources</h1>
                         <br /><br />
-                        <p className=' text-start text-white'>Learn more about the real-estate industry through our quick courses</p>
+                        <p className=' text-start text-white' style={{textTransform:"uppercase"}}>Learn more about real assets through the following modules.</p>
 
                     </div>
                     <br />
@@ -95,8 +95,8 @@ function Bestvalue() {
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
 
                         <div className="section-padding"></div>
-                        <p className=' text-start text-white'>Learn more about the real-estate industry through our quick courses</p>
-                        <hr />
+                        <p className=' text-start text-white' style={{textTransform:"uppercase"}}>get the latest updates about the industry</p>
+                        {/* <hr /> */}
                         <br />
                         <div className='owner-quote'>
 
