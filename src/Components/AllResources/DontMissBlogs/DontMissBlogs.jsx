@@ -58,8 +58,8 @@ function DontMissBlog() {
                 <div className="row m-auto w-100" style={{ display: "flex", justifyContent: "center" }}>
                     <h1 className="text-white text-center">Don’t miss these</h1>
                     <div className="padding-slite"></div>
-                    <div style={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
-                        <button style={{padding:"2px 30px",margin:"0px 20px"}}>Prev</button>
+                    <div className="dont-miss-this-btn" style={{ display: "flex", justifyContent: "center", alignItems:"center" }}>
+                        <button style={{padding:"2px 10px",margin:"0px 20px"}}><i class='bx bx-skip-previous' ></i> </button>
                         {DontMissThese.map((item, index) => (
                             <div className="col-lg-4 mb-5" key={index}>
 
@@ -71,7 +71,7 @@ function DontMissBlog() {
 
                             </div>
                         ))}
-                        <button style={{padding:"2px 30px",margin:"0px 20px"}}>Next</button>
+                        <button style={{padding:"2px 10px",margin:"0px 20px"}}> <i class='bx bx-skip-next' ></i> </button>
                     </div>
                 </div>
 

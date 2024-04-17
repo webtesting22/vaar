@@ -13,3 +13,22 @@
         display: block;
     }
 }
+.dont-miss-this-btn {
+    background-color: rgb(27, 27, 27);
+    padding-top: 50px;
+    border-radius: 20px;
+}
+.dont-miss-this-btn button{
+    border: none;
+    background-color:#D4F604;
+    border-radius: 3px;
+    width: 70px;
+    transition: .5s;
+}
+.dont-miss-this-btn button:hover{
+    border: none;
+    background-color:white;
+    color:#000000 ;
+    border-radius: 3px;
+    transition: .5s;
+}
