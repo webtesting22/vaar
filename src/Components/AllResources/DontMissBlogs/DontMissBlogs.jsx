@@ -27,12 +27,7 @@ function DontMissBlog() {
     const handleNext = () => {
         carouselRef.current.next();
     };
-    const [currentIndex, setCurrentIndex] = useState();
-
-    const handleNextClick = () => {
-        setCurrentIndex(currentIndex + 1);
-        console.log(currentIndex + 1);
-    };
+    
 
     const DontMissThese = [
         {
@@ -52,6 +47,8 @@ function DontMissBlog() {
         //     cardTitle: "Technology & Vaar"
         // },
     ]
+    const index =[]
+    
     return (
         <>
             <div className='all-resources-box for-pc'>
@@ -71,7 +68,9 @@ function DontMissBlog() {
 
                             </div>
                         ))}
+                        <Link to={`/SingleResource${index+1}`}>
                         <button style={{padding:"2px 10px",margin:"0px 20px"}}> <i class='bx bx-skip-next' ></i> </button>
+                        </Link>
                     </div>
                 </div>
 

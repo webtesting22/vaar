@@ -90,7 +90,7 @@ function VaarBlogs() {
                     <div className='container' >
                         {BlogDatamain.map((item, index) => (
 
-                            <Row key={index} className='blog-container-row'>
+                            <Row key={index} className='blog-container-row'style={{borderBottom:"1px solid rgb(196, 196, 196)"}}>
                                 {index % 2 === 0 ? (
                                     <>
 
