@@ -14,20 +14,20 @@ import { Descriptions, Carousel } from 'antd';
 
 const ValueData = [
     {
-        title: "💎 Asset Quality",
+        title: "Asset Quality",
         Descriptions: "The idea is to invest in assets that grow with what surrounds them. We don’t buy into what was or what will be.We buy what is here to stay."
     },
 
     {
-        title: "🤝 Intuitive Interface",
+        title: "Intuitive Interface",
         Descriptions: "The complexities of real estate transactions often deter smaller investors. However, Vaar prides itself on making it accessible at users' fingertips."
     },
     {
-        title: "📲 Diversity",
+        title: "Diversity",
         Descriptions: "Vaar is being built with a vision to offer investments in real assets that work for one's future. Diversification in these assets can be capital intensive and challenging to manage. We solve for both of these issues."
     },
     {
-        title: "🥛 Transparency",
+        title: "Transparency",
         Descriptions: "Transparency is our top priority. We disclose all costs related to each asset, ensuring our investors have the necessary information to make well-informed decisions."
     }
 ]
@@ -49,18 +49,23 @@ function Founder() {
             <section id='Founder-section'>
                 <div className="container">
                     <div className='text-center' >
-                        <hr className='m-0'/>
-                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px",textAlign:"start" }}>Value Proposition</h1>
+                        <hr className='m-0' />
+                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Value Proposition</h1>
                         <p className='section-para text-white text-start m-0'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
                     <div className="row w-100 m-auto home-pc">
                         {ValueData.map((item, index) => (
-                            <div className="col-lg-6" key={index}>
-                                <div className='right-side-container'>
+                            <div className="col-lg-3" key={index}>
+                                <div className='box'>
                                     <div>
-                                        <h2>{item.title}</h2>
+                                        <div className='box-top-header'>
+                                            <h2 className='box-title'>{item.title}</h2>
+                                          
+                                        </div>
+                                        
+                                        <br />
                                         <span>{item.Descriptions}</span>
                                     </div>
 
@@ -82,8 +87,8 @@ function Founder() {
                                 <div className="col-lg-6" key={index}>
                                     <div className='right-side-container'>
                                         <div>
-                                            <h2 style={{color:"white"}}>{item.title}</h2>
-                                            <span style={{color:"white"}}>{item.Descriptions}</span>
+                                            <h2 style={{ color: "white" }}>{item.title}</h2>
+                                            <span style={{ color: "white" }}>{item.Descriptions}</span>
                                         </div>
 
 
