@@ -17,7 +17,8 @@ function Bestvalue() {
             <section style={{ backgroundColor: "#000000", color: "white" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px" }}>Resources</h1>
+                        <hr  className='top-section-heading-hr'/>
+                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign:"start" }}>Resources</h1>
                         <br /><br />
                         <p className=' text-start text-white' style={{textTransform:"uppercase"}}>Learn more about real assets through the following modules.</p>
 
@@ -46,11 +47,11 @@ function Bestvalue() {
                             {BestvalueData.map((item, index) => (
                                 <SwiperSlide>
                                     {/* <div className="col-lg-3 col-md-6"> */}
-                                    <div className='content-section bg-white'>
+                                    <div className='content-section bg-white' id='content-section'>
                                         <img src={item.img} alt="" />
                                         <div className='footer-card' id='footer-card'>
                                             <h3 className='Card-title text-white'>{item.title}</h3>
-                                            <div className='button-animation'>
+                                            <div className='button-animation'id='button-animation'>
                                                 <a href="">See More <i class='bx bx-chevron-right'></i></a>
                                                 <span></span>
                                             </div>
