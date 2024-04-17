@@ -35,10 +35,10 @@ function Home() {
                     <Col lg={12} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
-                                <h1 className='main-global-heading' style={{ fontWeight: "300", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                               
                                 <div className='content-container-responsive'>
-
-                                    <p data-aos="fade-up" style={{ fontWeight: "200" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                <h1 className='main-global-heading ' style={{ fontWeight: "300",textAlign:"start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                                    <p data-aos="fade-up" style={{ fontWeight: "200",textAlign:"start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="What's your email" />
                                         <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>

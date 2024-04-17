@@ -49,9 +49,9 @@ function Founder() {
             <section id='Founder-section'>
                 <div className="container">
                     <div className='text-center' >
-                        <hr />
-                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px" }}>Value Proposition</h1>
-                        <p className='section-para text-white'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
+                        <hr className='m-0'/>
+                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px",textAlign:"start" }}>Value Proposition</h1>
+                        <p className='section-para text-white text-start m-0'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
