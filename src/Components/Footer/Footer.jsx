@@ -7,20 +7,20 @@ function Footer() {
             <section id='Footer'>
                 <div className='container'>
                     <div className='only-pc-footer'>
-                        <div className='top-menu'>
+                        {/* <div className='top-menu'>
                             <a href="">About</a>
                             <a href="">Resorces</a>
                             <a href="">VAAR HOLDING</a>
-                            {/* <a href="">About</a>
-                        <a href="">Resorces</a> */}
+                            <a href="">About</a>
+                        <a href="">Resorces</a>
                             <a href="">Blog</a>
                             <a href="">Team</a>
                         </div>
                         <br />
                         <hr />
-                        <br />
+                        <br /> */}
                         <div className='social-icons-btn'>
-                            {/* <span><i class='bx bxl-instagram'></i></span> */}
+                            <span><i class='bx bxl-instagram'></i></span>
                             <span><i class='bx bxl-twitter'></i></span>
                             <span><i class='bx bxl-linkedin-square' ></i></span>
 
