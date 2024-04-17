@@ -327,12 +327,12 @@ function SingleResource3() {
                                                 <div>
                                                     <h6>Returns</h6>
                                                     <hr />
-                                                    {ComparingRealStatesPointsData.map((item, index) => (
+                                                    {/* {ComparingRealStatesPointsData.map((item, index) => (
                                                         <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} autoplay>
 
 
                                                             <div key={index}>
-                                                                {/* <h6>{item.mainTitle}</h6> */}
+                                                                <h6>{item.mainTitle}</h6>
                                                                 <p>{item.pointTitle}</p>
                                                                 <ul>
                                                                     {item.pointsData.map((point, pointIndex) => (
@@ -342,17 +342,17 @@ function SingleResource3() {
                                                             </div>
 
                                                         </Carousel>
-                                                    ))}
+                                                    ))} */}
                                                 </div>
 
 
                                             </div>
-                                            <div>
+                                            {/* <div>
                                                 <div className="carousal-btn-styling">
                                                     <button onClick={handlePrevtwo}><i class='bx bx-chevron-left'></i></button>
                                                     <button onClick={handleNexttwo}><i class='bx bx-chevron-right'></i></button>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <p>In crafting an investment strategy, investors should carefully consider their risk tolerance, investment goals, and time horizon. Real estate, stocks, and bonds each offer unique advantages and drawbacks, and the optimal portfolio may involve a combination of these asset classes to achieve a well-balanced and diversified investment approach.</p>

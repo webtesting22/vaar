@@ -259,7 +259,7 @@ function SingleResource2() {
                                                     <div key={index} className="RealEstate-Box">
                                                         <h6>{item.boxtitle}</h6>
                                                         <hr style={{ opacity: "1" }} />
-                                                        <p>{item.description}</p>
+                                                        <p style={{color:"white"}}>{item.description}</p>
                                                         {item.pointsDetails && item.pointsDetails.length > 0 && (
                                                             <ul>
                                                                 {item.pointsDetails.map((point, pointIndex) => (
@@ -272,12 +272,7 @@ function SingleResource2() {
                                                     </div>
                                                 ))}
                                             </Carousel>
-                                            {/* <div>
-                                                <div className="carousal-btn-styling">
-                                                    <button onClick={handlePrevtwo}><i className='bx bx-left-arrow-alt'></i></button>
-                                                    <button onClick={handleNexttwo}><i className='bx bx-right-arrow-alt'></i></button>
-                                                </div>
-                                            </div> */}
+                                            
                                         </div>
 
 
@@ -290,7 +285,7 @@ function SingleResource2() {
                                     <h4 id="CommonAssetClasses">Common Asset Classes</h4>
                                     <div style={{ position: "relative" }}>
                                         <div className="carousal-container">
-                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={false} autoplay>
+                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={true} autoplay>
                                                 {CommonAssetsClasses.map((item, index) => (
                                                     <div key={index}>
                                                         <h6 style={{ fontWeight: "700" }}>{item.carousalTitle}</h6>
@@ -301,12 +296,12 @@ function SingleResource2() {
                                                 ))}
                                             </Carousel>
                                         </div>
-                                        <div>
+                                        {/* <div>
                                             <div className="carousal-btn-styling">
                                                 <button onClick={handlePrevthree}><i class='bx bx-chevron-left'></i></button>
                                                 <button onClick={handleNextthree}><i class='bx bx-chevron-right'></i></button>
                                             </div>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     <p>In summary, each common asset class plays a specific role in constructing a diversified investment portfolio. Equities offer growth potential but come with higher volatility, while fixed income provides stability and income. Cash and cash equivalents act as a safe haven, and real assets and alternative investments contribute to diversification. The strategic combination of these asset classes depends on an investor's risk tolerance, financial goals, and investment horizon.</p>
 
@@ -336,7 +331,7 @@ function SingleResource2() {
                                         <p id="RealEstateas">Real estate stands out as a unique and tangible asset class within an investment portfolio.</p>
                                         <div>
                                             <div>
-                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={false} autoplay>
+                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={true} autoplay>
                                                     {RealEstateData.map((item, index) => (
                                                         <div key={index} className="RealEstate-Box">
                                                             <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -350,12 +345,12 @@ function SingleResource2() {
 
 
 
-                                            <div>
+                                            {/* <div>
                                                 <div className="carousal-btn-styling">
                                                     <button onClick={handlePrevfour}><i class='bx bx-chevron-left'></i></button>
                                                     <button onClick={handlenextfour}><i class='bx bx-chevron-right'></i></button>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                     <p>In conclusion, understanding the intricacies of different asset classes is fundamental to building a resilient and well-performing investment portfolio. Each class brings its own set of characteristics, risk-return profiles, and growth prospects. By strategically allocating capital across diverse asset classes, investors can enhance the stability of their portfolios and pursue their financial goals with a more balanced and informed approach.</p>

@@ -213,7 +213,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {cardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -238,7 +238,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {HousingcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -263,7 +263,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {FinancingcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -287,7 +287,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {EmergingTrendscardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -311,7 +311,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {ChallengesOppcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -336,7 +336,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {RiskManagementcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -361,7 +361,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {ResedencialRealInverstmentcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -387,7 +387,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={false} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} autoplay>
                                         {FutureOutlookcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>

@@ -208,12 +208,7 @@ function SingleResource1() {
                                             </div>
                                         ))}
                                     </Carousel>
-                                    {/* <div>
-                                        <div className="carousal-btn-styling">
-                                            <button onClick={handlePrev}><i class='bx bx-left-arrow-alt' ></i></button>
-                                            <button onClick={handleNext}><i class='bx bx-right-arrow-alt'></i></button>
-                                        </div>
-                                    </div> */}
+                                    
                                 </div>
 
                                 <div className="padding-slite"></div>
