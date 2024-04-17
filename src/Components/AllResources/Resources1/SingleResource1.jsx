@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./SingleResources.css"
 import { Row, Col, Input, Button } from "antd"
 import img1 from "../Ellipse.svg"
@@ -154,6 +154,9 @@ function SingleResource1() {
         },
 
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 1" Date="February 17, 2023" ResourceHeading="REAL ESTATE INVESTMENTS IN THE UNITED STATES" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

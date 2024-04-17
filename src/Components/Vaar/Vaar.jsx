@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState,useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -17,6 +17,9 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import SignupSection from '../SignUp/SignupSection';
 
 function Vaar() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     const teamMembers = [
         {
             img: teamMemberimg1,

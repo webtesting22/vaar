@@ -1,12 +1,15 @@
-import React from 'react';
 import { Select } from 'antd';
 import { Link } from "react-router-dom"
 import "./Allresources.css"
 import { Module1, Module2, Module3, Module4 } from './AllResourcesData';
 import SignupSection from '../SignUp/SignupSection';
+import { useEffect } from 'react';
 function AllResources() {
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
+        
         <>
             <div className="section-padding "></div>
             <section>

@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef,useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources2/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -164,7 +164,9 @@ function SingleResource2() {
             description: "Real estate has the potential for long-term capital appreciation, driven by factors such as location, infrastructure development, and overall market conditions. For example, investing in real estate in a rapidly growing urban area may lead to property value appreciation over time."
         },
     ]
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
    
     return (
         <>

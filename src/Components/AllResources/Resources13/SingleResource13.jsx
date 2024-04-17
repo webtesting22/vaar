@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef , useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Descriptions,Tabs } from "antd"
@@ -79,7 +79,9 @@ function SingleResource13() {
             ]
         }
     ]
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
 
         <>

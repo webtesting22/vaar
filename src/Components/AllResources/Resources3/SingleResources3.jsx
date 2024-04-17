@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources3/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -209,6 +209,9 @@ function SingleResource3() {
 
 
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 3" Date="February 17, 2023" ResourceHeading="THE ALLURE OF REAL ESTATE INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

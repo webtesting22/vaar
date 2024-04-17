@@ -17,7 +17,7 @@ function Bestvalue() {
             <section style={{ backgroundColor: "#000000", color:"white" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <h1 className='section-heading-best-value'>Visit Our Courses</h1>
+                        <h1 className='section-heading-best-value' style={{fontWeight:"300", fontSize:"50px"}}>Visit Our Courses</h1>
                         <p className='section-para text-center text-white'>Learn more about the real-estate industry through our quick courses</p>
 
                     </div>
@@ -88,10 +88,12 @@ function Bestvalue() {
 
                     </div> */}
 
-                    <div className='blogs-section-pc'>
+                    <div className='blogs-section-pc' style={{}}>
                         <div className="section-padding"></div>
+                        {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
                         <div className="section-padding"></div>
                         <div className='owner-quote'>
+                            
                             <div className="row m-auto">
                                 <div className="col-lg-4 col-md-4">
                                     <div className='inside-content1 h-100'>
@@ -116,7 +118,7 @@ function Bestvalue() {
                             </div>
 
                         </div>
-
+                       
                         <div className='Infomation-cards'>
                             <div className="section-padding"></div>
                             <div className="row m-auto">
@@ -142,6 +144,7 @@ function Bestvalue() {
 
 
                 </div>
+               
                 <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
                     <h1 className='section-heading-best-value pb-4'>Our Blogs</h1>
                     <div className='container'>
@@ -181,6 +184,7 @@ function Bestvalue() {
                         </Swiper>
                     </div>
                 </div>
+               
             </section>
         </>
     );

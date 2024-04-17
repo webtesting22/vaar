@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Guide from "../Guide/Guide";
 import { Accordion } from "react-bootstrap";
 function HowItWorks() {
@@ -24,6 +24,9 @@ function HowItWorks() {
             content: 'Fourth accordion item content goes here.',
         },
     ];
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <div className="section-padding"></div>

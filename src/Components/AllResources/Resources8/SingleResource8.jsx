@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col } from "antd";
@@ -397,6 +397,9 @@ function SingleResource8() {
             ]
         }
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 8" Date="February 17, 2023" ResourceHeading="COMPREHENSIVE FACTORS INFLUENCING INVESTMENT DECISION-MAKING" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

@@ -25,7 +25,9 @@ function Home() {
             // You can customize other options here
         });
     }, []);
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <div className='parent-section'>

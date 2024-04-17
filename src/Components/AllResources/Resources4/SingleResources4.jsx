@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources4/Rectangle.svg";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -348,6 +348,9 @@ function SingleResource4() {
     const onChange = (currentSlide) => {
         // console.log(currentSlide);
     };
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 4" Date="February 17, 2023" ResourceHeading="UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

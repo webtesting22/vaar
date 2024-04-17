@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources6/Rectangle.svg"
 import { Row, Col } from "antd"
@@ -197,7 +197,9 @@ function SingleResource6() {
 
         }
     ]
-
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
 
     return (
         <>

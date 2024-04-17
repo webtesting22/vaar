@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-p{
+
+p {
     font-family: "Inter", sans-serif;
     /* font-weight: lighter; */
     /* color: white; */
 }
-h4{
+
+h4 {
     margin-bottom: 20px;
     color: white;
 }
+
 .singleResource-section {
     padding: 9rem 0rem;
     background-color: white;
@@ -91,6 +94,7 @@ h4{
     height: 42px;
     border-radius: 5px;
 }
+
 .Botom-body-edit button:hover {
     width: 100%;
     background-color: white;
@@ -180,7 +184,8 @@ h4{
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-.carousal-container hr{
+
+.carousal-container hr {
     background-color: white;
     opacity: 1;
     border: 1px solid rgb(85, 85, 85);
@@ -536,7 +541,8 @@ ul li {
     background-color: #D4F604;
     border-radius: 10px;
 }
-#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+
+#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab+.ant-tabs-tab {
     margin: 0px;
 }
 
@@ -544,17 +550,17 @@ ul li {
     /* background: #D4F604; */
     width: 150px;
     text-align: center;
-   display: flex;
-   justify-content: center;
-   color: rgb(255, 255, 255);
-   border-radius: 10px;
-   margin: 0px 20px;
-   padding: 4px 0px;
-   background-color: #606060;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 0px 20px;
+    padding: 4px 0px;
+    background-color: #606060;
 }
-#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab-btn{
+
+#pros-cons :where(.css-11xg00t).ant-tabs .ant-tabs-tab-btn {
     color: rgb(255, 255, 255);
     z-index: 55;
     /* background-color: red; */
 }
-

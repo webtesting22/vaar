@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React,{useRef, useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col } from "antd";
@@ -85,6 +85,9 @@ function SingleResource12() {
             ]
         }
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

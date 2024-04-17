@@ -1,4 +1,4 @@
-import React,{useRef} from "react";
+import React,{useRef,useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources5/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -189,6 +189,9 @@ function SingleResource5() {
     const onChange = (currentSlide) => {
         // console.log(currentSlide);
     };
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="CURRENT MARKET CONDITIONS FOR RESIDENTIAL REAL ESTATE INVESTING IN THE US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

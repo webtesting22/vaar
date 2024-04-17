@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources10/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col } from "antd"
+
 function SingleResource9() {
     const liList = [
         {
@@ -297,6 +298,9 @@ function SingleResource9() {
             ]
         }
     ]
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 9" Date="February 17, 2023" ResourceHeading="RISK AND RETURN ANALYSIS ACROSS INVESTMENT ASSETS" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />

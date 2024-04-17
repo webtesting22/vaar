@@ -28,6 +28,7 @@ import DontMissBlog from './Components/AllResources/DontMissBlogs/DontMissBlogs'
 import Vaar from './Components/Vaar/Vaar';
 import HowItWorks from './Components/HowItWorks/HowItWorks';
 function App() {
+ 
   return (
     <Router>
       <Navigation />
