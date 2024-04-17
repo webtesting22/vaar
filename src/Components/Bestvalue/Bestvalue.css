@@ -217,7 +217,7 @@
     color: rgb(255, 255, 255);
 }
 
-.Infomation-cards .row .col-lg-6 .read-more-btn:hover span {
+.Infomation-cards .row .col-lg-6:hover .read-more-btn span {
     position: absolute;
     background-color: #d6f60448;
     height: 40px;
