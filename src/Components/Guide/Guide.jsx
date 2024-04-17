@@ -6,7 +6,7 @@ import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
 import { Row, Col } from "antd"
 import teamposter from "../pictures/teamheroimage.png"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
-import HowItWorks from "../Guide/HowitWorks.jpeg"
+import HowItWorks from "../Guide/HowItWorks.jpeg"
 function Guide() {
   return (
     <>
@@ -14,9 +14,9 @@ function Guide() {
         <div>
           <div className="container">
             <Row>
-              
+
               <Col lg={12} md={12}>
-                <div className='team-section-hero2' style={{padding:"0px"}}>
+                <div className='team-section-hero2' style={{ padding: "0px" }}>
                   <img src={HowItWorks} alt="" />
                   <img src={HowItWorks} alt="" />
                 </div>
@@ -24,7 +24,7 @@ function Guide() {
               <Col lg={12} md={12}>
                 <div className='team-section-hero'>
                   <div>
-                  <h1 className='section-heading' style={{ color: "#D4F604" }}>A STEP-BY-STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
+                    <h1 className='section-heading' style={{ color: "#D4F604" }}>A STEP-BY-STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
                     {/* <p>Meet our team members and learn more about their work at VAAR Holding.</p> */}
                   </div>
                 </div>
@@ -36,7 +36,7 @@ function Guide() {
       </section>
       <section className='Guide-section'>
         <div className="container">
-          
+
           <p className='guide-container-mobile-para text-white'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
         </div>
         <div className='blob-mobile-img'>
@@ -47,8 +47,7 @@ function Guide() {
           <div className="row">
             {GuideData.map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
-                <div className="box" data-aos="fade-up"
-                  data-aos-duration="1000">
+                <div className="box" >
                   <div className='box-top-header'>
                     <img src={item.img} alt={item.title} />
                     <h3 className="box-title">{item.title}</h3>
