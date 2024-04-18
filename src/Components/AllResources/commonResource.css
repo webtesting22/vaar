@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .range-module-using-props {
-    padding: 4rem 0rem;
+    padding-top: 4rem;
+    padding-bottom: 1rem;
+    padding-right: 0rem;
+    padding-left: 0rem;
 }
 
 .range-module-using-props .ant-row {
