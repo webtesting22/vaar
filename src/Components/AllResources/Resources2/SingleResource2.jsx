@@ -199,7 +199,7 @@ function SingleResource2() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4 id="BasicsofAssetClasses">Basics of Asset Classes</h4>
-                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
+                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
                                             {boxContent.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
                                                     <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>
@@ -254,7 +254,7 @@ function SingleResource2() {
                                         <h4>Role of Asset Classes in Investments</h4>
                                         <p>Understanding the historical milestones in the US real estate market provides crucial insights into its current structure and trends.</p>
                                         <div>
-                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={true} autoplay>
+                                            <Carousel afterChange={onChange} ref={carouseltwoRef} dots={true} >
                                                 {boxContentTwo.map((item, index) => (
                                                     <div key={index} className="RealEstate-Box">
                                                         <h6>{item.boxtitle}</h6>
@@ -285,7 +285,7 @@ function SingleResource2() {
                                     <h4 id="CommonAssetClasses">Common Asset Classes</h4>
                                     <div style={{ position: "relative" }}>
                                         <div className="carousal-container">
-                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={true} autoplay>
+                                            <Carousel afterChange={onChange} ref={carousalthreeRef} dots={true} >
                                                 {CommonAssetsClasses.map((item, index) => (
                                                     <div key={index}>
                                                         <h6 style={{ fontWeight: "700" }}>{item.carousalTitle}</h6>
@@ -331,7 +331,7 @@ function SingleResource2() {
                                         <p id="RealEstateas">Real estate stands out as a unique and tangible asset class within an investment portfolio.</p>
                                         <div>
                                             <div>
-                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={true} autoplay>
+                                                <Carousel afterChange={onChange} ref={carousalfourRef} dots={true} >
                                                     {RealEstateData.map((item, index) => (
                                                         <div key={index} className="RealEstate-Box">
                                                             <h6>{index + 1}.&nbsp;{item.boxtitle}</h6>

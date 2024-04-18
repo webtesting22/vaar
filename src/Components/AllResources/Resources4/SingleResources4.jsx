@@ -381,7 +381,7 @@ function SingleResource4() {
 
                                         <div className="carousal-container">
                                             {/* Nested map for CarousalData inside Carousel */}
-                                            <Carousel afterChange={onChange} dots={true} autoplay>
+                                            <Carousel afterChange={onChange} dots={true} >
                                                 {item.CarousalData.map((carousalItem, carousalIndex) => (
                                                     <>
                                                         <div key={carousalIndex}>
@@ -403,7 +403,7 @@ function SingleResource4() {
                                 <div className="padding-slite"></div>
                                 <div className="carousal-container p-0">
 
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {TypesResidentialData.map((item, index) => (
 
                                             <div>

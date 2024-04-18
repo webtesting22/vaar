@@ -1,53 +1,53 @@
-import React,{useRef,useEffect} from "react";
+import React, { useRef, useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources5/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
-import {Module1, Module2} from "../AllResourcesData"
+import { Module1, Module2 } from "../AllResourcesData"
 function SingleResource5() {
     // const conclusionRef = useRef(null);
     const liList = [
         {
             list: "Overview of the Current Landscape",
-            id:"Overviewofthe"
+            id: "Overviewofthe"
         },
         {
             list: "Economic Factors Impacting Residential Real Estate",
-            id:"EconomicFactorsImpacting"
+            id: "EconomicFactorsImpacting"
         },
         {
             list: "Housing Market Trends",
-            id:"HousingMarket"
+            id: "HousingMarket"
         },
         {
             list: "Financing and Mortgage Market",
-            id:"FinancingandMortgage"
+            id: "FinancingandMortgage"
         },
         {
             list: "Emerging Trends in Residential Real Estate Investing",
-            id:"EmergingTrendsinResidential"
+            id: "EmergingTrendsinResidential"
         },
         {
             list: "Challenges and Opportunities",
-            id:"Challengesand"
+            id: "Challengesand"
         },
         {
             list: "Risk Management in Residential Real Estate Investing",
-            id:"RiskManagement"
+            id: "RiskManagement"
         },
         {
             list: "Residential Real Estate Investment Trusts (REITs) and Market Dynamics",
-            id:"ResidentialRealEstate"
+            id: "ResidentialRealEstate"
         },
         {
             list: "Future Outlook and Predictions",
-            id:"FutureOutlook"
+            id: "FutureOutlook"
         },
         {
             list: "Conclusion",
-            id:"Conclusion"
+            id: "Conclusion"
         }
     ]
     const cardData = [
@@ -65,27 +65,27 @@ function SingleResource5() {
             ]
         },
         {
-            cardTitle:"Employment and Income",
-            cardPoints:[
+            cardTitle: "Employment and Income",
+            cardPoints: [
                 {
-                    cardSubtitle:"Unemployment rates",
-                    cardPointDescription:"1. Despite improvements, certain sectors continue to face employment challenges post-pandemic. For instance, the hospitality industry may still grapple with workforce adjustments."
-                },{
-                    cardSubtitle:"Impact on demographics",
-                    cardPointDescription:"The job market nuances influence the ability of younger demographics to enter the housing market, with industries like tech experiencing robust growth."
+                    cardSubtitle: "Unemployment rates",
+                    cardPointDescription: "1. Despite improvements, certain sectors continue to face employment challenges post-pandemic. For instance, the hospitality industry may still grapple with workforce adjustments."
+                }, {
+                    cardSubtitle: "Impact on demographics",
+                    cardPointDescription: "The job market nuances influence the ability of younger demographics to enter the housing market, with industries like tech experiencing robust growth."
                 }
             ]
         },
         {
-            cardTitle:"Inflation and Housing Prices",
-            cardPoints:[
+            cardTitle: "Inflation and Housing Prices",
+            cardPoints: [
                 {
-                    cardSubtitle:"Connection between inflation and housing",
-                    cardPointDescription:"Inflationary pressures persist, contributing to the upward trajectory of housing prices. For instance, major metropolitan areas might experience double-digit year-over-year price increases."
+                    cardSubtitle: "Connection between inflation and housing",
+                    cardPointDescription: "Inflationary pressures persist, contributing to the upward trajectory of housing prices. For instance, major metropolitan areas might experience double-digit year-over-year price increases."
                 },
                 {
-                    cardSubtitle:"Effects on housing dynamics",
-                    cardPointDescription:"The inflation-driven rise in home prices poses challenges for first-time buyers, potentially necessitating creative financing solutions."
+                    cardSubtitle: "Effects on housing dynamics",
+                    cardPointDescription: "The inflation-driven rise in home prices poses challenges for first-time buyers, potentially necessitating creative financing solutions."
                 }
             ]
         }
@@ -105,28 +105,28 @@ function SingleResource5() {
             ]
         },
         {
-            cardTitle:"Regional Disparities",
-            cardPoints:[
+            cardTitle: "Regional Disparities",
+            cardPoints: [
                 {
-                    cardSubtitle:"Varied market conditions",
-                    cardPointDescription:"Regional variations persist. In tech hubs like Austin, Texas, and Raleigh, North Carolina, real estate markets may experience accelerated growth due to influxes of remote workers."
+                    cardSubtitle: "Varied market conditions",
+                    cardPointDescription: "Regional variations persist. In tech hubs like Austin, Texas, and Raleigh, North Carolina, real estate markets may experience accelerated growth due to influxes of remote workers."
                 },
                 {
-                    cardSubtitle:"Local economic factors",
-                    cardPointDescription:"The interplay of job markets, industries, and population growth on regional real estate. For instance, in Seattle, a booming tech sector may contribute to a robust real estate market."
+                    cardSubtitle: "Local economic factors",
+                    cardPointDescription: "The interplay of job markets, industries, and population growth on regional real estate. For instance, in Seattle, a booming tech sector may contribute to a robust real estate market."
                 }
             ]
         },
         {
-            cardTitle:"Homeownership Rates",
-            cardPoints:[
+            cardTitle: "Homeownership Rates",
+            cardPoints: [
                 {
-                    cardSubtitle:"Recent trends",
-                    cardPointDescription:"In 2023, the homeownership rate may witness a resurgence, especially as millennials, fueled by remote work opportunities, seek homeownership. However, in urban centers like New York City, renting might remain prevalent."
+                    cardSubtitle: "Recent trends",
+                    cardPointDescription: "In 2023, the homeownership rate may witness a resurgence, especially as millennials, fueled by remote work opportunities, seek homeownership. However, in urban centers like New York City, renting might remain prevalent."
                 },
                 {
-                    cardSubtitle:"Factors influencing decisions",
-                    cardPointDescription:"Affordability concerns, combined with changing preferences, impact the decision-making process for potential homebuyers."
+                    cardSubtitle: "Factors influencing decisions",
+                    cardPointDescription: "Affordability concerns, combined with changing preferences, impact the decision-making process for potential homebuyers."
                 }
             ]
         },
@@ -144,6 +144,19 @@ function SingleResource5() {
                     cardPointDescription: "Investors adapt their strategies based on the availability of financing, with some exploring creative financing options such as seller financing or partnerships."
                 }
             ]
+        },
+        {
+            cardTitle: "Mortgage Rates and Terms",
+            cardPoints: [
+                {
+                    cardSubtitle: "Current rates",
+                    cardPointDescription: "As of 2023, 30-year fixed-rate mortgages might be around 3%, influencing both first-time homebuyers and investors. Adjustable-rate mortgages may be more prevalent in markets with higher risk tolerance."
+                },
+                {
+                    cardSubtitle: "Long-term and short-term trends",
+                    cardPointDescription: "Analysis of how evolving mortgage rates impact investment decisions, with some investors opting for fixed-rate mortgages for stability."
+                }
+            ]
         }
     ]
     const EmergingTrendscardData = [
@@ -159,6 +172,32 @@ function SingleResource5() {
                     cardPointDescription: "AI-driven property management systems are streamlining processes, offering real-time insights into market trends, and enhancing tenant experiences."
                 }
             ]
+        },
+        {
+            cardTitle: "Sustainable and Smart Housing",
+            cardPoints: [
+                {
+                    cardSubtitle: "Growing demand",
+                    cardPointDescription: "The demand for eco-friendly and energy-efficient properties continues to rise. In cities like Seattle, where sustainability is a priority, green-certified homes command a premium."
+                },
+                {
+                    cardSubtitle: "Smart home features",
+                    cardPointDescription: "Properties equipped with smart home features, such as automated security and energy management systems, are becoming increasingly attractive to tech-savvy tenants."
+                }
+            ]
+        },
+        {
+            cardTitle: "Post-Pandemic Influences",
+            cardPoints: [
+                {
+                    cardSubtitle: "Remote work impact",
+                    cardPointDescription: "The lasting effects of remote work influence housing preferences. In cities like Denver, where remote work is prevalent, suburbs are experiencing a surge in popularity."
+                },
+                {
+                    cardPoints: "Design and functionality",
+                    cardPointDescription: "Homes designed for remote work, with dedicated office spaces and high-speed internet infrastructure, gain prominence in markets prioritizing functionality."
+                }
+            ]
         }
     ]
     const ChallengesOppcardData = [
@@ -172,6 +211,33 @@ function SingleResource5() {
                 {
                     cardSubtitle: "2. Income disparities",
                     cardPointDescription: "Strategies for investors include creative financing options and identifying markets where income growth outpaces housing price increases."
+                }
+            ]
+        },
+        {
+            cardTitle:" Regulatory Landscape",
+            cardPoints:[
+                {
+                    cardSubtitle:"Evolving regulations",
+                    cardPointDescription:"Recent changes in regulations impact real estate investing. In states like Oregon, where rent control measures are in place, investors adjust their strategies to comply with new legislation."
+                },
+                {
+                    cardSubtitle:"Legal considerations",
+                    cardPointDescription:" Navigating legal landscapes involves proactive measures, such as staying informed about local zoning laws and tax regulations."
+
+                }
+            ]
+        },
+        {
+            cardTitle:"Opportunities in Niche Markets",
+            cardPoints:[
+                {
+                    cardSubtitle:"Identifying niches",
+                    cardPointDescription:"Opportunities in niche markets, such as senior living communities or affordable housing projects, present avenues for investors. In cities like Austin, micro-housing developments catering to young professionals gain traction."
+                },
+                {
+                    cardSubtitle:"Specialized strategies",
+                    cardPointDescription:"Tailoring investment strategies involves understanding the unique demands of niche markets, requiring targeted research and partnerships."
                 }
             ]
         }
@@ -243,7 +309,7 @@ function SingleResource5() {
     };
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="CURRENT MARKET CONDITIONS FOR RESIDENTIAL REAL ESTATE INVESTING IN THE US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module2[1].img} />
@@ -265,7 +331,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {cardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -290,7 +356,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {HousingcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -307,7 +373,7 @@ function SingleResource5() {
 
                                     </Carousel>
                                 </div>
-                               
+
 
 
                                 <div className="padding-slite"></div>
@@ -315,7 +381,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {FinancingcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -339,7 +405,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {EmergingTrendscardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -363,7 +429,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {ChallengesOppcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -388,7 +454,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {RiskManagementcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -413,7 +479,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {ResedencialRealInverstmentcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -439,7 +505,7 @@ function SingleResource5() {
                                 {/* <div className="padding-slite"></div> */}
                                 <div className="carousal-container">
                                     {/* Nested map for CarousalData inside Carousel */}
-                                    <Carousel afterChange={onChange} dots={true} autoplay>
+                                    <Carousel afterChange={onChange} dots={true} >
                                         {FutureOutlookcardData.map((item, index) => (
                                             <div key={index}>
                                                 <h6>{item.cardTitle}</h6>
@@ -460,23 +526,23 @@ function SingleResource5() {
                                 <h4 id="Conclusion">Conclusion</h4>
                                 {/* <div className="padding-slite"></div> */}
                                 {/* <div className="carousal-container"> */}
-                                    {/* Nested map for CarousalData inside Carousel */}
-                                    {/* <Carousel afterChange={onChange} dots={false} autoplay> */}
-                                        {Conclusion.map((item, index) => (
-                                            <div key={index}>
-                                                <h6>{item.cardTitle}</h6>
-                                                {/* <hr style={{ opacity: "1" }} /> */}
-                                                {item.cardPoints.map((subitem, subIndex) => (
-                                                    <>
-                                                        <p key={subIndex}><b>{subitem.cardSubtitle}</b>: {subitem.cardPointDescription}</p>
-                                                        <div className="padding-slite"></div>
-                                                    </>
-                                                ))}
-
-                                            </div>
+                                {/* Nested map for CarousalData inside Carousel */}
+                                {/* <Carousel afterChange={onChange} dots={false} > */}
+                                {Conclusion.map((item, index) => (
+                                    <div key={index}>
+                                        <h6>{item.cardTitle}</h6>
+                                        {/* <hr style={{ opacity: "1" }} /> */}
+                                        {item.cardPoints.map((subitem, subIndex) => (
+                                            <>
+                                                <p key={subIndex}><b>{subitem.cardSubtitle}</b>: {subitem.cardPointDescription}</p>
+                                                <div className="padding-slite"></div>
+                                            </>
                                         ))}
 
-                                    {/* </Carousel>
+                                    </div>
+                                ))}
+
+                                {/* </Carousel>
                                 </div> */}
 
 
@@ -485,11 +551,11 @@ function SingleResource5() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog/>
+                    <DontMissBlog />
 
                 </div>
             </section>
-            <SignupSection/>
+            <SignupSection />
 
         </>
     )

@@ -246,7 +246,7 @@ function SingleResource3() {
                                     </div>
                                     <div className="only-for-mobile-view">
                                         <h4>Basics of Asset Classes</h4>
-                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay>
+                                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
                                             {WhatSetRealStateData.map((item, index) => (
                                                 <div key={index} className="RealEstate-Box">
                                                     <h6>{item.boxTitle}</h6>
@@ -331,7 +331,7 @@ function SingleResource3() {
                                                     <h6>Returns</h6>
                                                     <hr />
                                                     {/* {ComparingRealStatesPointsData.map((item, index) => (
-                                                        <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} autoplay>
+                                                        <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} >
 
 
                                                             <div key={index}>
