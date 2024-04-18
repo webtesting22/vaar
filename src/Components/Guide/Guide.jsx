@@ -6,9 +6,9 @@ import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
 import { Row, Col } from "antd"
 import teamposter from "../pictures/teamheroimage.png"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
-import HowItWorks from "./HowItWorks.jpeg"
+import HowItWorks from "/HowItWorks.jpeg"
 function Guide() {
-  // const HowItWorks =  "../Guide/HowItWorks.jpeg";
+  // const HowItWorks =  "./HowItWorks.jpeg";
   return (
     <>
       <section style={{ color: "white" }}>
