@@ -8,19 +8,23 @@ import ownerQuoteimg from "../pictures/ownerQuote.png"
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import { Link } from 'react-router-dom'; // Import Link from React Router
+
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
 
 function Bestvalue() {
+    const pageLinks = ['/SingleResource3', '/SingleResource4', '/SingleResource11', '/SingleResource13'];
+
     return (
         <>
             <section style={{ backgroundColor: "#000000", color: "white" }}>
                 <div className='container'>
                     <div className='top-section'>
-                        <hr  className='top-section-heading-hr'/>
-                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign:"start" }}>Resources</h1>
+                        <hr className='top-section-heading-hr' />
+                        <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
                         <br /><br />
-                        <p className=' text-start text-white' style={{textTransform:"uppercase"}}>Learn more about real assets through the following modules.</p>
+                        <p className=' text-start text-white' style={{ textTransform: "uppercase" }}>Learn more about real assets through the following modules.</p>
 
                     </div>
                     <br />
@@ -45,20 +49,19 @@ function Bestvalue() {
                         <div className='cards-section'>
                             {/* <div className="row m-auto"> */}
                             {BestvalueData.map((item, index) => (
-                                <SwiperSlide>
-                                    {/* <div className="col-lg-3 col-md-6"> */}
-                                    <div className='content-section bg-white' id='content-section'>
-                                        <img src={item.img} alt="" />
-                                        <div className='footer-card' id='footer-card'>
-                                            <h3 className='Card-title text-white'>{item.title}</h3>
-                                            <div className='button-animation'id='button-animation'>
-                                                <a href="">Read More <i class='bx bx-chevron-right'></i></a>
-                                                <span></span>
+                                <SwiperSlide key={index}>
+                                    <Link to={pageLinks[index]}>
+                                        <div className='content-section bg-white' id='content-section'>
+                                            <img src={item.img} alt="" />
+                                            <div className='footer-card' id='footer-card'>
+                                                <h3 className='Card-title text-white'>{item.title}</h3>
+                                                <div className='button-animation' id='button-animation'>
+                                                    <a href="">Read More <i className='bx bx-chevron-right'></i></a>
+                                                    <span></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    {/* </div> */}
+                                    </Link>
                                 </SwiperSlide>
                             ))}
                             {/* </div> */}
@@ -96,7 +99,7 @@ function Bestvalue() {
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
 
                         <div className="section-padding"></div>
-                        <p className=' text-start text-white' style={{textTransform:"uppercase"}}>get the latest updates about the industry</p>
+                        <p className=' text-start text-white' style={{ textTransform: "uppercase" }}>get the latest updates about the industry</p>
                         {/* <hr /> */}
                         <br />
                         <div className='owner-quote'>
@@ -135,8 +138,8 @@ function Bestvalue() {
                                         <div data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
                                             <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
-                                            
-                                            <p style={{ fontSize: "16px",marginTop:"20px" }}>{item.description}</p>
+
+                                            <p style={{ fontSize: "16px", marginTop: "20px" }}>{item.description}</p>
                                             <br />
                                             <div className='m-0 p-0 read-more-btn'>
                                                 <a href="">Read More</a>
@@ -156,45 +159,45 @@ function Bestvalue() {
 
                 <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
                     <div className='container'>
-                    {/* <hr  className='top-section-heading-hr'/> */}
-                    <p>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
-                    {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
-                    <div className='container p-0'>
+                        {/* <hr  className='top-section-heading-hr'/> */}
+                        <p>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
+                        {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
+                        <div className='container p-0'>
 
-                        <Swiper
-                            spaceBetween={30}
-                            pagination={{
-                                clickable: true,
-                            }}
-                            autoplay={{
-                                delay: 2000,
-                                disableOnInteraction: false,
-                            }}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                        >
-                            {BestValueCardsData.map((item, index) => (
-                                <SwiperSlide>
-                                    <div className='blog-cards'>
-                                        <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
-                                        <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
-                                            <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
-                                        </div>
-                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
-                                        <div className='Posted'>
-                                            <div><img src={item.avtar} alt="Not Found" /></div>
-                                            <div className='ps-3'>
-                                                <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
-                                                <span>15 Jan 2024</span>
+                            <Swiper
+                                spaceBetween={30}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            >
+                                {BestValueCardsData.map((item, index) => (
+                                    <SwiperSlide>
+                                        <div className='blog-cards'>
+                                            <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                            <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                                <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
+                                                <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
+                                            </div>
+                                            <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
+                                            <div className='Posted'>
+                                                <div><img src={item.avtar} alt="Not Found" /></div>
+                                                <div className='ps-3'>
+                                                    <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
+                                                    <span>15 Jan 2024</span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </SwiperSlide>
-                            ))}
+                                    </SwiperSlide>
+                                ))}
 
-                        </Swiper>
-                    </div>
+                            </Swiper>
+                        </div>
 
                     </div>
                 </div>

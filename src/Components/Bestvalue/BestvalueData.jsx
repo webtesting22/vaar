@@ -1,24 +1,23 @@
-import img1 from "../pictures/1.png"
-import img2 from "../pictures/2.png"
-import img3 from "../pictures/3.png"
-import img4 from "../pictures/4.png"
-
+import img1 from "./CHAPTER3.png"
+import img2 from "./CHAPTER4.png"
+import img3 from "./CONCEPT1.jpeg"
+import img4 from "./CONCEPT3.png"
 const BestvalueData = [
     {
         img: img1,
-        title: "Up Close & Personal - Residential Real Estate"
+        title: "THE ALLURE OF REAL ESTATE INVESTMENT"
     },
     {
         img: img2,
-        title: "Up Close & Personal - Residential Real Estate"
+        title: "UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE"
     },
     {
         img: img3,
-        title: "Access the Largest Asset Class in the US"
+        title: "FRACTIONALIZATION"
     },
     {
         img: img4,
-        title: "REITs & Vaar"
+        title: "Not REITs"
     },
 ]
 // export default BestvalueData;
@@ -27,13 +26,13 @@ import avtarr1 from "../pictures/Avatar.svg"
 const BestValueCardsData = [
     {
         img: img5,
-        avtar:avtarr1,
+        avtar: avtarr1,
         title: "Bricks and Beyond: The Art of Mortgage Mastery",
         description: "Amortization is your true amor when it comes to real estate. Far from a mere repayment strategy, it's your tailored roadmap to owning every corner of your..."
     },
     {
         img: img5,
-        avtar:avtarr1,
+        avtar: avtarr1,
         title: "Elevating Your Estate: The Fortress of Homeowners Insurance ",
         description: "This isn't just a policy; it's your property's guardian against the unforeseen. Let's navigate this indispensable asset."
     },
