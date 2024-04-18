@@ -52,20 +52,26 @@
   align-items: center;
 
 }
-.sign-in-btn i{
+
+.sign-in-btn i {
   display: none;
 }
 
 
-.sign-in-btn:hover i{
+.sign-in-btn:hover i {
   display: block;
 }
+
 .sign-in-btn:hover {
   background-color: white;
   color: rgb(0, 0, 0);
   border: none;
   border-radius: 10px;
   transition: .5s;
+}
+
+.navigation_ul li {
+  color: transparent;
 }
 
 .navigation_ul li a {

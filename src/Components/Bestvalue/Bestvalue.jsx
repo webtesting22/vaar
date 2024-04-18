@@ -131,8 +131,8 @@ function Bestvalue() {
                             <div className="section-padding"></div>
                             <div className="row m-auto">
                                 {BestValueCardsData.map((item, index) => (
-                                    <div className="col-lg-6 col-md-6">
-                                        <div data-aos="fade-up"
+                                    <div className="col-lg-6 col-md-6 " >
+                                        <div data-aos="fade-up" className='values-cards-home'
                                             data-aos-anchor-placement="top-bottom">
                                             <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
                                             

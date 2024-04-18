@@ -187,7 +187,7 @@
     padding: 3rem 0rem;
 }
 
-.Infomation-cards .row .col-lg-6 div {
+.Infomation-cards .row .col-lg-6 .values-cards-home {
     background-color: rgb(27, 27, 27);
     padding: 20px 30px;
     margin: 20px 0px;
@@ -210,21 +210,22 @@
     bottom: -10px;
     transition: .5s;
     color: rgb(255, 255, 255);
+    z-index: -1;
 }
 
 .Infomation-cards .row .col-lg-6 .read-more-btn a {
     color: rgb(255, 255, 255);
-    z-index: 22;
+    z-index: 55;
 }
-
+/* 
 .Infomation-cards .row .col-lg-6 .read-more-btn:hover a {
     color: rgb(0, 0, 0);
     z-index: 55;
-}
+} */
 
 .Infomation-cards .row .col-lg-6:hover .read-more-btn span {
     position: absolute;
-    background-color: #d6f60448;
+    background-color: #d6f604;
     height: 40px;
     width: 100px;
     border-radius: 20px;
@@ -232,6 +233,7 @@
     bottom: -10px;
     color: rgb(255, 255, 255);
     transition: .5s;
+    z-index: -1;
 }
 
 .parent-div {
