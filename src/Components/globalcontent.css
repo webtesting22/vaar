@@ -7,7 +7,7 @@
 }
 .section-para{
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 200;
     color: #000000;
     width: 70%;
     text-align: center;
@@ -23,8 +23,8 @@ a{
 @media (max-width:700px){
     .section-para{
         width: 100%;
-        font-size: 13px;
-        font-weight: 500;
+        /* font-size: 13px; */
+        font-weight: 200;
         color: #000000;
     }
 }

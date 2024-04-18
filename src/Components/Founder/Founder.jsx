@@ -51,7 +51,7 @@ function Founder() {
                     <div className='text-center' >
                         <hr className='m-0' />
                         <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Value Proposition</h1>
-                        <p className='section-para text-white text-start m-0'>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
+                        <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
                     </div>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
@@ -91,7 +91,7 @@ function Founder() {
                                     <div className='right-side-container'>
                                         <div>
                                             <h2 style={{ color: "white" }}>{item.title}</h2>
-                                            <p style={{ color: "white" }}>{item.Descriptions}</p>
+                                            <p style={{ color: "white", fontWeight:"200" }}>{item.Descriptions}</p>
                                         </div>
 
 
