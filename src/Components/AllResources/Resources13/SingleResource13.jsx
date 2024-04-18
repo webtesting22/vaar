@@ -85,7 +85,7 @@ function SingleResource13() {
     return (
 
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 3" Date="February 17, 2023" ResourceHeading="REITs & Discreit" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[2].img} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 3" Date="February 17, 2023" ResourceHeading="REITs & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[2].img} />
             <section>
                 <div className="container p-0">
                     <Row>

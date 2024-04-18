@@ -5,24 +5,31 @@ import ReactangleTopImage from "../Resources14/Rectangle.svg"
 import { Row, Col, Carousel } from "antd";
 import "../Resources1/SingleResources.css"
 import { Module1, Module4 } from "../AllResourcesData"
+import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
+import SignupSection from "../../SignUp/SignupSection";
 function SingleResource14() {
 
 
     const liList = [
         {
-            list: "Return Components"
+            list: "Return Components",
+            id:"ReturnComponents"
         },
         {
-            list: "Risk Components"
+            list: "Risk Components",
+            id:"RiskComponents"
         },
         {
-            list: "Risk-Return Tradeoff"
+            list: "Risk-Return Tradeoff",
+            id:"RiskReturnTradeoff"
         },
         {
-            list: "Monitoring and Adjustments"
+            list: "Monitoring and Adjustments",
+            id:"MonitoringandAdjustments"
         },
         {
-            list: "Conclusion"
+            list: "Conclusion",
+            id:"Conclusion"
         }
     ]
     const ReturnComponents = [
@@ -39,20 +46,118 @@ function SingleResource14() {
                     cardDescription: "The stability and regularity of rental income contribute to the overall return profile. Investors can evaluate the historical performance of similar properties and assess the potential for steady income."
                 }
             ]
+        },
+        {
+            topTitle: "Property Appreciation",
+            cardDetails: [
+                {
+                    cardBoldText: "Potential Return",
+                    cardDescription: "Over the long term, properties may appreciate in value, providing capital gains upon sale."
+                },
+                {
+                    cardBoldText: "Analysis",
+                    cardDescription: "The historical performance of real estate markets in the target locations can be considered, along with the economic factors influencing property values. Investors should assess the potential for property appreciation over their intended investment horizon."
+
+
+                }
+            ]
+        },
+        {
+            topTitle: "Diversification Benefits",
+            cardDetails: [
+                {
+                    cardBoldText: "Potential Return",
+                    cardDescription: "Fractional ownership on Vaar allows investors to diversify across different properties, mitigating risk and enhancing the potential for overall returns."
+                },
+                {
+                    cardBoldText: "Analysis",
+                    cardDescription: "The benefits of diversification, including the potential for improved risk-adjusted returns, can be assessed. Investors should consider the types and locations of properties available on the platform."
+                }
+            ]
         }
     ]
 
-    const RiskComponents =[
+    const RiskComponents = [
         {
-            topTitle:"Market Risk",
-            cardDetails:[
+            topTitle: "Market Risk",
+            cardDetails: [
                 {
-                    cardBoldText:"Potential Risk",
-                    cardDescription:"Real estate markets can be influenced by economic conditions, interest rates, and other macroeconomic factors."
+                    cardBoldText: "Potential Risk",
+                    cardDescription: "Real estate markets can be influenced by economic conditions, interest rates, and other macroeconomic factors."
                 },
                 {
-                    cardBoldText:"Analysis",
-                    cardDescription:"Understanding the broader economic environment and assessing how it might impact real estate markets is crucial. Historical market trends and potential future scenarios should be considered."
+                    cardBoldText: "Analysis",
+                    cardDescription: "Understanding the broader economic environment and assessing how it might impact real estate markets is crucial. Historical market trends and potential future scenarios should be considered."
+                }
+            ]
+        },
+        {
+            topTitle: "Property-Specific Risks",
+            cardDetails: [
+                {
+                    cardBoldText: "Potential Risk",
+                    cardDescription: "Each property has unique risks, such as maintenance issues, market demand fluctuations, or unexpected expenses."
+                },
+                {
+                    cardBoldText: "Analysis",
+                    cardDescription: "Vaar's due diligence process provides investors with information about each property. Thoroughly evaluating property-specific risks and the mitigation strategies implemented by Vaar is essential."
+                }
+            ]
+        },
+        {
+            topTitle: "Liquidity Risk",
+            cardDetails: [
+                {
+                    cardBoldText: "Potential Risk",
+                    cardDescription: "Fractional ownership in real estate may have limited liquidity compared to more liquid investments like stocks."
+                },
+                {
+                    cardBoldText: "Analysis",
+                    cardDescription: " Investors should consider their liquidity needs and the platform's recommended investment horizon. The trade-off between the potential returns and the ability to liquidate investments quickly should be assessed."
+                }
+            ]
+        },
+        {
+            topTitle: "Platform and Operational Risks",
+            cardDetails: [
+                {
+                    cardBoldText: "Potential Risk",
+                    cardDescription: "Risks related to the platform's operations, security, and regulatory compliance."
+                },
+                {
+                    cardBoldText: "Analysis",
+                    cardDescription: "Evaluating Vaar's reputation, track record, and the measures in place to ensure secure transactions and compliance with regulations is crucial for risk assessment."
+                }
+            ]
+        }
+    ]
+
+    const RiskReturnTradeoff = [
+        {
+            // topTitle: "Balancing Act",
+            cardDetails: [
+                {
+                    cardBoldText:"Balancing Act",
+                    cardDescription: "Investors need to strike a balance between their risk tolerance and return expectations. Higher potential returns often come with increased risk, and vice versa."
+                },
+            ]
+        },
+        {
+            // topTitle:"Investment Horizon",
+            cardDetails: [
+                {
+                    cardBoldText:"Investment Horizon",
+                    cardDescription: "The risk-return profile may vary based on the investor's time horizon. Vaar, with its long-term investment approach, aligns well with investors looking for stability and growth over an extended period."
+                }
+            ]
+        }
+    ]
+    const MonitoringAdjustments = [
+        {
+            topTitle: "Continuous Evaluation",
+            cardDetails: [
+                {
+                    cardDescription: "Regularly monitoring the performance of the investments on Vaar, staying informed about market conditions, and reassessing the risk-return profile can help investors make informed decisions about their portfolios."
                 }
             ]
         }
@@ -71,7 +176,7 @@ function SingleResource14() {
     };
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 4" Date="February 17, 2023" ResourceHeading="Risk-Return Analysis & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[3].img} />
@@ -85,8 +190,8 @@ function SingleResource14() {
                             <div className="resources-right-container">
                                 <p>Risk-return analysis is a fundamental principle in investment, assessing the relationship between the potential for higher returns and the associated level of risk. In the context of Vaar, a platform facilitating fractional ownership of real estate, the risk-return profile can be analyzed considering various factors. Here's a breakdown of how the risk-return analysis may be approached using Vaar:</p>
                                 <div className="padding-slite"></div>
-                                <h4>Return Components</h4>
-                                <div className="pc-view-14">
+                                <h4 id="ReturnComponents">Return Components</h4>
+                                {/* <div className="pc-view-14">
                                     {ReturnComponents.map((item, index) => (
                                         <div key={index} className="RealEstate-Box">
                                             <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
@@ -98,9 +203,9 @@ function SingleResource14() {
                                             ))}
                                         </div>
                                     ))}
-                                </div>
-                                <div className="mobile-view-14">
-                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay >
+                                </div> */}
+                                <div>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true}  >
                                         {ReturnComponents.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
                                                 <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
@@ -115,8 +220,8 @@ function SingleResource14() {
                                     </Carousel>
                                 </div>
                                 <div className="padding-slite"></div>
-                                <h4>Risk Components</h4>
-                                <div className="pc-view-14">
+                                <h4 id="RiskComponents">Risk Components</h4>
+                                {/* <div className="pc-view-14">
                                     {RiskComponents.map((item, index) => (
                                         <div key={index} className="RealEstate-Box">
                                             <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
@@ -128,9 +233,9 @@ function SingleResource14() {
                                             ))}
                                         </div>
                                     ))}
-                                </div>
-                                <div className="mobile-view-14">
-                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay >
+                                </div> */}
+                                <div>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true}  >
                                         {RiskComponents.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
                                                 <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
@@ -144,12 +249,50 @@ function SingleResource14() {
                                         ))}
                                     </Carousel>
                                 </div>
-
+                                <div className="padding-slite"></div>
+                                <h4 id="RiskReturnTradeoff">Risk-Return Tradeoff</h4>
+                                <div>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true}  >
+                                        {RiskReturnTradeoff.map((item, index) => (
+                                            <div key={index} className="RealEstate-Box">
+                                                {/* <h6>{index + 1}.&nbsp;{item.topTitle}</h6> */}
+                                                <hr style={{ opacity: "1" }} />
+                                                {item.cardDetails.map((card, cardIndex) => (
+                                                    <ul key={cardIndex}>
+                                                        <li><b>{card.cardBoldText}</b> : {card.cardDescription}</li>
+                                                    </ul>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                                <div className="padding-slite"></div>
+                                <h4 id="MonitoringandAdjustments">Monitoring and Adjustments</h4>
+                                <div>
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true}  >
+                                        {MonitoringAdjustments.map((item, index) => (
+                                            <div key={index} className="RealEstate-Box">
+                                                <h6>{item.topTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                {item.cardDetails.map((card, cardIndex) => (
+                                                    <ul key={cardIndex}>
+                                                        <li>{card.cardDescription}</li>
+                                                    </ul>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                                <div className="padding-slite"></div>
+                                <h4 id="Conclusion">Conclusion</h4>
+                                <p>In conclusion, conducting a risk-return analysis using Vaar involves a thorough examination of potential returns from rental income and property appreciation, balanced against various risks such as market, property-specific, liquidity, and operational risks. By understanding these factors, investors can make informed decisions aligned with their financial goals and risk tolerance.</p>
                             </div>
                         </Col>
                     </Row>
+                    <DontMissBlog/>
                 </div>
             </section>
+            <SignupSection/>
         </>
     )
 }
