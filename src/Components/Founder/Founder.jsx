@@ -91,7 +91,7 @@ function Founder() {
                                     <div className='right-side-container'>
                                         <div>
                                             <h2 style={{ color: "white" }}>{item.title}</h2>
-                                            <span style={{ color: "white" }}>{item.Descriptions}</span>
+                                            <p style={{ color: "white" }}>{item.Descriptions}</p>
                                         </div>
 
 

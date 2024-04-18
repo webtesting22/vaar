@@ -1,4 +1,4 @@
-import img1 from "../AllResources/images/1.jpeg"
+import img1 from "../AllResources/images/1-1.jpeg"
 import img2 from "../AllResources/images/2.jpeg"
 import img4 from "../AllResources/images/3.jpeg"
 import img3 from "../AllResources/images/4.jpeg"
