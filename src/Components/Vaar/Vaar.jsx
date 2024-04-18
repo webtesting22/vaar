@@ -21,6 +21,7 @@ import Kaivalyashah from "../Vaar/kaivalyashah.jpg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import SignupSection from '../SignUp/SignupSection';
+// import { Autoplay } from 'swiper/modules';
 
 function Vaar() {
     useEffect(() => {
@@ -140,12 +141,13 @@ function Vaar() {
                             // pagination={{
                             //     clickable: true,
                             // }}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: true,
-                            }}
-                            modules={[Pagination]}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: true,
+                            // }}
+                            modules={[Pagination,Autoplay]}
                             className="mySwiper"
+                            // modules={[Autoplay]}
                         >
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>

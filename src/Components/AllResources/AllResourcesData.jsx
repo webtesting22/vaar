@@ -1,4 +1,4 @@
-import img9 from "../AllResources/images/1-1.jpeg"
+
 import img1 from "../AllResources/images/Newfolder/CHAPTER1.png"
 import img2 from "../AllResources/images/Newfolder/CHAPTER2.png"
 import img3 from "../AllResources/images/Newfolder/CHAPTER3.png"
@@ -7,11 +7,12 @@ import img5 from "../AllResources/images/Newfolder/CHAPTER5.png"
 import img6 from "../AllResources/images/Newfolder/CHAPTER6.png"
 import img7 from "../AllResources/images/Newfolder/CHAPTER8.png"
 import img8 from "../AllResources/images/Newfolder/CHAPTER9.png"
-// import img10 from ""
-import img11 from "../pictures/module4-3.png"
-import img12 from "../pictures/module4-4.png"
-import img13 from "../pictures/module4-5.png"
-import img14 from "../pictures/module4-6.png"
+import img9 from "../AllResources/images/1-1.jpeg"
+import img10 from "../AllResources/images/Newfolder/CONCEPT2.png"
+import img11 from "../AllResources/images/Newfolder/CONCEPT3.png"
+import img12 from "../AllResources/images/Newfolder/CONCEPT4.png"
+import img13 from "../AllResources/images/Newfolder/CONCEPT5.png"
+import img14 from "../AllResources/images/Newfolder/CONCEPT6.png"
 const Module1 = [
     {
 
@@ -77,7 +78,7 @@ const Module4 = [
         timing: "15 MINUTE READ",
     },
     {
-        // img: img10,
+        img: img10,
         subtitle: "CONCEPT 2 ",
         title: "Risk Mitigation",
         timing: "15 MINUTE READ",
