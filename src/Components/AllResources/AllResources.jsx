@@ -31,7 +31,7 @@ function AllResources() {
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module1.map((item, index) => (
-                                        <div className="col-lg-3 mb-5">
+                                        <div className="col-lg-3 col-md-6 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 1}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
@@ -55,7 +55,7 @@ function AllResources() {
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module2.map((item, index) => (
-                                        <div className="col-lg-3 mb-5">
+                                        <div className="col-lg-3 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 4}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
@@ -82,7 +82,7 @@ function AllResources() {
                                     {Module3.map((item, index) => {
                                         if (index == 1 || index == 2 || index) {
                                             return (
-                                                <div className="col-lg-3 mb-5">
+                                                <div className="col-lg-3 col-md-6 mb-5">
                                                     <Link to={`/SingleResource${index + 7}`}>
                                                         <div className='module-box'>
                                                             <img src={item.img} alt="" />
@@ -95,7 +95,7 @@ function AllResources() {
                                             )
                                         } else {
                                             return (
-                                                <div className="col-lg-3 mb-5">
+                                                <div className="col-lg-3 col-md-6 mb-5">
                                                     <Link to={`/SingleResource${index + 6}`}>
                                                         <div className='module-box'>
                                                             <img src={item.img} alt="" />
@@ -121,7 +121,7 @@ function AllResources() {
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module4.map((item, index) => (
-                                        <div className="col-lg-3 mb-5">
+                                        <div className="col-lg-3 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 11}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
