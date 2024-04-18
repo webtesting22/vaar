@@ -197,7 +197,25 @@
 .mobile-show-img{
     display: none;
 }
+.pc-device-view{
+    display: block;
+    display: flex;
+}
+.mobile-device-view{
+    display: none;
+}
 @media (max-width:600px){
+    #Home_section{
+        padding-top: 2rem;
+    }
+    .pc-device-view{
+        display: none;
+        padding-top: 0rem;
+    }
+    .mobile-device-view{
+        display: block;
+        padding-top: 5rem;
+    }
     .mobile-view-home {
         width: 100%;
         display: none;   

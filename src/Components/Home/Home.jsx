@@ -31,7 +31,7 @@ function Home() {
     return (
         <>
             <div className='parent-section'>
-                <Row>
+                <Row className='pc-device-view'>
                     <Col lg={12} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
@@ -72,6 +72,50 @@ function Home() {
 
                             </Row>
                         </div>
+                    </Col>
+                </Row>
+                <Row className='mobile-device-view'>
+                    
+                    <Col lg={12} md={12} style={{ display: "flex", alignItems: "center" }}>
+                        <div className='grid-images'>
+                            <Row>
+                                <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
+                                    <div><img src={second} alt="" /></div>
+                                    <div><img src={first} alt="" /></div>
+                                </Col>
+                                {/* <Col lg={12} md={12} sm={8}>
+                              
+                            </Col> */}
+
+                                {/* <Col lg={4} md={12} sm={8}>
+                                <div><img src={third} alt="" /></div>
+                            </Col> */}
+                                {/* <Col lg={6} md={12}>
+                            <div><img src={four} alt="" /></div>
+                        </Col> */}
+
+                            </Row>
+                        </div>
+                    </Col>
+                    <Col lg={12} md={12}>
+                        <section id='Home_section'>
+                            <div className='container text-center'>
+                               
+                                <div className='content-container-responsive'>
+                                <h1 className='main-global-heading ' style={{ fontWeight: "300",textAlign:"start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                                    <p data-aos="fade-up" style={{ fontWeight: "200",textAlign:"start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                    <div className='email-collect'>
+                                        <input type="text" placeholder="What's your email" />
+                                        <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                    </div>
+                                    <div className='mobile-view-home' data-aos="fade-up"
+                                        data-aos-anchor-placement="bottom-center">
+                                        <button><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
                     </Col>
                 </Row>
                 {/* <div id='second-part-section'>
