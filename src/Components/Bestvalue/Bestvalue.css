@@ -35,7 +35,7 @@
 @media (max-width:800px) {
     #footer-card {
         padding: 30px 20px;
-        height: 25vh;
+        height: 18vh;
         position: relative;
     }
 }
@@ -68,12 +68,12 @@
 }
 
 #content-section .button-animation span {
-    height: 40px;
+    height: 2px;
     width: 20px;
     position: absolute;
     bottom: 20px;
-    left: 10px;
-    background-color: #d6f604;
+    left: 20px;
+    background-color: transparent;
     border-radius: 20px;
     transition: .5s;
     /* width: 100%; */
@@ -81,19 +81,19 @@
 }
 
 #content-section:hover .button-animation span {
-    height: 40px;
-    width: 92px;
+    height: 2px;
+    width: 70px;
     transition: .5s;
     position: absolute;
     bottom: 20px;
-    left: 10px;
+    left: 20px;
     background-color: #d6f604;
     border-radius: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     /* width: 100%; */
 }
 #content-section:hover .button-animation a{
-    color: black;
+    color: rgb(255, 255, 255);
     transition: .5s;
 }
 
@@ -202,11 +202,11 @@
 
 .Infomation-cards .row .col-lg-6 .read-more-btn span {
     position: absolute;
-    background-color: #d6f60448;
-    height: 40px;
+    background-color: transparent;
+    height: 2px;
     width: 30px;
     border-radius: 20px;
-    left: -10px;
+    left: 0px;
     bottom: -10px;
     transition: .5s;
     color: rgb(255, 255, 255);
@@ -226,10 +226,10 @@
 .Infomation-cards .row .col-lg-6:hover .read-more-btn span {
     position: absolute;
     background-color: #d6f604;
-    height: 40px;
-    width: 100px;
+    height: 2px;
+    width: 50px;
     border-radius: 20px;
-    left: -10px;
+    left: 0px;
     bottom: -10px;
     color: rgb(255, 255, 255);
     transition: .5s;
@@ -245,9 +245,9 @@
 }
 
 .button-animation-without-absolute span {
-    background-color: #d6f60428;
+    background-color: transparent;
     width: 20px;
-    height: 40px;
+    height: 2px;
     position: absolute;
     bottom: -8px;
     border-radius: 20px;
@@ -256,20 +256,20 @@
 }
 
 .button-animation-without-absolute:hover span {
-    background-color: #d6f60428;
-    width: 100px;
-    height: 40px;
+    background-color: #d6f604;
+    width: 50px;
+    height: 2px;
     position: absolute;
     bottom: -8px;
     border-radius: 20px;
-    left: -10px;
+    left: 0px;
     transition: .5s;
 }
 
 .section-heading-best-value {
-    font-size: 32px;
-    text-align: center;
-    color: white;
+    font-weight: 300;
+    font-size: 50px;
+    text-align: start;
 }
 
 #mySwiper {
@@ -294,7 +294,7 @@
     .Blog-section .container {
         background-color: rgb(0, 0, 0);
         color: white;
-        padding: 20px;
+        /* padding: 20px; */
     }
 
     .Posted {

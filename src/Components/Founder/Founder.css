@@ -41,6 +41,33 @@
 
 }
 
+@media (max-width:700px) {
+
+    .right-side-container div {
+        border-bottom: 1px solid transparent;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 20px;
+
+
+    }
+
+    .right-side-container div:hover {
+        border-bottom: 1px solid transparent;
+        background-color: rgb(33, 33, 33);
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        /* padding-left: 20px; */
+
+    }
+}
+
 .right-side-container h2 {
     font-size: 20px;
     font-weight: 700;
@@ -87,9 +114,10 @@
     }
 
     .founder-info h1 {
-        font-size: 30px;
+        font-size: 18px;
         display: block;
-        text-align: center;
+        text-align: start;
+        font-weight: 200;
     }
 
     .founder-info p,
@@ -108,20 +136,20 @@
 
     .founder-info h2 {
         display: block;
-        text-align: center;
+        text-align: start;
 
     }
 
     .founder-info h3 {
         display: block;
-        text-align: center;
+        text-align: start;
         color: #475467;
         font-weight: 500;
     }
 
     .owner-mobile-img {
         display: block;
-        margin: auto;
+        /* margin: auto; */
         width: 80px;
         border-radius: 50%;
         height: 80px;
@@ -196,21 +224,26 @@
 .right-side-container img {
     display: none;
 }
-.home-mobile{
+
+.home-mobile {
     display: none;
 }
-.home-pc{
+
+.home-pc {
     display: flex;
 
 }
+
 @media (max-width:600px) {
     .animated-girl-pick {
         display: none;
     }
-    .home-mobile{
+
+    .home-mobile {
         display: block;
     }
-    .home-pc{
+
+    .home-pc {
         display: none;
     }
 
@@ -273,7 +306,7 @@
 
 }
 
-.slick-slide{
+.slick-slide {
     padding-bottom: 50px;
 
 }

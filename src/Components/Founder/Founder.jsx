@@ -90,7 +90,7 @@ function Founder() {
                                 <div className="col-lg-6" key={index}>
                                     <div className='right-side-container'>
                                         <div>
-                                            <h2 style={{ color: "white" }}>{item.title}</h2>
+                                            <h2 style={{ color: "#D4F604" }}>{item.title}</h2>
                                             <p style={{ color: "white", fontWeight:"200" }}>{item.Descriptions}</p>
                                         </div>
 
@@ -115,13 +115,12 @@ function Founder() {
                                 <div className='content-founder mt-5'>
                                     <i class="bi bi-quote quote-icon"></i>
                                     <div>
-                                        <h1>We’ve been using VAAR to kick start every new project and can’t imagine working without it.</h1>
+                                        <h1>New concepts are no longer intimidating, and challenges have become puzzles awaiting solutions. With this mindset, we are developing Vaar in the traditionally inaccessible realm of real estate. <br /> The ultimate goal? <b style={{color:"#D4F604"}}> Digital access to income-generating real estate for ALL.</b></h1>
                                         <img src={founderPicture} alt="Not/loaded" className='owner-mobile-img' />
                                         <h2>From the Founder</h2>
                                         <h3>Vidhi Kankaria</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                        <br />
-                                        <span>Note For Founder</span>
+                                        <p style={{fontWeight:"200"}}>New concepts are no longer intimidating, and challenges have become puzzles awaiting solutions. With this mindset, we are developing Vaar in the traditionally inaccessible realm of real estate. <br /> The ultimate goal? <b style={{color:"#D4F604"}}> Digital access to income-generating real estate for ALL.</b></p>
+                                        
                                     </div>
                                 </div>
                             </div>
