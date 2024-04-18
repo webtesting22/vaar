@@ -13,11 +13,11 @@ const BestvalueData = [
     },
     {
         img: img3,
-        title: "FRACTIONALIZATION"
+        title: "Vaar: Fractionalization"
     },
     {
         img: img4,
-        title: "Not REITs"
+        title: "Vaar: Not REITs"
     },
 ]
 // export default BestvalueData;

@@ -74,37 +74,37 @@ const Module4 = [
     {
         img: img9,
         subtitle: "CONCEPT 1 ",
-        title: "Fractionalization",
+        title: "Vaar: Fractionalization",
         timing: "15 MINUTE READ",
     },
     {
         img: img10,
         subtitle: "CONCEPT 2 ",
-        title: "Risk Mitigation",
+        title: "Vaar: Risk Mitigation",
         timing: "15 MINUTE READ",
     },
     {
         img: img11,
         subtitle: "CONCEPT 3 ",
-        title: "Not REITs",
+        title: "Vaar: Not REITs",
         timing: "15 MINUTE READ",
     },
     {
         img: img12,
         subtitle: "CONCEPT 4 ",
-        title: "Risk & Return",
+        title: "Vaar: Risk & Return",
         timing: "15 MINUTE READ",
     },
     {
         img: img13,
         subtitle: "CONCEPT 5 ",
-        title: "Access the largest asset class in the world",
+        title: "Vaar: Access the largest asset class in the world",
         timing: "15 MINUTE READ",
     },
     {
         img: img14,
         subtitle: "CONCEPT 6 ",
-        title: "The Technology",
+        title: "Vaar: The Technology",
         timing: "15 MINUTE READ",
     },
 
