@@ -141,3 +141,17 @@
     padding: 20px 10px;
     border-bottom:1px solid #D4F604;
 }
+
+.swiper-pagination-bullet-active{
+    background-color: white;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    color: white;
+    width: 20px;
+    background: white;
+    height: 3px;
+    border-radius: 0px;
+}
+.swiper-pagination-bullet-active{
+    background-color: white;
+}

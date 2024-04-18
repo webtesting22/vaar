@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./ContactUs.css"
 
 function ContactUs() {
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
             <section style={{ padding: "6rem 0rem", backgroundColor: "white" }}>
@@ -34,7 +37,7 @@ function ContactUs() {
                                     <input type="email" class="form-control" id="email" placeholder="Email" required />
                                 </div>
                                 <br />
-                                <div>
+                                {/* <div>
                                     <label for="phoneNumber" className="form-label">Phone number</label>
                                     <input type="tel" class="form-control" id="phoneNumber" placeholder="Phone number" pattern="[0-9]{10}" required />
                                     <small id="phoneHelp" class="form-text text-muted">Please enter a valid 10-digit phone number.</small>
@@ -44,7 +47,7 @@ function ContactUs() {
                                     <label for="message" className="form-label">Message</label>
                                     <textarea type="text" class="form-control" id="message" required></textarea>
                                 </div>
-                                <br />
+                                <br /> */}
                                 <div style={{ display: "flex", alignItems: "center" }}>
                                     <input className="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate" required />&nbsp;&nbsp;
                                     <span style={{ color: "#475467" }}>You agree to our friendly <a href="" style={{ color: "#475467", borderBottom: "1px solid #475467" }}>privacy policy.</a></span>

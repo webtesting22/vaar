@@ -7,15 +7,15 @@ import { useEffect } from 'react';
 function AllResources() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
-        
+
         <>
             <div className="section-padding "></div>
             <section>
                 <div className="container">
                     <div>
-                        <h1 style={{ fontSize: "50px",color:"white",fontWeight:"300" }}>101 Real Estate</h1>
+                        <h1 style={{ fontSize: "50px", color: "white", fontWeight: "300" }}>101 Real Estate</h1>
                         {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>

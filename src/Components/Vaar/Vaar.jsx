@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import teamposter from "../pictures/teamheroimage.png"
+import teamposter from "../Vaar/Rectangle.jpeg"
 import "../VaarTeam/Vaarteam.css"
 import DrumanPatel from "../Vaar/druman-patel.jpg"
 import Reehanshah from "../Vaar/reehan-shah.jpg"
@@ -20,6 +20,7 @@ import VidhiK from "../Vaar/VidhiK.png"
 import Kaivalyashah from "../Vaar/kaivalyashah.jpg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css/navigation';
 import SignupSection from '../SignUp/SignupSection';
 // import { Autoplay } from 'swiper/modules';
 
@@ -32,55 +33,55 @@ function Vaar() {
             img: VidhiK,
             name: "Vidhi Kankaria",
             position: "Founder, CEO",
-            link:"https://www.linkedin.com/in/kankariavidhi/"
+            link: "https://www.linkedin.com/in/kankariavidhi/"
         },
         {
             img: Kaivalyashah,
             name: "Kaivalya Shah",
             position: "CTO",
-            link:"https://www.linkedin.com/in/kaivalyashah"
+            link: "https://www.linkedin.com/in/kaivalyashah"
         },
         {
             img: DrumanPatel,
             name: "Druman Patel",
             position: "Accounting and Tax Advisory",
-            link:"https://www.linkedin.com/in/druman-patel-58bba88b/"
+            link: "https://www.linkedin.com/in/druman-patel-58bba88b/"
         },
         {
             img: Reehanshah,
             name: "Reehan Shah",
             position: "Vaar Bot",
-            link:"https://www.linkedin.com/in/reehan-shah/"
+            link: "https://www.linkedin.com/in/reehan-shah/"
         },
         {
             img: SiddharthLaheri,
             name: "Siddharth Laheri",
             position: "Vaar App Design",
-            link:"https://www.linkedin.com/in/siddharth-laheri-636135122/"
+            link: "https://www.linkedin.com/in/siddharth-laheri-636135122/"
         },
         {
             img: KhEmmaNguyen,
             name: "Khai Han Nguyen",
             position: "Vaar Website Design",
-            link:"https://www.linkedin.com/in/kh-emma-nguyen/"
+            link: "https://www.linkedin.com/in/kh-emma-nguyen/"
         },
         {
             img: JimishP,
             name: "Jimish Parekh",
             position: "Technology & Product Development",
-            link:"https://www.linkedin.com/in/jimishio/"
+            link: "https://www.linkedin.com/in/jimishio/"
         },
         {
             img: Anamayee,
             name: "Anamayee Shirolkar",
             position: "Words",
-            link:"https://www.linkedin.com/in/anamayee/"
+            link: "https://www.linkedin.com/in/anamayee/"
         },
         {
             img: VipulvPatel,
             name: "Vipul Patel",
             position: "Advisor",
-            link:"https://www.linkedin.com/in/vipulvpatel/"
+            link: "https://www.linkedin.com/in/vipulvpatel/"
         },
 
     ]
@@ -89,7 +90,7 @@ function Vaar() {
         <>
             <div className="section-padding"></div>
 
-            <section style={{ color: "white", backgroundColor: "rgb(27, 27, 27)" }}>
+            <section style={{ color: "white", backgroundColor: "black" }}>
                 <div>
                     <div className="container">
                         <Row>
@@ -104,7 +105,7 @@ function Vaar() {
                             <Col lg={6} md={6}>
                                 <div className='team-section-hero2'>
                                     <img src={teamposter} alt="" />
-                                    <img src={teamheroimage2} alt="" />
+                                    <img src={teamposter} alt="" />
                                 </div>
                             </Col>
                         </Row>
@@ -148,9 +149,9 @@ function Vaar() {
                             pagination={{
                                 clickable: true, // Enable clickable dots
                             }}
-                            modules={[Pagination,Autoplay]}
+                            modules={[Pagination, Autoplay]}
                             className="mySwiper"
-                            // modules={[pagination]}
+                        // modules={[pagination]}
                         >
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>
@@ -185,12 +186,9 @@ function Vaar() {
                         <Swiper
                             spaceBetween={30}
                             pagination={{
-                                clickable: true,
+                                clickable: true, // Enable clickable dots
                             }}
-                            // autoplay={{
-                            //     delay: 2500,
-                            //     disableOnInteraction: true,
-                            // }}
+                            // modules={[Pagination,Autoplay]}
                             modules={[Autoplay, Pagination]}
                             className="mySwiper"
                         >

@@ -37,8 +37,10 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
-                                    <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
-                                    <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                    {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
+                                    {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
+                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{color:"#d4f604"}}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
+                                     <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down"><span style={{color:"#d4f604"}}>Vaar</span> levels the playing field.</h1>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="What's your email" />
                                         <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
