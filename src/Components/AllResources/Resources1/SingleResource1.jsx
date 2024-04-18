@@ -9,6 +9,8 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Carousel } from 'antd';
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import AllResources from "../AllResources";
+import {Module1} from "../AllResourcesData"
 function SingleResource1() {
     const conclusionRef = useRef(null);
     const contentStyle = {
@@ -160,7 +162,7 @@ function SingleResource1() {
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 1" Date="February 17, 2023" ResourceHeading="REAL ESTATE INVESTMENTS IN THE UNITED STATES" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 1" Date="February 17, 2023" ResourceHeading="REAL ESTATE INVESTMENTS IN THE UNITED STATES" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module1[0].img} />
 
 
 

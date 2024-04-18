@@ -10,6 +10,7 @@ import cardimg2 from "../Resources2/card2.svg"
 import cardimg3 from "../Resources2/card3.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import {Module1} from "../AllResourcesData"
 function SingleResource3() {
     const conclusionRef = useRef(null);
     const contentStyle = {
@@ -209,12 +210,14 @@ function SingleResource3() {
 
 
     ]
+
+
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 3" Date="February 17, 2023" ResourceHeading="THE ALLURE OF REAL ESTATE INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 3" Date="February 17, 2023" ResourceHeading="THE ALLURE OF REAL ESTATE INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module1[2].img} />
 
             <section>
                 <div className="container p-0 resourcestwo">

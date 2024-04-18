@@ -5,6 +5,7 @@ import ReactangleTopImage from "../Resources11/Rectangle.svg"
 import { Row, Col, Descriptions } from "antd"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import {Module1, Module4} from "../AllResourcesData"
 function SingleResource11() {
 
     const liList = [
@@ -34,7 +35,7 @@ function SingleResource11() {
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[0].img} />
             <section >
                 <div className="container p-0">
                     <Row>

@@ -5,6 +5,7 @@ import { Row, Col } from "antd"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import {Module1, Module2, Module3} from "../AllResourcesData"
 function SingleResource6() {
     const liList = [
         {
@@ -203,7 +204,7 @@ function SingleResource6() {
 
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 6&7" Date="February 17, 2023" ResourceHeading="ANALYZING REAL ESTATE INVESTMENTS WITH THE REAL ESTATE DIAMOND FRAMEWORK" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 6&7" Date="February 17, 2023" ResourceHeading="ANALYZING REAL ESTATE INVESTMENTS WITH THE REAL ESTATE DIAMOND FRAMEWORK" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module3[0].img} />
             <section >
                 <div className="container p-0">
                     <Row>

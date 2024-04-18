@@ -16,6 +16,8 @@ import KhEmmaNguyen from "../Vaar/kh-emma-nguyen.jpg";
 import JimishP from "../Vaar/JimishP.jpg"
 import Anamayee from "../Vaar/anamayee.jpg"
 import VipulvPatel from "../Vaar/vipulvpatel.jpg"
+import VidhiK from "../Vaar/VidhiK.png"
+import Kaivalyashah from "../Vaar/kaivalyashah.jpg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import SignupSection from '../SignUp/SignupSection';
@@ -26,39 +28,58 @@ function Vaar() {
     }, []);
     const teamMembers = [
         {
+            img: VidhiK,
+            name: "Vidhi Kankaria",
+            position: "Founder, CEO",
+            link:"https://www.linkedin.com/in/kankariavidhi/"
+        },
+        {
+            img: Kaivalyashah,
+            name: "Kaivalya Shah",
+            position: "CTO",
+            link:"https://www.linkedin.com/in/kaivalyashah"
+        },
+        {
             img: DrumanPatel,
             name: "Druman Patel",
-            position: "Accounting and Tax Advisory"
+            position: "Accounting and Tax Advisory",
+            link:"https://www.linkedin.com/in/druman-patel-58bba88b/"
         },
         {
             img: Reehanshah,
             name: "Reehan Shah",
-            position: "Vaar Bot"
+            position: "Vaar Bot",
+            link:"https://www.linkedin.com/in/reehan-shah/"
         },
         {
             img: SiddharthLaheri,
             name: "Siddharth Laheri",
-            position: "Vaar App Design"
+            position: "Vaar App Design",
+            link:"https://www.linkedin.com/in/siddharth-laheri-636135122/"
         },
         {
             img: KhEmmaNguyen,
             name: "Khai Han Nguyen",
-            position: "Vaar Website Design"
+            position: "Vaar Website Design",
+            link:"https://www.linkedin.com/in/kh-emma-nguyen/"
         },
         {
             img: JimishP,
             name: "Jimish Parekh",
-            position: "Technology & Product Development"
+            position: "Technology & Product Development",
+            link:"https://www.linkedin.com/in/jimishio/"
         },
         {
             img: Anamayee,
             name: "Anamayee Shirolkar",
-            position: "Words"
+            position: "Words",
+            link:"https://www.linkedin.com/in/anamayee/"
         },
         {
             img: VipulvPatel,
             name: "Vipul Patel",
-            position: "Advisor"
+            position: "Advisor",
+            link:"https://www.linkedin.com/in/vipulvpatel/"
         },
 
     ]
@@ -134,7 +155,7 @@ function Vaar() {
                                                     <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
                                                     <div className='team-Social_handles'>
                                                         <div>
-                                                            <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                                                            <a href={item.link} target='_blank'><i class='bx bxl-linkedin-square'></i></a>
                                                         </div>
                                                     </div>
                                                 </div>

@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import ReactangleTopImage from "../Resources14/Rectangle.svg"
 import { Row, Col, Carousel } from "antd";
 import "../Resources1/SingleResources.css"
-
+import { Module1, Module4 } from "../AllResourcesData"
 function SingleResource14() {
 
 
@@ -41,6 +41,22 @@ function SingleResource14() {
             ]
         }
     ]
+
+    const RiskComponents =[
+        {
+            topTitle:"Market Risk",
+            cardDetails:[
+                {
+                    cardBoldText:"Potential Risk",
+                    cardDescription:"Real estate markets can be influenced by economic conditions, interest rates, and other macroeconomic factors."
+                },
+                {
+                    cardBoldText:"Analysis",
+                    cardDescription:"Understanding the broader economic environment and assessing how it might impact real estate markets is crucial. Historical market trends and potential future scenarios should be considered."
+                }
+            ]
+        }
+    ]
     const onChange = (currentSlide) => {
         // console.log(currentSlide);
     };
@@ -53,9 +69,12 @@ function SingleResource14() {
     const handleNext = () => {
         carouselRef.current.next();
     };
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+      }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 4" Date="February 17, 2023" ResourceHeading="Risk-Return Analysis & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 4" Date="February 17, 2023" ResourceHeading="Risk-Return Analysis & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[3].img} />
             <section>
                 <div className="container p-0">
                     <Row>
@@ -83,6 +102,36 @@ function SingleResource14() {
                                 <div className="mobile-view-14">
                                     <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay >
                                         {ReturnComponents.map((item, index) => (
+                                            <div key={index} className="RealEstate-Box">
+                                                <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
+                                                <hr style={{ opacity: "1" }} />
+                                                {item.cardDetails.map((card, cardIndex) => (
+                                                    <ul key={cardIndex}>
+                                                        <li><b>{card.cardBoldText}</b>: {card.cardDescription}</li>
+                                                    </ul>
+                                                ))}
+                                            </div>
+                                        ))}
+                                    </Carousel>
+                                </div>
+                                <div className="padding-slite"></div>
+                                <h4>Risk Components</h4>
+                                <div className="pc-view-14">
+                                    {RiskComponents.map((item, index) => (
+                                        <div key={index} className="RealEstate-Box">
+                                            <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
+                                            <hr style={{ opacity: "1" }} />
+                                            {item.cardDetails.map((card, cardIndex) => (
+                                                <ul key={cardIndex}>
+                                                    <li><b>{card.cardBoldText}</b>: {card.cardDescription}</li>
+                                                </ul>
+                                            ))}
+                                        </div>
+                                    ))}
+                                </div>
+                                <div className="mobile-view-14">
+                                    <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay >
+                                        {RiskComponents.map((item, index) => (
                                             <div key={index} className="RealEstate-Box">
                                                 <h6>{index + 1}.&nbsp;{item.topTitle}</h6>
                                                 <hr style={{ opacity: "1" }} />

@@ -4,7 +4,7 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Descriptions,Tabs } from "antd"
 import ReactangleTopImage from "./Rectangle.svg"
 import DescriptionsItem from "antd/es/descriptions/Item";
-
+import {Module1, Module4} from "../AllResourcesData"
 function SingleResource13() {
     const { TabPane } = Tabs;
     const conclusionRef = useRef(null);
@@ -85,7 +85,7 @@ function SingleResource13() {
     return (
 
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 1" Date="February 17, 2023" ResourceHeading="FRACTIONALIZATION & VAAR " AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[2].img} />
             <section>
                 <div className="container p-0">
                     <Row>

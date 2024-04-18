@@ -52,7 +52,7 @@ function Bestvalue() {
                                         <div className='footer-card' id='footer-card'>
                                             <h3 className='Card-title text-white'>{item.title}</h3>
                                             <div className='button-animation'id='button-animation'>
-                                                <a href="">See More <i class='bx bx-chevron-right'></i></a>
+                                                <a href="">Read More <i class='bx bx-chevron-right'></i></a>
                                                 <span></span>
                                             </div>
                                         </div>

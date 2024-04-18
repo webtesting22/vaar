@@ -2,6 +2,7 @@ import React from "react";
 import cardimg1 from "../Resources2/card1.svg"
 import cardimg2 from "../Resources2/card2.svg"
 import cardimg3 from "../Resources2/card3.svg"
+import { Link } from "react-router-dom";
 function DontMissBlog() {
     const DontMissThese = [
         {
@@ -28,13 +29,13 @@ function DontMissBlog() {
                     <div className="padding-slite"></div>
                     {DontMissThese.map((item, index) => (
                         <div className="col-lg-4 mb-5">
-                            {/* <Link to="/SingleResource1"> */}
+                            <Link to={`/SingleResource${index+1}`}>
                             <div className='module-box'>
                                 <img src={item.img} alt="" />
                                 <h6>{item.concept}</h6>
                                 <h4>{item.cardTitle}</h4>
                             </div>
-                            {/* </Link> */}
+                            </Link>
                         </div>
                     ))}
 

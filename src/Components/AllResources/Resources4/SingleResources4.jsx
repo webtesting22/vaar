@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources4/Rectangle.svg";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
@@ -6,23 +6,24 @@ import { Row, Col, Carousel } from "antd"
 import CarousalImg from "../Resources4/carousalImg.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import { Module1, Module2 } from "../AllResourcesData"
 function SingleResource4() {
     const liList = [
         {
             list: "Definition of Residential Real Estate",
-            id:"DefinitionofResidential"
+            id: "DefinitionofResidential"
         },
         {
             list: "Importance of Residential Real Estate",
-            id:"ImportanceofResidential"
+            id: "ImportanceofResidential"
         },
         {
             list: "Types of Residential Real Estate",
-            id:"TypesofResidential"
+            id: "TypesofResidential"
         },
         {
             list: "Real Estate Investment in Residential Properties",
-            id:"RealEstateInvestment"
+            id: "RealEstateInvestment"
         }
     ]
     const ImportanceResidencial = [
@@ -350,10 +351,10 @@ function SingleResource4() {
     };
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 4" Date="February 17, 2023" ResourceHeading="UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 4" Date="February 17, 2023" ResourceHeading="UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module2[0].img} />
             <section>
                 <div className="container p-0">
                     <Row>
@@ -458,10 +459,10 @@ function SingleResource4() {
                                                         <>
                                                             {subItem.mainsubtitleTitle.map((mainSubtitle, mainIndex) => (
                                                                 <div key={mainIndex}>
-                                                                    <ul style={{listStyle:"none",padding:"0px"}}>
+                                                                    <ul style={{ listStyle: "none", padding: "0px" }}>
                                                                         <li>{mainSubtitle.mainsubtitleTitlePoint}</li>
                                                                     </ul>
-                                                                  
+
                                                                     {mainSubtitle.subtitlePoints && (
                                                                         <ul>
                                                                             {mainSubtitle.subtitlePoints.map(

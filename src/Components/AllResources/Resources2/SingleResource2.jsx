@@ -5,7 +5,7 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
 import { Link } from "react-router-dom"
 import "../Resources1/SingleResources.css"
-
+import {Module1} from "../AllResourcesData"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 function SingleResource2() {
@@ -170,7 +170,7 @@ function SingleResource2() {
    
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 2" Date="February 17, 2023" ResourceHeading="UNDERSTANDING ASSET CLASSES IN INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 2" Date="February 17, 2023" ResourceHeading="UNDERSTANDING ASSET CLASSES IN INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module1[1].img} />
 
             <section>
                 <div className="container p-0 resourcestwo">

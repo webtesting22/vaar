@@ -5,6 +5,7 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import {Module1, Module2} from "../AllResourcesData"
 function SingleResource5() {
     // const conclusionRef = useRef(null);
     const liList = [
@@ -194,7 +195,7 @@ function SingleResource5() {
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="CURRENT MARKET CONDITIONS FOR RESIDENTIAL REAL ESTATE INVESTING IN THE US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 5" Date="February 17, 2023" ResourceHeading="CURRENT MARKET CONDITIONS FOR RESIDENTIAL REAL ESTATE INVESTING IN THE US (2023)" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module2[1].img} />
             <section>
                 <div className="container p-0">
                     <Row>

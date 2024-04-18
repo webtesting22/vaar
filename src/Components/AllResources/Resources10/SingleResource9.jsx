@@ -3,6 +3,7 @@ import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources10/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col } from "antd"
+import {Module1, Module3} from "../AllResourcesData"
 
 function SingleResource9() {
     const liList = [
@@ -303,7 +304,7 @@ function SingleResource9() {
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 9" Date="February 17, 2023" ResourceHeading="RISK AND RETURN ANALYSIS ACROSS INVESTMENT ASSETS" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={ReactangleTopImage} />
+            <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 9" Date="February 17, 2023" ResourceHeading="RISK AND RETURN ANALYSIS ACROSS INVESTMENT ASSETS" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module3[2].img} />
             <section >
                 <div className="container p-0">
                     <Row>
