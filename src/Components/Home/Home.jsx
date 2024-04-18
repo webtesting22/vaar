@@ -35,10 +35,10 @@ function Home() {
                     <Col lg={12} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
-                               
+
                                 <div className='content-container-responsive'>
-                                <h1 className='main-global-heading ' style={{ fontWeight: "300",textAlign:"start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
-                                    <p data-aos="fade-up" style={{ fontWeight: "200",textAlign:"start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                    <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                                    <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="What's your email" />
                                         <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
@@ -75,7 +75,7 @@ function Home() {
                     </Col>
                 </Row>
                 <Row className='mobile-device-view'>
-                    
+
                     <Col lg={12} md={12} style={{ display: "flex", alignItems: "center" }}>
                         <div className='grid-images'>
                             <Row>
@@ -100,10 +100,10 @@ function Home() {
                     <Col lg={12} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
-                               
+
                                 <div className='content-container-responsive'>
-                                <h1 className='main-global-heading ' style={{ fontWeight: "300",textAlign:"start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
-                                    <p data-aos="fade-up" style={{ fontWeight: "200",textAlign:"start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                                    <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
+                                    <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="What's your email" />
                                         <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
@@ -223,9 +223,14 @@ function Home() {
                 {/* <br /> */}
                 <div class="marquee">
                     <div class="track">
-                        <div class="content"><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></div>
+                        <div class="content">New York&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boston&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Las Vegas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; San Francisco&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seattle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; San Diego&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Miami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Washington&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baltimore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Orlando&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Austin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dallas</div>
                     </div>
                 </div>
+                {/* <marquee class="marquee" loop={10000}>
+                    <div class="track">
+                        <div class="content"><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></div>
+                    </div>
+                </marquee> */}
                 {/* <marquee behavior="scroll" direction="left" ><h4 style={{ color: "white", fontWeight: "300", fontSize: "3rem" }}><span>New York</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Boston</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Las Vegas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Francisc</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Seattle</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>San Diego</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Miami</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Washington</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span> Baltimore</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Orlando</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Austin</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span>Dallas</span></h4> </marquee> */}
                 <br />
 
