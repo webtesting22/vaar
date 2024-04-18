@@ -83,7 +83,7 @@ function Navigation() {
 
                     <Offcanvas show={show} onHide={handleClose} placement="end">
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title><Link to="/"><img src={varrimg1} alt=" " style={{ width: "50px" }} /></Link></Offcanvas.Title>
+                            <Offcanvas.Title><Link to="/"><h2 style={{fontSize:"30px", textTransform:"uppercase"}}>Navigate</h2></Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul className='mobile-offcanvas-menu'>
