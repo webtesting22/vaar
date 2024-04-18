@@ -96,7 +96,7 @@ function VaarTeam() {
                 <div>
                     {/* <div className="section-padding"></div> */}
                     <div className='container only-mobile-heading'>
-                        <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Tefsafsam</h1>
+                        <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Team</h1>
                         <hr className='team-hr mb-4' />
                     </div>
                     <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>

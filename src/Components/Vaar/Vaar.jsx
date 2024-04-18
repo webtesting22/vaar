@@ -145,9 +145,12 @@ function Vaar() {
                             //     delay: 2500,
                             //     disableOnInteraction: true,
                             // }}
+                            pagination={{
+                                clickable: true, // Enable clickable dots
+                            }}
                             modules={[Pagination,Autoplay]}
                             className="mySwiper"
-                            // modules={[Autoplay]}
+                            // modules={[pagination]}
                         >
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>
@@ -184,11 +187,11 @@ function Vaar() {
                             pagination={{
                                 clickable: true,
                             }}
-                            autoplay={{
-                                delay: 2500,
-                                disableOnInteraction: true,
-                            }}
-                            modules={[Autoplay]}
+                            // autoplay={{
+                            //     delay: 2500,
+                            //     disableOnInteraction: true,
+                            // }}
+                            modules={[Autoplay, Pagination]}
                             className="mySwiper"
                         >
                             {teamMembers.map((item, index) => (
