@@ -156,9 +156,10 @@ function Bestvalue() {
 
                 <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
                     <div className='container'>
-                    <hr  className='top-section-heading-hr'/>
-                    <h1 className='section-heading-best-value pb-0'>Our Blogs</h1>
-                    <div className='container'>
+                    {/* <hr  className='top-section-heading-hr'/> */}
+                    <p>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
+                    {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
+                    <div className='container p-0'>
 
                         <Swiper
                             spaceBetween={30}
