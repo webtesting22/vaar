@@ -30,7 +30,7 @@ function Bestvalue() {
                         freeMode={true}
                         loop={true} // Enable infinite loop
                         autoplay={{
-                            delay: 2500,
+                            delay: 3000,
                             disableOnInteraction: true,
                         }}
                         breakpoints={{

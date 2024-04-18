@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./Founder.css";
 import animatedGirl from "../pictures/animatedgirl.png";
-import founderPicture from "../pictures/owner.jpg"
+import founderPicture from "../Founder/VidhiK.png"
 import img1 from "../pictures/About-icons/lightning.svg"
 import img2 from "../pictures/About-icons/graph.svg"
 import img3 from "../pictures/About-icons/command.svg"
