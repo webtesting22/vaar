@@ -63,6 +63,31 @@ function SingleResource5() {
                     cardPointDescription: "This low-interest environment translates to favorable mortgage rates, encouraging both traditional homebuyers and real estate investors to capitalize on the market."
                 }
             ]
+        },
+        {
+            cardTitle:"Employment and Income",
+            cardPoints:[
+                {
+                    cardSubtitle:"Unemployment rates",
+                    cardPointDescription:"1. Despite improvements, certain sectors continue to face employment challenges post-pandemic. For instance, the hospitality industry may still grapple with workforce adjustments."
+                },{
+                    cardSubtitle:"Impact on demographics",
+                    cardPointDescription:"The job market nuances influence the ability of younger demographics to enter the housing market, with industries like tech experiencing robust growth."
+                }
+            ]
+        },
+        {
+            cardTitle:"Inflation and Housing Prices",
+            cardPoints:[
+                {
+                    cardSubtitle:"Connection between inflation and housing",
+                    cardPointDescription:"Inflationary pressures persist, contributing to the upward trajectory of housing prices. For instance, major metropolitan areas might experience double-digit year-over-year price increases."
+                },
+                {
+                    cardSubtitle:"Effects on housing dynamics",
+                    cardPointDescription:"The inflation-driven rise in home prices poses challenges for first-time buyers, potentially necessitating creative financing solutions."
+                }
+            ]
         }
     ]
     const HousingcardData = [
@@ -70,15 +95,41 @@ function SingleResource5() {
             cardTitle: "Supply and Demand Dynamics",
             cardPoints: [
                 {
-                    cardSubtitle: "1. Current trends",
-                    cardPointDescription: "With interest rates hovering near historic lows in 2023, the real estate landscape is characterized by increased affordability. For example, a 30-year fixed-rate mortgage might be available at around 3%."
+                    cardSubtitle: "1. Inventory levels",
+                    cardPointDescription: "Scarce housing inventory in 2023 intensifies competition among buyers and investors. In cities like San Francisco, where demand outstrips supply, bidding wars become common."
                 },
                 {
-                    cardSubtitle: "2. Influence on mortgage rates",
-                    cardPointDescription: "This low-interest environment translates to favorable mortgage rates, encouraging both traditional homebuyers and real estate investors to capitalize on the market."
+                    cardSubtitle: "2. Demographic impacts",
+                    cardPointDescription: "The surge in demand from millennials, particularly in suburbs, influences housing market dynamics."
                 }
             ]
-        }
+        },
+        {
+            cardTitle:"Regional Disparities",
+            cardPoints:[
+                {
+                    cardSubtitle:"Varied market conditions",
+                    cardPointDescription:"Regional variations persist. In tech hubs like Austin, Texas, and Raleigh, North Carolina, real estate markets may experience accelerated growth due to influxes of remote workers."
+                },
+                {
+                    cardSubtitle:"Local economic factors",
+                    cardPointDescription:"The interplay of job markets, industries, and population growth on regional real estate. For instance, in Seattle, a booming tech sector may contribute to a robust real estate market."
+                }
+            ]
+        },
+        {
+            cardTitle:"Homeownership Rates",
+            cardPoints:[
+                {
+                    cardSubtitle:"Recent trends",
+                    cardPointDescription:"In 2023, the homeownership rate may witness a resurgence, especially as millennials, fueled by remote work opportunities, seek homeownership. However, in urban centers like New York City, renting might remain prevalent."
+                },
+                {
+                    cardSubtitle:"Factors influencing decisions",
+                    cardPointDescription:"Affordability concerns, combined with changing preferences, impact the decision-making process for potential homebuyers."
+                }
+            ]
+        },
     ]
     const FinancingcardData = [
         {
