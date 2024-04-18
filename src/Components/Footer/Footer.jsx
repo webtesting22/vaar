@@ -28,7 +28,7 @@ function Footer() {
 
                         <div className="slitely-padding"></div>
                         <div className='copyright-text'>
-                            <span>© 2024</span>
+                            <span>© 2023 Vaar Holding Corp</span>
                             <span>Privacy — Terms</span>
 
                         </div>

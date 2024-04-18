@@ -68,7 +68,7 @@ function Navigation() {
                                 <li><Link to="/HowItWorks">HOW IT WORKS</Link><hr /></li>
                                 {/* <li><Link to="/AboutUs">ABOUT US</Link><hr /></li> */}
                                 <li><Link to="/AllResources" >LEARN</Link><hr /></li>
-                                {/* <li><Link to="/VaarBlogs">BLOG</Link><hr /></li> */}
+                                <li><Link to="/VaarBlogs">BLOG</Link><hr /></li>
                                 <li><Link to="/Vaar">VAAR</Link><hr /></li>
                                 {/* <li><Link to="/VaarTeam">TEAM</Link><hr /></li> */}
                                 {/* <li><Link to="/ContactUs">Contact</Link></li> */}
@@ -99,10 +99,10 @@ function Navigation() {
                                     console.log("click")
                                     handleCloseOffcanvas();
                                 }}>LEARN</Link></li>
-                                {/* <li><Link to="/VaarBlogs" onClick={() => {
+                                <li><Link to="/VaarBlogs" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>BLOG</Link></li> */}
+                                }}>BLOG</Link></li>
                                 <li><Link to="/Vaar" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
@@ -113,7 +113,7 @@ function Navigation() {
                 </div>
                 <div className='sign-in-container'>
                     {/* <div className='input-group'> */}
-                        <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join Our</Link></button>
+                        <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Contact Us</Link></button>
                     {/* </div> */}
                 </div>
             </nav>

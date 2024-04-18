@@ -5,11 +5,11 @@ import img4 from "./CONCEPT3.png"
 const BestvalueData = [
     {
         img: img1,
-        title: "THE ALLURE OF REAL ESTATE INVESTMENT"
+        title: "The Allure of Real Estate Investment"
     },
     {
         img: img2,
-        title: "UP CLOSE & PERSONAL - RESIDENTIAL REAL ESTATE"
+        title: "Up Close & Personal - Residential Real Estate"
     },
     {
         img: img3,

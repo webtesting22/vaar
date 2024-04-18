@@ -51,9 +51,9 @@ function Founder() {
                     <div className='text-center' >
                         <hr className='m-0' />
                         <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Value Proposition</h1>
-                        <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>In a world that constantly builds and breaks itself down through disruption, confusion, and warfare, we offer a store of value that stands the tests of time.</p>
+                        <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>Vaar enables portfolio investment in prime, income-generating real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
                     </div>
-                    <div className="padding-slite"></div>
+                    {/* <div className="padding-slite"></div> */}
                     <div className="padding-slite"></div>
                     <div className="row w-100 m-auto home-pc">
                         {ValueData.map((item, index) => (
@@ -83,7 +83,7 @@ function Founder() {
 
                     </div>
                     <div className="row w-100 m-auto home-mobile">
-                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} autoplay >
+                        <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
 
                             {ValueData.map((item, index) => (
 
