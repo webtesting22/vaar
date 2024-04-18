@@ -15,7 +15,7 @@ function AllResources() {
             <section>
                 <div className="container">
                     <div>
-                        <h1 style={{ fontSize: "55px",color:"white" }}>All resources</h1>
+                        <h1 style={{ fontSize: "50px",color:"white",fontWeight:"300" }}>All resources</h1>
                         {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>

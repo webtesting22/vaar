@@ -78,8 +78,8 @@ a:hover:visited{
 
 .owner-quote-text {
     color: white;
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 300;
 }
 
 .blog-container-row {
@@ -151,6 +151,7 @@ a:hover:visited{
 
 .blog-title-container p {
     font-size: 18px;
+    font-weight: 300;
 }
 
 @media (max-width:778px) {

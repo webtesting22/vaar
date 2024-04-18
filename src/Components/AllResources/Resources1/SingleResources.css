@@ -190,9 +190,19 @@ h4 {
     opacity: 1;
     border: 1px solid rgb(85, 85, 85);
 }
-
+.pc-view-14{
+    display: block;
+}
+.mobile-view-14{
+    display: none;
+}
 @media (max-width:778px) {
-
+    .pc-view-14{
+        display: none;
+    }
+    .mobile-view-14{
+        display: block;
+    }
     .resources-left-container,
     .resources-right-container {
         padding: 0.5rem;

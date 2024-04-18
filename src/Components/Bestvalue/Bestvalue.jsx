@@ -135,7 +135,8 @@ function Bestvalue() {
                                         <div data-aos="fade-up"
                                             data-aos-anchor-placement="top-bottom">
                                             <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
-                                            <p style={{ fontSize: "18px" }}>{item.description}</p>
+                                            
+                                            <p style={{ fontSize: "16px",marginTop:"20px" }}>{item.description}</p>
                                             <br />
                                             <div className='m-0 p-0 read-more-btn'>
                                                 <a href="">Read More</a>

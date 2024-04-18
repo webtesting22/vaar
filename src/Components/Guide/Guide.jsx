@@ -6,8 +6,9 @@ import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
 import { Row, Col } from "antd"
 import teamposter from "../pictures/teamheroimage.png"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
-import HowItWorks from "../Guide/HowItWorks.jpeg"
+import HowItWorks from "./HowItWorks.jpeg"
 function Guide() {
+  // const HowItWorks =  "../Guide/HowItWorks.jpeg";
   return (
     <>
       <section style={{ color: "white" }}>
@@ -53,7 +54,7 @@ function Guide() {
                     <h3 className="box-title">{item.title}</h3>
                   </div>
                   <hr />
-                  <p className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</p>
+                  <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
                 </div>
               </div>
             ))}

@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import "./SingleResources.css"
+// import ReactangleTopImage from "../images/1.jpeg"
 import { Row, Col, Input, Button } from "antd"
 import img1 from "../Ellipse.svg"
 import CommonResourceComponent from "../commonResourceComponent";

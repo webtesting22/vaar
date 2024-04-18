@@ -57,6 +57,8 @@ function Founder() {
                     <div className="padding-slite"></div>
                     <div className="row w-100 m-auto home-pc">
                         {ValueData.map((item, index) => (
+                            
+                            // <div className="col-lg-3" key={index}></div>
                             <div className="col-lg-3" key={index}>
                                 <div className='box'>
                                     <div>
@@ -74,6 +76,7 @@ function Founder() {
 
 
                             </div>
+                            
                         ))}
 
 

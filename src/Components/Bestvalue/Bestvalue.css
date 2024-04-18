@@ -149,8 +149,8 @@
 }
 
 .owner-quote .inside-content2 .parent-div div h1 {
-    font-size: 48px;
-    font-weight: 600;
+    font-size: 35px;
+    font-weight: 300;
     margin-bottom: 3rem;
 }
 
@@ -197,7 +197,7 @@
 
 .Infomation-cards .row .col-lg-6 div h5 {
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .Infomation-cards .row .col-lg-6 .read-more-btn span {

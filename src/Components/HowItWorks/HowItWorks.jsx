@@ -105,6 +105,7 @@ function HowItWorks() {
 
                     <Accordion defaultActiveKey="0" id='accordion'>
                         <h6 className='FAQS-heading-mobile'>FAQs</h6>
+                        <hr />
                         <h1 id='FAQS-heading-pc' className="text-white">Frequently Asked Questions</h1>
                         <span className='FAQS-tagline-mobile'>Have questions? We’re here to help.</span>
                         <div className='input-group'>

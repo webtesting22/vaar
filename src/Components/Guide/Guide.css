@@ -29,7 +29,8 @@
 
 .box .box-title {
     color: #D4F604;
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 500;
     margin-bottom: 0px;
 }
 
@@ -137,6 +138,7 @@
     width: 30px;
     opacity: 0;
     transition: .5s;
+    margin: 8px 0px;
 }
 
 .box:hover hr {

@@ -3,7 +3,8 @@ import { Row, Col } from "antd";
 import "./commonResource.css"
 import Ellipse from "./Ellipse.svg"
 import ReactangleTopImage from "./Rectangle.svg"
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+
 function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHeading, AuthorInfo, topResourceImg }) {
     return (
         <>
@@ -35,7 +36,7 @@ function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHea
                         </Col>
                         <Col lg={12} md={12} className="order-lg-2 order-md-2">
                             <div>
-                                <img src={topResourceImg} alt="" style={{ width: "100%" }} />
+                                <img src={topResourceImg} alt="" style={{ width: "100%", borderRadius:"20px" }} />
                             </div>
                         </Col>
                     </Row>

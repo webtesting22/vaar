@@ -98,7 +98,7 @@ function VaarBlogs() {
                                             <Link to="/VaarBlogCommon">
                                                 <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                     <div>
-                                                        <h1 className='main-blog-heading'><a href="./VaarBlogCommon" className='text-white'>{item.blogTitle}</a></h1>
+                                                        <h1 className='main-blog-heading'><a href="./VaarBlogCommon" className='text-white' style={{fontWeight:"400"}}>{item.blogTitle}</a></h1>
                                                         <p className='text-white'>{item.blogContent}</p>
                                                         <div style={{ display: "flex", alignItems: "center" }}>
                                                             <span style={{ margin: "0px 10px", display: "flex", alignItems: "center", color:"white" }}><i class='bx bxs-calendar' style={{fontSize:"20px"}}></i> </span> <p style={{ margin: "0px", color: "white", fontSize: "14px" }}> {item.Date}</p>

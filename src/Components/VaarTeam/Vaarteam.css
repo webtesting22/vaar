@@ -41,12 +41,15 @@
 .only-for-mobile {
     display: none;
 }
-.only-mobile-heading{
+
+.only-mobile-heading {
     display: none;
 }
-.only-pc-heading{
+
+.only-pc-heading {
     display: block;
 }
+
 @media (max-width:700px) {
     .team-section-hero {
         height: 100%;
@@ -75,7 +78,8 @@
     .only-for-mobile {
         display: block;
     }
-    .team-hr{
+
+    .team-hr {
         height: 8px;
         width: 100px;
         border-radius: 20px;
@@ -83,10 +87,12 @@
         background-color: #D4F604;
         border: none;
     }
-    .only-mobile-heading{
+
+    .only-mobile-heading {
         display: block;
     }
-    .only-pc-heading{
+
+    .only-pc-heading {
         display: none;
     }
 }
@@ -99,5 +105,39 @@
         align-items: center;
         padding: 0rem 1rem;
     }
-    
+
+}
+
+.team-card .team-Social_handles div {
+    display: flex;
+    margin-top: 20px;
+}
+
+.team-card .team-Social_handles div i {
+    font-size: 20px;
+    color: white;
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 50%;
+    padding: 5px;
+    transition: .5s;
+}
+
+.team-card:hover .team-Social_handles div i {
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(27, 27, 27);
+    background-color: #D4F604;
+    border-radius: 50%;
+    transition: .5s;
+    padding: 5px;
+}
+
+.team-card-footer {
+    background-color: rgb(27, 27, 27);
+    padding: 20px 10px;
+}
+.team-card:hover .team-card-footer {
+    background-color: rgb(27, 27, 27);
+    padding: 20px 10px;
+    border-bottom:1px solid #D4F604;
 }

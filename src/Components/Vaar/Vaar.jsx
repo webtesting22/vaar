@@ -1,4 +1,4 @@
-import React, { useRef, useState,useEffect } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -9,9 +9,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import teamposter from "../pictures/teamheroimage.png"
 import "../VaarTeam/Vaarteam.css"
-import teamMemberimg1 from "../pictures/team1.svg"
-import teamMemberimg2 from "../pictures/team2.svg"
-import teamMemberimg3 from "../pictures/team3.svg"
+import DrumanPatel from "../Vaar/druman-patel.jpg"
+import Reehanshah from "../Vaar/reehan-shah.jpg"
+import SiddharthLaheri from "../Vaar/siddharth-laheri.jpg"
+import KhEmmaNguyen from "../Vaar/kh-emma-nguyen.jpg";
+import JimishP from "../Vaar/JimishP.jpg"
+import Anamayee from "../Vaar/anamayee.jpg"
+import VipulvPatel from "../Vaar/vipulvpatel.jpg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import SignupSection from '../SignUp/SignupSection';
@@ -19,67 +23,58 @@ import SignupSection from '../SignUp/SignupSection';
 function Vaar() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     const teamMembers = [
         {
-            img: teamMemberimg1,
-            name: "ANNIE HOANG",
-            position: "Marketing Associate"
+            img: DrumanPatel,
+            name: "Druman Patel",
+            position: "Accounting and Tax Advisory"
         },
         {
-            img: teamMemberimg2,
-            name: "MICHELLE WANG",
-            position: "Content Creator"
+            img: Reehanshah,
+            name: "Reehan Shah",
+            position: "Vaar Bot"
         },
         {
-            img: teamMemberimg3,
-            name: "RACHELE LEE",
-            position: "Manager"
+            img: SiddharthLaheri,
+            name: "Siddharth Laheri",
+            position: "Vaar App Design"
         },
         {
-            img: teamMemberimg1,
-            name: "ANNIE HOANG",
-            position: "Marketing Associate"
+            img: KhEmmaNguyen,
+            name: "Khai Han Nguyen",
+            position: "Vaar Website Design"
         },
         {
-            img: teamMemberimg2,
-            name: "MICHELLE WANG",
-            position: "Content Creator"
+            img: JimishP,
+            name: "Jimish Parekh",
+            position: "Technology & Product Development"
         },
         {
-            img: teamMemberimg3,
-            name: "RACHELE LEE",
-            position: "Manager"
+            img: Anamayee,
+            name: "Anamayee Shirolkar",
+            position: "Words"
         },
         {
-            img: teamMemberimg1,
-            name: "ANNIE HOANG",
-            position: "Marketing Associate"
+            img: VipulvPatel,
+            name: "Vipul Patel",
+            position: "Advisor"
         },
-        {
-            img: teamMemberimg2,
-            name: "MICHELLE WANG",
-            position: "Content Creator"
-        },
-        {
-            img: teamMemberimg3,
-            name: "RACHELE LEE",
-            position: "Manager"
-        },
+
     ]
 
     return (
         <>
             <div className="section-padding"></div>
 
-            <section style={{ color: "white", backgroundColor:"rgb(27, 27, 27)" }}>
+            <section style={{ color: "white", backgroundColor: "rgb(27, 27, 27)" }}>
                 <div>
                     <div className="container">
                         <Row>
                             <Col lg={6} md={6}>
                                 <div className='team-section-hero'>
                                     <div>
-                                        <h2>People who care about your growth</h2>
+                                        <h2>People who care about fyour growth</h2>
                                         <p>Meet our team members and learn more about their work at VAAR Holding.</p>
                                     </div>
                                 </div>
@@ -102,7 +97,7 @@ function Vaar() {
                         <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Team</h1>
                         <hr className='team-hr mb-4' />
                     </div>
-                    <h1 style={{ textAlign: "center", fontSize: "55px", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>
+                    <h1 style={{ textAlign: "center", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>
                     <div className='container only-for-pc'>
                         {/* <Row>
                 {teamMembers.map((item, index) => (
@@ -130,17 +125,23 @@ function Vaar() {
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>
                                     <Row>
+                                        <div className='team-card'>
 
-                                        <Col key={index} lg={24} md={24} style={{ margin: "auto" }}>
-                                            <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
-                                            <div style={{ backgroundColor: "rgb(27, 27, 27)", padding: "20px 10px" }}>
-                                                <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
-                                                <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
-                                            </div>
-                                            <div className="team-section-padding"></div>
-                                        </Col>
+                                            <Col key={index} lg={24} md={24} style={{ margin: "auto" }} >
+                                                <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
+                                                <div className='team-card-footer'>
+                                                    <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
+                                                    <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
+                                                    <div className='team-Social_handles'>
+                                                        <div>
+                                                            <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="team-section-padding"></div>
+                                            </Col>
 
-
+                                        </div>
                                     </Row>
                                 </SwiperSlide>
 
@@ -165,12 +166,19 @@ function Vaar() {
                         >
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>
-                                    <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
-                                    <div className='pt-4'>
-                                        <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
-                                        <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
+                                    <div className='team-card'>
+                                        <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
+                                        <div className='pt-4'>
+                                            <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
+                                            <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
+                                            <div className='team-Social_handles'>
+                                                <div>
+                                                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="team-section-padding"></div>
                                     </div>
-                                    <div className="team-section-padding"></div>
                                 </SwiperSlide>
                             ))}
                         </Swiper>
