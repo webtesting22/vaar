@@ -131,7 +131,7 @@
     }
 
     .quote-icon {
-        display: none;
+        display: block;
     }
 
     .founder-info h2 {
