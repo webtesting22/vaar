@@ -90,23 +90,23 @@ function Navigation() {
                                 <li><Link to="/" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Home</Link></li>
+                                }}>HOME</Link></li>
                                 <li><Link to="/HowItWorks" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>How it works</Link></li>
+                                }}>HOW IT WORKS</Link></li>
                                 <li><Link to="/AllResources" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Learn</Link></li>
+                                }}>LEARN</Link></li>
                                 <li><Link to="/VaarBlogs" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Blog</Link></li>
+                                }}>BLOG</Link></li>
                                 <li><Link to="/Vaar" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>Vaar</Link></li>
+                                }}>VAAR</Link></li>
                             </ul>
 
                             <div className='social-connect'>
