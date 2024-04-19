@@ -24,7 +24,7 @@ function Bestvalue() {
                         <hr className='top-section-heading-hr' />
                         <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
                         <div className="padding-slite"></div>
-                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>Learn more about real assets through the following modules.</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>REAL ESTATE: A COURSE</p>
 
                     </div>
 
@@ -42,6 +42,7 @@ function Bestvalue() {
                                 slidesPerView: 4, // Slides per view for screens >= 768px (for mobile devices)
                             },
                         }}
+                        pagination={true}
                         // pagination={{ clickable: true }}
                         id="mySwiper"
                         modules={[Autoplay, Pagination, Navigation]}
@@ -99,7 +100,7 @@ function Bestvalue() {
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
 
                         {/* <div className="section-padding"></div> */}
-                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>get the latest updates about the industry</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>LEATEST IN THE INDUSTRY</p>
                         {/* <hr /> */}
 
 
@@ -165,7 +166,7 @@ function Bestvalue() {
                 <div className='Blog-section only-mobile ' >
                     <div className='container'>
                         {/* <hr  className='top-section-heading-hr'/> */}
-                        <p style={{ color: "#D4F604"}}>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
+                        <p style={{ color: "#D4F604"}}>LEATEST IN THE INDUSTRY</p>
                         {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
                         <div className='container p-0'>
 

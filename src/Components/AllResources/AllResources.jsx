@@ -3,10 +3,11 @@ import { Link } from "react-router-dom"
 import "./Allresources.css"
 import { Module1, Module2, Module3, Module4 } from './AllResourcesData';
 import SignupSection from '../SignUp/SignupSection';
+import {Row,Col} from "antd"
 import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import guideimg from "../AllResources/guideimg.jpeg"
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -18,11 +19,36 @@ function AllResources() {
 
         <>
             <div className="section-padding "></div>
+            <section style={{ color: "white", backgroundColor: "black" }}>
+                <div>
+                    <div className="container">
+                        <Row>
+
+                            <Col lg={12} md={12}>
+                                <div className='team-section-hero' id='team-section-hero'>
+                                    <div>
+                                        <h2 style={{fontWeight:"200",fontSize:"50px", color:"#D4F604"}}>101 Real Estate</h2>
+                                        <p>An introduction to real estate and other asset classes</p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col lg={12} md={12}>
+                                <div className='team-section-hero2'>
+                                    <img src={guideimg} alt="" />
+                                    <img src={guideimg} alt="" />
+                                    <h2 style={{fontWeight:"200",fontSize:"50px", color:"#D4F604"}} id='mobile-heading-show'>101 Real Estate</h2>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+
+            </section>
             <section>
                 <div className="container">
                     <div>
-                    <hr className='top-section-heading-hr' />
-                        <h1 style={{ fontSize: "50px", color: "#D4F604", fontWeight: "300" }}>101 Real Estate</h1>
+                    {/* <hr className='top-section-heading-hr' /> */}
+                        {/* <h1 style={{ fontSize: "50px", color: "#D4F604", fontWeight: "300" }}>101 Real Estate</h1> */}
                         {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
                             <option value="1">One</option>

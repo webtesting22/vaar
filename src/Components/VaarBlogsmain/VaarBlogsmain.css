@@ -127,9 +127,9 @@ a:hover:visited{
     }
 
     .Blog-section .blog-cards {
-        margin: 20px 0px;
+        /* margin: 20px 0px; */
         border-bottom: 1px solid rgba(0, 0, 0, 0.267);
-        padding: 20px 0px;
+        /* padding: 20px 0px; */
     }
 
     .blogs-block {

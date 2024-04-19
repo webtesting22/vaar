@@ -134,8 +134,8 @@ function Vaar() {
                             <Col lg={12} md={12}>
                                 <div className='team-section-hero' id='team-section-hero'>
                                     <div>
-                                        <h2>People who care about fyour growth</h2>
-                                        <p>Meet our team members and learn more about their work at VAAR Holding.</p>
+                                        <h2 style={{fontWeight:"200", color:"#D4F604", fontSize:"50px"}}>Who We Are</h2>
+                                        <p>A glimpse of how we think and what are team looks like </p>
                                     </div>
                                 </div>
                             </Col>

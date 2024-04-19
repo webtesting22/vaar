@@ -26,8 +26,8 @@ function Guide() {
                 <div className='team-section-hero'>
                   <div style={{marginTop:"2rem"}}>
                     <hr className='top-section-heading-hr' />
-                    <h1 id='howitworks-heading'>A STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
-                    {/* <p>Meet our team members and learn more about their work at VAAR Holding.</p> */}
+                    <h1 id='howitworks-heading'>A Step Guide To Being A Digital Landlord</h1>
+                    <p>Learn about the process</p>
                   </div>
                 </div>
               </Col>

@@ -5,13 +5,19 @@
    border-right: none;
    border-radius: 0px;
 }
-
+#mobile-heading-show{
+   display: none;
+}
 @media (max-width:600px) {
    .form-select {
       width: 100%;
       border-top: none;
       border-left: none;
       border-right: none;
+   }
+   #mobile-heading-show{
+      display: block;
+      margin-top: 20px;
    }
 }
 
