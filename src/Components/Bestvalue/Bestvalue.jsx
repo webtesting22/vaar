@@ -158,7 +158,7 @@ function Bestvalue() {
 
                 </div>
 
-                <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
+                <div className='Blog-section only-mobile ' >
                     <div className='container'>
                         {/* <hr  className='top-section-heading-hr'/> */}
                         <p>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
