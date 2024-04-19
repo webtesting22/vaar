@@ -55,14 +55,14 @@ function Home() {
                                             onChange={handleInputChange}
                                         />
                                         <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white' }}>
-                                            <Link to="/ContactUs" style={{ color: "black", display: "flex", alignItems: "center" }}>
+                                            <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                 <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                             </Link>
                                         </button>
                                     </div>
                                     <div className='mobile-view-home' data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-center">
-                                        <button><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                        <button><Link to="" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
                                     </div>
                                 </div>
 
@@ -131,7 +131,7 @@ function Home() {
                                             onChange={handleInputChange}
                                         />
                                         <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white' }}>
-                                            <Link to="/ContactUs" style={{ color: "black", display: "flex", alignItems: "center" }}>
+                                            <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                 <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                             </Link>
                                         </button>
