@@ -118,7 +118,8 @@ function Bestvalue() {
                                         <div className='parent-div'>
                                             <div style={{ position: "relative" }}>
                                                 <span>Vidhi Kanaria</span>
-                                                <h1>CONCEPT: Real Estate x Fractional Investing</h1>
+                                                <h1>CONCEPT: </h1>
+                                                <p>Real Estate x Fractional Investing</p>
                                                 <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...</p>
                                                 <div className='button-animation-without-absolute p-0'>
                                                     <a href="">Read More</a>

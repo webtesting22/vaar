@@ -5,7 +5,8 @@ import blogimg3 from "../pictures/blogImage3.svg"
 const BlogDatamain = [
     {
         blogImg: blogimg1,
-        blogTitle: "CONCEPT: Real Estate x Fractional Investing",
+        blogTitle: "CONCEPT:",
+        title:" Real Estate x Fractional Investing",
         blogContent: "The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...",
         Date: "dd-mm-yy"
 
