@@ -176,7 +176,7 @@ function Vaar() {
 
                 </Row >
             </div>
-       
+
             <div className="padding-slite"></div>
 
             <section>
@@ -266,7 +266,7 @@ function Vaar() {
                                             <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
                                             <div className='team-Social_handles'>
                                                 <div>
-                                                    <a href=""><i class='bx bxl-linkedin-square'></i></a>
+                                                    <a href={item.link} target='_black'><i class='bx bxl-linkedin-square'></i></a>
                                                 </div>
                                             </div>
                                         </div>
