@@ -5,8 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Row, Col } from 'antd';
 import teamposter from "../Vaar/Rectangle.jpeg"
 import "../VaarTeam/Vaarteam.css"
 import DrumanPatel from "../Vaar/druman-patel.jpg"
@@ -22,6 +21,7 @@ import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import SignupSection from '../SignUp/SignupSection';
+import Title from 'antd/es/skeleton/Title';
 // import { Autoplay } from 'swiper/modules';
 
 function Vaar() {
@@ -86,6 +86,36 @@ function Vaar() {
 
     ]
 
+    const InwardData = [
+        {
+            Title: "Inward",
+            pointTitle: "Think Rigorously",
+            pointDescription: "We care about being right and it often takes reasoning from first principles to get there- essentially boiling things down to facts and using them as a foundation to building a solution"
+        },
+        {
+            pointTitle: "Optimism",
+            pointDescription: "We are micro pessimists but macro optimists. Yes, it makes our life difficult in the short-run, but the eventual outcome is generally within shouting-distance of our expectations."
+        },
+        {
+            pointTitle: "Trust & Amplify",
+            pointDescription: "By the standards of rest of the world, we overtrust. We’re okay with that. Within the company, individuals in charge of different tasks are trusted to think and produce the best possible results without interference in their process. Thus, it is imperative for us to work with people that are driven to build and deliver."
+        }
+    ]
+    const Outward = [
+        {
+            Title: "Outward",
+            pointTitle: "Do Not Sell",
+            pointDescription: "We are neither selling Vaar, nor real estate. We want to equip you with all the relevant information about real estate and then if you decide that the asset deserves a place in your portfolio, we facilitate that transaction."
+        },
+        {
+            pointTitle: "Nobody Likes A Preacher",
+            pointDescription: "“You cannot bore people into buying a product. You can only interest them.” David Ogilvy. We like to think this way, and thus our so we can build something they might actually want."
+        },
+        {
+            pointTitle: "Implement With Precision",
+            pointDescription: "Our users trust us with their money and rely on our research to earn returns. If we mess up, or slow down, it matters. We take that responsibility seriously"
+        }
+    ]
     return (
         <>
             <div className="section-padding"></div>
@@ -94,7 +124,8 @@ function Vaar() {
                 <div>
                     <div className="container">
                         <Row>
-                            <Col lg={6} md={6}>
+
+                            <Col lg={12} md={12}>
                                 <div className='team-section-hero'>
                                     <div>
                                         <h2>People who care about fyour growth</h2>
@@ -102,7 +133,7 @@ function Vaar() {
                                     </div>
                                 </div>
                             </Col>
-                            <Col lg={6} md={6}>
+                            <Col lg={12} md={12}>
                                 <div className='team-section-hero2'>
                                     <img src={teamposter} alt="" />
                                     <img src={teamposter} alt="" />
@@ -113,14 +144,49 @@ function Vaar() {
                 </div>
 
             </section>
+            <div className="padding-slite"></div>
+            <div className='container'>
+                <hr className='top-section-heading-hr' />
+                <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Values</h1>
+            </div>
+            <div className='container values-container'>
+                <Row >
+                    {InwardData.map((item, index) => (
+                        <Col lg={24} md={24}>
+                            <h4>{item.Title}</h4>
+                            <div key={index} className='values-boxes'>
+                                <h6 style={{ fontWeight: "400" }}>{item.pointTitle}</h6>
+                                <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
+                            </div>
+                        </Col>
+                    ))}
+                </Row>
+
+                <Row >
+                    {Outward.map((item, index) => (
+                        <Col lg={24} md={24}>
+                            <h4>{item.Title}</h4>
+                            <div key={index} className='values-boxes'>
+                                <h6 style={{ fontWeight: "400" }}>{item.pointTitle}</h6>
+                                <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
+
+                            </div>
+                        </Col>
+                    ))}
+
+                </Row >
+            </div>
+            <div className="padding-slite"></div>
+
             <section>
-                <div>
+                <div className='container'>
                     {/* <div className="section-padding"></div> */}
-                    <div className='container only-mobile-heading'>
+                    {/* <div className='container only-mobile-heading'>
                         <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Team</h1>
                         <hr className='team-hr mb-4' />
-                    </div>
-                    <h1 style={{ textAlign: "center", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>
+                    </div> */}
+                    <hr className='top-section-heading-hr' />
+                    <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Team</h1>
                     <div className='container only-for-pc team-navigation'>
                         {/* <Row>
                 {teamMembers.map((item, index) => (
@@ -147,7 +213,7 @@ function Vaar() {
                             //     disableOnInteraction: true,
                             // }}
                             navigation={true}
-                            modules={[Pagination, Autoplay,Navigation]}
+                            modules={[Pagination, Autoplay, Navigation]}
                             className="mySwiper"
                         // modules={[pagination]}
                         >

@@ -66,8 +66,20 @@
     padding: 10px;
     border-radius: 2px;
 }
-
+.values-boxes{
+    padding: 10px 20px;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    margin: 0px 10px;
+}
+.values-container{
+    display: flex;
+    flex-direction: row;
+}
 @media (max-width:700px) {
+    .values-container{
+        display: flex;
+        flex-direction: column;
+    }
     .team-navigation .swiper-button-next:after {
         content: 'next';
         background: #D4F604;
