@@ -43,7 +43,7 @@ function VaarBlogs() {
                             </div>
                         </Col>
                     </Row>
-                    <div className='Blog-section only-mobile ' style={{ padding: "3rem 0rem" }}>
+                    <div className='Blog-section only-mobile '>
                    <div className='container'>
                    <hr className='top-section-heading-hr' />
                         <h1 className='section-heading-best-value pb-2' style={{color: "#D4F604"}}>Our Blogs</h1>
