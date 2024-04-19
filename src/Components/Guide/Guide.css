@@ -153,8 +153,13 @@
 .box-top-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-
+.numbering span{
+    font-size: 25px;
+    font-weight: bold;
+    color: #333333;
+}
 .box-top-header img {
     background-color: #D4F604;
     width: 48px;
@@ -183,9 +188,12 @@
 
     .box-top-header {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column; */
+        /* justify-content: center; */
         margin: auto;
         text-align: center;
+    }
+    .box-title{
+        padding-left: 10px;
     }
 }

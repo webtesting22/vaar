@@ -50,8 +50,12 @@ function Guide() {
               <div key={index} className="col-lg-4 col-md-6">
                 <div className="box" >
                   <div className='box-top-header'>
-                    <img src={item.img} alt={item.title} />
-                    <h3 className="box-title">{item.title}</h3>
+                    <div style={{ display: "flex", alignItems: "center" }}>
+                      <img src={item.img} alt={item.title} />
+                      <h3 className="box-title">{item.title}</h3>
+                    </div>
+                    <div className='numbering'><span>{index+1}</span></div>
+
                   </div>
                   <hr />
                   <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
