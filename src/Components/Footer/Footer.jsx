@@ -41,7 +41,7 @@ function Footer() {
                         </div>
                         <hr /> */}
                         <div className='copyright-text-mobile' style={{display:"flex",justifyContent:"center"}}>
-                            <span style={{textAlign:"center"}}>© 2024 Vaar Holding. All rights reserved.</span>
+                            <span style={{textAlign:"center"}}>© 2023 Vaar Holding Corp. All rights reserved.</span>
                         </div>
 
 

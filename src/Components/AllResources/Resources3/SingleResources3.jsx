@@ -178,8 +178,6 @@ function SingleResource3() {
             // mainTitle: "Returns",
             pointTitle: "Real Estate",
             pointsData: [
-
-
                 "Income Generation: Rental yields provide a steady income stream.",
                 "Potential for Appreciation: Real estate has the potential for long-term capital appreciation."
 
@@ -330,7 +328,7 @@ function SingleResource3() {
                                                 <div>
                                                     <h6>Returns</h6>
                                                     <hr />
-                                                    {/* {ComparingRealStatesPointsData.map((item, index) => (
+                                                    {ComparingRealStatesPointsData.map((item, index) => (
                                                         <Carousel afterChange={onChange} ref={carouseltwoRef} dots={false} >
 
 
@@ -345,7 +343,7 @@ function SingleResource3() {
                                                             </div>
 
                                                         </Carousel>
-                                                    ))} */}
+                                                    ))}
                                                 </div>
 
 
