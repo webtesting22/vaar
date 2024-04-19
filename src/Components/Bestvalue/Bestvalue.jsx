@@ -210,6 +210,7 @@ function Bestvalue() {
                         </div>
 
                     </div>
+                    <div className="padding-slite"></div>
                 </div>
 
             </section>
