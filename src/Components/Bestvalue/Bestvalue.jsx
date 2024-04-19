@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "./Bestvalue.css"
 import { BestvalueData, BestValueCardsData } from './BestvalueData';
-import ownerQuoteimg from "../pictures/ownerQuote.png"
+import ownerQuoteimg from "../Bestvalue/blog-common.jpeg"
 // import { FreeMode, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/free-mode';
@@ -186,18 +186,19 @@ function Bestvalue() {
                                         <Link to="/VaarBlogCommon">
                                             <div className='blog-cards'>
                                                 <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
-                                                <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                                <div style={{ position: "relative", justifyContent: "space-between" }}>
                                                     <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
+                                                    <p style={{color:"white"}}>{item.subtitle}</p>
                                                     <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                                 </div>
                                                 <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
-                                                <div className='Posted'>
+                                                {/* <div className='Posted'>
                                                     <div><img src={item.avtar} alt="Not Found" /></div>
                                                     <div className='ps-3'>
                                                         <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
                                                         <span>15 Jan 2024</span>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </Link>
                                     </SwiperSlide>

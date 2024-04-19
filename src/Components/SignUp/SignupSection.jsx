@@ -7,13 +7,13 @@ function SignupSection() {
             <section className=' Sign-up-btns'>
                 <div className="container">
                     <div className="row m-auto">
-                        <div className="col-lg-6" style={{display:"flex", justifyContent:"right"}}>
+                        <div className="col-lg-6" >
                             <div>
                                 {/* <h2 className='sign-up-title'><b>Ready to get started?</b></h2> */}
                                 <span className='sign-up-tagline' style={{ fontWeight: "300" }}>Questions? Comments? Let's debate!</span>
                             </div>
                         </div>
-                        <div className="col-lg-6" style={{display:"flex", justifyContent:"center"}}>
+                        <div className="col-lg-6">
                             <div className='sign-up-btn-container'>
                                 <button><Link to="/ContactUs">Contact Us</Link></button>
                                 {/* <button> <a href="" className='text-white'>Contact Us</a></button> */}

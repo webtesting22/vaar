@@ -24,8 +24,9 @@ function Guide() {
               </Col>
               <Col lg={12} md={12}>
                 <div className='team-section-hero'>
-                  <div>
-                    <h1 className='section-heading' style={{ color: "#D4F604", paddingBottom: "0px" }}>A STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
+                  <div style={{marginTop:"2rem"}}>
+                    <hr className='top-section-heading-hr' />
+                    <h1 id='howitworks-heading'>A STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
                     {/* <p>Meet our team members and learn more about their work at VAAR Holding.</p> */}
                   </div>
                 </div>

@@ -111,8 +111,8 @@ function Navigation() {
 
                             <div className='social-connect'>
                                 <div className='mobile-menu-social-icons'>
-                                    <i class='bx bxl-twitter'></i>
-                                    <i class='bx bxl-instagram'></i>
+                                    <a href="https://x.com/vaar_corp?s=11&t=uw6GXpJlRYYPYOVJoKHs9g" target='_black'><i class='bx bxl-twitter'></i></a>
+                                    <a href="https://www.linkedin.com/company/vaar-holding/" target='_black'><i class='bx bxl-linkedin-square'></i></a>
                                 </div>
                                 <div style={{ display: "flex", justifyContent: "center" }}>
                                     <span>Privacy — Terms</span>

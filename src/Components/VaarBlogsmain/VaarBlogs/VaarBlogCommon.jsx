@@ -58,9 +58,9 @@ function VaarBlogCommon() {
                         {/* <div className="padding-slite"></div> */}
                         <ul>
                             <li> <p><b>Stable Returns:</b> Real estate investments have historically provided steady rental income alongside potential appreciation in property value.</p></li>
-                            <li><p><b>Inflation Hedge</b> Real estate often appreciates in value at a rate that outpaces inflation, making it an excellent tool to protect your purchasing power over time.</p></li>
-                            <li><p><b>Tax Advantages</b> Real estate investors can benefit from various tax deductions, such as depreciation, mortgage interest, and property tax deductions, potentially lowering their tax burden.</p></li>
-                            <li><p><b>Tangible Asset</b>Real estate is a physical asset that provides utility and has intrinsic value, offering a layer of security that isn't available with all types of investments — putting the “real” in real estate.</p></li>
+                            <li><p><b>Inflation Hedge:</b> Real estate often appreciates in value at a rate that outpaces inflation, making it an excellent tool to protect your purchasing power over time.</p></li>
+                            <li><p><b>Tax Advantages:</b> Real estate investors can benefit from various tax deductions, such as depreciation, mortgage interest, and property tax deductions, potentially lowering their tax burden.</p></li>
+                            <li><p><b>Tangible Asset:</b> Real estate is a physical asset that provides utility and has intrinsic value, offering a layer of security that isn't available with all types of investments — putting the “real” in real estate.</p></li>
                         </ul>
 
                     <div className="padding-slite"></div>
@@ -74,12 +74,12 @@ function VaarBlogCommon() {
                         <p style={{color:"#D4F604"}}>3. Is Fractional Investing Worth It?</p>
                         <p>Here's why we think fractional investing is a game-changer:</p>
                         <ul>
-                            <li><p><b>Affordability</b>Fractional ownership drastically reduces the financial barrier to entry, allowing you to invest in properties that would otherwise require substantial capital.</p></li>
-                            <li><p><b>Diversification</b>With the ability to invest as per your abilities, you can spread your investment across multiple properties or different types of real estate, reducing risk and increasing potential returns.</p></li>
-                            <li><p><b>Simplicity</b>Managing a fractional investment is typically handled by us, removing the complexity of property management, maintenance, and other logistical issues.</p></li>
-                            <li><p><b>Accessibility</b>Fractional investing platforms provide detailed insights and analyses, leveling the playing field and offering transparency that individual investors often don't have access to in traditional real estate markets.</p></li>
+                            <li><p><b>Affordability:</b> Fractional ownership drastically reduces the financial barrier to entry, allowing you to invest in properties that would otherwise require substantial capital.</p></li>
+                            <li><p><b>Diversification:</b> With the ability to invest as per your abilities, you can spread your investment across multiple properties or different types of real estate, reducing risk and increasing potential returns.</p></li>
+                            <li><p><b>Simplicity:</b> Managing a fractional investment is typically handled by us, removing the complexity of property management, maintenance, and other logistical issues.</p></li>
+                            <li><p><b>Accessibility:</b> Fractional investing platforms provide detailed insights and analyses, leveling the playing field and offering transparency that individual investors often don't have access to in traditional real estate markets.</p></li>
                         </ul>
-                        <div className="blogAuthorDetails">
+                        {/* <div className="blogAuthorDetails">
                             <div>
                                 <img src={Ellipse} alt="" />
                             </div>
@@ -88,7 +88,7 @@ function VaarBlogCommon() {
                                 <p style={{ color: "white" }}>Founder, VAAR</p>
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
                 </div>

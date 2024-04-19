@@ -21,8 +21,8 @@ function Footer() {
                         <br /> */}
                         <div className='social-icons-btn'>
                             {/* <span><i class='bx bxl-instagram'></i></span> */}
-                            <span><i class='bx bxl-twitter'></i></span>
-                            <span><i class='bx bxl-linkedin-square' ></i></span>
+                            <span><a href="https://x.com/vaar_corp?s=11&t=uw6GXpJlRYYPYOVJoKHs9g" target='_blank'><i class='bx bxl-twitter'></i></a></span>
+                            <span><a href="https://www.linkedin.com/company/vaar-holding/" target='_blank'><i class='bx bxl-linkedin-square' ></i></a></span>
 
                         </div>
 
@@ -40,8 +40,8 @@ function Footer() {
 
                         </div>
                         <hr /> */}
-                        <div className='copyright-text-mobile' style={{display:"flex",justifyContent:"center"}}>
-                            <span style={{textAlign:"center"}}>© 2023 Vaar Holding Corp. All rights reserved.</span>
+                        <div className='copyright-text-mobile' style={{ display: "flex", justifyContent: "center" }}>
+                            <span style={{ textAlign: "center" }}>© 2023 Vaar Holding Corp. All rights reserved.</span>
                         </div>
 
 

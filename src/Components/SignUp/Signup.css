@@ -4,7 +4,7 @@
 }
 .Sign-up-btns .row .col-lg-6 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 .Sign-up-btns .row .col-lg-6 a{
@@ -17,7 +17,7 @@
     font-size: 18px;
     color: black;
     background-color: #D4F604;
-    margin: 20px;
+    margin: 20px 0px;
     width: 200px;
     height: 48px;
     border: none;
@@ -88,5 +88,12 @@
     }
     .sign-up-title{
         font-size: 30px;
+    }
+    .Sign-up-btns .col-lg-6{
+        display: flex;
+        justify-content: start;
+    }
+    .sign-up-btn-container{
+
     }
 }

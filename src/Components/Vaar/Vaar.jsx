@@ -132,7 +132,7 @@ function Vaar() {
                         <Row>
 
                             <Col lg={12} md={12}>
-                                <div className='team-section-hero'>
+                                <div className='team-section-hero' id='team-section-hero'>
                                     <div>
                                         <h2>People who care about fyour growth</h2>
                                         <p>Meet our team members and learn more about their work at VAAR Holding.</p>
@@ -153,7 +153,7 @@ function Vaar() {
             <div className="padding-slite"></div>
             <div className='container'>
                 <hr className='top-section-heading-hr' />
-                <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Values</h1>
+                <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Values</h1>
             </div>
             <div className='container values-container  ourvalues-viewpc' id='ourvalues-viewpc'>
                 <Row>
@@ -239,7 +239,7 @@ function Vaar() {
                         <hr className='team-hr mb-4' />
                     </div> */}
                     <hr className='top-section-heading-hr' />
-                    <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Team</h1>
+                    <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Team</h1>
                     <div className='container only-for-pc team-navigation'>
                         {/* <Row>
                 {teamMembers.map((item, index) => (

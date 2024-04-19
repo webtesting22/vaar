@@ -55,6 +55,7 @@
         position: relative;
         padding: 28vh 0vh;
     }
+ 
 }
 @media (min-width:501px) and (max-width:600px){
     .blob-mobile-img {
@@ -63,7 +64,19 @@
         padding: 28vh 0vh;
     }
 }
+#howitworks-heading{
+    text-align: start;
+    font-weight: 300;
+    /* margin-top: 2rem; */
+    color: #D4F604;
+}
 @media (max-width:600px) {
+    #howitworks-heading{
+        text-align: start;
+        font-weight: 300;
+        margin-top: 2rem;
+        color: #D4F604;
+    }
     .Guide-section .row {
         padding: 0rem 0rem;
     }

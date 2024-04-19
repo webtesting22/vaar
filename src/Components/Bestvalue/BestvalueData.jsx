@@ -28,7 +28,8 @@ const BestValueCardsData = [
     {
         img: img5,
         avtar: avtarr1,
-        title: "CONCEPT: Real Estate x Fractional Investing",
+        title: "CONCEPT: ",
+        subtitle:"Real Estate x Fractional Investing",
         description: "The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio..."
     },
     // {
