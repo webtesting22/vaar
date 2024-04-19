@@ -206,7 +206,7 @@ function Vaar() {
                     </Button>
                 </div>
                 <Row>
-                    <Swiper
+                    {/* <Swiper
                         spaceBetween={30}
                         pagination={{
                             clickable: true, // Enable clickable dots
@@ -214,9 +214,9 @@ function Vaar() {
                         // modules={[Pagination,Autoplay]}
                         modules={[Autoplay, Pagination]}
                         className="mySwiper"
-                    >
+                    > */}
                         {(activeTab === 'inward' ? InwardData : OutwardData).map((item, index) => (
-                            <SwiperSlide>
+                            // <SwiperSlide>
                                 <Col lg={24} md={24} key={index}>
                                     {/* <h4>{item.Title}</h4> */}
                                     <div className='values-boxes'>
@@ -224,9 +224,9 @@ function Vaar() {
                                         <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
                                     </div>
                                 </Col>
-                            </SwiperSlide>
+                            // </SwiperSlide>
                         ))}
-                    </Swiper>
+                    {/* </Swiper> */}
                 </Row>
             </div>
             <div className="padding-slite"></div>
