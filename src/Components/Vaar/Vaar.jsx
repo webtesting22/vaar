@@ -153,9 +153,9 @@ function Vaar() {
                 <Row >
                     {InwardData.map((item, index) => (
                         <Col lg={24} md={24}>
-                            <h4>{item.Title}</h4>
+                            <h4 >{item.Title}</h4>
                             <div key={index} className='values-boxes'>
-                                <h6 style={{ fontWeight: "400" }}>{item.pointTitle}</h6>
+                                <h6 style={{ fontWeight: "400",color:"#D4F604"}}>{item.pointTitle}</h6>
                                 <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
                             </div>
                         </Col>
@@ -167,7 +167,7 @@ function Vaar() {
                         <Col lg={24} md={24}>
                             <h4>{item.Title}</h4>
                             <div key={index} className='values-boxes'>
-                                <h6 style={{ fontWeight: "400" }}>{item.pointTitle}</h6>
+                                <h6 style={{ fontWeight: "400",color:"#D4F604"}}>{item.pointTitle}</h6>
                                 <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
 
                             </div>
