@@ -11,7 +11,7 @@ function Guide() {
   // const HowItWorks =  "./HowItWorks.jpeg";
   return (
     <>
-      <section style={{ color: "white",paddingBottom:"0px" }}>
+      <section style={{ color: "white", paddingBottom: "0px" }}>
         <div>
           <div className="container">
             <Row>
@@ -25,7 +25,7 @@ function Guide() {
               <Col lg={12} md={12}>
                 <div className='team-section-hero'>
                   <div>
-                    <h1 className='section-heading' style={{ color: "#D4F604",paddingBottom:"0px" }}>A STEP-BY-STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
+                    <h1 className='section-heading' style={{ color: "#D4F604", paddingBottom: "0px" }}>A STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
                     {/* <p>Meet our team members and learn more about their work at VAAR Holding.</p> */}
                   </div>
                 </div>
@@ -54,7 +54,7 @@ function Guide() {
                       <img src={item.img} alt={item.title} />
                       <h3 className="box-title">{item.title}</h3>
                     </div>
-                    <div className='numbering'><span>{index+1}</span></div>
+                    <div className='numbering'><span>{index + 1}</span></div>
 
                   </div>
                   <hr />

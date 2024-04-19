@@ -90,30 +90,34 @@ function Navigation() {
                                 <li><Link to="/" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>HOME</Link></li>
+                                }}>Home</Link></li>
                                 <li><Link to="/HowItWorks" className="hover-this" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>HOW IT WORKS</Link></li>
+                                }}>How it works</Link></li>
                                 <li><Link to="/AllResources" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>LEARN</Link></li>
+                                }}>Learn</Link></li>
                                 <li><Link to="/VaarBlogs" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>BLOG</Link></li>
+                                }}>Blog</Link></li>
                                 <li><Link to="/Vaar" onClick={() => {
                                     console.log("click")
                                     handleCloseOffcanvas();
-                                }}>VAAR</Link></li>
+                                }}>Vaar</Link></li>
                             </ul>
 
-                            <div className='mobile-menu-social-icons'>
-                                <i class='bx bxl-twitter'></i>
-                                <i class='bx bxl-instagram'></i>
+                            <div className='social-connect'>
+                                <div className='mobile-menu-social-icons'>
+                                    <i class='bx bxl-twitter'></i>
+                                    <i class='bx bxl-instagram'></i>
+                                </div>
+                                <div style={{ display: "flex", justifyContent: "center" }}>
+                                    <span>Privacy — Terms</span>
+                                </div>
                             </div>
-                            <div>fsaf</div>
                         </Offcanvas.Body>
                     </Offcanvas>
                 </div>

@@ -30,9 +30,9 @@ const ValueData = [
         Descriptions: "The intricacies of any real estate transactions often crowd-out the retail investor. However, Vaar prides itself on making RE accessible at any users' fingertips."
     },
     {
-        title: "Diversification",
+        title: "Diversify",
         colorText:"Preserve your wealth.",
-        Descriptions: "Diversification in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
+        Descriptions: "Diversify in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
     }
 ]
 function Founder() {

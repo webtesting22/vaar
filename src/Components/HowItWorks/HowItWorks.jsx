@@ -106,12 +106,12 @@ function HowItWorks() {
                     <Accordion defaultActiveKey="0" id='accordion'>
                         {/* <h6 className='FAQS-heading-mobile'>FAQs</h6> */}
                         <hr />
-                        <h1 id='FAQS-heading-pc' className="text-white text-start">Frequently Asked Questions</h1>
+                        <h1 id='FAQS-heading-pc' className="text-white text-start">FAQs</h1>
                         {/* <span className='FAQS-tagline-mobile'>Have questions? We’re here to help.</span> */}
-                        <div className='input-group'>
+                        {/* <div className='input-group'>
                             <i class='bx bx-search'></i>
                             <input type="text" placeholder='Search' />
-                        </div>
+                        </div> */}
                         {accordionData.map((item, index) => (
                             <Accordion.Item key={item.id} eventKey={item.id.toString()}>
                                 <h1 style={{ fontSize: "30px", fontWeight: "700" }} className='count-show'>0{index + 1}</h1>
