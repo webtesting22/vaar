@@ -5,7 +5,7 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./Navigation.css";
 import varrimg from "../pictures/vaarblacklogo.png"
-import varrimg1 from "../pictures/vaarwhitelogo.jpeg"
+import newLogoUpdate from "../pictures/newlogoUpdate.png"
 
 function Navigation() {
     const [show, setShow] = useState(false);
@@ -54,10 +54,10 @@ function Navigation() {
         <>
             <nav id="navigation" className={`navbar navbar-expand-lg ${isSticky ? 'sticky' : ''}`} >
                 <div className={`navbar-brand ${isSticky ? 'hide' : ''}`}>
-                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
+                    <Link to="/"><img src={newLogoUpdate} alt=" " style={{ width: "130px" }} /></Link>
                 </div>
                 <div className={`navbar-brand ${isSticky ? '' : 'hide'}`}>
-                    <Link to="/"><img src={varrimg} alt=" " style={{ width: "50px" }} /></Link>
+                    <Link to="/"><img src={newLogoUpdate} alt=" " style={{ width: "130px" }} /></Link>
                 </div>
                 <div>
                     {isDesktop ? (

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Home.css"
 import "../../Components/globalcontent.css"
 import homeCard from "../pictures/home-card-img.png"
@@ -17,6 +17,11 @@ import second from "../Home/second2.jpeg"
 // import four from "../Home/four.png"
 import { Row, Col } from "antd";
 function Home() {
+    const [email, setEmail] = useState('');
+
+    const handleInputChange = (e) => {
+        setEmail(e.target.value);
+    };
     useEffect(() => {
         AOS.init({
             duration: 1000, // Animation duration
@@ -39,11 +44,21 @@ function Home() {
                                 <div className='content-container-responsive'>
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{color:"#d4f604"}}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
-                                     <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "46px" }} data-aos="fade-down"><span style={{color:"#d4f604"}}>Vaar</span> levels the playing field.</h1>
+                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
+                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1>
+                                    {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
                                     <div className='email-collect'>
-                                        <input type="text" placeholder="Stay in the know!" />
-                                        <button className='input-btn'><Link to="/ContactUs" style={{ color: "black",display:"flex",alignItems:"center" }}><i class='bx bx-right-arrow-alt'></i></Link></button>
+                                        <input
+                                            type="text"
+                                            placeholder="Enter your email"
+                                            value={email}
+                                            onChange={handleInputChange}
+                                        />
+                                        <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white' }}>
+                                            <Link to="/ContactUs" style={{ color: "black", display: "flex", alignItems: "center" }}>
+                                                <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
+                                            </Link>
+                                        </button>
                                     </div>
                                     <div className='mobile-view-home' data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-center">
@@ -58,8 +73,8 @@ function Home() {
                         <div className='grid-images'>
                             <Row>
                                 <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
-                                    <div><img src={second} alt="" data-aos="fade-right"/></div>
-                                    <div><img src={first} alt="" data-aos="fade-left"/></div>
+                                    <div><img src={second} alt="" data-aos="fade-right" /></div>
+                                    <div><img src={first} alt="" data-aos="fade-left" /></div>
                                 </Col>
                                 {/* <Col lg={12} md={12} sm={8}>
                               
@@ -83,7 +98,7 @@ function Home() {
                             <Row>
                                 <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
                                     <div><img src={second} alt="" data-aos="fade-right" /></div>
-                                    <div><img src={first} alt="" data-aos="fade-left"/></div>
+                                    <div><img src={first} alt="" data-aos="fade-left" /></div>
                                 </Col>
                                 {/* <Col lg={12} md={12} sm={8}>
                               
@@ -106,8 +121,8 @@ function Home() {
                                 <div className='content-container-responsive'>
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
                                     <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{color:"#d4f604"}}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
-                                     <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "46px" }} data-aos="fade-down"><span style={{color:"#d4f604"}}>Vaar</span> levels the playing field.</h1>
+                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
+                                    <h1 className='main-global-heading mobile' style={{ fontWeight: "300", textAlign: "start", fontSize: "8vw" }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="What's your email" />
                                         <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>

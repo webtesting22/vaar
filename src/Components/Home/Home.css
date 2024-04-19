@@ -46,7 +46,7 @@
 }
 
 .email-collect input::placeholder {
-    color: black;
+    color: rgb(116, 116, 116);
     font-weight: 400;
 }
 
@@ -219,7 +219,11 @@
     display: none;
 }
 
+
 @media (max-width:600px) {
+ 
+    
+  
     #Home_section {
         padding-top: 2rem;
     }
