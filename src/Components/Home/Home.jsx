@@ -82,8 +82,8 @@ function Home() {
                         <div className='grid-images'>
                             <Row>
                                 <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
-                                    <div><img src={second} alt="" /></div>
-                                    <div><img src={first} alt="" /></div>
+                                    <div><img src={second} alt="" data-aos="fade-right" /></div>
+                                    <div><img src={first} alt="" data-aos="fade-left"/></div>
                                 </Col>
                                 {/* <Col lg={12} md={12} sm={8}>
                               
