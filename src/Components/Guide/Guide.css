@@ -67,10 +67,17 @@
 #howitworks-heading{
     text-align: start;
     font-weight: 300;
+    font-size: 50px;
     /* margin-top: 2rem; */
     color: #D4F604;
 }
+.mobile-hide{
+    display: block;
+}
 @media (max-width:600px) {
+    .mobile-hide{
+        display: none;
+    }
     #howitworks-heading{
         text-align: start;
         font-weight: 300;

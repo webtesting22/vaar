@@ -83,7 +83,14 @@
     display: none;
     
 }
+.mobile-show{
+    display: none;
+}
 @media (max-width:700px) {
+    .mobile-show{
+        display: block;
+        margin-top: 1rem;
+    }
     #team-section-hero{
         display: none;
     }

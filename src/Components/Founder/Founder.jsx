@@ -56,7 +56,7 @@ function Founder() {
                         <hr className='m-0' />
                         <h1 className='section-heading-big only-pc-heading' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>We solve an access problem</h1>
                         <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We solve an access problem</h1>
-                        <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p>
+                        {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p> */}
                     </div>
                     {/* <div className="padding-slite"></div> */}
                     {/* <div className="padding-slite"></div> */}

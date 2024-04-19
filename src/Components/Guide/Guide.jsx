@@ -24,10 +24,10 @@ function Guide() {
               </Col>
               <Col lg={12} md={12}>
                 <div className='team-section-hero'>
-                  <div style={{marginTop:"2rem"}}>
-                    <hr className='top-section-heading-hr' />
+                  <div>
+                    {/* <hr className='top-section-heading-hr mobile-hide' /> */}
                     <h1 id='howitworks-heading'>A Step Guide To Being A Digital Landlord</h1>
-                    <p>Learn about the process</p>
+                    <p className='mobile-hide'>Learn about the process</p>
                   </div>
                 </div>
               </Col>

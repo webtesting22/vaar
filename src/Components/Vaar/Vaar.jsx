@@ -143,6 +143,7 @@ function Vaar() {
                                 <div className='team-section-hero2'>
                                     <img src={teamposter} alt="" />
                                     <img src={teamposter} alt="" />
+                                    <h2 style={{fontWeight:"200", color:"#D4F604", fontSize:"50px"}} className='mobile-show'>Who We Are</h2>
                                 </div>
                             </Col>
                         </Row>
