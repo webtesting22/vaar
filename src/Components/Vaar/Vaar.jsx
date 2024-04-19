@@ -96,7 +96,7 @@ function Vaar() {
         {
             Title: "Inward",
             pointTitle: "Think Rigorously",
-            pointDescription: "We care about being right and it often takes reasoning from first principles to get there- essentially boiling things down to facts and using them as a foundation to building a solution"
+            pointDescription: "We care about being right and it often takes reasoning from first principles to get there- essentially boiling things down to facts and using them as a foundation to building a solution."
         },
         {
             pointTitle: "Optimism",
@@ -104,7 +104,7 @@ function Vaar() {
         },
         {
             pointTitle: "Trust & Amplify",
-            pointDescription: "By the standards of rest of the world, we overtrust. We’re okay with that. Within the company, individuals in charge of different tasks are trusted to think and produce the best possible results without interference in their process. Thus, it is imperative for us to work with people that are driven to build and deliver."
+            pointDescription: "By the standards of rest of the world, we overtrust, and we are okay with that. Within the company, individuals are trusted to think and produce the best possible results without interference in their process. Thus, it is imperative for us to work with people that are driven to build and deliver."
         }
     ]
     const OutwardData = [
@@ -115,11 +115,11 @@ function Vaar() {
         },
         {
             pointTitle: "Nobody Likes A Preacher",
-            pointDescription: "“You cannot bore people into buying a product. You can only interest them.” David Ogilvy. We like to think this way, and thus our so we can build something they might actually want."
+            pointDescription: "“You cannot bore people into buying a product. You can only interest them.” - David Ogilvy. We like to think this way, and thus our only job is to walk in our users' shoes so we can build something they might actually want."
         },
         {
             pointTitle: "Implement With Precision",
-            pointDescription: "Our users trust us with their money and rely on our research to earn returns. If we mess up, or slow down, it matters. We take that responsibility seriously"
+            pointDescription: "Our users trust us with their money and rely on our research to earn returns. If we mess up, or slow down, it matters. We take that responsibility seriously."
         }
     ]
     return (
