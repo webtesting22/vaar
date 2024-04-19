@@ -124,6 +124,7 @@ function HowItWorks() {
 
                 </div>
             </section>
+            <div className="padding-slite"></div>
         </>
     )
 }

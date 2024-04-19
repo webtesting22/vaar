@@ -118,8 +118,8 @@ function Bestvalue() {
                                         <div className='parent-div'>
                                             <div style={{ position: "relative" }}>
                                                 <span>Vidhi Kanaria</span>
-                                                <h1>CONCEPT: </h1>
-                                                <p>Real Estate x Fractional Investing</p>
+                                                <h1 style={{color:"#D4F604"}}>CONCEPT: </h1>
+                                                <p style={{color:"#D4F604"}}>Real Estate x Fractional Investing</p>
                                                 <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...</p>
                                                 <div className='button-animation-without-absolute p-0'>
                                                     <a href="">Read More</a>
@@ -189,8 +189,8 @@ function Bestvalue() {
                                             <div className='blog-cards'>
                                                 <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                                 <div style={{ position: "relative", justifyContent: "space-between" }}>
-                                                    <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
-                                                    <p style={{color:"white"}}>{item.subtitle}</p>
+                                                    <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "rgb(212, 246, 4)" }}>{item.title}</h5>
+                                                    <p style={{color:"rgb(212, 246, 4)"}}>{item.subtitle}</p>
                                                     <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                                 </div>
                                                 <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
@@ -210,6 +210,7 @@ function Bestvalue() {
                         </div>
 
                     </div>
+                    <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
                 </div>
 
