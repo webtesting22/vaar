@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import teamposter from "../Vaar/Rectangle.jpeg"
@@ -121,7 +121,7 @@ function Vaar() {
                         <hr className='team-hr mb-4' />
                     </div>
                     <h1 style={{ textAlign: "center", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} className='only-pc-heading'>Our Team</h1>
-                    <div className='container only-for-pc'>
+                    <div className='container only-for-pc team-navigation'>
                         {/* <Row>
                 {teamMembers.map((item, index) => (
                     <Col key={index} lg={4} md={6} style={{ margin: "auto" }}>
@@ -139,17 +139,15 @@ function Vaar() {
                         <Swiper
                             slidesPerView={4}
                             spaceBetween={30}
-                            // pagination={{
-                            //     clickable: true,
-                            // }}
+                            pagination={{
+                                clickable: true,
+                            }}
                             // autoplay={{
                             //     delay: 2500,
                             //     disableOnInteraction: true,
                             // }}
-                            pagination={{
-                                clickable: true, // Enable clickable dots
-                            }}
-                            modules={[Pagination, Autoplay]}
+                            navigation={true}
+                            modules={[Pagination, Autoplay,Navigation]}
                             className="mySwiper"
                         // modules={[pagination]}
                         >
