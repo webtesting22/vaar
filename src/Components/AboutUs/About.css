@@ -288,7 +288,7 @@ section{
 
     /* Open accordion icon */
     .accordion-button:not(.collapsed)::after {
-        background-image: url("../pictures/About-icons/close.png");
+        background-image: url("./TRINGULAR1.png");
         /* Add styles for the open icon as needed */
         position: absolute;
         margin-top: -8rem;
@@ -298,7 +298,7 @@ section{
 
     /* Closed accordion icon */
     .accordion-button.collapsed::after {
-        background-image: url("../pictures/About-icons/remove.png");
+        background-image: url("./TRINGULAR2.png");
         /* background-size: 30px; */
         /* Add styles for the closed icon as needed */
         position: absolute;
