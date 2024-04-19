@@ -15,20 +15,24 @@ import { Descriptions, Carousel } from 'antd';
 const ValueData = [
     {
         title: "Asset Quality",
-        Descriptions: "The idea is to invest in assets that grow with what surrounds them. We don’t buy into what was or what will be.We buy what is here to stay."
+        colorText:"Invest in assets that grow with what surrounds them.",
+        Descriptions: "We don’t buy into what was, or what will be. We offer what is here to stay."
     },
 
     {
-        title: "Intuitive Interface",
-        Descriptions: "The complexities of real estate transactions often deter smaller investors. However, Vaar prides itself on making it accessible at users' fingertips."
-    },
-    {
-        title: "Diversity",
-        Descriptions: "Vaar is being built with a vision to offer investments in real assets that work for one's future. Diversification in these assets can be capital intensive and challenging to manage. We solve for both of these issues."
-    },
-    {
         title: "Transparency",
-        Descriptions: "Transparency is our top priority. We disclose all costs related to each asset, ensuring our investors have the necessary information to make well-informed decisions."
+        colorText:"Know what you are getting into.",
+        Descriptions: " We disclose all costs related to each asset, ensuring our investors have the necessary information to make well-informed decisions."
+    },
+    {
+        title: "Intuitive Interface",
+        colorText:"Uncomplicate your investments.",
+        Descriptions: "The intricacies of any real estate transactions often crowd-out the retail investor. However, Vaar prides itself on making RE accessible at any users' fingertips."
+    },
+    {
+        title: "Diversification",
+        colorText:"Preserve your wealth.",
+        Descriptions: "Diversification in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
     }
 ]
 function Founder() {
@@ -50,11 +54,11 @@ function Founder() {
                 <div className="container">
                     <div className='text-center' >
                         <hr className='m-0' />
-                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Value Proposition</h1>
-                        <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>Vaar enables portfolio investment in prime, income-generating real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p>
+                        <h1 className='section-heading-big' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Vaar solves an access problem.</h1>
+                        {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>Vaar enables portfolio investment in prime, income-generating real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
                     </div>
                     {/* <div className="padding-slite"></div> */}
-                    <div className="padding-slite"></div>
+                    {/* <div className="padding-slite"></div> */}
                     <div className="row w-100 m-auto home-pc">
                         {ValueData.map((item, index) => (
                             
@@ -68,7 +72,7 @@ function Founder() {
                                         </div>
                                         
                                         <br />
-                                        <span>{item.Descriptions}</span>
+                                        <span><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</span>
                                     </div>
 
 

@@ -23,11 +23,11 @@ function Bestvalue() {
                     <div className='top-section'>
                         <hr className='top-section-heading-hr' />
                         <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
-                        <br /><br />
-                        <p className=' text-start text-white' style={{ textTransform: "uppercase" }}>Learn more about real assets through the following modules.</p>
+                        <div className="padding-slite"></div>
+                        <p className=' text-start' style={{ textTransform: "uppercase",color:"#D4F604" }}>Learn more about real assets through the following modules.</p>
 
                     </div>
-                    <br />
+                    
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={30}
@@ -68,10 +68,10 @@ function Bestvalue() {
 
                         </div>
                         {/* <SwiperSlide style={{ height: "50vh", backgroundColor:"red" }}>Slide 1</SwiperSlide> */}
-
+                       
                     </Swiper>
 
-
+                    <br />
                     {/* <div className='cards-section'>
                         <div className="row m-auto">
                             {BestvalueData.map((item, index) => (
@@ -92,16 +92,17 @@ function Bestvalue() {
                         </div>
 
                     </div> */}
-
-                    <div className='blogs-section-pc' style={{}}>
+                    <div className="padding-slite"></div>
+                    <div className='blogs-section-pc'>
 
                         {/* <div className="section-padding"></div> */}
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
-
-                        <div className="section-padding"></div>
-                        <p className=' text-start text-white' style={{ textTransform: "uppercase" }}>get the latest updates about the industry</p>
+                        
+                        {/* <div className="section-padding"></div> */}
+                        <p className=' text-start' style={{ textTransform: "uppercase",color:"#D4F604" }}>get the latest updates about the industry</p>
                         {/* <hr /> */}
-                        <br />
+                        
+                      
                         <div className='owner-quote'>
 
                             <div className="row m-auto">
@@ -130,8 +131,8 @@ function Bestvalue() {
                         </div>
 
                         <div className='Infomation-cards'>
-
-                            <div className="section-padding"></div>
+                        <div className="padding-slite"></div>
+                            {/* <div className="section-padding"></div> */}
                             <div className="row m-auto">
                                 {BestValueCardsData.map((item, index) => (
                                     <div className="col-lg-6 col-md-6 " >
