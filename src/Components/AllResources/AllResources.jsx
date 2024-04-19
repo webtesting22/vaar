@@ -21,6 +21,7 @@ function AllResources() {
             <section>
                 <div className="container">
                     <div>
+                    <hr className='top-section-heading-hr' />
                         <h1 style={{ fontSize: "50px", color: "#D4F604", fontWeight: "300" }}>101 Real Estate</h1>
                         {/* <select class="form-select" aria-label="Default select example">
                             <option selected>Topics</option>
