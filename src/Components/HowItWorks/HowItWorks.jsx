@@ -44,7 +44,7 @@ function HowItWorks() {
         },
         {
             id: 4,
-            title: 'How is well is Vaar positioned in the market?',
+            title: 'How well is Vaar positioned in the market?',
             content: [
                 '1. "The first one through the wall always gets bloody." Due to this, we at Vaar want to correct many mistakes made by our predecessors and first-movers.',
                 <br />,   <br />,
