@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Row, Col } from 'antd';
+import { Row, Col, Button } from 'antd';
 import teamposter from "../Vaar/Rectangle.jpeg"
 import "../VaarTeam/Vaarteam.css"
 import DrumanPatel from "../Vaar/druman-patel.jpg"
@@ -25,6 +25,12 @@ import Title from 'antd/es/skeleton/Title';
 // import { Autoplay } from 'swiper/modules';
 
 function Vaar() {
+
+    const [activeTab, setActiveTab] = useState('inward'); // State to track active tab
+
+    const handleTabClick = (tab) => {
+        setActiveTab(tab);
+    };
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
     }, []);
@@ -101,7 +107,7 @@ function Vaar() {
             pointDescription: "By the standards of rest of the world, we overtrust. We’re okay with that. Within the company, individuals in charge of different tasks are trusted to think and produce the best possible results without interference in their process. Thus, it is imperative for us to work with people that are driven to build and deliver."
         }
     ]
-    const Outward = [
+    const OutwardData = [
         {
             Title: "Outward",
             pointTitle: "Do Not Sell",
@@ -149,7 +155,7 @@ function Vaar() {
                 <hr className='top-section-heading-hr' />
                 <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Values</h1>
             </div>
-            <div className='container values-container'>
+            <div className='container values-container  ourvalues-viewpc' id='ourvalues-viewpc'>
                 <Row>
                     {InwardData.map((item, index) => (
                         <Col lg={24} md={24}>
@@ -163,7 +169,7 @@ function Vaar() {
                 </Row>
 
                 <Row >
-                    {Outward.map((item, index) => (
+                    {OutwardData.map((item, index) => (
                         <Col lg={24} md={24}>
                             <h4>{item.Title}</h4>
                             <div key={index} className='values-boxes'>
@@ -176,7 +182,53 @@ function Vaar() {
 
                 </Row >
             </div>
-
+            <div className='container values-container ourvalues-viewmobile' >
+                <div className='tab-buttons'>
+                    <Button
+                        onClick={() => handleTabClick('inward')}
+                        type="primary"
+                        style={{
+                            backgroundColor: activeTab === 'inward' ? '#D4F604' : '#000000',
+                            color: activeTab === 'inward' ? '#000000' : null,
+                        }}
+                    >
+                        Inward
+                    </Button>
+                    <Button
+                        onClick={() => handleTabClick('outward')}
+                        type="primary"
+                        style={{
+                            backgroundColor: activeTab === 'outward' ? '#D4F604' : '#000000',
+                            color: activeTab === 'outward' ? '#000000' : null,
+                        }}
+                    >
+                        Outward
+                    </Button>
+                </div>
+                <Row>
+                    <Swiper
+                        spaceBetween={30}
+                        pagination={{
+                            clickable: true, // Enable clickable dots
+                        }}
+                        // modules={[Pagination,Autoplay]}
+                        modules={[Autoplay, Pagination]}
+                        className="mySwiper"
+                    >
+                        {(activeTab === 'inward' ? InwardData : OutwardData).map((item, index) => (
+                            <SwiperSlide>
+                                <Col lg={24} md={24} key={index}>
+                                    {/* <h4>{item.Title}</h4> */}
+                                    <div className='values-boxes'>
+                                        <h6 style={{ fontWeight: "400", color: "#D4F604" }}>{item.pointTitle}</h6>
+                                        <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
+                                    </div>
+                                </Col>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </Row>
+            </div>
             <div className="padding-slite"></div>
 
             <section>

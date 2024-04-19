@@ -75,7 +75,28 @@
     display: flex;
     flex-direction: row;
 }
+#ourvalues-viewpc{
+    display: block;
+    display: flex;
+}
+.ourvalues-viewmobile{
+    display: none;
+    
+}
 @media (max-width:700px) {
+    #ourvalues-viewpc{
+        display: none;
+        /* display: flex; */
+    }
+    .ourvalues-viewmobile{
+        display: block;
+    }
+    .tab-buttons{
+        margin-bottom: 30px;
+    }
+    /* .tab-buttons :where(.css-dev-only-do-not-override-11xg00t).ant-btn-primary{
+        background-color: #D4F604;
+    } */
     .values-container{
         display: flex;
         flex-direction: column;
