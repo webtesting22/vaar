@@ -24,10 +24,10 @@ function Bestvalue() {
                         <hr className='top-section-heading-hr' />
                         <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
                         <div className="padding-slite"></div>
-                        <p className=' text-start' style={{ textTransform: "uppercase",color:"#D4F604" }}>Learn more about real assets through the following modules.</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>Learn more about real assets through the following modules.</p>
 
                     </div>
-                    
+
                     <Swiper
                         slidesPerView={1}
                         spaceBetween={30}
@@ -68,7 +68,7 @@ function Bestvalue() {
 
                         </div>
                         {/* <SwiperSlide style={{ height: "50vh", backgroundColor:"red" }}>Slide 1</SwiperSlide> */}
-                       
+
                     </Swiper>
 
                     <br />
@@ -97,12 +97,12 @@ function Bestvalue() {
 
                         {/* <div className="section-padding"></div> */}
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
-                        
+
                         {/* <div className="section-padding"></div> */}
-                        <p className=' text-start' style={{ textTransform: "uppercase",color:"#D4F604" }}>get the latest updates about the industry</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>get the latest updates about the industry</p>
                         {/* <hr /> */}
-                        
-                      
+
+
                         <div className='owner-quote'>
 
                             <div className="row m-auto">
@@ -112,11 +112,13 @@ function Bestvalue() {
                                     </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8" id='Owner_info-content'>
+                                    <Link to="/VaarBlogCommon">
                                     <div className='inside-content2'>
                                         <div className='parent-div'>
                                             <div style={{ position: "relative" }}>
                                                 <span>Vidhi Kanaria</span>
-                                                <h1>Beyond the Walls: Keeping Up the Potential with Real Estate Management</h1>
+                                                <h1>CONCEPT: Real Estate x Fractional Investing</h1>
+                                                <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...</p>
                                                 <div className='button-animation-without-absolute p-0'>
                                                     <a href="">Read More</a>
                                                     <span className='m-0'></span>
@@ -125,34 +127,36 @@ function Bestvalue() {
                                         </div>
 
                                     </div>
+                                    </Link>
                                 </div>
                             </div>
 
                         </div>
 
-                        <div className='Infomation-cards'>
-                        <div className="padding-slite"></div>
-                            {/* <div className="section-padding"></div> */}
-                            <div className="row m-auto">
+                        {/* <div className='Infomation-cards'>
+                            <div className="padding-slite"></div>
+                            <div className="section-padding"></div>
+                            <div className="row m-auto ">
                                 {BestValueCardsData.map((item, index) => (
-                                    <div className="col-lg-6 col-md-6 " >
-                                        <div data-aos="fade-up"
-                                            data-aos-anchor-placement="top-bottom">
-                                            <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
+                                    <Link to="/VaarBlogCommon" className='text-white'>
+                                        <div className="col-lg-6 col-md-6 " >
+                                            <div data-aos="fade-up"
+                                                data-aos-anchor-placement="top-bottom">
+                                                <h5 style={{ fontSize: "24px" }}>{item.title}</h5>
 
-                                            <p style={{ fontSize: "16px", marginTop: "20px" }}>{item.description}</p>
-                                            <br />
-                                            <div className='m-0 p-0 read-more-btn'>
-                                                <a href="">Read More</a>
-                                                <span></span>
+                                                <p style={{ fontSize: "16px", marginTop: "20px" }}>{item.description}</p>
+                                                <br />
+                                                <div className='m-0 p-0 read-more-btn'>
+                                                    <a href="">Read More</a>
+                                                    <span></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-
+                                    </Link>
                                 ))}
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
 
@@ -161,7 +165,7 @@ function Bestvalue() {
                 <div className='Blog-section only-mobile ' >
                     <div className='container'>
                         {/* <hr  className='top-section-heading-hr'/> */}
-                        <p>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
+                        <p style={{ color: "#D4F604"}}>GET THE LATEST UPDATES ABOUT THE INDUSTRY</p>
                         {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
                         <div className='container p-0'>
 
@@ -179,21 +183,23 @@ function Bestvalue() {
                             >
                                 {BestValueCardsData.map((item, index) => (
                                     <SwiperSlide>
-                                        <div className='blog-cards'>
-                                            <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
-                                            <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                                <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
-                                                <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
-                                            </div>
-                                            <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
-                                            <div className='Posted'>
-                                                <div><img src={item.avtar} alt="Not Found" /></div>
-                                                <div className='ps-3'>
-                                                    <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
-                                                    <span>15 Jan 2024</span>
+                                        <Link to="/VaarBlogCommon">
+                                            <div className='blog-cards'>
+                                                <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                                <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
+                                                    <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
+                                                    <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
+                                                </div>
+                                                <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
+                                                <div className='Posted'>
+                                                    <div><img src={item.avtar} alt="Not Found" /></div>
+                                                    <div className='ps-3'>
+                                                        <h6 style={{ marginBottom: "3px", color: "black" }}>Vidhi Kanaria</h6>
+                                                        <span>15 Jan 2024</span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </Link>
                                     </SwiperSlide>
                                 ))}
 

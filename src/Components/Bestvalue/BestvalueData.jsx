@@ -2,40 +2,41 @@ import img1 from "./CHAPTER3.png"
 import img2 from "./CHAPTER4.png"
 import img3 from "./CONCEPT1.jpeg"
 import img4 from "./CONCEPT3.png"
+import img5 from "./blog-common.jpeg"
 const BestvalueData = [
     {
         img: img1,
-        title: "The Allure of Real Estate Investment"
+        title: "The allure of real estate investment"
     },
     {
         img: img2,
-        title: "Up Close & Personal - Residential Real Estate"
+        title: "Up close & personal - residential real estate"
     },
     {
         img: img3,
-        title: "Vaar: Fractionalization"
+        title: "Vaar: fractionalization"
     },
     {
         img: img4,
-        title: "Vaar: Not REITs"
+        title: "Vaar: not REITs"
     },
 ]
 // export default BestvalueData;
-import img5 from "../pictures/blogimage.svg"
+// import img5 from "../pictures/blogimage.svg"
 import avtarr1 from "../pictures/Avatar.svg"
 const BestValueCardsData = [
     {
         img: img5,
         avtar: avtarr1,
-        title: "Bricks and Beyond: The Art of Mortgage Mastery",
-        description: "Amortization is your true amor when it comes to real estate. Far from a mere repayment strategy, it's your tailored roadmap to owning every corner of your..."
+        title: "CONCEPT: Real Estate x Fractional Investing",
+        description: "The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio..."
     },
-    {
-        img: img5,
-        avtar: avtarr1,
-        title: "Elevating Your Estate: The Fortress of Homeowners Insurance ",
-        description: "This isn't just a policy; it's your property's guardian against the unforeseen. Let's navigate this indispensable asset."
-    },
+    // {
+    //     img: img5,
+    //     avtar: avtarr1,
+    //     title: "Elevating Your Estate: The Fortress of Homeowners Insurance ",
+    //     description: "This isn't just a policy; it's your property's guardian against the unforeseen. Let's navigate this indispensable asset."
+    // },
     // {
     //     img: img5,
     //     avtar:avtarr1,

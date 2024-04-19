@@ -151,7 +151,8 @@
 .owner-quote .inside-content2 .parent-div div h1 {
     font-size: 35px;
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
 }
 
 .owner-quote .inside-content2 .parent-div div a {
