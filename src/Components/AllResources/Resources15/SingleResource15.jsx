@@ -24,8 +24,8 @@ function SingleResource15() {
                     cardDescription: "Residential real estate often requires a significant upfront investment, making it inaccessible to many individuals."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Discreit introduces fractional ownership, allowing investors to buy and own a fraction of a residential property. This eliminates the need for a large upfront capital investment, making real estate accessible to a broader range of investors with varying financial capacities."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar introduces fractional ownership, allowing investors to buy and own a fraction of a residential property. This eliminates the need for a large upfront capital investment, making real estate accessible to a broader range of investors with varying financial capacities."
                 }
             ]
         },
@@ -37,8 +37,8 @@ function SingleResource15() {
                     cardDescription: "High minimum investment amounts can exclude smaller investors from participating in the real estate market."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "By lowering the entry barriers, Discreit allows individuals to start investing in residential real estate with a fraction of the typical cost. This inclusivity opens up wealth-building opportunities for a more diverse investor base."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "By lowering the entry barriers, Vaar allows individuals to start investing in residential real estate with a fraction of the typical cost. This inclusivity opens up wealth-building opportunities for a more diverse investor base."
                 }
             ]
         },
@@ -50,8 +50,8 @@ function SingleResource15() {
                     cardDescription: "Diversifying across multiple properties is challenging for individual investors due to capital constraints."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Through fractional ownership, Discreit enables investors to diversify their real estate portfolio by owning fractions of multiple residential properties. This diversification helps mitigate risk and provides exposure to different housing markets."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Through fractional ownership, Vaar enables investors to diversify their real estate portfolio by owning fractions of multiple residential properties. This diversification helps mitigate risk and provides exposure to different housing markets."
                 }
             ]
         },
@@ -63,8 +63,8 @@ function SingleResource15() {
                     cardDescription: "Complexity and lack of transparency in real estate transactions can deter potential investors."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Discreit offers an intuitive and user-friendly platform that simplifies the real estate investment process. The platform's interface guides users through research, investment decisions, and ongoing management, making it accessible to individuals regardless of their experience in real estate."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar offers an intuitive and user-friendly platform that simplifies the real estate investment process. The platform's interface guides users through research, investment decisions, and ongoing management, making it accessible to individuals regardless of their experience in real estate."
                 }
             ]
         },
@@ -76,8 +76,8 @@ function SingleResource15() {
                     cardDescription: "Lack of information and transparency in real estate transactions can lead to investment hesitations."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Discreit conducts thorough due diligence on each residential property before offering it for fractional ownership. This comprehensive research ensures that investors have access to clean and transparent information, empowering them to make well-informed investment decisions."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar conducts thorough due diligence on each residential property before offering it for fractional ownership. This comprehensive research ensures that investors have access to clean and transparent information, empowering them to make well-informed investment decisions."
                 }
             ]
         },
@@ -89,8 +89,8 @@ function SingleResource15() {
                     cardDescription: "Real estate income is often generated through property ownership, which can be a challenge for smaller investors."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Investors on Discreit receive a share of the rental income generated by the residential properties they own. This income is distributed in the form of quarterly dividends, providing a regular and predictable stream of passive income."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Investors on Vaar receive a share of the rental income generated by the residential properties they own. This income is distributed in the form of quarterly dividends, providing a regular and predictable stream of passive income."
                 }
             ]
         },
@@ -102,8 +102,8 @@ function SingleResource15() {
                     cardDescription: "Real estate transactions are often perceived as long-term commitments, potentially deterring some investors."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Discreit embraces a long-term investment horizon, aligning with the nature of residential real estate. This perspective encourages investors to view real estate as a stable and enduring asset class."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar embraces a long-term investment horizon, aligning with the nature of residential real estate. This perspective encourages investors to view real estate as a stable and enduring asset class."
                 }
             ]
         },
@@ -115,8 +115,8 @@ function SingleResource15() {
                     cardDescription: " Information asymmetry and lack of transparency in real estate transactions can hinder decision-making."
                 },
                 {
-                    cardBoldText: "Discreit's Solution",
-                    cardDescription: "Transparency is a priority for Discreit. The platform discloses and breaks down all costs and figures related to each residential property, ensuring investors have access to the necessary information to make informed decisions."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Transparency is a priority for Vaar. The platform discloses and breaks down all costs and figures related to each residential property, ensuring investors have access to the necessary information to make informed decisions."
                 }
             ]
         }
@@ -135,7 +135,7 @@ function SingleResource15() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <p>Discreit revolutionizes the accessibility of the largest asset class in the US, residential real estate, by addressing traditional barriers and democratizing investment opportunities. Here's how Discreit makes residential real estate accessible to everyone:</p>
+                                <p>Vaar revolutionizes the accessibility of the largest asset class in the US, residential real estate, by addressing traditional barriers and democratizing investment opportunities. Here's how Vaar makes residential real estate accessible to everyone:</p>
                                 <div className="padding-slite"></div>
                                 <div>
                                     {/* <Carousel afterChange={onChange} ref={carouselRef} dots={true}  > */}
@@ -154,7 +154,7 @@ function SingleResource15() {
                                 </div>
                                 <div className="padding-slite"></div>
                                 <h4>Conclusion</h4>
-                                <p>In summary, Discreit's innovative approach to fractional ownership removes long standing barriers, making residential real estate, the largest asset class in the US, accessible to a wider audience. Through lower entry barriers, diversification opportunities, user-friendly interfaces, thorough due diligence, and transparent processes, Discreit empowers individuals of various financial backgrounds to participate in the wealth-building potential of residential real estate.</p>
+                                <p>In summary, Vaar's innovative approach to fractional ownership removes long standing barriers, making residential real estate, the largest asset class in the US, accessible to a wider audience. Through lower entry barriers, diversification opportunities, user-friendly interfaces, thorough due diligence, and transparent processes, Vaar empowers individuals of various financial backgrounds to participate in the wealth-building potential of residential real estate.</p>
                             </div>
                         </Col>
                     </Row>
