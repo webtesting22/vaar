@@ -291,7 +291,7 @@ section{
         background-image: url("./TRINGULAR1.png");
         /* Add styles for the open icon as needed */
         position: absolute;
-        margin-top: -8rem;
+        margin-top: -4rem;
         right: 0;
     }
 
@@ -302,7 +302,7 @@ section{
         /* background-size: 30px; */
         /* Add styles for the closed icon as needed */
         position: absolute;
-        margin-top: -8rem;
+        margin-top: -4rem;
         right: 0;
     }
     .accordion-title button{
