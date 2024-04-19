@@ -34,14 +34,14 @@ function Footer() {
                         </div>
                     </div>
                     <div className='only-mobile-footer'>
-                        <div>
+                        {/* <div>
 
                             <img src={footerlogo} alt="" style={{width:"120px"}}/>
 
                         </div>
-                        <hr />
-                        <div className='copyright-text-mobile'>
-                            <span>© 2024 Vaar Holding. All rights reserved.</span>
+                        <hr /> */}
+                        <div className='copyright-text-mobile' style={{display:"flex",justifyContent:"center"}}>
+                            <span style={{textAlign:"center"}}>© 2024 Vaar Holding. All rights reserved.</span>
                         </div>
 
 
