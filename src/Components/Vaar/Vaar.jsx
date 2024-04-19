@@ -150,12 +150,12 @@ function Vaar() {
                 <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Our Values</h1>
             </div>
             <div className='container values-container'>
-                <Row >
+                <Row>
                     {InwardData.map((item, index) => (
                         <Col lg={24} md={24}>
                             <h4 >{item.Title}</h4>
                             <div key={index} className='values-boxes'>
-                                <h6 style={{ fontWeight: "400",color:"#D4F604"}}>{item.pointTitle}</h6>
+                                <h6 style={{ fontWeight: "400", color: "#D4F604" }}>{item.pointTitle}</h6>
                                 <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
                             </div>
                         </Col>
@@ -167,7 +167,7 @@ function Vaar() {
                         <Col lg={24} md={24}>
                             <h4>{item.Title}</h4>
                             <div key={index} className='values-boxes'>
-                                <h6 style={{ fontWeight: "400",color:"#D4F604"}}>{item.pointTitle}</h6>
+                                <h6 style={{ fontWeight: "400", color: "#D4F604" }}>{item.pointTitle}</h6>
                                 <p style={{ color: "white", fontWeight: "200" }}>{item.pointDescription}</p>
 
                             </div>
@@ -176,6 +176,7 @@ function Vaar() {
 
                 </Row >
             </div>
+       
             <div className="padding-slite"></div>
 
             <section>
