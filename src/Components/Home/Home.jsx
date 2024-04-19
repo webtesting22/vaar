@@ -43,7 +43,7 @@ function Home() {
                                      <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "46px" }} data-aos="fade-down"><span style={{color:"#d4f604"}}>Vaar</span> levels the playing field.</h1>
                                     <div className='email-collect'>
                                         <input type="text" placeholder="Stay in the know!" />
-                                        <button className='input-btn'><Link to="/ContactUs" style={{ color: "black" }}>Join&nbsp;Our</Link></button>
+                                        <button className='input-btn'><Link to="/ContactUs" style={{ color: "black",display:"flex",alignItems:"center" }}>Join&nbsp;Our <i class='bx bx-right-arrow-alt'></i></Link></button>
                                     </div>
                                     <div className='mobile-view-home' data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-center">
@@ -58,8 +58,8 @@ function Home() {
                         <div className='grid-images'>
                             <Row>
                                 <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
-                                    <div><img src={second} alt="" /></div>
-                                    <div><img src={first} alt="" /></div>
+                                    <div><img src={second} alt="" data-aos="fade-right"/></div>
+                                    <div><img src={first} alt="" data-aos="fade-left"/></div>
                                 </Col>
                                 {/* <Col lg={12} md={12} sm={8}>
                               
