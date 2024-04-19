@@ -13,7 +13,7 @@ function SignupSection() {
                                 <span className='sign-up-tagline' style={{ fontWeight: "300" }}>Questions? Comments? Let's debate!</span>
                             </div>
                         </div>
-                        <div className="col-lg-6" style={{display:"flex", justifyContent:"start"}}>
+                        <div className="col-lg-6" style={{display:"flex", justifyContent:"center"}}>
                             <div className='sign-up-btn-container'>
                                 <button><Link to="/ContactUs">Contact Us</Link></button>
                                 {/* <button> <a href="" className='text-white'>Contact Us</a></button> */}

@@ -108,7 +108,20 @@
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
-
+.mobile-menu-social-icons{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+}
+.mobile-menu-social-icons i{
+  font-size: 30px;
+  margin: 0px 20px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 50%;
+}
 @media (max-width:780px) {
   .sign-in-container {
     display: none;

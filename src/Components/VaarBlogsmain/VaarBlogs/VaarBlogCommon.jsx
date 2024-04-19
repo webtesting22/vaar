@@ -1,6 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./VaarBlogCommon.css"
-import blogimg1 from "../VaarBlogs/Image.svg"
+import blogimg1 from "../VaarBlogs/blog-common.jpeg"
 import bloginside1 from "./bloginside1.svg"
 import Ellipse from "../../AllResources/Ellipse.svg"
 import SignupSection from "../../SignUp/SignupSection";
@@ -38,67 +38,63 @@ function VaarBlogCommon() {
             blogPoints: ""
         }
     ]
-   
+    useEffect(() => {
+        window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+    }, []);
     return (
         <>
-            <section style={{ backgroundColor: "white", padding: "8rem 0rem" }}>
+            <section style={{ backgroundColor: "black", padding: "2rem 0rem" }}>
                 <div className="container">
-                    <div className="blog-top-part">
-                        <h6 className="publishDate">Published 20 Jan 2024</h6>
-                        <h1>Beyond the Walls: The Power of Conformity in Real Estate</h1>
+                    <div className="blog-top-part" >
+                        <h6 className="publishDate" style={{ color: "white" }}>Published 19 April 2024</h6>
+                        <h1 style={{ color: "white", fontSize: "50px", fontWeight: "300" }}>CONCEPT: Real Estate x Fractional Investing</h1>
                         <div className="blog-section-spacer"></div>
                         <img src={blogimg1} alt="" />
                     </div>
-                    <div className="blog-content-container">
-                        <p>Have you ever wondered why some houses sell faster and for better prices than the unique gems that stand out with their quirky features? Enter the Conformity Principle, your real estate compass pointing towards what sells.</p>
-                        <div className="blog-section-spacer"></div>
-                        <h4>The Real Estate Magnet</h4>
-                        <div className="blog-section-spacer"></div>
-                        <p>In the world of property, blending in isn't just safe; it's smart. Buyers tend to gravitate towards homes that reflect the overall vibe of the neighborhood. It's about harmony, and in real estate, harmony translates to value.</p>
-                        <div className="blog-section-spacer"></div>
-                        <img src={bloginside1} alt="" />
-                        <div className="blog-section-spacer"></div>
-                        <div>
-                            {blogPointsData.map((item, index) => (
-                                <div key={index}>
-                                    <h6>{item.blogTitle}</h6>
-                                    {Array.isArray(item.blogDescription) ? (
-                                        item.blogDescription.map((desc, idx) => (
-                                            <p key={idx}>{desc}</p>
-                                        ))
-                                    ) : (
-                                        <p>{item.blogDescription}</p>
-                                    )}
-                                    {item.blogPoints !== "" && (
-                                        <ul style={{ listStyle: "none", padding: "0px" }}>
-                                            {item.blogPoints.map((point, idx) => (
-                                                <li key={idx}>{point}</li>
-                                            ))}
-                                        </ul>
+                    <div className="blog-content-container text-white">
+                        <p style={{color:"#D4F604"}}>1. Why Should I Invest in Real Estate?</p>
+                        <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio:</p>
+                        {/* <div className="padding-slite"></div> */}
+                        {/* <div className="padding-slite"></div> */}
+                        <ul>
+                            <li> <p><b>Stable Returns:</b> Real estate investments have historically provided steady rental income alongside potential appreciation in property value.</p></li>
+                            <li><p><b>Inflation Hedge</b> Real estate often appreciates in value at a rate that outpaces inflation, making it an excellent tool to protect your purchasing power over time.</p></li>
+                            <li><p><b>Tax Advantages</b> Real estate investors can benefit from various tax deductions, such as depreciation, mortgage interest, and property tax deductions, potentially lowering their tax burden.</p></li>
+                            <li><p><b>Tangible Asset</b>Real estate is a physical asset that provides utility and has intrinsic value, offering a layer of security that isn't available with all types of investments — putting the “real” in real estate.</p></li>
+                        </ul>
 
-                                    )}
-                                    <div className="blog-section-spacer"></div>
-                                </div>
-                            ))}
+                    <div className="padding-slite"></div>
+
+                        <p style={{color:"#D4F604"}}>2. What is Fractional Investing?</p>
+                        <p>Fractional investing is an innovative approach that allows multiple investors to share ownership in a single asset. This method breaks down expensive assets into smaller, more affordable segments, often referred to as "shares." Everyone gets access to, and a slice of, the real estate pie. In this segment, fractional investing means you can own a part of a property without the need to buy the entire asset yourself. By democratizing investment opportunities, this makes it possible for individuals to invest in high-quality real estate, previously out of reach due to high costs.</p>
 
 
-                        </div>
+                        <div className="padding-slite"></div>
+
+                        <p style={{color:"#D4F604"}}>3. Is Fractional Investing Worth It?</p>
+                        <p>Here's why we think fractional investing is a game-changer:</p>
+                        <ul>
+                            <li><p><b>Affordability</b>Fractional ownership drastically reduces the financial barrier to entry, allowing you to invest in properties that would otherwise require substantial capital.</p></li>
+                            <li><p><b>Diversification</b>With the ability to invest as per your abilities, you can spread your investment across multiple properties or different types of real estate, reducing risk and increasing potential returns.</p></li>
+                            <li><p><b>Simplicity</b>Managing a fractional investment is typically handled by us, removing the complexity of property management, maintenance, and other logistical issues.</p></li>
+                            <li><p><b>Accessibility</b>Fractional investing platforms provide detailed insights and analyses, leveling the playing field and offering transparency that individual investors often don't have access to in traditional real estate markets.</p></li>
+                        </ul>
                         <div className="blogAuthorDetails">
                             <div>
                                 <img src={Ellipse} alt="" />
                             </div>
                             <div>
                                 <h6>Vidhi Kankaria</h6>
-                                <p>Founder, VAAR</p>
+                                <p style={{ color: "white" }}>Founder, VAAR</p>
                             </div>
 
                         </div>
                     </div>
 
                 </div>
-                
+
             </section>
-            <BlogCarousal/>
+            {/* <BlogCarousal /> */}
             <SignupSection />
         </>
     )

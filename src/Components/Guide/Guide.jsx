@@ -11,7 +11,7 @@ function Guide() {
   // const HowItWorks =  "./HowItWorks.jpeg";
   return (
     <>
-      <section style={{ color: "white" }}>
+      <section style={{ color: "white",paddingBottom:"0px" }}>
         <div>
           <div className="container">
             <Row>
@@ -25,7 +25,7 @@ function Guide() {
               <Col lg={12} md={12}>
                 <div className='team-section-hero'>
                   <div>
-                    <h1 className='section-heading' style={{ color: "#D4F604" }}>A STEP-BY-STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
+                    <h1 className='section-heading' style={{ color: "#D4F604",paddingBottom:"0px" }}>A STEP-BY-STEP GUIDE TO BEING A DIGITAL LANDLORD</h1>
                     {/* <p>Meet our team members and learn more about their work at VAAR Holding.</p> */}
                   </div>
                 </div>
@@ -35,15 +35,15 @@ function Guide() {
         </div>
 
       </section>
-      <section className='Guide-section'>
-        <div className="container">
+      <section className='Guide-section '>
+        {/* <div className="container">
 
           <p className='guide-container-mobile-para text-white'>Powerful, self-serve product and growth analytics to help you convert, engage, and retain more users. Trusted by over 4,000 startups.</p>
-        </div>
-        <div className='blob-mobile-img'>
+        </div> */}
+        {/* <div className='blob-mobile-img'>
           <div className='blob-container'><img src={blobData} alt="" /></div>
           <div className='mobile-image'><img src={mobilePicture} alt="" /></div>
-        </div>
+        </div> */}
         <div className="container">
           <div className="row">
             {GuideData.map((item, index) => (

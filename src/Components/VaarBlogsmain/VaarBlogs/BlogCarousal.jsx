@@ -45,11 +45,11 @@ function BlogCarousal() {
     ]
     return (
         <>
-            <section style={{ backgroundColor: "#F2F2F2" }}>
+            <section style={{ backgroundColor: "black" }}>
 
                 <div className="blog-section-spacer"></div>
                 <div className="container" id="blog-carousal">
-                    <h1>More like this</h1>
+                    <h1 style={{color:"white"}}>More like this</h1>
                     <div className="blog-section-spacer"></div>
                     <Swiper
                         slidesPerView={2} 

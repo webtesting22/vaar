@@ -83,7 +83,7 @@ function Navigation() {
 
                     <Offcanvas show={show} onHide={handleClose} placement="end">
                         <Offcanvas.Header closeButton>
-                            <Offcanvas.Title><Link to="/"><h2 style={{fontSize:"30px", textTransform:"uppercase"}}>Navigate</h2></Link></Offcanvas.Title>
+                            <Offcanvas.Title><Link to="/"><h2 style={{ fontSize: "30px", textTransform: "uppercase" }}>Navigate</h2></Link></Offcanvas.Title>
                         </Offcanvas.Header>
                         <Offcanvas.Body>
                             <ul className='mobile-offcanvas-menu'>
@@ -109,14 +109,17 @@ function Navigation() {
                                 }}>VAAR</Link></li>
                             </ul>
 
-                            <div>sag</div>
+                            <div className='mobile-menu-social-icons'>
+                                <i class='bx bxl-twitter'></i>
+                                <i class='bx bxl-instagram'></i>
+                            </div>
                             <div>fsaf</div>
                         </Offcanvas.Body>
                     </Offcanvas>
                 </div>
                 <div className='sign-in-container'>
                     {/* <div className='input-group'> */}
-                        <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Contact Us</Link></button>
+                    <button className='sign-in-btn'><Link to="/ContactUs" style={{ color: "black" }}>Contact Us</Link></button>
                     {/* </div> */}
                 </div>
             </nav>
