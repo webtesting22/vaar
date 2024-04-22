@@ -52,13 +52,13 @@ function Guide() {
                 <div className="box" >
                   <div className='box-top-header'>
                     <div style={{ display: "flex", alignItems: "center" }}>
-                      <img src={item.img} alt={item.title} style={{backgroundColor:"#00C2FF"}}/>
-                      <h3 className="box-title" style={{color:"#00C2FF"}}>{item.title}</h3>
+                      <img src={item.img} alt={item.title} style={{ backgroundColor: "#00C2FF" }} />
+                      <h3 className="box-title" style={{ color: "#00C2FF" }}>{item.title}</h3>
                     </div>
                     <div className='numbering'><span>{index + 1}</span></div>
 
                   </div>
-                  <hr style={{backgroundColor: "rgb(0, 194, 255)"}}/>
+                  <hr style={{ backgroundColor: "rgb(0, 194, 255)" }} />
                   <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
                 </div>
               </div>
