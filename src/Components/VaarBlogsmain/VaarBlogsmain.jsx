@@ -4,7 +4,7 @@ import 'swiper/css/pagination';
 import "./VaarBlogsmain.css"
 import { Link } from "react-router-dom"
 import blogimage from "../pictures/blogHomeBaneer.svg"
-import { Row, Col } from "antd"
+import { Row, Col,message,Card } from "antd"
 import BlogDatamain from './VaarBlogData';
 import { BestValueCardsData } from '../Bestvalue/BestvalueData';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -37,7 +37,7 @@ function VaarBlogs() {
                 const data = await response.json();
                 setBlogs(data); // Update state with fetched data
                 console.log("Show data", data);
-                message.success('Blogs fetched successfully.');
+                // message.success('Blogs fetched successfully.');
             } catch (error) {
                 console.error('Error:', error.message);
                 message.error('An error occurred. Please try again later.');
@@ -109,7 +109,7 @@ function VaarBlogs() {
                 </div>
                 <div className='blogs-block text-white '>
                     <div className='container' >
-                        {BlogDatamain.map((item, index) => (
+                        {blogs.map((item, index) => (
 
                             <Row key={index} className='blog-container-row' style={{ borderBottom: "1px solid rgb(196, 196, 196)" }}>
                                 {index % 2 === 0 ? (
@@ -120,7 +120,7 @@ function VaarBlogs() {
                                                 <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                     <div>
                                                         <h1 className='main-blog-heading'><a href="./VaarBlogCommon" className='text-white' style={{ fontWeight: "400" }}>{item.blogTitle}</a></h1>
-                                                        <p className='text-white'>{item.title}</p>
+                                                        <p className='text-white'>{item.blogTitle}</p>
                                                         <p className='text-white'>{item.blogContent}</p>
                                                         <div style={{ display: "flex", alignItems: "center" }}>
                                                             <span style={{ margin: "0px 10px", display: "flex", alignItems: "center", color: "white" }}><i class='bx bxs-calendar' style={{ fontSize: "20px" }}></i> </span> <p style={{ margin: "0px", color: "white", fontSize: "14px" }}> {item.Date}</p>
@@ -170,6 +170,21 @@ function VaarBlogs() {
 
                 </div>
             </section>
+            {/* <Row gutter={[16, 16]}>
+            {blogs.map((blog, index) => (
+                <Col key={index} xs={24} sm={12} md={8} lg={6}>
+                    <Card
+                        title={blog.blogTitle}
+                        cover={<img alt="Blog Cover" src={blog.blogImg} />}
+                        style={{ marginBottom: 16 }}
+                    >
+                        <p>{blog.title}</p>
+                        <p>{blog.blogContent}</p>
+                        <p>Date: {blog.Date}</p>
+                    </Card>
+                </Col>
+            ))}
+        </Row> */}
             <SignupSection />
         </>
     );

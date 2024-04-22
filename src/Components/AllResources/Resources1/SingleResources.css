@@ -451,70 +451,12 @@ h6 {
     }
 }
 
-.pros-cons button {
+#pros-cons button{
     border: none;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
+    margin: 0px 20px;
+    width: 100px;
+    padding: 6px 20px;
     border-radius: 10px;
-    font-size: 14px;
-    margin: 20px 0px;
-    transition: .3s;
-}
-
-.pros-cons button:hover {
-    border: none;
-    transform: scale(1.1);
-    transition: .3s;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    margin: 20px 0px;
-}
-
-.pros-cons button:nth-child(1) {
-    border: none;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: #D4F604;
-}
-
-.pros-cons button:nth-child(2) {
-    border: none;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: #606060;
-    color: white;
-}
-
-.pros-cons button:nth-child(1):hover {
-    border: none;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    color: white;
-    background-color: #606060;
-}
-
-.pros-cons button:nth-child(2):hover {
-    border: none;
-    width: 140px;
-    height: 28px;
-    margin-right: 20px;
-    border-radius: 10px;
-    font-size: 14px;
-    background-color: #D4F604;
-    color: rgb(0, 0, 0);
 }
 
 #commonassetscontainer ul li {

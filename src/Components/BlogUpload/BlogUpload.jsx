@@ -120,65 +120,65 @@ function BlogUpload() {
     <>
 
       <section style={{ backgroundColor: "white", padding: "8rem 0rem" }}>
-      <Form
-      form={form}
-      name="blogForm"
-      onFinish={onFinish}
-      labelCol={{ span: 8 }}
-      wrapperCol={{ span: 16 }}
-    >
-      <Form.Item
-        label="Title"
-        name="blogTitle"
-        rules={[{ required: true, message: 'Please input the title!' }]}
-      >
-        <Input
-          value={formData.blogTitle}
-          onChange={(e) => handleInputChange('blogTitle', e.target.value)}
-        />
-      </Form.Item>
+        <Form
+          form={form}
+          name="blogForm"
+          onFinish={onFinish}
+          labelCol={{ span: 8 }}
+          wrapperCol={{ span: 16 }}
+        >
+          <Form.Item
+            label="Title"
+            name="blogTitle"
+            rules={[{ required: true, message: 'Please input the title!' }]}
+          >
+            <Input
+              value={formData.blogTitle}
+              onChange={(e) => handleInputChange('blogTitle', e.target.value)}
+            />
+          </Form.Item>
 
-      <Form.Item
-        label="Subtitle"
-        name="blogSubtitle"
-        rules={[{ required: true, message: 'Please input the subtitle!' }]}
-      >
-        <Input
-          value={formData.blogSubtitle}
-          onChange={(e) => handleInputChange('blogSubtitle', e.target.value)}
-        />
-      </Form.Item>
+          <Form.Item
+            label="Subtitle"
+            name="blogSubtitle"
+            rules={[{ required: true, message: 'Please input the subtitle!' }]}
+          >
+            <Input
+              value={formData.blogSubtitle}
+              onChange={(e) => handleInputChange('blogSubtitle', e.target.value)}
+            />
+          </Form.Item>
 
-      <Form.Item
-        label="Description"
-        name="blogDescription"
-        rules={[{ required: true, message: 'Please input the description!' }]}
-      >
-        <ReactQuill
-          value={formData.blogDescription}
-          onChange={(value) => handleInputChange('blogDescription', value)}
-          modules={modules}
-        />
-      </Form.Item>
+          <Form.Item
+            label="Description"
+            name="blogDescription"
+            rules={[{ required: true, message: 'Please input the description!' }]}
+          >
+            <ReactQuill
+              value={formData.blogDescription}
+              onChange={(value) => handleInputChange('blogDescription', value)}
+              modules={modules}
+            />
+          </Form.Item>
 
-      <Form.Item
-        label="Comment"
-        name="blogComment"
-        rules={[{ required: true, message: 'Please input the comment!' }]}
-      >
-        <ReactQuill
-          value={formData.blogComment}
-          onChange={(value) => handleInputChange('blogComment', value)}
-          modules={modules}
-        />
-      </Form.Item>
+          <Form.Item
+            label="Comment"
+            name="blogComment"
+            rules={[{ required: true, message: 'Please input the comment!' }]}
+          >
+            <ReactQuill
+              value={formData.blogComment}
+              onChange={(value) => handleInputChange('blogComment', value)}
+              modules={modules}
+            />
+          </Form.Item>
 
-      <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form.Item>
-    </Form>
+          <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+            <Button type="primary" htmlType="submit">
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
         {/* <ReactQuill
       theme="snow"
       value={value}

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources3/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
-import { Row, Col, Carousel, Tabs } from "antd"
+import { Row, Col, Carousel, Tabs, Button } from "antd"
 import { Link } from "react-router-dom"
 import "../Resources1/SingleResources.css"
 import cardimg1 from "../Resources2/card1.svg"
@@ -10,7 +10,7 @@ import cardimg2 from "../Resources2/card2.svg"
 import cardimg3 from "../Resources2/card3.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
-import {Module1} from "../AllResourcesData"
+import { Module1 } from "../AllResourcesData"
 import linkIndex from "../utils/linkIndex";
 function SingleResource3() {
     const conclusionRef = useRef(null);;
@@ -30,19 +30,19 @@ function SingleResource3() {
     const liList = [
         {
             list: "What Sets Real Estate Apart",
-            id:"WhatSets"
+            id: "WhatSets"
         },
         {
             list: "Why Real Estate Investments Should Be Considered Seriously",
-            id:"WhyRealEstate"
+            id: "WhyRealEstate"
         },
         {
             list: "Evaluating Real Estate Investments: Pros and Cons",
-            id:"EvaluatingRealEstate"
+            id: "EvaluatingRealEstate"
         },
         {
             list: "Comparing Real Estate Risks and Returns with Traditional Asset Classes",
-            id:"ComparingRealEstate"
+            id: "ComparingRealEstate"
         },
     ]
 
@@ -209,11 +209,16 @@ function SingleResource3() {
 
 
     ]
+    const [activeTab, setActiveTab] = useState('pros');
+
+    const handleTabChange = (tab) => {
+        setActiveTab(tab);
+    };
 
 
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
         <>
             <CommonResourceComponent Resources="Resources" Module="Module 1" Chapter="Chapter 3" Date="February 17, 2023" ResourceHeading="THE ALLURE OF REAL ESTATE INVESTMENT" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module1[2].img} />
@@ -286,11 +291,28 @@ function SingleResource3() {
 
                                 <div className="pros-cons" id="pros-cons">
                                     <h4 id="EvaluatingRealEstate">Evaluating Real Estate Investments: Pros and Cons</h4>
-                                    <Tabs defaultActiveKey="1">
-                                        <TabPane tab="Pros" key="1">
-                                            <Row>
-                                                {EvalutionRealStatepros.map((item, index) => (
-                                                    <Col lg={12} md={24} key={index} style={{ margin: "10px 0px" }}>
+
+                                    <div>
+                                        <div style={{ marginBottom: '10px' }}>
+                                            <button
+                                                style={{ backgroundColor: activeTab === 'pros' ? '#D4F604' : 'rgb(0, 0, 0)',color: activeTab === 'pros' ? 'black' : 'white' }}
+                                                onClick={() => handleTabChange('pros')}
+                                            >
+                                                Pros
+                                            </button>
+                                            <button
+                                                style={{ backgroundColor: activeTab === 'cons' ? '#D4F604' : 'rgb(0, 0, 0)',color: activeTab === 'pros' ? 'white' : 'black' }}
+                                                onClick={() => handleTabChange('cons')}
+                                            >
+                                                Cons
+                                            </button>
+                                        </div>
+
+
+                                        <Row>
+                                            {activeTab === 'pros' &&
+                                                EvalutionRealStatepros.map((item, index) => (
+                                                    <Col lg={12} md={24} key={index} style={{ margin: '10px 0px' }}>
                                                         <div className="EvalutionCardbox">
                                                             <h6>{item.cardTitle}</h6>
                                                             <hr />
@@ -298,12 +320,9 @@ function SingleResource3() {
                                                         </div>
                                                     </Col>
                                                 ))}
-                                            </Row>
-                                        </TabPane>
-                                        <TabPane tab="Cons" key="2">
-                                            <Row>
-                                                {EvalutionRealStatecons.map((item, index) => (
-                                                    <Col lg={12} md={24} key={index} style={{ margin: "10px 0px" }}>
+                                            {activeTab === 'cons' &&
+                                                EvalutionRealStatecons.map((item, index) => (
+                                                    <Col lg={12} md={24} key={index} style={{ margin: '10px 0px' }}>
                                                         <div className="EvalutionCardbox">
                                                             <h6>{item.cardTitle}</h6>
                                                             <hr />
@@ -311,9 +330,8 @@ function SingleResource3() {
                                                         </div>
                                                     </Col>
                                                 ))}
-                                            </Row>
-                                        </TabPane>
-                                    </Tabs>
+                                        </Row>
+                                    </div>
                                     <p>In conclusion, real estate's allure lies in its tangible nature, income-generating potential, and diversification benefits. Thoroughly evaluating the pros and cons, considering financial goals, risk tolerance, and investment horizon, allows investors to harness the unique advantages of real estate within a well-rounded investment strategy. When approached thoughtfully, real estate serves as a pivotal component, providing stability, income, and growth potential to an investment portfolio.</p>
                                 </div>
 
@@ -368,7 +386,7 @@ function SingleResource3() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog index ={[2,4]}/>
+                    <DontMissBlog index={[2, 4]} />
 
                 </div>
             </section>

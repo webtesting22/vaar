@@ -248,7 +248,7 @@ function AllResources() {
                         {/* <div className="section-padding"></div> */}
 
                         <div className='only-for-pc'>
-                            <h4>CONCEPTS</h4>
+                            <h4 id="module4" ref={module4Ref}>CONCEPTS</h4>
                             <hr />
                             <div className='all-resources-box'>
                                 <div className="row">
