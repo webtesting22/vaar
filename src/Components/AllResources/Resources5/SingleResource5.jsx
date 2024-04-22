@@ -6,6 +6,7 @@ import { Row, Col, Carousel } from "antd"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import { Module1, Module2 } from "../AllResourcesData"
+import linkIndex from "../utils/linkIndex";
 function SingleResource5() {
     // const conclusionRef = useRef(null);
     const liList = [
@@ -551,8 +552,7 @@ function SingleResource5() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog />
-
+                    <DontMissBlog index ={[4,6]}/>
                 </div>
             </section>
             <SignupSection />

@@ -173,21 +173,7 @@ function AllResources() {
                             <div className='all-resources-box'>
                                 <div className="row">
                                     {Module3.map((item, index) => {
-                                        if (index == 1 || index == 2 || index) {
-                                            return (
-                                                <div className="col-lg-3 col-md-6 mb-5">
-                                                    <Link to={`/SingleResource${index + 7}`}>
-                                                        <div className='module-box'>
-                                                            <img src={item.img} alt="" />
-                                                            <h6>{item.subtitle}</h6>
-                                                            <h4>{item.title}</h4>
-                                                            <span>{item.timing}</span>
-                                                        </div>
-                                                    </Link>
-                                                </div>
-                                            )
-                                        } else {
-                                            return (
+                                           return (
                                                 <div className="col-lg-3 col-md-6 mb-5">
                                                     <Link to={`/SingleResource${index + 6}`}>
                                                         <div className='module-box'>
@@ -199,7 +185,7 @@ function AllResources() {
                                                     </Link>
                                                 </div>
                                             )
-                                        }
+                                        
                                     })}
 
                                 </div>
@@ -221,7 +207,7 @@ function AllResources() {
                                     <SwiperSlide key={index}>
                                         <div className="col-lg-3 col-md-6 mb-5">
                                             {/* Conditional rendering based on index */}
-                                            <Link to={`/SingleResource${index + (index >= 8 ? 2 : 6)}`}>
+                                            <Link to={`/SingleResource${index +1}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>
@@ -243,7 +229,7 @@ function AllResources() {
                                 <div className="row">
                                     {Module4.map((item, index) => (
                                         <div className="col-lg-3 col-md-6 mb-5">
-                                            <Link to={`/SingleResource${index + 11}`}>
+                                            <Link to={`/SingleResource${index + 9}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>
@@ -274,7 +260,7 @@ function AllResources() {
                                     <SwiperSlide>
                                         {/* {Module4.map((item, index) => ( */}
                                         <div className="col-lg-3 col-md-6 mb-5">
-                                            <Link to={`/SingleResource${index + 11}`}>
+                                            <Link to={`/SingleResource${index + 9}`}>
                                                 <div className='module-box'>
                                                     <img src={item.img} alt="" />
                                                     <h6>{item.subtitle}</h6>

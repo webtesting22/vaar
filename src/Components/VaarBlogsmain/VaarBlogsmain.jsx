@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "./VaarBlogsmain.css"
@@ -16,8 +16,35 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
 import SignupSection from '../SignUp/SignupSection';
 function VaarBlogs() {
+    const [blogs, setBlogs] = useState([])
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
+    }, []);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await fetch('https://vaarbackend-two.vercel.app/blogs', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Server responded with status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                setBlogs(data); // Update state with fetched data
+                console.log("Show data", data);
+                message.success('Blogs fetched successfully.');
+            } catch (error) {
+                console.error('Error:', error.message);
+                message.error('An error occurred. Please try again later.');
+            }
+        };
+
+        fetchData();
     }, []);
     return (
         <>
@@ -50,19 +77,8 @@ function VaarBlogs() {
                         </div>
                         <div className='container'>
 
-                            {/* <Swiper
-                                spaceBetween={30}
-                                pagination={{
-                                    clickable: true,
-                                }}
-                                autoplay={{
-                                    delay: 2000,
-                                    disableOnInteraction: false,
-                                }}
-                                modules={[Autoplay]}
-                                className="mySwiper"
-                            > */}
-                            <Link to="/VaarBlogCommon" style={{position:"static"}}>
+
+                            <Link to="/VaarBlogCommon" style={{ position: "static" }}>
                                 {BestValueCardsData.map((item, index) => (
                                     // <SwiperSlide>
                                     // <Link to="/">
@@ -87,7 +103,7 @@ function VaarBlogs() {
                                     // </SwiperSlide>
                                 ))}
                             </Link>
-                            {/* </Swiper> */}
+
                         </div>
                     </div>
                 </div>

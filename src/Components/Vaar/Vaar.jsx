@@ -83,12 +83,12 @@ function Vaar() {
             position: "Words",
             link: "https://www.linkedin.com/in/anamayee/"
         },
-        {
-            img: VipulvPatel,
-            name: "Vipul Patel",
-            position: "Advisor",
-            link: "https://www.linkedin.com/in/vipulvpatel/"
-        },
+        // {
+        //     img: VipulvPatel,
+        //     name: "Vipul Patel",
+        //     position: "Advisor",
+        //     link: "https://www.linkedin.com/in/vipulvpatel/"
+        // },
 
     ]
 

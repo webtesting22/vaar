@@ -3,12 +3,14 @@ import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources2/Rectangle.svg"
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import { Row, Col, Carousel } from "antd"
-import { Link } from "react-router-dom"
+import { Link,useParams } from "react-router-dom"
 import "../Resources1/SingleResources.css"
 import {Module1} from "../AllResourcesData"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
+import linkIndex from "../utils/linkIndex";
 function SingleResource2() {
+    
     const contentStyle = {
         margin: 0,
         height: '160px',
@@ -362,7 +364,7 @@ function SingleResource2() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog/>
+                    <DontMissBlog index ={[1,3]}/>
                 </div>
             </section>
             <SignupSection/>

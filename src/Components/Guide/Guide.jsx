@@ -1,6 +1,8 @@
 import React from 'react';
 import "./Guide.css"
 import GuideData from './GuideData';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/swiper-bundle.min.css';
 import blobData from "../pictures/About-icons/Blob.svg"
 import mobilePicture from "../pictures/About-icons/mobilePicture.svg"
 import { Row, Col } from "antd"
@@ -65,6 +67,33 @@ function Guide() {
             ))}
           </div>
         </div>
+        <div className="container">
+          <Swiper spaceBetween={30} slidesPerView={1}>
+            {GuideData.map((item, index) => (
+              <SwiperSlide key={index}>
+                <div className="row">
+                  <div className="col-lg-6 col-md-6">
+                    <div className="box">
+                      <div className='box-top-header'>
+                        <div style={{ display: "flex", alignItems: "center" }}>
+                          <img src={item.img} alt={item.title} style={{ backgroundColor: "#00C2FF" }} />
+                          <h3 className="box-title" style={{ color: "#00C2FF" }}>{item.title}</h3>
+                        </div>
+                        <div className='numbering'><span>{index + 1}</span></div>
+                      </div>
+                      <hr style={{ backgroundColor: "rgb(0, 194, 255)" }} />
+                      <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+
+        </div>
+
+
+
 
 
 

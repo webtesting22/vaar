@@ -11,6 +11,7 @@ import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import AllResources from "../AllResources";
 import {Module1} from "../AllResourcesData"
+import linkIndex from "../utils/linkIndex";
 function SingleResource1() {
     const conclusionRef = useRef(null);
     const contentStyle = {
@@ -302,7 +303,7 @@ function SingleResource1() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog/>
+                    <DontMissBlog index={[2]}/>
                 </div>
             </section>
             <SignupSection/>

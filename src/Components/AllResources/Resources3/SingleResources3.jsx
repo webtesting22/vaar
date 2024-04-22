@@ -11,8 +11,9 @@ import cardimg3 from "../Resources2/card3.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import {Module1} from "../AllResourcesData"
+import linkIndex from "../utils/linkIndex";
 function SingleResource3() {
-    const conclusionRef = useRef(null);
+    const conclusionRef = useRef(null);;
     const contentStyle = {
         margin: 0,
         height: '160px',
@@ -367,7 +368,7 @@ function SingleResource3() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog />
+                    <DontMissBlog index ={[2,4]}/>
 
                 </div>
             </section>

@@ -6,6 +6,7 @@ import CommonResourceLeftSide from "../CommonResourceLeftSide";
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import {Module1, Module2, Module3} from "../AllResourcesData"
+import linkIndex from "../utils/linkIndex";
 function SingleResource6() {
     const liList = [
         {
@@ -291,7 +292,7 @@ function SingleResource6() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog/>
+                    <DontMissBlog index ={[5,7]}/>
                 </div>
             </section >
             <SignupSection/>

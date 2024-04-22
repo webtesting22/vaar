@@ -107,6 +107,19 @@ const Module4 = [
         title: "Vaar: The Technology",
         timing: "15 MINUTE READ",
     },
+    // {
+    //     Test Data
+    //     img: img14,
+    //     subtitle: "CONCEPT 7 ",
+    //     title: "Vaar: The Technology",
+    //     timing: "15 MINUTE READ",
+    // },
+    // {
+    //     img: img14,
+    //     subtitle: "CONCEPT 8 ",
+    //     title: "Vaar: The Technology",
+    //     timing: "15 MINUTE READ",
+    // },
 
 ]
 export { Module1, Module2, Module3, Module4 };

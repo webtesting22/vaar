@@ -1,91 +1,133 @@
-import React, { useRef , useEffect} from "react";
+import React, { useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
-import { Row, Col, Descriptions,Tabs } from "antd"
-import ReactangleTopImage from "./Rectangle.svg"
-import DescriptionsItem from "antd/es/descriptions/Item";
-import {Module1, Module4} from "../AllResourcesData"
+import { Module1, Module4 } from "../AllResourcesData"
+import { Row, Col } from "antd"
+import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
+import SignupSection from "../../SignUp/SignupSection";
+import linkIndex from "../utils/linkIndex";
 function SingleResource13() {
-    const { TabPane } = Tabs;
-    const conclusionRef = useRef(null);
     const liList = [
         {
-            list: "Real Estate Investment Trusts (REITs)",
-            id:"RealEstateInvestmentTrusts(REITs)"
-
+            list: "Concepts"
         },
         {
-            list: "Vaar",
-            id:"Vaar"
-        },
-        {
-            list: "Similarities VS Differences",
-            id:"SimilaritiesVSDifferences"
-        },
-        {
-            list: "Conclusion",
-            id: "Conclusion"
+            list: "Conclusion"
         }
     ]
-    const VaarData = [
+
+    const concept5Data = [
         {
-            cardMainTitle: "Real Estate Investment Trusts (REITs)",
+            topTitle: "Fractional Ownership",
             cardDetails: [
                 {
-                    mainPoint: "Structure",
-                    Descriptions: "Publicly Traded: REITs are typically publicly traded on stock exchanges, making them easily accessible to a broad range of investors."
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Residential real estate often requires a significant upfront investment, making it inaccessible to many individuals."
                 },
                 {
-                    mainPoint: "Investment Approach",
-                    Descriptions: "Portfolio Diversification: REITs own and manage a portfolio of income-generating real estate assets. Investors indirectly own a share of this diversified portfolio."
-                },
-                {
-                    mainPoint: "Liquidity",
-                    Descriptions: "Market Liquidity: Being publicly traded, REIT shares can be bought and sold on the stock market, providing investors with liquidity and the ability to exit their investments relatively easily."
-                },
-                {
-                    mainPoint: "Management and Control:",
-                    Descriptions: "Passive Ownership: Investors in REITs are passive owners and do not have direct control over the management or decisions related to specific properties. The REIT management team handles property acquisition, management, and sales."
-                },
-                {
-                    mainPoint: "Income Distribution:",
-                    Descriptions: "Dividend Payments: REITs are required to distribute at least 90% of their taxable income to shareholders in the form of dividends. Investors receive regular dividend payments, often sourced from rental income."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar introduces fractional ownership, allowing investors to buy and own a fraction of a residential property. This eliminates the need for a large upfront capital investment, making real estate accessible to a broader range of investors with varying financial capacities."
                 }
             ]
         },
         {
-            cardMainTitle: "Vaar",
+            topTitle: "Lowering Entry Barriers",
             cardDetails: [
                 {
-                    mainPoint: "Structure",
-                    Descriptions: "Fractional Ownership Platform: Vaar operates as an investment platform that facilitates fractional ownership of individual real estate assets. Investors directly own a portion of a specific property."
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "High minimum investment amounts can exclude smaller investors from participating in the real estate market."
                 },
                 {
-                    mainPoint: "Investment Approach:",
-                    Descriptions: "Direct Ownership: Vaar allows investors to directly own a fractional share of a specific property, providing them with more control over their individual investments."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "By lowering the entry barriers, Vaar allows individuals to start investing in residential real estate with a fraction of the typical cost. This inclusivity opens up wealth-building opportunities for a more diverse investor base."
+                }
+            ]
+        },
+        {
+            topTitle: "Diversification Opportunities",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Diversifying across multiple properties is challenging for individual investors due to capital constraints."
                 },
                 {
-                    mainPoint: "Liquidity",
-                    Descriptions: "Investment Horizon: Vaar typically views real estate as a long-term investment, with an intended holding period of 3-10 years. While investors receive quarterly dividends, liquidity may be more limited compared to publicly traded REITs."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Through fractional ownership, Vaar enables investors to diversify their real estate portfolio by owning fractions of multiple residential properties. This diversification helps mitigate risk and provides exposure to different housing markets."
+                }
+            ]
+        },
+        {
+            topTitle: "User-Friendly Interface",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Complexity and lack of transparency in real estate transactions can deter potential investors."
                 },
                 {
-                    mainPoint: "Management and Control",
-                    Descriptions: "Informed Decision-Making: Vaar conducts thorough due diligence on each property before offering it for fractional ownership. This information is provided to investors, allowing for informed decision-making. Investors have a level of control over which specific properties they choose to invest in."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar offers an intuitive and user-friendly platform that simplifies the real estate investment process. The platform's interface guides users through research, investment decisions, and ongoing management, making it accessible to individuals regardless of their experience in real estate."
+                }
+            ]
+        },
+        {
+            topTitle: "Thorough Due Diligence",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Lack of information and transparency in real estate transactions can lead to investment hesitations."
                 },
                 {
-                    mainPoint: "Income Distribution",
-                    Descriptions: "Rental Income: Investors on Vaar receive a portion of the rental income generated by the specific property they own. This income is distributed in the form of quarterly dividends."
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar conducts thorough due diligence on each residential property before offering it for fractional ownership. This comprehensive research ensures that investors have access to clean and transparent information, empowering them to make well-informed investment decisions."
+                }
+            ]
+        },
+        {
+            topTitle: "Regular Income Distribution",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Real estate income is often generated through property ownership, which can be a challenge for smaller investors."
+                },
+                {
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Investors on Vaar receive a share of the rental income generated by the residential properties they own. This income is distributed in the form of quarterly dividends, providing a regular and predictable stream of passive income."
+                }
+            ]
+        },
+        {
+            topTitle: "Long-Term Investment Perspective",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: "Real estate transactions are often perceived as long-term commitments, potentially deterring some investors."
+                },
+                {
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Vaar embraces a long-term investment horizon, aligning with the nature of residential real estate. This perspective encourages investors to view real estate as a stable and enduring asset class."
+                }
+            ]
+        },
+        {
+            topTitle: "Transparency and Information Access",
+            cardDetails: [
+                {
+                    cardBoldText: "Traditional Barrier",
+                    cardDescription: " Information asymmetry and lack of transparency in real estate transactions can hinder decision-making."
+                },
+                {
+                    cardBoldText: "Vaar's Solution",
+                    cardDescription: "Transparency is a priority for Vaar. The platform discloses and breaks down all costs and figures related to each residential property, ensuring investors have access to the necessary information to make informed decisions."
                 }
             ]
         }
     ]
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
-      }, []);
+    }, []);
     return (
-
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 3" Date="February 17, 2023" ResourceHeading="REITs & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[2].img} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 5" Date="February 17, 2023" ResourceHeading="Access the Largest Asset Class in the US" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[4].img} />
             <section>
                 <div className="container p-0">
                     <Row>
@@ -94,49 +136,35 @@ function SingleResource13() {
                         </Col>
                         <Col lg={18} md={18} className="full-width-on-mobile">
                             <div className="resources-right-container">
-                                <p id="RealEstateInvestmentTrusts(REITs)">Real Estate Investment Trusts (REITs) and Vaar share similarities in that they both provide a way for investors to gain exposure to real estate without having to directly own and manage physical properties. However, there are key differences in their structures, investment approaches, and the level of control investors have over their investments. Let's delve into the concepts of REITs and Vaar, highlighting both their commonalities and distinctions:</p>
+                                <p>Vaar revolutionizes the accessibility of the largest asset class in the US, residential real estate, by addressing traditional barriers and democratizing investment opportunities. Here's how Vaar makes residential real estate accessible to everyone:</p>
                                 <div className="padding-slite"></div>
-                                
-                                {VaarData.map((item, index) => (
-                                    <div key={index} className="RealEstate-Box" id="Vaar">
-                                        <h6>{item.cardMainTitle}</h6>
-                                        <hr style={{ opacity: "1" }} />
-                                        {item.cardDetails.map((card, cardIndex) => (
-                                            <ul key={cardIndex}>
-                                                <li><b>{card.mainPoint}</b> : {card.Descriptions}</li>
-
-                                            </ul>
-                                        ))}
-                                    </div>
-                                ))}
-                                <div className="padding-slite"></div>
-                                <h4 id="SimilaritiesVSDifferences">Similarities VS Differences</h4>
-                                <div className="pros-cons" id="pros-cons">
-                                    <h4>Evaluating Real Estate Investments: Pros and Cons</h4>
-                                    <Tabs defaultActiveKey="1">
-                                        <TabPane tab="Pros" key="1">
-                                            <Row>
-                                                    
-                                            </Row>
-                                        </TabPane>
-                                        <TabPane tab="Cons" key="2">
-                                            <Row>
-                                                
-                                            </Row>
-                                        </TabPane>
-                                    </Tabs>
-
-                                   
+                                <div>
+                                    {/* <Carousel afterChange={onChange} ref={carouselRef} dots={true}  > */}
+                                    {concept5Data.map((item, index) => (
+                                        <div key={index} className="RealEstate-Box">
+                                            <h6>{item.topTitle}</h6>
+                                            <hr style={{ opacity: "1" }} />
+                                            {item.cardDetails.map((card, cardIndex) => (
+                                                <ul key={cardIndex}>
+                                                    <li><b>{card.cardBoldText}</b>: {card.cardDescription}</li>
+                                                </ul>
+                                            ))}
+                                        </div>
+                                    ))}
+                                    {/* </Carousel> */}
                                 </div>
-                                <h4 id="Conclusion">Conclusion</h4>
-                                <p>In summary, both REITs and Vaar provide valuable opportunities for investors to access real estate investments with varying degrees of control, liquidity, and investment horizon. The choice between the two would depend on an investor's preferences, risk tolerance, and investment objectives. REITs may be suitable for those seeking a more liquid and diversified approach, while Vaar offers a more hands-on, direct ownership experience in specific real estate assets.</p>
+                                <div className="padding-slite"></div>
+                                <h4>Conclusion</h4>
+                                <p>In summary, Vaar's innovative approach to fractional ownership removes long standing barriers, making residential real estate, the largest asset class in the US, accessible to a wider audience. Through lower entry barriers, diversification opportunities, user-friendly interfaces, thorough due diligence, and transparent processes, Vaar empowers individuals of various financial backgrounds to participate in the wealth-building potential of residential real estate.</p>
                             </div>
                         </Col>
                     </Row>
-
-
+                    <div className="padding-slite"></div>
+                    <div className="padding-slite"></div>
+                    <DontMissBlog index={[12,14]} />
                 </div>
             </section>
+            <SignupSection/>
         </>
     )
 }

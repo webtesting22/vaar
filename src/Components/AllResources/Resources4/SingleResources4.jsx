@@ -7,6 +7,7 @@ import CarousalImg from "../Resources4/carousalImg.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import { Module1, Module2 } from "../AllResourcesData"
+import linkIndex from "../utils/linkIndex";
 function SingleResource4() {
     const liList = [
         {
@@ -501,7 +502,7 @@ function SingleResource4() {
                     </Row>
                     <div className="padding-slite"></div>
                     <div className="padding-slite"></div>
-                    <DontMissBlog />
+                    <DontMissBlog index ={[3,5]}/>
                 </div>
 
             </section>
