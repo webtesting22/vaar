@@ -6,6 +6,7 @@ import ReactangleTopImage from "./Rectangle.svg"
 import {Link} from "react-router-dom";
 
 function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHeading, AuthorInfo, topResourceImg }) {
+    
     return (
         <>
             <section style={{ paddingTop: "6rem", paddingBottom: "0rem", backgroundColor: "black" }}>
@@ -14,9 +15,9 @@ function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHea
                         <Col lg={12} md={12} className="order-lg-1 order-md-1">
                             <div className="left-side-content-container">
                                 <div  className="top-range-container">
-                                    <div><span><Link to="/AllResources">{Resources}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
-                                    <div><span><Link to="/">{Module}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
-                                    <div><span><Link to="/">{Chapter}</Link></span></div>
+                                    <div><span><Link to="">{Resources}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
+                                    <div><span><Link to="/AllResources#module1">{Module}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
+                                    <div><span><Link to="">{Chapter}</Link></span></div>
                                 </div>
                                 <div className="resource-Date-container">
                                     <p>{Date}</p>
