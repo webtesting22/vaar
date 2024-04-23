@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "./VaarBlogsmain.css"
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import blogimage from "../pictures/blogHomeBaneer.svg"
 import { Row, Col,message,Card } from "antd"
 import BlogDatamain from './VaarBlogData';
@@ -16,11 +16,13 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
 import SignupSection from '../SignUp/SignupSection';
 function VaarBlogs() {
+
     const [blogs, setBlogs] = useState([])
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
     }, []);
     useEffect(() => {
+        
         const fetchData = async () => {
             try {
                 const response = await fetch('https://vaarbackend-two.vercel.app/blogs', {
@@ -86,11 +88,11 @@ function VaarBlogs() {
                                     <div className='blog-cards'>
                                         <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                         <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                            <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "white" }}>{item.title}</h5>
+                                            <h5 style={{ fontSize: "20px", width: "80%", color: "white" }}>{item.title}</h5>
                                             <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                         </div>
                                         <p>{item.subtitle}</p>
-                                        <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
+                                        <p style={{ fontSize: "16px", marginBottom: "0px", color: "white" }}>{item.description}</p>
                                         <div className='Posted'>
                                             <div><img src={item.avtar} alt="Not Found" /></div>
                                             <div className='ps-3'>
@@ -170,21 +172,26 @@ function VaarBlogs() {
 
                 </div>
             </section>
-            {/* <Row gutter={[16, 16]}>
+            <Row gutter={[16, 16]}>
             {blogs.map((blog, index) => (
                 <Col key={index} xs={24} sm={12} md={8} lg={6}>
+                     <Link to={{
+                        pathname: "/VaarBlogCommon",
+                        state: { title: blog.title, content: blog.blogContent, date: "divyan" }
+                    }}>
                     <Card
                         title={blog.blogTitle}
                         cover={<img alt="Blog Cover" src={blog.blogImg} />}
                         style={{ marginBottom: 16 }}
                     >
                         <p>{blog.title}</p>
-                        <p>{blog.blogContent}</p>
+                        {/* <p>{blog.blogContent}</p> */}
                         <p>Date: {blog.Date}</p>
                     </Card>
+                    </Link>
                 </Col>
             ))}
-        </Row> */}
+        </Row>
             <SignupSection />
         </>
     );

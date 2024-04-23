@@ -6,7 +6,8 @@ import Ellipse from "../../AllResources/Ellipse.svg"
 import SignupSection from "../../SignUp/SignupSection";
 
 import BlogCarousal from "./BlogCarousal";
-function VaarBlogCommon() {
+const  VaarBlogCommon=({ title, content, date })=> {
+    console.log(title,content,date)
     const blogPointsData = [
 
         {
@@ -45,6 +46,11 @@ function VaarBlogCommon() {
         <>
             <section style={{ backgroundColor: "black", padding: "2rem 0rem" }}>
                 <div className="container">
+                    <div>
+                        title: {title},
+                        date: {date},
+                        content:{content}
+                    </div>
                     <div className="blog-top-part" >
                         <h6 className="publishDate" style={{ color: "white" }}>Published 19 April 2024</h6>
                         <h1 style={{ color: "white", fontSize: "50px", fontWeight: "300" }}>CONCEPT: Real Estate x Fractional Investing</h1>
@@ -54,8 +60,8 @@ function VaarBlogCommon() {
                     <div className="blog-content-container text-white">
                         <p style={{color:"#D4F604"}}>1. Why Should I Invest in Real Estate?</p>
                         <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio:</p>
-                        {/* <div className="padding-slite"></div> */}
-                        {/* <div className="padding-slite"></div> */}
+                        <div className="padding-slite"></div>
+                        <div className="padding-slite"></div>
                         <ul>
                             <li> <p><b>Stable Returns:</b> Real estate investments have historically provided steady rental income alongside potential appreciation in property value.</p></li>
                             <li><p><b>Inflation Hedge:</b> Real estate often appreciates in value at a rate that outpaces inflation, making it an excellent tool to protect your purchasing power over time.</p></li>
@@ -79,7 +85,7 @@ function VaarBlogCommon() {
                             <li><p><b>Simplicity:</b> Managing a fractional investment is typically handled by us, removing the complexity of property management, maintenance, and other logistical issues.</p></li>
                             <li><p><b>Accessibility:</b> Fractional investing platforms provide detailed insights and analyses, leveling the playing field and offering transparency that individual investors often don't have access to in traditional real estate markets.</p></li>
                         </ul>
-                        {/* <div className="blogAuthorDetails">
+                        <div className="blogAuthorDetails">
                             <div>
                                 <img src={Ellipse} alt="" />
                             </div>
@@ -88,7 +94,7 @@ function VaarBlogCommon() {
                                 <p style={{ color: "white" }}>Founder, VAAR</p>
                             </div>
 
-                        </div> */}
+                        </div>
                     </div>
 
                 </div>
