@@ -9,6 +9,7 @@ import { Row, Col } from "antd"
 import teamposter from "../pictures/teamheroimage.png"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
 import HowItWorks from "/HowItWorks.jpeg"
+import { Autoplay, Pagination } from 'swiper/modules';
 function Guide() {
   // const HowItWorks =  "./HowItWorks.jpeg";
   return (
@@ -68,7 +69,16 @@ function Guide() {
           </div>
         </div>
         <div className="container guide-only-mobile" >
-          <Swiper spaceBetween={30} slidesPerView={1}>
+          <Swiper spaceBetween={30} slidesPerView={1}
+          pagination={{
+            clickable: true,
+        }}
+        // autoplay={{
+        //     delay: 2500,
+        //     disableOnInteraction: true,
+        // }}
+        // navigation={true}
+        modules={[Pagination, Autoplay, ]}>
             {GuideData.reduce((acc, item, index) => {
               if (index % 2 === 0) {
                 acc.push(
