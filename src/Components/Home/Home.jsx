@@ -169,18 +169,24 @@ function Home() {
                                     <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
                                     <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
                                     <h1 className='main-global-heading mobile' style={{ fontWeight: "300", textAlign: "start", fontSize: "8vw" }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1>
-                                    <div className='email-collect'>
-                                        <input
-                                            type="text"
-                                            placeholder="Enter your email"
-                                            value={email}
-                                            onChange={handleInputChange}
-                                        />
-                                        <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white' }}>
-                                            <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
-                                                <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
-                                            </Link>
+                                    <div className="email-collect" style={{ position: 'relative' }}>
+                                        <button className='click-dynamic-btn' style={{backgroundColor:"#D4F604"}} onClick={handleButtonClick}>
+                                            Join the waitlist
                                         </button>
+                                        <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
+                                            <input
+                                                type="text"
+                                                placeholder="Enter your email"
+                                                value={email}
+                                                onChange={handleInputChange}
+                                                style={{ opacity: inputVisible ? '1' : '0' }}
+                                            />
+                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white',opacity: inputVisible ? '1' : '0' }}>
+                                                <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
+                                                    <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
+                                                </Link>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div className='mobile-view-home' data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-center">
