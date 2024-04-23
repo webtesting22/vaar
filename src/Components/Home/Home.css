@@ -46,25 +46,29 @@
 }
 
 .email-collect input::placeholder {
-    color: rgb(116, 116, 116);
+    color: rgb(142, 142, 142);
     font-weight: 400;
 }
 
 .email-collect {
-    padding: 8px 16px;
+    /* padding: 8px 16px; */
     margin-top: 3rem;
     display: flex;
-    background-color: white;
+    /* background-color: white; */
     width: 100%;
     height: 50px;
     border-radius: 10px;
+    display: flex;
+    align-items: center;
 }
 
 .email-collect input {
     border: none;
-    width: 100%;
+    width: 150px;
+    padding: 0px 10px;
     outline: none;
     box-shadow: none;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .email-collect input:focus {
@@ -79,9 +83,11 @@
     border: none;
     background-color: #D4F604;
     padding: 5px 15px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     transition: .5s;
+    border-radius: 0px 10px 10px 0px;
     transform: translatex(0px);
+
 }
 
 .input-btn:hover {
@@ -91,15 +97,17 @@
     color: black;
     padding: 5px 15px;
     border-radius: 5px;
-   
+
     /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
     transition: .5s;
 }
-.input-btn i{
+
+.input-btn i {
     transition: .5s;
 }
-.input-btn:hover i{
-    transform: translatex(3px);
+
+.input-btn:hover i {
+    /* transform: translatex(3px); */
     transition: .5s;
 }
 
@@ -221,9 +229,9 @@
 
 
 @media (max-width:600px) {
- 
-    
-  
+
+
+
     #Home_section {
         padding-top: 2rem;
     }
@@ -317,3 +325,29 @@
     padding: 5px;
 }
 
+
+.input-box {
+    position: absolute;
+    display: flex;
+    /* top: 0; */
+    height: 43px;
+    left: 160px;
+    /* Initially position it outside the container */
+    width: 200px;
+    transition: left 0.4s ease;
+    /* Transition the left position over 2 seconds */
+}
+
+.input-visible {
+    left: 0;
+    /* Move the input box to the left when visible */
+}
+
+.click-dynamic-btn {
+    width: 150px;
+    z-index: 1;
+    border: none;
+    height: 43px;
+    border-radius: 10px;
+    /* border-radius: 10px 0px 0px 10px; */
+}

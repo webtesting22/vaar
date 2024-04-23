@@ -40,6 +40,17 @@ function Home() {
 
     const dynamicWords = ['easy', 'accessible', 'transparent', 'democratized'];
 
+
+    const [inputVisible, setInputVisible] = useState();
+
+
+    const handleButtonClick = () => {
+        if (!inputVisible) {
+            setInputVisible(true); // Open the input box only if it's not already open
+            setArrowVisible(false); // Hide the right arrow
+        }
+    };
+
     return (
         <>
             <div className='parent-section'>
@@ -72,21 +83,28 @@ function Home() {
                                             </Swiper>
                                         </h3>
                                     </div>
-                                    <br />  
+                                    <br />
                                     <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "200" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
-                                    <div className='email-collect'>
-                                        <input
-                                            type="text"
-                                            placeholder="Enter your email"
-                                            value={email}
-                                            onChange={handleInputChange}
-                                        />
-                                        <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white' }}>
-                                            <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
-                                                <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
-                                            </Link>
+
+                                    <div className="email-collect" style={{ position: 'relative' }}>
+                                        <button className='click-dynamic-btn' style={{backgroundColor:"#D4F604"}} onClick={handleButtonClick}>
+                                            Button
                                         </button>
+                                        <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
+                                            <input
+                                                type="text"
+                                                placeholder="Enter your email"
+                                                value={email}
+                                                onChange={handleInputChange}
+                                                style={{ opacity: inputVisible ? '1' : '0' }}
+                                            />
+                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white',opacity: inputVisible ? '1' : '0' }}>
+                                                <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
+                                                    <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
+                                                </Link>
+                                            </button>
+                                        </div>
                                     </div>
                                     <div className='mobile-view-home' data-aos="fade-up"
                                         data-aos-anchor-placement="bottom-center">
