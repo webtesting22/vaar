@@ -47,12 +47,12 @@ function Vaar() {
             position: "CTO",
             link: "https://www.linkedin.com/in/kaivalyashah"
         },
-        {
-            img: DrumanPatel,
-            name: "Druman Patel",
-            position: "Accounting and Tax Advisory",
-            link: "https://www.linkedin.com/in/druman-patel-58bba88b/"
-        },
+        // {
+        //     img: DrumanPatel,
+        //     name: "Druman Patel",
+        //     position: "Accounting and Tax Advisory",
+        //     link: "https://www.linkedin.com/in/druman-patel-58bba88b/"
+        // },
         {
             img: Reehanshah,
             name: "Reehan Shah",

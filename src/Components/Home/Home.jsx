@@ -14,6 +14,10 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 import first from "../Home/first1.jpeg"
 import second from "../Home/second2.jpeg"
 // import third from "../Home/third.jpeg"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay } from 'swiper/modules';
+
+
 // import four from "../Home/four.png"
 import { Row, Col } from "antd";
 function Home() {
@@ -33,19 +37,42 @@ function Home() {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
     }, []);
+
+    const dynamicWords = ['easy', 'accessible', 'transparent', 'democratized'];
+
     return (
         <>
             <div className='parent-section'>
                 <Row className='pc-device-view'>
-                    <Col lg={12} md={12}>
+                    <Col lg={14} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
-                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "300", textAlign: "start", fontSize:"50px" }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1>
+                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "45px" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    {/* <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p> */}
+                                    
+                                  <br /><div>
+                                        <h3 style={{display:"flex", justifyContent:"start",fontWeight:"300", fontSize:"35px"}}>Vaar makes real estate
+                                            <Swiper direction={'vertical'} loop={true}
+                                                autoplay={{
+                                                    delay: 1000,
+                                                    disableOnInteraction: false,
+                                                }}
+                                                modules={[Autoplay]}
+                                                style={{ height: "50px", margin:"0px",textAlign:"start",marginLeft:"10px" }} className="mySwiper">
+                                                {dynamicWords.map((item, index) => (
+                                                    <SwiperSlide key={index}>
+                                                        <h3 style={{color:"#D4F604",fontSize:"35px",fontWeight: "300"}}>{item}</h3>
+                                                    </SwiperSlide>
+                                                ))}
+                                            </Swiper>
+                                        </h3>
+                                    </div>
+                                    <br />
+                                    <h3 style={{textAlign:"start",fontSize:"25px",fontWeight: "200" }}>Real Estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
                                     <div className='email-collect'>
                                         <input
@@ -69,7 +96,7 @@ function Home() {
                             </div>
                         </section>
                     </Col>
-                    <Col lg={12} md={12} style={{ display: "flex", alignItems: "center" }}>
+                    <Col lg={10} md={12} style={{ display: "flex", alignItems: "center" }}>
                         <div className='grid-images'>
                             <Row>
                                 <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
