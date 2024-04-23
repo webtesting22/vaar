@@ -89,7 +89,7 @@ function Home() {
 
                                     <div className="email-collect" style={{ position: 'relative' }}>
                                         <button className='click-dynamic-btn' style={{backgroundColor:"#D4F604"}} onClick={handleButtonClick}>
-                                            Button
+                                            Join the waitlist
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
                                             <input
