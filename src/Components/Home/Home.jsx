@@ -88,7 +88,7 @@ function Home() {
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
 
                                     <div className="email-collect" style={{ position: 'relative' }}>
-                                        <button className='click-dynamic-btn' style={{backgroundColor:"#D4F604"}} onClick={handleButtonClick}>
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
                                             Join the waitlist
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
@@ -99,7 +99,7 @@ function Home() {
                                                 onChange={handleInputChange}
                                                 style={{ opacity: inputVisible ? '1' : '0' }}
                                             />
-                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white',opacity: inputVisible ? '1' : '0' }}>
+                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white', opacity: inputVisible ? '1' : '0' }}>
                                                 <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                     <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                                 </Link>
@@ -139,38 +139,45 @@ function Home() {
                 </Row>
                 <Row className='mobile-device-view'>
 
-                    <Col lg={12} md={12} style={{ display: "flex", alignItems: "center" }}>
-                        <div className='grid-images'>
-                            <Row>
-                                <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
-                                    <div><img src={second} alt="" data-aos="fade-right" /></div>
-                                    <div><img src={first} alt="" data-aos="fade-left" /></div>
-                                </Col>
-                                {/* <Col lg={12} md={12} sm={8}>
-                              
-                            </Col> */}
 
-                                {/* <Col lg={4} md={12} sm={8}>
-                                <div><img src={third} alt="" /></div>
-                            </Col> */}
-                                {/* <Col lg={6} md={12}>
-                            <div><img src={four} alt="" /></div>
-                        </Col> */}
-
-                            </Row>
-                        </div>
-                    </Col>
                     <Col lg={12} md={12}>
                         <section id='Home_section'>
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
-                                    {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1>
-                                    <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p>
-                                    <h1 className='main-global-heading mobile' style={{ fontWeight: "300", textAlign: "start", fontSize: "8vw" }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1>
+                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
+
+                                    <div>
+                                        <h3 style={{ display: "flex", justifyContent: "start", fontWeight: "300", fontSize: "35px" }}>Vaar makes real estate
+                                            
+                                        </h3>
+                                        <Swiper direction={'vertical'} loop={true}
+                                                autoplay={{
+                                                    delay: 1000,
+                                                    disableOnInteraction: false,
+                                                }}
+                                                modules={[Autoplay]}
+                                                style={{ height: "50px", margin: "0px", textAlign: "start", marginLeft: "10px" }} className="mySwiper">
+                                                {dynamicWords.map((item, index) => (
+                                                    <SwiperSlide key={index}>
+                                                        <h3 style={{ color: "#D4F604", fontSize: "35px", fontWeight: "300" }}>{item}</h3>
+                                                    </SwiperSlide>
+                                                ))}
+                                            </Swiper>
+                                    </div>
+                                    <div className='grid-images'>
+                                        <Row>
+                                            <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
+                                                <div><img src={second} alt="" data-aos="fade-right" /></div>
+                                                <div><img src={first} alt="" data-aos="fade-left" /></div>
+                                            </Col>
+                                           
+                                        </Row>
+                                    </div>
+                                    <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "200", marginTop:"20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     <div className="email-collect" style={{ position: 'relative' }}>
-                                        <button className='click-dynamic-btn' style={{backgroundColor:"#D4F604"}} onClick={handleButtonClick}>
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
                                             Join the waitlist
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
@@ -181,7 +188,7 @@ function Home() {
                                                 onChange={handleInputChange}
                                                 style={{ opacity: inputVisible ? '1' : '0' }}
                                             />
-                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white',opacity: inputVisible ? '1' : '0' }}>
+                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white', opacity: inputVisible ? '1' : '0' }}>
                                                 <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                     <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                                 </Link>
@@ -196,6 +203,9 @@ function Home() {
 
                             </div>
                         </section>
+                    </Col>
+                    <Col lg={12} md={12} style={{ display: "flex", alignItems: "center" }}>
+
                     </Col>
                 </Row>
                 {/* <div id='second-part-section'>
