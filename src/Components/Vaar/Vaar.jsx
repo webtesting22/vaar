@@ -18,6 +18,7 @@ import VipulvPatel from "../Vaar/vipulvpatel.jpg"
 import VidhiK from "../Vaar/VidhiK.png"
 import Kaivalyashah from "../Vaar/kaivalyashah.jpg"
 import teamheroimage2 from "../pictures/teamheroimage2.jpg"
+import Anamayee1 from "../Vaar/anamayee1.jpeg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import 'swiper/css/navigation';
 import SignupSection from '../SignUp/SignupSection';
@@ -78,7 +79,7 @@ function Vaar() {
             link: "https://www.linkedin.com/in/jimishio/"
         },
         {
-            img: Anamayee,
+            img: Anamayee1,
             name: "Anamayee Shirolkar",
             position: "Words",
             link: "https://www.linkedin.com/in/anamayee/"

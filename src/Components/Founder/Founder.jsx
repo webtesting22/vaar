@@ -101,7 +101,7 @@ function Founder() {
                                             
                                             <h2 style={{ color: "#D4F604" }}>{item.title}</h2>
                                                 <br />
-                                            <p style={{ color: "white", fontWeight:"200",fontSize:"20px", marginTop:"10px" }}><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</p>
+                                            <p style={{ color: "white", fontWeight:"200" ,fontSize:"20px", marginTop:"10px" }}><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</p>
                                         </div>
 
 
