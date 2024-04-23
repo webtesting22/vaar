@@ -145,20 +145,20 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
-                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "center", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1>
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
 
                                     <div >
-                                        <h3 style={{ textAlign:"start", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
+                                        <h3 style={{ textAlign:"center", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
                                             
                                         </h3>
                                         <Swiper direction={'vertical'} loop={true}
                                                 autoplay={{
-                                                    delay: 1000,
+                                                    delay: 6000,
                                                     disableOnInteraction: false,
                                                 }}
                                                 modules={[Autoplay]}
-                                                style={{ height: "50px", margin: "0px", textAlign: "start", marginLeft: "10px" }} className="mySwiper">
+                                                style={{ height: "50px", margin: "0px", textAlign: "center", marginLeft: "10px" }} className="mySwiper">
                                                 {dynamicWords.map((item, index) => (
                                                     <SwiperSlide key={index}>
                                                         <h3 style={{ color: "#D4F604", fontSize: "25px", fontWeight: "300" }}>{item}</h3>
@@ -175,8 +175,8 @@ function Home() {
                                            
                                         </Row>
                                     </div>
-                                    <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "200", marginTop:"20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
-                                    <div className="email-collect" style={{ position: 'relative' }}>
+                                    <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "200", marginTop:"20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
+                                    <div className="email-collect" style={{ position: 'relative', display:"flex",justifyContent:"center" }}>
                                         <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
                                             Join the waitlist
                                         </button>
