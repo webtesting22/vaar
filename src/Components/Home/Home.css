@@ -380,7 +380,7 @@
     
     .email-collect input:focus {
         border: none;
-        width: 160px;
+        width: 100%;
     
         outline: none;
         box-shadow: none;
