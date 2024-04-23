@@ -89,8 +89,8 @@ function Founder() {
                     </div>
                     <div className="row w-100 m-auto home-mobile">
                         <br />    <br />
-                    <h1 className='text-white'>Vaar ensures: </h1>
-                    <h1 className='text-white' style={{position:"absolute", marginTop:"70px"}}>So, you can: </h1>
+                    <h1 className='text-white' style={{fontSize:"20px", fontWeight:"200"}}>Vaar ensures: </h1>
+                    <h1 className='text-white' style={{position:"absolute", marginTop:"32px",fontSize:"20px", fontWeight:"200"}}>So, you can: </h1>
                         <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
 
                             {ValueData.map((item, index) => (
@@ -100,8 +100,8 @@ function Founder() {
                                         <div>
                                             
                                             <h2 style={{ color: "#D4F604" }}>{item.title}</h2>
-                                                <br /><br /><br />
-                                            <p style={{ color: "white", fontWeight:"200" }}><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</p>
+                                                <br />
+                                            <p style={{ color: "white", fontWeight:"200",fontSize:"20px", marginTop:"10px" }}><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</p>
                                         </div>
 
 
