@@ -145,11 +145,11 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
-                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1>
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
 
-                                    <div>
-                                        <h3 style={{ display: "flex", justifyContent: "start", fontWeight: "300", fontSize: "35px" }}>Vaar makes real estate
+                                    <div >
+                                        <h3 style={{ textAlign:"start", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
                                             
                                         </h3>
                                         <Swiper direction={'vertical'} loop={true}
@@ -161,7 +161,7 @@ function Home() {
                                                 style={{ height: "50px", margin: "0px", textAlign: "start", marginLeft: "10px" }} className="mySwiper">
                                                 {dynamicWords.map((item, index) => (
                                                     <SwiperSlide key={index}>
-                                                        <h3 style={{ color: "#D4F604", fontSize: "35px", fontWeight: "300" }}>{item}</h3>
+                                                        <h3 style={{ color: "#D4F604", fontSize: "25px", fontWeight: "300" }}>{item}</h3>
                                                     </SwiperSlide>
                                                 ))}
                                             </Swiper>
