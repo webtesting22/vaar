@@ -71,7 +71,7 @@ function Home() {
                                             </Swiper>
                                         </h3>
                                     </div>
-                                    <br />  <br />  <br />  <br />
+                                    <br />  <br />  <br />  <br /><br />
                                     <h3 style={{textAlign:"start",fontSize:"25px",fontWeight: "200" }}>Real Estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
                                     <div className='email-collect'>
