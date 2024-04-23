@@ -89,8 +89,8 @@ function Founder() {
                     </div>
                     <div className="row w-100 m-auto home-mobile">
                         <br />    <br />
-                    <h1 className='text-white' style={{fontSize:"20px", fontWeight:"200"}}>Vaar ensures: </h1>
-                    <h1 className='text-white' style={{position:"absolute", marginTop:"32px",fontSize:"20px", fontWeight:"200"}}>So, you can: </h1>
+                    <h1 className='text-white' style={{fontSize:"20px", fontWeight:"200"}}>Vaar ensures </h1>
+                    <h1 className='text-white' style={{position:"absolute", marginTop:"32px",fontSize:"20px", fontWeight:"200"}}>So, you can </h1>
                         <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
 
                             {ValueData.map((item, index) => (
