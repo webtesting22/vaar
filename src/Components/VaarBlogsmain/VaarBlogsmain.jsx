@@ -69,7 +69,7 @@ function VaarBlogs() {
                             <Col lg={12} md={12}>
                                 <div className='team-section-hero' id='team-section-hero'>
                                     <div>
-                                        <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }}>Blogs and Concepts </h2>
+                                        <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }}>Blogs & Concepts </h2>
                                         <p>Latest insights into the world of real estate </p>
                                     </div>
                                 </div>
