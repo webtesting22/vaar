@@ -115,7 +115,7 @@ function SingleResource14() {
     }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 5" Date="February 17, 2023" ResourceHeading="Technology & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[5].img} />
+            <CommonResourceComponent Resources="Resources" Module="Module 4" Chapter="Concept 6" Date="February 17, 2023" ResourceHeading="Technology & Vaar" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module4[5].img} />
             <section>
                 <div className="container p-0">
                     <Row>
