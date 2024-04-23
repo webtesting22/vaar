@@ -58,19 +58,20 @@ function VaarBlogs() {
                     <div className="container">
                         <Row>
 
+                          
+                            <Col lg={12} md={12}>
+                                <div className='team-section-hero2'>
+                                    <img src={topimg} alt="" />
+                                    <img src={topimg} alt="" />
+                                    <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>Blogs and Concepts </h2>
+                                </div>
+                            </Col>
                             <Col lg={12} md={12}>
                                 <div className='team-section-hero' id='team-section-hero'>
                                     <div>
                                         <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }}>Blogs and Concepts </h2>
                                         <p>Latest insights into the world of real estate </p>
                                     </div>
-                                </div>
-                            </Col>
-                            <Col lg={12} md={12}>
-                                <div className='team-section-hero2'>
-                                    <img src={topimg} alt="" />
-                                    <img src={topimg} alt="" />
-                                    <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>Blogs and Concepts </h2>
                                 </div>
                             </Col>
                         </Row>
