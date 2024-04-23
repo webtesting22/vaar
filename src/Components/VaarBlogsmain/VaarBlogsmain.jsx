@@ -63,8 +63,8 @@ function VaarBlogs() {
                                     <h1 className='owner-quote-text'>Beyond the Walls: Keeping Up the Potential with Real Estate Management</h1>
                                     <div className='button-animation'>
                                         <br />
-                                        <a href="">Read More<i class='bx bx-chevron-right'></i></a>
-                                        <span></span>
+                                        {/* <a href="">Read More<i class='bx bx-chevron-right'></i></a>
+                                        <span></span> */}
                                     </div>
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ function VaarBlogs() {
                 </div>
                 <div className='blogs-block text-white '>
                     <div className='container' >
-                        {blogs.map((item, index) => (
+                        {BlogDatamain.map((item, index) => (
 
                             <Row key={index} className='blog-container-row' style={{ borderBottom: "1px solid rgb(196, 196, 196)" }}>
                                 {index % 2 === 0 ? (

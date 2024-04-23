@@ -11,7 +11,7 @@ function ContactUs() {
                 <div className='container'>
                     <div className='top-heading-content'>
                         <div className='contact-us-details-info'>
-                            <h6>Sign up now</h6>
+                            <h6 style={{color:"black"}}>Sign up now</h6>
                             <h1>Get in touch</h1>
                             <p className='contact-us-tagline'>We’d love to hear from you. Please fill out this form.</p>
                         </div>
