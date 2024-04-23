@@ -23,6 +23,7 @@ function Bestvalue() {
                     <div className='top-section'>
                         <hr className='top-section-heading-hr' />
                         <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
+                        <p style={{fontWeight:"200"}}>The first step towards better decisions is knowledge, especially about the stuff that seems daunting. We’ve collated, curated, and created quick 101s to light your real estate investing journey.  </p>
                         <div className="padding-slite"></div>
                         <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>REAL ESTATE: A COURSE</p>
 
@@ -117,7 +118,7 @@ function Bestvalue() {
                                     <div className='inside-content2'>
                                         <div className='parent-div'>
                                             <div style={{ position: "relative" }}>
-                                                <span>Vidhi Kanaria</span>
+                                                <span>Powered by Vaar</span>
                                                 <h1 style={{color:"#D4F604"}}>CONCEPT: </h1>
                                                 <p style={{color:"#D4F604"}}>Real Estate x Fractional Investing</p>
                                                 <p>The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...</p>

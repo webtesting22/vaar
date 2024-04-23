@@ -25,7 +25,7 @@ const GuideData = [
     {
         img: img4,
         title: "Offer",
-        description: "Next, the asset is offered for investment on Vaar. It is accompanied with documents that outline the asset's return profile, strengths and risks in detail. If the asset aligns with the investor's thesis for investment, the platform can accept an investment within few clicks. "
+        description: "Next, the asset is offered for investment on Vaar. It is accompanied with documents that outline the asset's return profile, strengths and risks in detail. If the asset aligns with the aligns with the investor’s vision for their portfolio, the platform can accept an investment within few clicks."
     },
     {
         img: img5,

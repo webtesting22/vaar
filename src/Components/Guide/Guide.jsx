@@ -29,7 +29,7 @@ function Guide() {
                 <div className='team-section-hero'>
                   <div>
                     {/* <hr className='top-section-heading-hr mobile-hide' /> */}
-                    <h1 id='howitworks-heading'>A Step Guide To Being A Digital Landlord</h1>
+                    <h1 id='howitworks-heading'>A Step-by-Step Guide To Being A Digital Landlord</h1>
                     <p className='mobile-hide'>Learn about the process</p>
                   </div>
                 </div>

@@ -12,6 +12,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/free-mode';
 import 'swiper/css/pagination';
+import topimg from "../VaarBlogsmain/blog-top-img.jpeg"
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import blogArrow from "../pictures/About-icons/blogarrow.svg"
 import SignupSection from '../SignUp/SignupSection';
@@ -51,8 +52,33 @@ function VaarBlogs() {
     return (
         <>
             <section className='blog-section-change-back bg-black'>
-                <div className='container blog-section-adjust' >
-                    <Row className='row-for-pc'>
+                <div className='container' >
+                <section style={{ color: "white", backgroundColor: "black" }}>
+                <div>
+                    <div className="container">
+                        <Row>
+
+                            <Col lg={12} md={12}>
+                                <div className='team-section-hero' id='team-section-hero'>
+                                    <div>
+                                        <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }}>Blogs and Concepts </h2>
+                                        <p>Latest insights into the world of real estate </p>
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col lg={12} md={12}>
+                                <div className='team-section-hero2'>
+                                    <img src={topimg} alt="" />
+                                    <img src={topimg} alt="" />
+                                    <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>Blogs and Concepts </h2>
+                                </div>
+                            </Col>
+                        </Row>
+                    </div>
+                </div>
+
+            </section>
+                    {/* <Row className='row-for-pc'>
                         <Col lg={8} md={8}>
                             <div className='blog-top-img'>
                                 <img src={blogimage} alt="" />
@@ -65,13 +91,13 @@ function VaarBlogs() {
                                     <h1 className='owner-quote-text'>Beyond the Walls: Keeping Up the Potential with Real Estate Management</h1>
                                     <div className='button-animation'>
                                         <br />
-                                        {/* <a href="">Read More<i class='bx bx-chevron-right'></i></a>
-                                        <span></span> */}
+                                        <a href="">Read More<i class='bx bx-chevron-right'></i></a>
+                                        <span></span>
                                     </div>
                                 </div>
                             </div>
                         </Col>
-                    </Row>
+                    </Row> */}
                     <div className='Blog-section only-mobile '>
                         <div className='container'>
                             <hr className='top-section-heading-hr' />
@@ -121,8 +147,8 @@ function VaarBlogs() {
                                             <Link to="/VaarBlogCommon">
                                                 <div className='blog-title-container' style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100%", width: "100%" }}>
                                                     <div>
-                                                        <h1 className='main-blog-heading'><a href="./VaarBlogCommon" className='text-white' style={{ fontWeight: "400" }}>{item.blogTitle}</a></h1>
-                                                        <p className='text-white'>{item.blogTitle}</p>
+                                                        <h1 className='main-blog-heading' ><a href="./VaarBlogCommon"  style={{ fontWeight: "400",color:"#D4F604" }}>{item.blogTitle}</a></h1>
+                                                        <p style={{color:"#D4F604"}}>{item.title}</p>
                                                         <p className='text-white'>{item.blogContent}</p>
                                                         <div style={{ display: "flex", alignItems: "center" }}>
                                                             <span style={{ margin: "0px 10px", display: "flex", alignItems: "center", color: "white" }}><i class='bx bxs-calendar' style={{ fontSize: "20px" }}></i> </span> <p style={{ margin: "0px", color: "white", fontSize: "14px" }}> {item.Date}</p>
