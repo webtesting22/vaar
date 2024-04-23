@@ -173,7 +173,7 @@ function Home() {
                                         repeat={Infinity}
                                     />
                                     <div >
-                                        <h3 style={{ textAlign: "center", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
+                                        <h3 style={{ textAlign: "center", fontWeight: "300", fontSize: "30px" }}>Vaar makes real estate
 
                                         </h3>
                                         <Swiper direction={'vertical'} loop={true}
@@ -185,7 +185,7 @@ function Home() {
                                             style={{ height: "50px", margin: "0px", textAlign: "center", marginLeft: "10px" }} className="mySwiper">
                                             {dynamicWords.map((item, index) => (
                                                 <SwiperSlide key={index}>
-                                                    <h3 style={{ color: "#D4F604", fontSize: "25px", fontWeight: "300" }}>{item}</h3>
+                                                    <h3 style={{ color: "#D4F604",  fontSize: "30px", fontWeight: "300" }}>{item}</h3>
                                                 </SwiperSlide>
                                             ))}
                                         </Swiper>
