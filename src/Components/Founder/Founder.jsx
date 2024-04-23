@@ -55,7 +55,7 @@ function Founder() {
                     <div className='text-center' >
                         <hr className='m-0' />
                         <h1 className='section-heading-big only-pc-heading' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>We solve an access problem</h1>
-                        <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We solve an access problem</h1>
+                        <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1>
                         {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p> */}
                     </div>
                     {/* <div className="padding-slite"></div> */}
@@ -88,6 +88,9 @@ function Founder() {
 
                     </div>
                     <div className="row w-100 m-auto home-mobile">
+                        <br />    <br />
+                    <h1 className='text-white'>Vaar ensures: </h1>
+                    <h1 className='text-white' style={{position:"absolute", marginTop:"70px"}}>So, you can: </h1>
                         <Carousel afterChange={onChange} ref={carouselRef} dots={true} >
 
                             {ValueData.map((item, index) => (
@@ -95,7 +98,9 @@ function Founder() {
                                 <div className="col-lg-6" key={index}>
                                     <div className='right-side-container'>
                                         <div>
+                                            
                                             <h2 style={{ color: "#D4F604" }}>{item.title}</h2>
+                                                <br /><br /><br />
                                             <p style={{ color: "white", fontWeight:"200" }}><span style={{fontWeight:"600"}}>{item.colorText}</span> {item.Descriptions}</p>
                                         </div>
 
