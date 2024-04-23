@@ -404,7 +404,7 @@ function SingleResource7() {
       }, []);
     return (
         <>
-            <CommonResourceComponent Resources="Resources" Module="Module 2" Chapter="Chapter 8" Date="February 17, 2023" ResourceHeading="COMPREHENSIVE FACTORS INFLUENCING INVESTMENT DECISION-MAKING" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module3[1].img} />
+            <CommonResourceComponent Resources="Resources" Module="Module 3" Chapter="Chapter 8" Date="February 17, 2023" ResourceHeading="COMPREHENSIVE FACTORS INFLUENCING INVESTMENT DECISION-MAKING" AuthorInfo="Stephanie Gordon, Content Manager, Vaar" topResourceImg={Module3[1].img} />
             <section>
                 <div className="container p-0">
                     <Row>

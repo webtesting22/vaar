@@ -63,7 +63,7 @@ function SingleResource9() {
                             </div>
                         </Col>
                     </Row>
-                    <DontMissBlog index={Number(linkIndex())} />
+                    <DontMissBlog  index ={[8,10]}/>
                 </div>
             </section>
             <SignupSection/>

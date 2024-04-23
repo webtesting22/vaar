@@ -172,7 +172,7 @@ function VaarBlogs() {
 
                 </div>
             </section>
-            <Row gutter={[16, 16]}>
+            {/* <Row gutter={[16, 16]}>
             {blogs.map((blog, index) => (
                 <Col key={index} xs={24} sm={12} md={8} lg={6}>
                      <Link to={{
@@ -185,13 +185,13 @@ function VaarBlogs() {
                         style={{ marginBottom: 16 }}
                     >
                         <p>{blog.title}</p>
-                        {/* <p>{blog.blogContent}</p> */}
+                        <p>{blog.blogContent}</p>
                         <p>Date: {blog.Date}</p>
                     </Card>
                     </Link>
                 </Col>
             ))}
-        </Row>
+        </Row> */}
             <SignupSection />
         </>
     );

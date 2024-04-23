@@ -19,7 +19,7 @@ function DontMissBlog(ind) {
                 <h1 style={{ color: "white" }}>Don’t miss these</h1>
                 <div className="padding-slite"></div>
                 {finalData && finalData.map((item, index) => (
-                    <div className="col-lg-6 mb-5" key={index}>
+                    <div className="col-lg-4 mb-5" key={index}>
                         <Link to={`/SingleResource${index === 0 ? ind.index[0] : ind.index[1]}`}>
                             <div className='module-box'>
                                 <img src={item.img} alt="" />
