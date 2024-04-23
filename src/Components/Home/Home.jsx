@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Home.css"
 import "../../Components/globalcontent.css"
+import { TypeAnimation } from 'react-type-animation';
 import homeCard from "../pictures/home-card-img.png"
 // import homeMobile from "../pictures/Rectangle.png"
 import Founder from '../Founder/Founder';
@@ -60,9 +61,21 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
+                                    <TypeAnimation
+                                        sequence={[
+                                            // Same substring at the start will only be typed out once, initially
+                                            'It’s time to level the playing field.',
+                                            6000, // wait 1s before replacing "Mice" with "Hamsters"
+                                           
+                                        ]}
+                                        wrapper="p"
+                                        speed={200}
+                                        style={{ fontSize: '2em', display: 'block',fontSize:"50px", fontWeight:"400px",textAlign:"start"  }}
+                                        repeat={Infinity}
+                                    />
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    {/* <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">It’s time to level the playing field.</h1> */}
                                     {/* <p style={{ fontWeight: "200", textAlign: "start" }}>Despite being the world's largest store of value, <span style={{ color: "#d4f604" }}>Real estate</span>  as an investment is only accessible to a small fraction of the population.</p> */}
 
                                     <br />
@@ -145,38 +158,49 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive'>
-                                    <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "center", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1>
+                                    {/* <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "center", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-
+                                    <TypeAnimation
+                                        sequence={[
+                                            // Same substring at the start will only be typed out once, initially
+                                            'It’s time to level the playing field.',
+                                            6000, // wait 1s before replacing "Mice" with "Hamsters"
+                                           
+                                        ]}
+                                        wrapper="p"
+                                        speed={200}
+                                        style={{ fontSize: '2em', display: 'block',fontSize:"50px", fontWeight:"400px",textAlign:"center"  }}
+                                        repeat={Infinity}
+                                    />
                                     <div >
-                                        <h3 style={{ textAlign:"center", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
-                                            
+                                        <h3 style={{ textAlign: "center", fontWeight: "300", fontSize: "25px" }}>Vaar makes real estate
+
                                         </h3>
                                         <Swiper direction={'vertical'} loop={true}
-                                                autoplay={{
-                                                    delay: 6000,
-                                                    disableOnInteraction: false,
-                                                }}
-                                                modules={[Autoplay]}
-                                                style={{ height: "50px", margin: "0px", textAlign: "center", marginLeft: "10px" }} className="mySwiper">
-                                                {dynamicWords.map((item, index) => (
-                                                    <SwiperSlide key={index}>
-                                                        <h3 style={{ color: "#D4F604", fontSize: "25px", fontWeight: "300" }}>{item}</h3>
-                                                    </SwiperSlide>
-                                                ))}
-                                            </Swiper>
+                                            autoplay={{
+                                                delay: 1000,
+                                                disableOnInteraction: false,
+                                            }}
+                                            modules={[Autoplay]}
+                                            style={{ height: "50px", margin: "0px", textAlign: "center", marginLeft: "10px" }} className="mySwiper">
+                                            {dynamicWords.map((item, index) => (
+                                                <SwiperSlide key={index}>
+                                                    <h3 style={{ color: "#D4F604", fontSize: "25px", fontWeight: "300" }}>{item}</h3>
+                                                </SwiperSlide>
+                                            ))}
+                                        </Swiper>
                                     </div>
                                     <div className='grid-images'>
                                         <Row>
-                                            <Col lg={24} md={24} sm={8} style={{ display: "flex" }}>
+                                            <Col lg={24} md={24}  style={{ display: "flex" }}>
                                                 <div><img src={second} alt="" data-aos="fade-right" /></div>
                                                 <div><img src={first} alt="" data-aos="fade-left" /></div>
                                             </Col>
-                                           
+
                                         </Row>
                                     </div>
-                                    <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "200", marginTop:"20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
-                                    <div className="email-collect" style={{ position: 'relative', display:"flex",justifyContent:"center" }}>
+                                    <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "200", marginTop: "20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
+                                    <div className="email-collect" style={{ position: 'relative', display: "flex", justifyContent: "center" }}>
                                         <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
                                             Join the waitlist
                                         </button>
