@@ -47,7 +47,7 @@ function Guide() {
           <div className='blob-container'><img src={blobData} alt="" /></div>
           <div className='mobile-image'><img src={mobilePicture} alt="" /></div>
         </div> */}
-        <div className="container">
+        <div className="container guide-only-pc">
           <div className="row">
             {GuideData.map((item, index) => (
               <div key={index} className="col-lg-4 col-md-6">
@@ -67,29 +67,48 @@ function Guide() {
             ))}
           </div>
         </div>
-        <div className="container">
+        <div className="container guide-only-mobile" >
           <Swiper spaceBetween={30} slidesPerView={1}>
-            {GuideData.map((item, index) => (
-              <SwiperSlide key={index}>
-                <div className="row">
-                  <div className="col-lg-6 col-md-6">
-                    <div className="box">
-                      <div className='box-top-header'>
-                        <div style={{ display: "flex", alignItems: "center" }}>
-                          <img src={item.img} alt={item.title} style={{ backgroundColor: "#00C2FF" }} />
-                          <h3 className="box-title" style={{ color: "#00C2FF" }}>{item.title}</h3>
+            {GuideData.reduce((acc, item, index) => {
+              if (index % 2 === 0) {
+                acc.push(
+                  <SwiperSlide key={index}>
+                    <div className="row">
+                      <div className="col-lg-6 col-md-6">
+                        <div className="box">
+                          <div className='box-top-header'>
+                            <div style={{ display: "flex", alignItems: "center" }}>
+                              <img src={item.img} alt={item.title} style={{ backgroundColor: "#00C2FF" }} />
+                              <h3 className="box-title" style={{ color: "#00C2FF" }}>{item.title}</h3>
+                            </div>
+                            <div className='numbering'><span>{index + 1}</span></div>
+                          </div>
+                          <hr style={{ backgroundColor: "rgb(0, 194, 255)" }} />
+                          <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
                         </div>
-                        <div className='numbering'><span>{index + 1}</span></div>
                       </div>
-                      <hr style={{ backgroundColor: "rgb(0, 194, 255)" }} />
-                      <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{item.description}</span>
+                      {GuideData[index + 1] && (
+                        <div className="col-lg-6 col-md-6">
+                          <div className="box">
+                            <div className='box-top-header'>
+                              <div style={{ display: "flex", alignItems: "center" }}>
+                                <img src={GuideData[index + 1].img} alt={GuideData[index + 1].title} style={{ backgroundColor: "#00C2FF" }} />
+                                <h3 className="box-title" style={{ color: "#00C2FF" }}>{GuideData[index + 1].title}</h3>
+                              </div>
+                              <div className='numbering'><span>{index + 2}</span></div>
+                            </div>
+                            <hr style={{ backgroundColor: "rgb(0, 194, 255)" }} />
+                            <span className="paragraph" style={{ fontWeight: "300", fontSize: "16px" }}>{GuideData[index + 1].description}</span>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-            ))}
+                  </SwiperSlide>
+                );
+              }
+              return acc;
+            }, [])}
           </Swiper>
-
         </div>
 
 

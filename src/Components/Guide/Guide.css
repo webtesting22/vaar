@@ -49,41 +49,73 @@
 .blob-mobile-img {
     display: none;
 }
-@media (min-width:300px) and (max-width:500px){
+
+@media (min-width:300px) and (max-width:500px) {
     .blob-mobile-img {
         display: block;
         position: relative;
         padding: 28vh 0vh;
     }
- 
+
 }
-@media (min-width:501px) and (max-width:600px){
+
+@media (min-width:501px) and (max-width:600px) {
     .blob-mobile-img {
         display: block;
         position: relative;
         padding: 28vh 0vh;
     }
 }
-#howitworks-heading{
+
+#howitworks-heading {
     text-align: start;
     font-weight: 300;
     font-size: 50px;
     /* margin-top: 2rem; */
     color: #00C2FF;
 }
-.mobile-hide{
+
+.mobile-hide {
     display: block;
 }
+
+.guide-only-pc {
+    display: block;
+}
+
+.guide-only-mobile {
+    display: none;
+}
+
 @media (max-width:600px) {
-    .mobile-hide{
+    .box:hover {
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px 0px;
+        transition: .5s;
+        transform: translatey(0px);
+    }
+
+    .guide-only-mobile {
+        display: block;
+    }
+
+    .guide-only-pc {
         display: none;
     }
-    #howitworks-heading{
+
+    .mobile-hide {
+        display: none;
+    }
+
+    #howitworks-heading {
         text-align: start;
         font-weight: 300;
         margin-top: 2rem;
         color: #00C2FF;
     }
+
     .Guide-section .row {
         padding: 0rem 0rem;
     }
@@ -95,13 +127,6 @@
         margin-top: 15px;
     }
 
-    .box {
-        border: 1px solid transparent;
-        padding: 20px;
-        border-radius: 20px;
-        margin: 20px 0px;
-        transition: .5s;
-    }
 
     .box .paragraph {
         color: rgb(231, 231, 231);
@@ -118,7 +143,7 @@
     /* .Guide-section .container {
         padding: 0px;
     } */
-   
+
 
     .blob-container {
         width: 100%;
@@ -146,7 +171,7 @@
         bottom: 0;
         width: 100%;
     }
-  
+
 
 
 }
@@ -175,11 +200,13 @@
     align-items: center;
     justify-content: space-between;
 }
-.numbering span{
+
+.numbering span {
     font-size: 25px;
     font-weight: bold;
     color: #333333;
 }
+
 .box-top-header img {
     background-color: #D4F604;
     width: 48px;
@@ -213,7 +240,8 @@
         margin: auto;
         text-align: center;
     }
-    .box-title{
+
+    .box-title {
         padding-left: 10px;
     }
 }
