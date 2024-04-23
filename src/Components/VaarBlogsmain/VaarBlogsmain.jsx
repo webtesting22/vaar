@@ -63,7 +63,7 @@ function VaarBlogs() {
                                 <div className='team-section-hero2'>
                                     <img src={topimg} alt="" />
                                     <img src={topimg} alt="" />
-                                    <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>Blogs and Concepts </h2>
+                                    <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>Blogs & Concepts </h2>
                                 </div>
                             </Col>
                             <Col lg={12} md={12}>

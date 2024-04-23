@@ -63,14 +63,29 @@ function Founder() {
                                     6000, // wait 1s before replacing "Mice" with "Hamsters"
 
                                 ]}
-                                wrapper="p"
+                                wrapper="h1"
                                 speed={200}
-                                style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}
+                                style={{ fontWeight: "300", fontSize: "50px", textAlign: "start",margin:"0px" }}
                                 // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
                                 repeat={Infinity}
                             />
-                    from the small stuff to the big picture.</h1>
-                        <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1>
+                            from the small stuff to the big picture.</h1>
+                        {/* <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1> */}
+                        <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed out once, initially
+                                    'We take care of it all,  ',
+                                    6000, // wait 1s before replacing "Mice" with "Hamsters"
+
+                                ]}
+                                wrapper="h1"
+                                speed={200}
+                                style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" ,margin:"0px"}}
+                                // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                                repeat={Infinity}
+                            />
+                            from the small stuff to the big picture.</h1>
                         {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p> */}
                     </div>
                     {/* <div className="padding-slite"></div> */}
