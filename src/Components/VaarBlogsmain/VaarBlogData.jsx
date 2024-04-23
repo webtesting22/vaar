@@ -8,7 +8,7 @@ const BlogDatamain = [
         blogTitle: "CONCEPT:",
         title:" Real Estate x Fractional Investing",
         blogContent: "The long-term red turns are incredible. Investing in real estate offers several benefits for your investment portfolio...",
-        Date: "dd-mm-yy"
+        Date: "Published: 19 April 2024"
 
     },
     // {
