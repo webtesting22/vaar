@@ -7,6 +7,7 @@ import SignupSection from "../../SignUp/SignupSection";
 
 import BlogCarousal from "./BlogCarousal";
 const VaarBlogCommon = ({ title, content, date }) => {
+    // const [Blogs, setBlogs] = useState(null);
     console.log(title, content, date)
     const blogPointsData = [
 
@@ -42,6 +43,33 @@ const VaarBlogCommon = ({ title, content, date }) => {
     useEffect(() => {
         window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
     }, []);
+    // useEffect(() => {
+
+    //     const fetchData = async () => {
+    //         try {
+    //             const response = await fetch('https://vaarbackend-two.vercel.app/blogs', {
+    //                 method: 'GET',
+    //                 headers: {
+    //                     'Content-Type': 'application/json'
+    //                 },
+    //             });
+
+    //             if (!response.ok) {
+    //                 throw new Error(`Server responded with status: ${response.status}`);
+    //             }
+
+    //             const data = await response.json();
+    //             setBlogs(data); // Update state with fetched data
+    //             console.log("Show dataaaaaaa", data);
+    //             // message.success('Blogs fetched successfully.');
+    //         } catch (error) {
+    //             console.error('Error:', error.message);
+    //             message.error('An error occurred. Please try again later.');
+    //         }
+    //     };
+
+    //     fetchData();
+    // }, []);
     return (
         <>
             <section style={{ backgroundColor: "black", padding: "2rem 0rem" }}>

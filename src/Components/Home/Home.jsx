@@ -167,14 +167,14 @@ function Home() {
                                             // Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
                                             6000, // wait 1s before replacing "Mice" with "Hamsters"
-                                            '',
+                                           
                                         ]}
                                         wrapper="p"
                                         speed={200}
                                       
                                         style={{
                                             fontSize: '2em',
-                                            content: '',
+
                                             display: 'block',
                                             fontSize: '10vw',
                                             fontWeight: '400px',
@@ -182,7 +182,7 @@ function Home() {
                                             textAlign: 'center',
                                         }}
                                         repeat={Infinity}
-                                        hideCursor={true}
+                                        // hideCursor={true}
                                     />
 
                                     <br />
