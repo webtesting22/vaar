@@ -334,7 +334,17 @@
     /* border-radius: 10px 0px 0px 10px; */
 }
 
-
+@media (max-width:700px){
+    .click-dynamic-btn {
+        width: 200px;
+        z-index: 1;
+        border: none;
+        height: 43px;
+        border-radius: 10px;
+        color: black;
+        /* border-radius: 10px 0px 0px 10px; */
+    }
+}
 .email-collect input::placeholder {
     color: rgb(142, 142, 142);
     font-weight: 400;
