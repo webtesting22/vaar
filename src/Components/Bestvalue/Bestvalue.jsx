@@ -54,7 +54,7 @@ function Bestvalue() {
                                 <SwiperSlide key={index}>
                                     <Link to={pageLinks[index]}>
                                         <div className='content-section bg-white' id='content-section'>
-                                            <img src={item.img} alt="" />
+                                            <img src={item.img} alt="vaar concepts" />
                                             <div className='footer-card' id='footer-card'>
                                                 <h3 className='Card-title text-white'>{item.title}</h3>
                                                 <div className='button-animation' id='button-animation'>
@@ -110,7 +110,7 @@ function Bestvalue() {
                             <div className="row m-auto">
                                 <div className="col-lg-4 col-md-4">
                                     <div className='inside-content1 h-100'>
-                                        <img src={ownerQuoteimg} className='w-100 h-100' alt="" />
+                                        <img src={ownerQuoteimg} className='w-100 h-100' alt="vaar img" />
                                     </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8" id='Owner_info-content'>
@@ -188,11 +188,11 @@ function Bestvalue() {
                                     <SwiperSlide>
                                         <Link to="/VaarBlogCommon">
                                             <div className='blog-cards'>
-                                                <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
+                                                <img src={item.img} alt="vaar blogs" style={{ marginBottom: "30px", width: "100%" }} />
                                                 <div style={{ position: "relative", justifyContent: "space-between" }}>
                                                     <h5 style={{ fontSize: "20px", color: "black", width: "80%", color: "rgb(212, 246, 4)" }}>{item.title}</h5>
                                                     <p style={{color:"rgb(212, 246, 4)"}}>{item.subtitle}</p>
-                                                    <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
+                                                    <img src={blogArrow} alt="vaar blogs" style={{ position: "absolute", top: "3px", right: "0" }} />
                                                 </div>
                                                 <p style={{ fontSize: "16px", color: "#475467", marginBottom: "0px", color: "white" }}>{item.description}</p>
                                                 {/* <div className='Posted'>

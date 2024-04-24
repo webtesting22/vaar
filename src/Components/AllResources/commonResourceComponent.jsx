@@ -38,7 +38,7 @@ function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHea
                         </Col>
                         <Col lg={12} md={12} className="order-lg-2 order-md-2">
                             <div>
-                                <img src={topResourceImg} alt="" style={{ width: "100%", borderRadius:"20px" }} />
+                                <img src={topResourceImg} alt="vaar-img" style={{ width: "100%", borderRadius:"20px" }} />
                             </div>
                         </Col>
                     </Row>

@@ -115,10 +115,10 @@ function VaarBlogs() {
                                     <div className='blog-cards'>
                                         <img src={item.img} alt="" style={{ marginBottom: "30px", width: "100%" }} />
                                         <div style={{ position: "relative", display: "flex", justifyContent: "space-between" }}>
-                                            <h5 style={{ fontSize: "20px", width: "80%", color: "white" }}>{item.title}</h5>
+                                            <h5 style={{ fontSize: "20px", width: "80%", color: "rgb(212, 246, 4)" }}>{item.title}</h5>
                                             <img src={blogArrow} alt="" style={{ position: "absolute", top: "3px", right: "0" }} />
                                         </div>
-                                        <p>{item.subtitle}</p>
+                                        <p style={{color:"rgb(212, 246, 4)"}}>{item.subtitle}</p>
                                         <p style={{ fontSize: "16px", marginBottom: "0px", color: "white" }}>{item.description}</p>
                                         <div className='Posted'>
                                             <div><img src={item.avtar} alt="Not Found" /></div>

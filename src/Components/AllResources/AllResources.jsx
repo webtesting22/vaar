@@ -59,8 +59,8 @@ function AllResources() {
                             </Col>
                             <Col lg={12} md={12}>
                                 <div className='team-section-hero2'>
-                                    <img src={guideimg} alt="" />
-                                    <img src={guideimg} alt="" />
+                                    <img src={guideimg} alt="101 Real Estate vaar" />
+                                    <img src={guideimg} alt="101 Real Estate vaar" />
                                     <h2 style={{ fontWeight: "200", fontSize: "50px", color: "#D4F604" }} id='mobile-heading-show'>101 Real Estate</h2>
                                 </div>
                             </Col>
@@ -92,7 +92,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 1}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -124,7 +124,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 1}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -146,7 +146,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 4}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -178,7 +178,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 1}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -202,7 +202,7 @@ function AllResources() {
                                             <div className="col-lg-3 col-md-6 mb-5">
                                                 <Link to={`/SingleResource${index + 6}`}>
                                                     <div className='module-box'>
-                                                        <img src={item.img} alt="" />
+                                                        <img src={item.img} alt="Vaar resources" />
                                                         <h6>{item.subtitle}</h6>
                                                         <h4>{item.title}</h4>
                                                         <span>{item.timing}</span>
@@ -234,7 +234,7 @@ function AllResources() {
                                             {/* Conditional rendering based on index */}
                                             <Link to={`/SingleResource${index + 1}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -256,7 +256,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 9}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>
@@ -287,7 +287,7 @@ function AllResources() {
                                         <div className="col-lg-3 col-md-6 mb-5">
                                             <Link to={`/SingleResource${index + 9}`}>
                                                 <div className='module-box'>
-                                                    <img src={item.img} alt="" />
+                                                    <img src={item.img} alt="Vaar resources" />
                                                     <h6>{item.subtitle}</h6>
                                                     <h4>{item.title}</h4>
                                                     <span>{item.timing}</span>

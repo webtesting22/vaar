@@ -98,6 +98,8 @@ function Home() {
                                     </div>
                                     <br />
                                     <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "200" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
+                                    <br />
+                                    <h3 style={{textAlign:"start", fontSize:"25px", fontWeight:"400"}}>We’re here to change that</h3>
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
 
                                     <div className="email-collect" style={{ position: 'relative' }}>
@@ -169,9 +171,10 @@ function Home() {
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                        style={{ fontSize: '2em', display: 'block',fontSize:"8vw", fontWeight:"400px",textAlign:"center"  }}
+                                        style={{ fontSize: '2em', display: 'block',fontSize:"10vw", fontWeight:"400px",textAlign:"center"  }}
                                         repeat={Infinity}
                                     />
+                                    <br />
                                     <div >
                                         <h3 style={{ textAlign: "center", fontWeight: "300", fontSize: "30px" }}>Vaar makes real estate
 
@@ -200,6 +203,9 @@ function Home() {
                                         </Row>
                                     </div>
                                     <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "200", marginTop: "20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
+                                    <br />
+                                    <h3 style={{textAlign:"center", fontSize:"25px", fontWeight:"400"}}>We’re here to change that</h3>
+                                  
                                     <div className="email-collect" style={{ position: 'relative', display: "flex", justifyContent: "center" }}>
                                         <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
                                             Join the waitlist
