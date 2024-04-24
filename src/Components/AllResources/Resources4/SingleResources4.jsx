@@ -2,12 +2,20 @@ import React, { useEffect } from "react";
 import CommonResourceComponent from "../commonResourceComponent";
 import ReactangleTopImage from "../Resources4/Rectangle.svg";
 import CommonResourceLeftSide from "../CommonResourceLeftSide";
-import { Row, Col, Carousel } from "antd"
+import { Row, Col, Carousel, Descriptions } from "antd"
 import CarousalImg from "../Resources4/carousalImg.svg"
 import DontMissBlog from "../DontMissBlogs/DontMissBlogs";
 import SignupSection from "../../SignUp/SignupSection";
 import { Module1, Module2 } from "../AllResourcesData"
 import linkIndex from "../utils/linkIndex";
+import singleFamily from "../Resources4/Single-family.png"
+import Condominium from "../Resources4/Condominium.png"
+import Townhouse from "../Resources4/Townhome.png"
+import Multifamily from "../Resources4/Multi-family.png"
+import studentHousing from "../Resources4/StudentHousing.png"
+import vacationRentals from "../Resources4/Vacationrentals.png"
+import Coorperatives from "../Resources4/Cooperatives.png"
+
 function SingleResource4() {
     const liList = [
         {
@@ -61,7 +69,7 @@ function SingleResource4() {
 
     const TypesResidentialData = [
         {
-            image: CarousalImg,
+            image: singleFamily,
             heading: "Single-Family Homes",
             Description: "Detached, standalone structures designed for one family.",
             listData: [
@@ -73,6 +81,103 @@ function SingleResource4() {
                 },
                 {
                     list: "Vary in size and architectural styles."
+                }
+            ]
+        },
+        {
+            image:Condominium,
+            heading:"Condominiums (Condos)",
+            Descriptions:"Units within a larger building or complex that are individually owned.",
+            listData:[
+                {
+                    list:"Shared common areas and facilities."
+                },
+                {
+                    list:"Typically managed by a homeowners association (HOA)."
+                },
+                {
+                    list:'Owners responsible for interior maintenance.'
+                }
+            ]
+            
+        },
+        {
+            image:Townhouse,
+            heading:"Townhouses",
+            Descriptions:"Multi-level homes that share walls with neighboring units.",
+            listData:[
+                {
+                    list:"Ownership of both the structure and land."
+                },
+                {
+                    list:"May have common areas maintained by an HOA."
+                },
+                {
+                    list:"Varied architectural styles."
+                }
+            ]
+        },
+        {
+            image:Multifamily,
+            heading:"Multifamily Properties",
+            Descriptions:"Buildings designed to accommodate multiple families.",
+            listData:[
+                {
+                    list:"Duplexes: Two separate living units."
+                },
+                {
+                    list:"Triplexes: Three separate living units."
+                },
+                {
+                    list:"Apartment Buildings: Multiple units within a single structure."
+                }
+            ]
+        },
+        {
+            image:studentHousing,
+            heading:"Student Housing",
+            Descriptions:"Properties specifically designed to accommodate students.",
+            listData:[
+                {
+                    list:"Often furnished with communal spaces."
+                },
+                {
+                    list:" Proximity to educational institutions."
+                },
+                {
+                    list:"Leases may align with the academic calendar."
+                }
+            ]
+        },
+        {
+            image:vacationRentals,
+            heading:"Short-Term or Vacation Rentals",
+            Descriptions:"Properties rented out for short durations, typically for vacations.",
+            listData:[
+                {
+                    list:"Often facilitated through online platforms (e.g., Airbnb)."
+                },
+                {
+                    list:"Flexibility in rental terms."
+                },
+                {
+                    list:"Location and amenities attract tourists."
+                }
+            ]
+        },
+        {
+            image:Coorperatives,
+            heading:"Housing Cooperatives (Co-ops)",
+            Descriptions:"Residents collectively own and manage the property.",
+            listData:[
+                {
+                    list:"Members hold shares in the cooperative."
+                },
+                {
+                    list:"Decision-making through a board of directors."
+                },
+                {
+                    list:"Shared responsibility for maintenance and expenses."
                 }
             ]
         }
@@ -409,7 +514,7 @@ function SingleResource4() {
 
                                             <div>
                                                 <div style={{ width: '100%' }}>
-                                                    <img src={item.image} alt="Carousel Image" style={{ width: "100%" }} />
+                                                    <img src={item.image} alt="vaar image" style={{ width: "100%" }} />
                                                 </div>
 
                                                 {/* Second Column for Heading, Description, and List Data */}

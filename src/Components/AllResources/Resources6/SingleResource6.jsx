@@ -269,7 +269,7 @@ function SingleResource6() {
 
                                 <div className="padding-slite"></div>
                                 <h4 id="SectionIV">Section IV: Capital Markets</h4>
-                                {ExternalEnvironmentData.map((item, index) => (
+                                {CapitalMarkets.map((item, index) => (
                                     <div key={index} className="RealEstate-Box">
                                         <h6>{item.cardTitle}</h6>
                                         <hr style={{ opacity: "1" }} />

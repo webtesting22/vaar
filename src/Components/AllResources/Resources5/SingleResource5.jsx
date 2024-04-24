@@ -256,6 +256,19 @@ function SingleResource5() {
                     cardPointDescription: "Risk-averse investors may explore stable markets with consistent demand, adopting a conservative approach to mitigate potential downturns."
                 }
             ]
+        },
+        {
+            cardTitle:" Interest Rate Risks",
+            cardPoints:[
+                {
+                    cardSubtitle:"1. Preparing for fluctuations",
+                    cardPointDescription:"Anticipating potential interest rate fluctuations, investors in cities like Miami, with historically low-interest rates, may secure long-term fixed-rate mortgages to shield against rising rates."
+                },
+                {
+                    cardSubtitle:"2. Long-term planning",
+                    cardPointDescription:"Long-term planning involves stress testing investments against various interest rate scenarios, ensuring resilience in the face of market changes."
+                }
+            ]
         }
     ]
 
@@ -273,6 +286,32 @@ function SingleResource5() {
                     cardPointDescription: "The presence of residential REITs contributes to market liquidity and allows individual investors to access a share of the residential real estate market without direct property ownership."
                 }
             ]
+        },
+        {
+            cardTitle:"Current Trends in Residential REITs",
+            cardPoints:[
+                {
+                    cardSubtitle:"1. Single-family rental REITs",
+                    cardPointDescription:"Entities focusing on single-family rentals, such as American Homes 4 Rent, are capitalizing on the growing demand for rental properties."
+                },
+                {
+                    cardSubtitle:"2. Technology-driven REITs",
+                    cardPointDescription:"Some REITs leverage technology to enhance property management and tenant experiences, reflecting broader trends in the real estate industry."
+                }
+            ]
+        },
+        {
+            cardTitle:"Investor Considerations with REITs",
+            cardPoints:[
+                {
+                    cardSubtitle:"1. Diversification",
+                    cardPointDescription:"Investing in residential REITs allows for diversification across various properties and geographic locations."
+                },
+                {
+                    cardSubtitle:"2. Distribution yields",
+                    cardPointDescription:"Investors often consider the distribution yields offered by residential REITs as a source of passive income."
+                }
+            ]
         }
     ]
     const FutureOutlookcardData = [
@@ -286,6 +325,19 @@ function SingleResource5() {
                 {
                     cardSubtitle: "2. Considerations for long-term investment",
                     cardPointDescription: "Long-term considerations involve identifying markets with strong fundamentals, such as Phoenix, where population growth and job opportunities support sustained real estate demand."
+                }
+            ]
+        },
+        {
+            cardTitle:"Economic Indicators",
+            cardPoints:[
+                {
+                    cardSubtitle:"1. Key economic factors",
+                    cardPointDescription:"Indicators like job creation and GDP growth shape the future of residential real estate. In markets like Nashville, where diverse industries thrive, economic indicators support positive real estate projections."
+                },
+                {
+                    cardSubtitle:"Predictions based on indicators",
+                    cardPointDescription:"Predictions hinge on indicators suggesting sustained economic growth, with markets exhibiting resilience expected to outperform in the coming years."
                 }
             ]
         }
