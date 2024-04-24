@@ -4,11 +4,29 @@ import blogimg1 from "../VaarBlogs/blog-common.jpeg"
 import bloginside1 from "./bloginside1.svg"
 import Ellipse from "../../AllResources/Ellipse.svg"
 import SignupSection from "../../SignUp/SignupSection";
-
+import { useLocation } from "react-router-dom";
 import BlogCarousal from "./BlogCarousal";
-const VaarBlogCommon = ({ title, content, date }) => {
-    // const [Blogs, setBlogs] = useState(null);
-    console.log(title, content, date)
+import { useParams } from "react-router-dom";
+const VaarBlogCommon = (props) => {
+    const location = useLocation();
+    console.log("Location:", location); // Check the location object
+
+    // Extract data from search string
+    const params = new URLSearchParams(location.search);
+    const title = params.get('title');
+    const content = params.get('content');
+    const date = params.get('date');
+    console.log("hgvjchdvhcfvtayddfcxiytsafdytdxsyt",title);
+    console.log("$$$$$",content);
+    // Access the state property if available
+    // const { state } = props.location || {};
+    // const { title, content, date } = state || {};
+
+    // Alternatively, you can destructure directly in the function parameters
+    // const VaarBlogCommon = ({ location: { state: { title, content, date } } }) => {
+    
+    // console.log(title, content, date);
+
     const blogPointsData = [
 
         {
