@@ -171,7 +171,7 @@ function Home() {
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                        style={{ fontSize: '2em', display: 'block',fontSize:"10vw", fontWeight:"400px",textAlign:"center"  }}
+                                        style={{ fontSize: '2em', display: 'block',fontSize:"10vw", fontWeight:"400px",lineHeight:"50px",textAlign:"center"  }}
                                         repeat={Infinity}
                                     />
                                     <br />
