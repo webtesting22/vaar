@@ -60,17 +60,17 @@ function Home() {
                         <section id='Home_section'>
                             <div className='container text-center'>
 
-                                <div className='content-container-responsive'>
+                                <div className='content-container-responsive' id='hello'>
                                     <TypeAnimation
                                         sequence={[
                                             // Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
                                             6000, // wait 1s before replacing "Mice" with "Hamsters"
-                                           
+
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                        style={{ fontSize: '2em', display: 'block',fontSize:"50px", fontWeight:"400px",textAlign:"start"  }}
+                                        style={{ fontSize: '2em', display: 'block', fontSize: "50px", fontWeight: "400px", textAlign: "start" }}
                                         repeat={Infinity}
                                     />
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
@@ -99,12 +99,12 @@ function Home() {
                                     <br />
                                     <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "200" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     <br />
-                                    <h3 style={{textAlign:"start", fontSize:"25px", fontWeight:"400"}}>We’re here to change that</h3>
+                                    <h3 style={{ textAlign: "start", fontSize: "25px", fontWeight: "400" }}>We’re here to change that</h3>
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
 
                                     <div className="email-collect" style={{ position: 'relative' }}>
-                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
-                                            Join the waitlist
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604",fontSize:"16px", fontWeight:"500" }} onClick={handleButtonClick}>
+                                            Join the waitlist!
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
                                             <input
@@ -159,7 +159,7 @@ function Home() {
                         <section id='Home_section'>
                             <div className='container text-center'>
 
-                                <div className='content-container-responsive'>
+                                <div className='content-container-responsive' id='hello'>
                                     {/* <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "center", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
                                     <TypeAnimation
@@ -167,13 +167,24 @@ function Home() {
                                             // Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
                                             6000, // wait 1s before replacing "Mice" with "Hamsters"
-                                           
+                                            '',
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                        style={{ fontSize: '2em', display: 'block',fontSize:"10vw", fontWeight:"400px",lineHeight:"50px",textAlign:"center"  }}
+                                      
+                                        style={{
+                                            fontSize: '2em',
+                                            content: '',
+                                            display: 'block',
+                                            fontSize: '10vw',
+                                            fontWeight: '400px',
+                                            lineHeight: '50px',
+                                            textAlign: 'center',
+                                        }}
                                         repeat={Infinity}
+                                        hideCursor={true}
                                     />
+
                                     <br />
                                     <div >
                                         <h3 style={{ textAlign: "center", fontWeight: "300", fontSize: "30px" }}>Vaar makes real estate
@@ -188,14 +199,14 @@ function Home() {
                                             style={{ height: "50px", margin: "0px", textAlign: "center", marginLeft: "10px" }} className="mySwiper">
                                             {dynamicWords.map((item, index) => (
                                                 <SwiperSlide key={index}>
-                                                    <h3 style={{ color: "#D4F604",  fontSize: "30px", fontWeight: "300" }}>{item}</h3>
+                                                    <h3 style={{ color: "#D4F604", fontSize: "30px", fontWeight: "300" }}>{item}</h3>
                                                 </SwiperSlide>
                                             ))}
                                         </Swiper>
                                     </div>
                                     <div className='grid-images'>
                                         <Row>
-                                            <Col lg={24} md={24}  style={{ display: "flex" }}>
+                                            <Col lg={24} md={24} style={{ display: "flex" }}>
                                                 <div><img src={second} alt="" data-aos="fade-right" /></div>
                                                 <div><img src={first} alt="" data-aos="fade-left" /></div>
                                             </Col>
@@ -204,11 +215,11 @@ function Home() {
                                     </div>
                                     <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "200", marginTop: "20px" }}>Real estate is the world’s largest store of value, yet inaccessible to most. </h3>
                                     <br />
-                                    <h3 style={{textAlign:"center", fontSize:"25px", fontWeight:"400"}}>We’re here to change that</h3>
-                                  
+                                    <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "400" }}>We’re here to change that</h3>
+
                                     <div className="email-collect" style={{ position: 'relative', display: "flex", justifyContent: "center" }}>
-                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604" }} onClick={handleButtonClick}>
-                                            Join the waitlist
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604", fontSize:"16px", fontWeight:"500" }} onClick={handleButtonClick}>
+                                        Join the waitlist!
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
                                             <input

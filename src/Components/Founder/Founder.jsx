@@ -16,24 +16,28 @@ import { Descriptions, Carousel } from 'antd';
 const ValueData = [
     {
         title: "Asset Quality",
-        colorText: "Invest in assets that grow with what surrounds them.",
-        Descriptions: "We don’t buy into what was, or what will be. We offer what is here to stay."
+        colorText: "Invest in assets that grow with what surrounds them",
+        // Descriptions: "We don’t buy into what was, or what will be. We offer what is here to stay."
     },
 
     {
         title: "Transparency",
-        colorText: "Know what you are getting into.",
-        Descriptions: " We disclose all costs related to each asset, ensuring our investors have the necessary information to make well-informed decisions."
+        colorText: "Know what you’re getting into with clarity",
+        // Descriptions: " We disclose all costs related to each asset, ensuring our investors have the necessary information to make well-informed decisions."
     },
     {
-        title: "Intuitive Interface",
-        colorText: "Uncomplicate your investments.",
-        Descriptions: "The intricacies of any real estate transactions often crowd-out the retail investor. However, Vaar prides itself on making RE accessible at any users' fingertips."
+        title: "Intuitive UI & UX",
+        colorText: "Uncomplicate your investments via an interface that makes information accessible",
+        // Descriptions: "The intricacies of any real estate transactions often crowd-out the retail investor. However, Vaar prides itself on making RE accessible at any users' fingertips."
     },
     {
-        title: "Diversify",
-        colorText: "Preserve your wealth.",
-        Descriptions: "Diversify in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
+        title: "Diversification",
+        colorText: "Preserve and grow your wealth by accessing several assets at the same time",
+        // Descriptions: "Diversify in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
+    },
+    {
+        title:"Feasibility",
+        colorText:"Fractionally own what suits your portfolio"
     }
 ]
 function Founder() {
@@ -55,7 +59,7 @@ function Founder() {
                 <div className="container">
                     <div className='text-center' >
                         <hr className='m-0' />
-                        <h1 className='section-heading-big only-pc-heading' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>
+                        <h1 className='section-heading-big only-pc-heading' id='hello' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>
                             <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
@@ -71,7 +75,7 @@ function Founder() {
                             />
                             from the small stuff to the big picture.</h1>
                         {/* <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1> */}
-                        <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
+                        <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
                             <TypeAnimation
                                 sequence={[
                                     // Same substring at the start will only be typed out once, initially
