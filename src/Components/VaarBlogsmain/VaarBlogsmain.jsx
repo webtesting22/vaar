@@ -320,7 +320,7 @@ function VaarBlogs() {
                         <Link
                           to={{
                             pathname: "/VaarBlogCommon",
-                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}`
+                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
                           }}
                         >
                           <div
