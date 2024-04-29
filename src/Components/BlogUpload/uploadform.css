@@ -40,3 +40,7 @@
 .upload-img-container img {
     width: 100%;
 }
+
+#upload-form :where(.css-11xg00t).ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before{
+    display: none;
+}
