@@ -45,7 +45,7 @@ function VaarBlogs() {
         // message.success('Blogs fetched successfully.');
       } catch (error) {
         console.error("Error:", error.message);
-        message.error("An error occurred. Please try again later.");
+        // message.error("An error occurred. Please try again later.");
       }
     };
 
