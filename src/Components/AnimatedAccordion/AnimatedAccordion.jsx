@@ -1,38 +1,54 @@
 import React, { useEffect, useState } from 'react';
 import { Row, Col } from "antd";
+import "./animatedAccordion.css"
+import { Collapse } from 'antd';
+import { Accordion } from "react-bootstrap";
+import { ValueData } from '../Founder/Founder';
+import { accordionData } from '../HowItWorks/HowItWorks';
+import animatedAccordionImg from "../AnimatedAccordion/animatedAccordionImg.jpeg"
 const AnimatedAccordion = () => {
-    const [isSticky, setIsSticky] = useState(true);
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            if (scrollPosition >= window.innerHeight * 3) {
-                setIsSticky(false);
-            } else {
-                setIsSticky(true);
-            }
-        };
+    const allActiveKeys = ValueData.map((item) => item.id);
+    const [isDisabled, setIsDisabled] = useState(false);
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+  const toggleDisabled = () => {
+    setIsDisabled(!isDisabled);
+  };
 
+  const handleSelect = (eventKey) => {
+    if (isDisabled) {
+      eventKey = null; // Prevent accordion from collapsing when disabled
+    }
+  };
     return (
         <>
-            <div className="app" style={{ position: isSticky ? 'sticky' : 'static', top: '0', display: 'flex' }}>
-                <div style={{ width: '50%', height: '300vh', backgroundColor: 'red' }}>
-                    <img
-                        src="https://images.unsplash.com/photo-1713480841794-1f7774609b36?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                        alt=""
-                        style={{ width: '100%' }}
-                    />
+
+            <div className='animated-accordion bg-white'>
+                <div>
+                    <Row>
+                        <Col lg={24}><img style={{ width: "100%" }} src={animatedAccordionImg} alt="" /></Col>
+                    </Row>
                 </div>
-                <div style={{ width: '50%', height: '300vh', backgroundColor: 'green' }}>
-                    <h1>hello</h1>
-                    <h1>hello</h1>
-                    <h1>hello</h1>
-                    <h1>hello</h1>
-                    <h1>hello</h1>
-                    <h1>hello</h1>
+                <div>
+                    <Row>
+                        <Col lg={24}>
+                            <div className='top-text-styling'>
+                                <h1>We take care of it all,<br />
+                                    from the small stuff to the big picture.</h1>
+                            </div>
+                            <div className='accordion-tabs-container'>
+                                <Accordion activeKey={allActiveKeys} onSelect={handleSelect}>
+                                    {ValueData.map((item) => (
+                                        <Accordion.Item disabled={true}>
+                                            {/* <h1 style={{ fontSize: "30px", fontWeight: "700" }} className='count-show'>0{item.id}</h1> */}
+                                            <Accordion.Header className='accordion-title' >{item.title}</Accordion.Header>
+                                            <Accordion.Body>{item.colorText}</Accordion.Body>
+                                        </Accordion.Item>
+                                    ))}
+                                </Accordion>
+
+                            </div>
+                        </Col>
+                    </Row>
                 </div>
             </div>
         </>

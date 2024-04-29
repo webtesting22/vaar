@@ -12,7 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Descriptions, Carousel } from 'antd';
-// import AnimatedAccordion from '../AnimatedAccordion/AnimatedAccordion';
+import AnimatedAccordion from '../AnimatedAccordion/AnimatedAccordion';
 
 const ValueData = [
     {
@@ -37,10 +37,11 @@ const ValueData = [
         // Descriptions: "Diversify in real assets can be both capital intensive and challenging to manage. Vaar provides a solutions for both these issues."
     },
     {
-        title:"Feasibility",
-        colorText:"Fractionally own what suits your portfolio"
+        title: "Feasibility",
+        colorText: "Fractionally own what suits your portfolio"
     }
 ]
+export { ValueData };
 function Founder() {
     const onChange = (currentSlide) => {
         // console.log(currentSlide);
@@ -56,74 +57,95 @@ function Founder() {
     };
     return (
         <>
-        {/* <AnimatedAccordion/> */}
+            <div className='only-for-pc-device'>
+                <AnimatedAccordion />
+            </div>
             <section id='Founder-section'>
                 <div className="container">
-                    <div className='text-center' >
-                        <hr className='m-0' />
-                        <h1 className='section-heading-big only-pc-heading' id='hello' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>
-                            <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'We take care of it all,  ',
-                                    6000, // wait 1s before replacing "Mice" with "Hamsters"
+                    <div style={{display:"none" }}>
+                        <div className='text-center' >
+                            <hr className='m-0' />
+                            <h1 className='section-heading-big only-pc-heading' id='hello' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>
+                                <TypeAnimation
+                                    sequence={[
+                                        // Same substring at the start will only be typed out once, initially
+                                        'We take care of it all,  ',
+                                        6000, // wait 1s before replacing "Mice" with "Hamsters"
 
-                                ]}
-                                wrapper="h1"
-                                speed={200}
-                                style={{ fontWeight: "300", fontSize: "50px", textAlign: "start", margin: "0px" }}
-                                // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                                repeat={Infinity}
-                            />
-                            from the small stuff to the big picture.</h1>
-                        {/* <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1> */}
-                        <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
-                            <TypeAnimation
-                                sequence={[
-                                    // Same substring at the start will only be typed out once, initially
-                                    'We take care of it all,  ',
-                                    6000, // wait 1s before replacing "Mice" with "Hamsters"
+                                    ]}
+                                    wrapper="h1"
+                                    speed={200}
+                                    style={{ fontWeight: "300", fontSize: "50px", textAlign: "start", margin: "0px" }}
+                                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                                    repeat={Infinity}
+                                />
+                                from the small stuff to the big picture.</h1>
+                            {/* <h1 className='section-heading-big only-mobile-heading' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>We take care of it all, from the small stuff to the big picture.</h1> */}
+                            <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
+                                <TypeAnimation
+                                    sequence={[
+                                        // Same substring at the start will only be typed out once, initially
+                                        'We take care of it all,  ',
+                                        6000, // wait 1s before replacing "Mice" with "Hamsters"
 
-                                ]}
-                                wrapper="h1"
-                                speed={200}
-                                style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
-                                // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                                repeat={Infinity}
-                            />
-                            from the small stuff to the big picture.</h1>
-                        {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p> */}
-                    </div>
-                    {/* <div className="padding-slite"></div> */}
-                    {/* <div className="padding-slite"></div> */}
-                    <div className="row w-100 m-auto home-pc">
-                        {ValueData.map((item, index) => (
+                                    ]}
+                                    wrapper="h1"
+                                    speed={200}
+                                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                                    repeat={Infinity}
+                                />
+                                from the small stuff to the big picture.</h1>
+                            {/* <p className='section-para text-white text-start m-0' style={{ color: "white", fontWeight:"200" }}>By bringing the largest asset class to your fingertips </p> */}
+                        </div>
+                        {/* <div className="padding-slite"></div> */}
+                        {/* <div className="padding-slite"></div> */}
+                        <div className="row w-100 m-auto home-pc">
+                            {ValueData.map((item, index) => (
 
-                            // <div className="col-lg-3" key={index}></div>
-                            <div className="col-lg-3" key={index}>
-                                <div className='box'>
-                                    <div>
-                                        <div className='box-top-header'>
-                                            <h2 className='box-title'>{item.title}</h2>
+                                // <div className="col-lg-3" key={index}></div>
+                                <div className="col-lg-3" key={index}>
+                                    <div className='box'>
+                                        <div>
+                                            <div className='box-top-header'>
+                                                <h2 className='box-title'>{item.title}</h2>
 
+                                            </div>
+
+                                            <br />
+                                            <span><span style={{ fontWeight: "600" }}>{item.colorText}</span> {item.Descriptions}</span>
                                         </div>
 
-                                        <br />
-                                        <span><span style={{ fontWeight: "600" }}>{item.colorText}</span> {item.Descriptions}</span>
+
                                     </div>
 
 
                                 </div>
 
-
-                            </div>
-
-                        ))}
+                            ))}
 
 
 
+                        </div>
                     </div>
+                    
                     <div className="row w-100 m-auto home-mobile">
+                    <hr className='m-0' />
+                    <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
+                                <TypeAnimation
+                                    sequence={[
+                                        // Same substring at the start will only be typed out once, initially
+                                        'We take care of it all,  ',
+                                        6000, // wait 1s before replacing "Mice" with "Hamsters"
+
+                                    ]}
+                                    wrapper="h1"
+                                    speed={200}
+                                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                                    repeat={Infinity}
+                                />
+                                from the small stuff to the big picture.</h1>
                         <br />    <br />
                         <h1 className='text-white' style={{ fontSize: "20px", }}>Vaar ensures </h1>
                         <h1 className='text-white' style={{ position: "absolute", marginTop: "32px", fontSize: "20px" }}>So, you can </h1>
@@ -153,8 +175,8 @@ function Founder() {
                     </div>
 
 
-                    <div className="padding-slite"></div>
-                    <div className="padding-slite"></div>
+                    {/* <div className="padding-slite"></div> */}
+                    {/* <div className="padding-slite"></div> */}
                     <div className='founder-info'>
                         <div className="row">
                             <div className="col-lg-6" style={{ display: "flex", justifyContent: "center", position: "relative" }}>

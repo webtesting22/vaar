@@ -15,9 +15,14 @@ import 'aos/dist/aos.css'; // Import AOS CSS
 import first from "../Home/first1.jpeg"
 import second from "../Home/second2.jpeg"
 // import third from "../Home/third.jpeg"
+// import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/free-mode';
+import 'swiper/css/pagination';
+import { FreeMode, Pagination, Autoplay } from 'swiper/modules';
 
 // import four from "../Home/four.png"
 import { Row, Col } from "antd";
@@ -51,7 +56,7 @@ function Home() {
             setArrowVisible(false); // Hide the right arrow
         }
     };
-
+    
     return (
         <>
             <div className='parent-section'>
@@ -103,7 +108,7 @@ function Home() {
                                     {/* <h1 className='main-global-heading' id='pc' style={{ fontWeight: "300", textAlign: "start",  }} data-aos="fade-down"><span style={{ color: "#d4f604" }}>Vaar</span> levels the playing field.</h1> */}
 
                                     <div className="email-collect" style={{ position: 'relative' }}>
-                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604",fontSize:"16px", fontWeight:"500" }} onClick={handleButtonClick}>
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604", fontSize: "16px", fontWeight: "500" }} onClick={handleButtonClick}>
                                             Join the waitlist
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
@@ -167,11 +172,11 @@ function Home() {
                                             // Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
                                             6000, // wait 1s before replacing "Mice" with "Hamsters"
-                                           
+
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                      
+
                                         style={{
                                             fontSize: '2em',
 
@@ -182,7 +187,7 @@ function Home() {
                                             textAlign: 'center',
                                         }}
                                         repeat={Infinity}
-                                        // hideCursor={true}
+                                    // hideCursor={true}
                                     />
 
                                     <br />
@@ -218,8 +223,8 @@ function Home() {
                                     <h3 style={{ textAlign: "center", fontSize: "25px", fontWeight: "400" }}>We’re here to change that</h3>
 
                                     <div className="email-collect" style={{ position: 'relative', display: "flex", justifyContent: "center" }}>
-                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604", fontSize:"16px", fontWeight:"500" }} onClick={handleButtonClick}>
-                                        Join the waitlist
+                                        <button className='click-dynamic-btn' style={{ backgroundColor: "#D4F604", fontSize: "16px", fontWeight: "500" }} onClick={handleButtonClick}>
+                                            Join the waitlist
                                         </button>
                                         <div className={`input-box ${inputVisible ? '' : 'input-visible'}`}>
                                             <input
@@ -352,6 +357,18 @@ function Home() {
 
                 </div> */}
                 {/* <br /> */}
+
+                {/* <div className="m-scroll">
+                    <div className="m-scroll__title">
+                        <div>
+                            {marquee.map((item, index) => (
+                                <h1 key={index}>
+                                    <span>{item}</span>
+                                </h1>
+                            ))}
+                        </div>
+                    </div>
+                </div> */}
                 <div class="marquee">
                     <div class="track">
                         <div class="content">New York&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Boston&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Las Vegas&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; San Francisco&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Seattle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; San Diego&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Miami&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Washington&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Baltimore&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Orlando&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Austin&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dallas</div>

@@ -1,27 +1,13 @@
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-form-item .ant-form-item-label {
+#upload-form :where(.css-11xg00t).ant-form-item .ant-form-item-label{
     text-align: start;
-    width: 150px;
 }
 
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-col-8 {
-    flex: none;
-}
-
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-col-offset-8 {
-    margin-inline-start: none;
-}
-
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-form-item .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
-    content: "";
-}
-
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-form-item .ant-form-item-label>label {
-    font-size: 15px;
-    font-weight: 600;
-}
-
-#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-col-offset-8 {
-    margin-inline-start: 0px;
+#upload-form :where(.css-11xg00t).ant-col-8{
+    --ant-display: block;
+    display: block;
+    /* display: var(--ant-display); */
+    /* flex: 0 0 33.33333333333333%; */
+    /* max-width: 33.33333333333333%;*/
 }
 
 #submit-btn {

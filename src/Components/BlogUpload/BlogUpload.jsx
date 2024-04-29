@@ -78,7 +78,7 @@ function BlogUpload() {
         ['blockquote', 'code-block'],
         [{ header: 1 }, { header: 2 }],
         [{ list: 'ordered' }, { list: 'bullet' }],
-        [{ color: [] }, { background: [] }],
+        [{ color: ["#FFFFFF", "#000000", "#D4F604","rgb(71, 84, 103)"] }, { background: [] }],
         [{ script: 'sub' }, { script: 'super' }],
         ['link', 'image', 'video'],
         ['clean'],
