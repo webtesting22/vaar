@@ -225,7 +225,7 @@ function VaarBlogs() {
                             }}
                           >
                             <div>
-                             
+
                               <h1 className="main-blog-heading" style={{ color: "#D4F604" }}>
                                 {/* <a
                                   // href="./VaarBlogCommon"
@@ -246,7 +246,7 @@ function VaarBlogs() {
                               >
                                 <span
                                   style={{
-                                    margin: "0px 10px",
+                                    marginRight: "10px",
                                     display: "flex",
                                     alignItems: "center",
                                     color: "white",
@@ -264,7 +264,7 @@ function VaarBlogs() {
                                     fontSize: "14px",
                                   }}
                                 >
-
+                                  Published 20 Jan 2024
                                   {/* {item.Date} */}
                                 </p>
                               </div>
@@ -281,7 +281,7 @@ function VaarBlogs() {
                           justifyContent: "center",
                         }}
                       >
-                         <Link
+                        <Link
                           to={{
                             pathname: "/VaarBlogCommon",
                             search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
