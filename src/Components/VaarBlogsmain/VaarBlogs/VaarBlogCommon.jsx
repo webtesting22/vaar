@@ -46,7 +46,7 @@ const VaarBlogCommon = (props) => {
                     </div> */}
                     <div className="blog-top-part" >
                         <h6 className="publishDate" style={{ color: "white" }}>{date}</h6>
-                        <h1 style={{ color: "white", fontSize: "50px", fontWeight: "300" }}>{title}</h1>
+                        <h1 style={{ color: "#d4f604", fontSize: "50px", fontWeight: "300" }}>{title}</h1>
                         <div className="blog-section-spacer"></div>
                         <img src={image} alt="" />
                     </div>
