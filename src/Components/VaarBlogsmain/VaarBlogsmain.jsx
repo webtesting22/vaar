@@ -21,6 +21,7 @@ function VaarBlogs() {
   useEffect(() => {
     window.scrollTo(0, 0); // Scroll to the top when the component mounts or updates
   }, []);
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -187,158 +188,200 @@ function VaarBlogs() {
             </div>
           </div>
         </div>
+
+
+
+        {/* blogcards container */}
+
+
         <div className="blogs-block text-white ">
           <div className="container">
-            {BlogDatamain.map((item, index) => (
-              <Row
-                key={index}
-                className="blog-container-row"
-                style={{ borderBottom: "1px solid rgb(196, 196, 196)" }}
-              >
-                {index % 2 === 0 ? (
-                  <>
-                    <Col lg={12} md={12}>
-                      <Link to="/VaarBlogCommon">
-                        <div
-                          className="blog-title-container"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            height: "100%",
-                            width: "100%",
+            {blogs.map((blog, index) => {
+              return (
+
+
+                <Row
+                  key={index}
+                  className="blog-container-row"
+                  style={{ borderBottom: "1px solid rgb(196, 196, 196)" }}
+                >
+                  {index % 2 === 0 ? (
+                    <>
+                      <Col lg={12} md={12}>
+                        <Link
+                          to={{
+                            pathname: "/VaarBlogCommon",
+                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
                           }}
                         >
-                          <div>
-                            <h1 className="main-blog-heading">
-                              <a
-                                href="./VaarBlogCommon"
-                                style={{ fontWeight: "400", color: "#D4F604" }}
-                              >
-                                {item.blogTitle}
-                              </a>
-                            </h1>
-                            <p style={{ color: "#D4F604" }}>{item.title}</p>
-                            <p className="text-white">{item.blogContent}</p>
-                            <div
-                              style={{ display: "flex", alignItems: "center" }}
-                            >
-                              <span
-                                style={{
-                                  margin: "0px 10px",
-                                  display: "flex",
-                                  alignItems: "center",
-                                  color: "white",
-                                }}
-                              >
-                                <i
-                                  class="bx bxs-calendar"
-                                  style={{ fontSize: "20px" }}
-                                ></i>{" "}
-                              </span>{" "}
-                              <p
-                                style={{
-                                  margin: "0px",
-                                  color: "white",
-                                  fontSize: "14px",
-                                }}
-                              >
-                                {" "}
-                                {item.Date}
+                          <div
+                            className="blog-title-container"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              height: "100%",
+                              width: "100%",
+                            }}
+                          >
+                            <div>
+                             
+                              <h1 className="main-blog-heading" style={{ color: "#D4F604" }}>
+                                {/* <a
+                                  // href="./VaarBlogCommon"
+                                  style={{ fontWeight: "400", color: "#D4F604" }}
+                                > */}
+                                {blog.blogTitle}
+                                {/* </a> */}
+                              </h1>
+                              <p style={{ color: "white" }}>
+                                {blog.blogSubtitle.length > 50
+                                  ? blog.blogSubtitle.substring(0, 50) + "..."
+                                  : blog.blogSubtitle}
                               </p>
+
+                              {/* <p className="text-white">{item.blogContent}</p> */}
+                              <div
+                                style={{ display: "flex", alignItems: "center" }}
+                              >
+                                <span
+                                  style={{
+                                    margin: "0px 10px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    color: "white",
+                                  }}
+                                >
+                                  <i
+                                    class="bx bxs-calendar"
+                                    style={{ fontSize: "20px" }}
+                                  ></i>
+                                </span>
+                                <p
+                                  style={{
+                                    margin: "0px",
+                                    color: "white",
+                                    fontSize: "14px",
+                                  }}
+                                >
+
+                                  {/* {item.Date} */}
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
-                    </Col>
-                    <Col
-                      lg={12}
-                      md={12}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Link to="/VaarBlogCommon">
-                        <div className="img-style-container">
-                          <img src={item.blogImg} alt="" />
-                        </div>
-                      </Link>
-                    </Col>
-                  </>
-                ) : (
-                  <>
-                    <Col
-                      lg={12}
-                      md={12}
-                      style={{
-                        display: "flex",
-                        alignItems: "center",
-                        justifyContent: "center",
-                      }}
-                    >
-                      <Link to="/VaarBlogCommon">
-                        <div className="img-style-container">
-                          <img src={item.blogImg} alt="" />
-                        </div>
-                      </Link>
-                    </Col>
-                    <Col lg={12} md={12}>
-                      <Link to="/VaarBlogCommon">
-                        <div
-                          className="blog-title-container"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            height: "100%",
-                            width: "100%",
+                        </Link>
+                      </Col>
+                      <Col
+                        lg={12}
+                        md={12}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                         <Link
+                          to={{
+                            pathname: "/VaarBlogCommon",
+                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
                           }}
                         >
-                          <div>
-                            <h1 className="main-blog-heading">
-                              {item.blogTitle}
-                            </h1>
-                            <p className="text-white">{item.blogContent}</p>
-                            <div
-                              style={{ display: "flex", alignItems: "center" }}
-                            >
-                              <span
-                                style={{
-                                  margin: "0px 10px",
-                                  display: "flex",
-                                  alignItems: "center",
-                                  color: "white",
-                                }}
-                              >
-                                <i
-                                  class="bx bxs-calendar"
-                                  style={{ fontSize: "20px" }}
-                                ></i>{" "}
-                              </span>{" "}
-                              <p
-                                style={{
-                                  margin: "0px",
-                                  fontSize: "14px",
-                                  color: "white",
-                                }}
-                              >
-                                {item.Date}
+                          <div className="img-style-container">
+                            <img src={blog.image} alt="" />
+                            {console.log("imagesfsfsfsfs", blog.image)}
+                          </div>
+                        </Link>
+                      </Col>
+                    </>
+                  ) : (
+                    <>
+                      <Col
+                        lg={12}
+                        md={12}
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        <Link
+                          to={{
+                            pathname: "/VaarBlogCommon",
+                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
+                          }}
+                        >
+                          <div className="img-style-container">
+                            <img src={blog.image} alt="" />
+                          </div>
+                        </Link>
+                      </Col>
+                      <Col lg={12} md={12}>
+                        <Link
+                          to={{
+                            pathname: "/VaarBlogCommon",
+                            search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}`
+                          }}
+                        >
+                          <div
+                            className="blog-title-container"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              height: "100%",
+                              width: "100%",
+                            }}
+                          >
+                            <div>
+                              <h1 className="main-blog-heading" style={{ color: "#D4F604" }}>
+                                {blog.blogTitle}
+                              </h1>
+                              <p style={{ color: "white" }}>
+                                {blog.blogSubtitle.length > 50
+                                  ? blog.blogSubtitle.substring(0, 50) + "..."
+                                  : blog.blogSubtitle}
                               </p>
+
+                              <div
+                                style={{ display: "flex", alignItems: "center" }}
+                              >
+                                <span
+                                  style={{
+                                    margin: "0px 10px",
+                                    display: "flex",
+                                    alignItems: "center",
+                                    color: "white",
+                                  }}
+                                >
+                                  <i
+                                    class="bx bxs-calendar"
+                                    style={{ fontSize: "20px" }}
+                                  ></i>
+                                </span>
+                                <p
+                                  style={{
+                                    margin: "0px",
+                                    fontSize: "14px",
+                                    color: "white",
+                                  }}
+                                >
+                                  {/* {item.Date} */}
+                                </p>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </Link>
-                    </Col>
-                  </>
-                )}
-              </Row>
-            ))}
+                        </Link>
+                      </Col>
+                    </>
+                  )}
+                </Row>
+              )
+            })}
           </div>
         </div>
       </section>
-      <Row gutter={[16, 16]}>
+      {/* <Row gutter={[16, 16]}>
         {blogs.map((blog, index) => {
           console.log("Blog array:", blogs); // Log the blogs array
           console.log("Current blog:", blog); // Log the current blog object
@@ -347,7 +390,7 @@ function VaarBlogs() {
               <Link
                 to={{
                   pathname: "/VaarBlogCommon",
-                  search: `?title=${encodeURIComponent(blog.blogTitle)}&content=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent("divyan")}`
+                  search: `?title=${encodeURIComponent(blog.blogTitle)}&content=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}`
                 }}
               >
                 <Card
@@ -363,7 +406,7 @@ function VaarBlogs() {
             </Col>
           );
         })}
-      </Row>
+      </Row> */}
       <SignupSection />
     </>
   );

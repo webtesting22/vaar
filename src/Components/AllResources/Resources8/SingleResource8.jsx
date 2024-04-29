@@ -323,7 +323,7 @@ function SingleResource8() {
                                 {CashData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -349,7 +349,7 @@ function SingleResource8() {
                                 {bondsData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -375,7 +375,7 @@ function SingleResource8() {
                                 {goldData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -401,7 +401,7 @@ function SingleResource8() {
                                 {realEstateData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -427,7 +427,7 @@ function SingleResource8() {
                                 {stocksData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -453,7 +453,7 @@ function SingleResource8() {
                                 {cryptocurrencyData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -479,7 +479,7 @@ function SingleResource8() {
                                 {commoditiesData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>

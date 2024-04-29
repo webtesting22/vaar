@@ -12,6 +12,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 import { Descriptions, Carousel } from 'antd';
+// import AnimatedAccordion from '../AnimatedAccordion/AnimatedAccordion';
 
 const ValueData = [
     {
@@ -55,6 +56,7 @@ function Founder() {
     };
     return (
         <>
+        {/* <AnimatedAccordion/> */}
             <section id='Founder-section'>
                 <div className="container">
                     <div className='text-center' >

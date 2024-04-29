@@ -358,7 +358,19 @@ h6 {
     transition: .3s;
 }
 
+.visible-for-pc{
+    display: block;
+}
+.visible-for-mobile{
+    display: none;
+}
 @media(max-width:700px) {
+    .visible-for-pc{
+        display: none;
+    }
+    .visible-for-mobile{
+        display: block;
+    }
     .EvalutionCardbox:hover {
         margin: 20px;
         padding: 20px;

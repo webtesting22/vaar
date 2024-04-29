@@ -424,7 +424,7 @@ function SingleResource7() {
                                 {AgeBalancingData.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -470,7 +470,7 @@ function SingleResource7() {
                                 {IncomeSaving.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -515,7 +515,7 @@ function SingleResource7() {
                                 {psychological.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -542,7 +542,7 @@ function SingleResource7() {
                                 {riskTolerant.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -568,7 +568,7 @@ function SingleResource7() {
                                 {ShortTerm.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -594,7 +594,7 @@ function SingleResource7() {
                                 {liquidVSlliquid.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -620,7 +620,7 @@ function SingleResource7() {
                                 {Entrepreneurs.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -646,7 +646,7 @@ function SingleResource7() {
                                 {BusyProfessionals.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -672,7 +672,7 @@ function SingleResource7() {
                                 {Geography.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -698,7 +698,7 @@ function SingleResource7() {
                                 {MarketConditionAdaoting.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -724,7 +724,7 @@ function SingleResource7() {
                                 {MarketKnowledge.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
@@ -750,7 +750,7 @@ function SingleResource7() {
                                 {technologicalAdoptive.map((item, index) => (
                                     <div key={index}>
                                         <div className="heading-vertical-line-edit">
-                                            <span></span>
+                                            {/* <span></span> */}
                                             <h6>{item.CardrowTitle}</h6> {/* Use item.heading instead of hardcoding */}
                                             <br />
                                         </div>
