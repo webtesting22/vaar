@@ -50,6 +50,10 @@ p {
     font-weight: 200;
     font-size: 16px;
 }
+.blog-content-container ul li{
+    font-weight: 200;
+    font-size: 16px;
+}
 @media (max-width:1000px) {
 
     .blog-top-part h1 {
