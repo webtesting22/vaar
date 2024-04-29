@@ -30,3 +30,12 @@
 #upload-form :where(.css-11xg00t).ant-form-item .ant-form-item-label >label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before{
     display: none;
 }
+#upload-form :where(.css-11xg00t).ant-form-item .ant-form-item-label >label{
+    color: white;
+}
+#upload-form :where(.css-dev-only-do-not-override-11xg00t).ant-form-item .ant-form-item-label >label{
+    color: white;
+}
+#upload-form p{
+    color: white;
+}

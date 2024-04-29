@@ -114,7 +114,7 @@ function BlogUpload() {
   // };
 
   return (
-    <section style={{ backgroundColor: 'white', padding: '8rem 0rem' }} id='upload-form'>
+    <section style={{ backgroundColor: 'black', padding: '8rem 0rem' }} id='upload-form'>
       <div className='container'>
         <div className="padding-slite"></div>
         <div className="padding-slite"></div>
