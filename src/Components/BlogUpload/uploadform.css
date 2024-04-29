@@ -39,3 +39,8 @@
 #upload-form p{
     color: white;
 }
+
+#upload-form .ql-editor ol li:not(.ql-direction-rtl){
+    font-size: 18px;
+    color: white;
+}
