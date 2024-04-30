@@ -51,6 +51,7 @@ function VaarBlogs() {
 
     fetchData();
   }, []);
+  
   return (
     <>
       <section className="blog-section-change-back bg-black">
@@ -126,14 +127,17 @@ function VaarBlogs() {
               </h1>
             </div>
             <div className="container">
-              <Link to="/VaarBlogCommon" style={{ position: "static" }}>
-                {BestValueCardsData.map((item, index) => (
-                  // <SwiperSlide>
-                  // <Link to="/">
-
+              {blogs.map((blog, index) => {
+                return (
+                  <Link
+                  to={{
+                    pathname: "/VaarBlogCommon",
+                    search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
+                  }}
+                >
                   <div className="blog-cards">
                     <img
-                      src={item.img}
+                      src={blog.image}
                       alt=""
                       style={{ marginBottom: "30px", width: "100%" }}
                     />
@@ -151,7 +155,7 @@ function VaarBlogs() {
                           color: "rgb(212, 246, 4)",
                         }}
                       >
-                        {item.title}
+                        {blog.blogTitle}
                       </h5>
                       <img
                         src={blogArrow}
@@ -159,19 +163,24 @@ function VaarBlogs() {
                         style={{ position: "absolute", top: "3px", right: "0" }}
                       />
                     </div>
-                    <p style={{ color: "rgb(212, 246, 4)" }}>{item.subtitle}</p>
-                    <p
+                    <p style={{ color: "rgb(212, 246, 4)" }}>{blog.subtitle}</p>
+                    {/* <p
                       style={{
                         fontSize: "16px",
                         marginBottom: "0px",
                         color: "white",
                       }}
                     >
-                      {item.description}
-                    </p>
+                      <div>
+                        {blog.blogDescription.length > 50
+                          ? blog.blogDescription.substring(0, 50) + "..."
+                          : blog.blogDescription}
+                      </div>
+
+                    </p> */}
                     <div className="Posted">
                       <div>
-                        <img src={item.avtar} alt="Not Found" />
+                        {/* <img src={blog.avtar} alt="Not Found" /> */}
                       </div>
                       <div className="ps-3">
                         <h6 style={{ marginBottom: "3px", color: "white" }}>
@@ -180,11 +189,13 @@ function VaarBlogs() {
                         <span>15 Jan 2024</span>
                       </div>
                     </div>
+                    <div className="padding-slite"></div>
+                    <div className="padding-slite"></div>
                   </div>
+                    </Link>
+                )
+              })}
 
-                  // </SwiperSlide>
-                ))}
-              </Link>
             </div>
           </div>
         </div>
