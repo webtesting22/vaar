@@ -59,6 +59,7 @@ const VaarBlogCommon = (props) => {
                 </div>
 
             </section>
+            <div className="padding-slite"></div>
             {/* <BlogCarousal /> */}
             <SignupSection />
         </>

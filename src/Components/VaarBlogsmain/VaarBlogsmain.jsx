@@ -139,7 +139,7 @@ function VaarBlogs() {
                     <img
                       src={blog.image}
                       alt=""
-                      style={{ marginBottom: "30px", width: "100%" }}
+                      style={{ marginBottom: "30px", width: "100%", borderRadius:"5px" }}
                     />
                     <div
                       style={{
@@ -299,7 +299,7 @@ function VaarBlogs() {
                           }}
                         >
                           <div className="img-style-container">
-                            <img src={blog.image} alt="" />
+                            <img src={blog.image} alt=""  style={{ borderRadius:"5px"}}/>
                             {console.log("imagesfsfsfsfs", blog.image)}
                           </div>
                         </Link>
@@ -323,7 +323,7 @@ function VaarBlogs() {
                           }}
                         >
                           <div className="img-style-container">
-                            <img src={blog.image} alt="" />
+                            <img src={blog.image} alt="" style={{ borderRadius:"5px"}}/>
                           </div>
                         </Link>
                       </Col>
@@ -377,6 +377,7 @@ function VaarBlogs() {
                                     color: "white",
                                   }}
                                 >
+                                  Published 20 Jan 2024
                                   {/* {item.Date} */}
                                 </p>
                               </div>

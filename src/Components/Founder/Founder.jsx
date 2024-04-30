@@ -62,7 +62,7 @@ function Founder() {
             </div>
             <section id='Founder-section'>
                 <div className="container">
-                    <div style={{display:"none" }}>
+                    <div style={{ display: "none" }}>
                         <div className='text-center' >
                             <hr className='m-0' />
                             <h1 className='section-heading-big only-pc-heading' id='hello' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>
@@ -128,24 +128,24 @@ function Founder() {
 
                         </div>
                     </div>
-                    
-                    <div className="row w-100 m-auto home-mobile">
-                    <hr className='m-0' />
-                    <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
-                                <TypeAnimation
-                                    sequence={[
-                                        // Same substring at the start will only be typed out once, initially
-                                        'We take care of it all,  ',
-                                        6000, // wait 1s before replacing "Mice" with "Hamsters"
 
-                                    ]}
-                                    wrapper="h1"
-                                    speed={200}
-                                    style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
-                                    // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
-                                    repeat={Infinity}
-                                />
-                                from the small stuff to the big picture.</h1>
+                    <div className="row w-100 m-auto home-mobile">
+                        <hr className='m-0' />
+                        <h1 className='section-heading-big only-mobile-heading' id='hello' style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start" }}>
+                            <TypeAnimation
+                                sequence={[
+                                    // Same substring at the start will only be typed out once, initially
+                                    'We take care of it all,  ',
+                                    6000, // wait 1s before replacing "Mice" with "Hamsters"
+
+                                ]}
+                                wrapper="h1"
+                                speed={200}
+                                style={{ fontWeight: "300", fontSize: "8vw", textAlign: "start", margin: "0px" }}
+                                // style={{ fontSize: '2em', display: 'block', fontSize: "8vw", fontWeight: "400px", textAlign: "center" }}
+                                repeat={Infinity}
+                            />
+                            from the small stuff to the big picture.</h1>
                         <br />    <br />
                         <h1 className='text-white' style={{ fontSize: "20px", }}>Vaar ensures </h1>
                         <h1 className='text-white' style={{ position: "absolute", marginTop: "32px", fontSize: "20px" }}>So, you can </h1>
