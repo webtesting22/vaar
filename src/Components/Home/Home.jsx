@@ -64,7 +64,7 @@ function Home() {
                 clearAlerts();
                 return; // Exit the function if email is empty
               }
-            const response = await fetch('http://localhost:3001/email', {
+            const response = await fetch('https://vaarbackend-two.vercel.app/email', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
