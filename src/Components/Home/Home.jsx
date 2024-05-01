@@ -56,6 +56,16 @@ function Home() {
             setArrowVisible(false); // Hide the right arrow
         }
     };
+    const validateEmail = () => {
+        const isValid = /^[A-Za-z0-9._\-]+@[A-Za-z]+\.[A-Za-z]+$/.test(email);
+        if (isValid) {
+            emailSend(); // Call emailSend function if email is valid
+        } else {
+            // Handle invalid email input, such as displaying an error message
+            console.log('Invalid email address');
+            alert(`Please enter a valid email address. For example, try 'demo@gmail.com'.`)
+        }
+    };
     const emailSend = async () => {
         try {
             if (!email) {
@@ -76,7 +86,7 @@ function Home() {
                 throw new Error(`Server responded with status: ${response.status}`);
             }
             setEmail('');
-            alert("Email created")
+            alert("Email submitted. Thank you!")
             const data = await response.json();
             message.success(data.message);
         } catch (error) {
@@ -145,12 +155,15 @@ function Home() {
                                                 value={email}
                                                 onChange={(e) => setEmail(e.target.value)}// Handle input change
                                                 style={{ opacity: inputVisible ? '1' : '0' }}
+                                                pattern="^[A-Za-z0-9._\-]+@[A-Za-z]+\.[A-Za-z]+$"
+                                                required
                                             />
                                             <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white', opacity: inputVisible ? '1' : '0' }}
-                                             onClick={() => {
+                                           onClick={() => {
+                                            if (validateEmail()) { // Check if email is valid before sending
                                                 emailSend(); // Call emailSend function when button is clicked
-                                              
-                                            }}>
+                                            }
+                                        }}>
                                                 <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                     <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                                 </Link>
