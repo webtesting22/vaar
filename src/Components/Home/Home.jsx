@@ -56,7 +56,34 @@ function Home() {
             setArrowVisible(false); // Hide the right arrow
         }
     };
-    
+    const emailSend = async () => {
+        try {
+            if (!email) {
+             
+                alert("Please provide an email");
+                clearAlerts();
+                return; // Exit the function if email is empty
+              }
+            const response = await fetch('http://localhost:3001/email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ text: email }) // Send email data in the body
+            });
+
+            if (!response.ok) {
+                throw new Error(`Server responded with status: ${response.status}`);
+            }
+            setEmail('');
+            alert("Email created")
+            const data = await response.json();
+            message.success(data.message);
+        } catch (error) {
+            console.error('Error:', error.message);
+            message.error('An error occurred. Please try again later.');
+        }
+    };
     return (
         <>
             <div className='parent-section'>
@@ -75,7 +102,7 @@ function Home() {
                                         ]}
                                         wrapper="p"
                                         speed={200}
-                                        style={{ fontSize: '2em', display: 'block', fontSize: "50px", fontWeight: "400px", textAlign: "start" }}
+                                        style={{ display: 'block', fontSize: "50px", fontWeight: "400px", textAlign: "start" }}
                                         repeat={Infinity}
                                     />
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
@@ -116,10 +143,14 @@ function Home() {
                                                 type="text"
                                                 placeholder="Enter your email"
                                                 value={email}
-                                                onChange={handleInputChange}
+                                                onChange={(e) => setEmail(e.target.value)}// Handle input change
                                                 style={{ opacity: inputVisible ? '1' : '0' }}
                                             />
-                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white', opacity: inputVisible ? '1' : '0' }}>
+                                            <button className='input-btn' style={{ backgroundColor: email ? '#D4F604' : 'white', opacity: inputVisible ? '1' : '0' }}
+                                             onClick={() => {
+                                                emailSend(); // Call emailSend function when button is clicked
+                                              
+                                            }}>
                                                 <Link to="" style={{ color: "black", display: "flex", alignItems: "center" }}>
                                                     <i className='bx bx-right-arrow-alt' style={{ color: 'black', padding: '5px' }}></i>
                                                 </Link>
@@ -181,7 +212,7 @@ function Home() {
                                             fontSize: '2em',
 
                                             display: 'block',
-                                            fontSize: '10vw',
+                                            // fontSize: '10vw',
                                             fontWeight: '400px',
                                             lineHeight: '50px',
                                             textAlign: 'center',

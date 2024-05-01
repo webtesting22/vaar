@@ -185,9 +185,11 @@ function Founder() {
                                     <div>
                                         <h1>New concepts are no longer intimidating, and challenges have become puzzles awaiting solutions. With this mindset, we are developing Vaar in the traditionally inaccessible realm of real estate. <br /> The ultimate goal? <b style={{ color: "#D4F604" }}> Digital access to income-generating real estate for ALL.</b></h1>
                                         <img src={founderPicture} alt="Not/loaded" className='owner-mobile-img' />
+                                        <br />
                                         <h3 style={{ color: "#475467" }}>Founder,</h3>
                                         <h2 style={{ color: "white" }}>Vidhi Kankaria</h2>
                                         <p style={{ fontWeight: "200" }}>New concepts are no longer intimidating, and challenges have become puzzles awaiting solutions. With this mindset, we are developing Vaar in the traditionally inaccessible realm of real estate. The ultimate goal?<br /> <b style={{ color: "#D4F604" }}> Digital access to income-generating real estate for ALL.</b></p>
+                                        <br />
                                         <span style={{ color: "#475467" }}>Founder, <br /><b style={{ color: "white" }}>Vidhi Kankaria</b></span>
                                     </div>
                                 </div>

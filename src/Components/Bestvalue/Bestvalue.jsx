@@ -54,7 +54,7 @@ function Bestvalue() {
                         <h1 className='section-heading-best-value' style={{ fontWeight: "300", fontSize: "50px", textAlign: "start" }}>Resources</h1>
                         <p style={{ fontWeight: "200" }}>The first step towards better decisions is knowledge, especially about the stuff that seems daunting. We’ve collated, curated, and created quick 101s to light your real estate investing journey.  </p>
                         <div className="padding-slite"></div>
-                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>REAL ESTATE: A COURSE</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604",marginBottom:"10px" }}>REAL ESTATE: A COURSE</p>
 
                     </div>
 
@@ -131,7 +131,7 @@ function Bestvalue() {
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
 
                         {/* <div className="section-padding"></div> */}
-                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604" }}>LEATEST IN THE INDUSTRY</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604",marginBottom:"10px" }}>LEATEST IN THE INDUSTRY</p>
                         {/* <hr /> */}
 
 
@@ -253,7 +253,7 @@ function Bestvalue() {
                 <div className='Blog-section only-mobile ' >
                     <div className='container'>
                         {/* <hr  className='top-section-heading-hr'/> */}
-                        <p style={{ color: "#D4F604" }}>LEATEST IN THE INDUSTRY</p>
+                        <p style={{ color: "#D4F604", marginBottom:"10px" }}>LEATEST IN THE INDUSTRY</p>
                         {/* <h1 className='section-heading-best-value pb-0'>Our Blogs</h1> */}
                         <div className='container p-0'>
 
@@ -279,10 +279,11 @@ function Bestvalue() {
                                                 search: `?title=${encodeURIComponent(blog.blogTitle)}&Description=${encodeURIComponent(blog.blogDescription)}&date=${encodeURIComponent(blog.Date)}&Comment=${encodeURIComponent(blog.blogComment)}&image=${encodeURIComponent(blog.image)}`
                                             }}
                                         >
+                                            {console.log("apicol" ,blog.blogTitle)}
                                             <div className='blog-cards'>
                                                 <img src={blog.image} alt="vaar blogs" style={{ marginBottom: "30px", width: "100%" }} />
                                                 <div style={{ position: "relative", justifyContent: "space-between" }}>
-                                                    <h5 style={{ fontSize: "20px", color: "black", width: "100%", color: "rgb(212, 246, 4)" }}>{blog.blogTitle}</h5>
+                                                    <h5 style={{ fontSize: "20px", width: "100%", color: "rgb(212, 246, 4)" }}>{blog.blogTitle}</h5>
                                                     <img src={blogArrow} alt="vaar blogs" style={{ position: "absolute", top: "3px", right: "0" }} />
                                                 </div>
                                                 {/* <p style={{ fontSize: "16px", marginBottom: "0px", color: "white" }}>{blog.blogDescription}</p> */}
