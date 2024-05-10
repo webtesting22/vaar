@@ -38,6 +38,12 @@
         height: 20vh;
         position: relative;
     }
+    #mySwiperslider{
+        height: 550px;
+    }
+    .mySwiperslider1{
+        height: 450px;
+    }
 }
 
 .content-section img {

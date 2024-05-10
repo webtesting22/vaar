@@ -121,6 +121,14 @@
 
 @media (max-width:600px) {
     .founder-info {
+        background-color: #000000;
+        border-radius: 20px;
+        /* height: 60vh; */
+        width: 100%;
+        margin-top: 40px;
+    
+    }
+    .founder-info {
         background-color: transparent;
         border-radius: 20px;
         /* height: 60vh; */

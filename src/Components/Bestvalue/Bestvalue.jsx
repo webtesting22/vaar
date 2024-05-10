@@ -72,10 +72,10 @@ function Bestvalue() {
                                 slidesPerView: 4, // Slides per view for screens >= 768px (for mobile devices)
                             },
                         }}
-                        style={{height:"50vh"}}
+                        // style={{height:"50vh"}}
                         pagination={true}
                         // pagination={{ clickable: true }}
-                        id="mySwiper"
+                        id="mySwiperslider"
                         modules={[Autoplay, Pagination, Navigation]}
                     >
                         <div className='cards-section'>
@@ -143,6 +143,7 @@ function Bestvalue() {
                                         search: `?title=${encodeURIComponent(blogs[0]?.blogTitle)}&Description=${encodeURIComponent(blogs[0]?.blogDescription)}&date=${encodeURIComponent(blogs[0]?.Date)}&Comment=${encodeURIComponent(blogs[0]?.blogComment)}&image=${encodeURIComponent(blogs[0]?.image)}`
                                     }}
                                 >
+                                    
                                     <div className="row m-auto">
                                         <div className="col-lg-6 col-md-6" style={{paddingLeft:"0px"}}>
                                             <div className='inside-content1 h-100'>
@@ -157,6 +158,7 @@ function Bestvalue() {
                                                     <div style={{ position: "relative" }}>
                                                         <span>Powered by Vaar</span>
                                                         <p style={{ color: "#D4F604" }}>{blogs[0]?.blogTitle}</p>
+                                                        <br />
                                                         <div className='button-animation-without-absolute p-0'>
                                                             <a href="">Read More</a>
                                                             <span className='m-0'></span>
@@ -267,8 +269,7 @@ function Bestvalue() {
                                     disableOnInteraction: false,
                                 }}
                                 modules={[Autoplay,Pagination]}
-                                className="mySwiper"
-                                style={{height:"43vh"}}
+                                className="mySwiperslider1"
                             >
                                 {blogs.map((blog, index) => (
                                     <SwiperSlide key={index}>
