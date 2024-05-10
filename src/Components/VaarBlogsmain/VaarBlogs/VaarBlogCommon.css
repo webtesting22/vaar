@@ -18,10 +18,7 @@ p {
     /* color: #333333; */
 }
 
-.blog-top-part img {
-    width: 100%;
-    /* margin: 2rem 0rem; */
-}
+
 
 .blog-top-part h6,
 .blog-top-part h1 {
@@ -55,8 +52,17 @@ p {
     font-weight: 200;
     font-size: 16px;
 }
+.blog-common-image{
+    width: 60%;
+    display: flex;
+    margin: auto;
+}
 @media (max-width:1000px) {
-
+    .blog-common-image{
+        width: 100%;
+        display: flex;
+        margin: auto;
+    }
     .blog-top-part h1 {
         font-size: 48px;
         font-weight: 600;

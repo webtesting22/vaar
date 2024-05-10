@@ -39,10 +39,10 @@
         position: relative;
     }
     #mySwiperslider{
-        height: 550px;
+        height: 50vh;
     }
     .mySwiperslider1{
-        height: 450px;
+        height: 47vh;
     }
 }
 
