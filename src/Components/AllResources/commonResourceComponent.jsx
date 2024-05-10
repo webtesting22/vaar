@@ -17,7 +17,7 @@ function CommonResourceComponent({ Resources, Module, Chapter, Date, ResourceHea
                                 <div  className="top-range-container">
                                     <div><span><Link to="/AllResources">{Resources}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
                                     <div><span><Link to="/AllResources#">{Module}</Link></span>&nbsp;&nbsp;</div><i class='bx bx-right-arrow-alt'></i>&nbsp;&nbsp;
-                                    <div><span><Link to="">{Chapter}</Link></span></div>
+                                    <div><span><Link to="" style={{color:"#D4F604"}}>{Chapter}</Link></span></div>
                                 </div>
                                 {/* <div className="resource-Date-container">
                                     <p>{Date}</p>

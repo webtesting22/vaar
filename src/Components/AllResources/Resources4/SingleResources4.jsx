@@ -512,7 +512,7 @@ function SingleResource4() {
                                     <Carousel afterChange={onChange} dots={true} >
                                         {TypesResidentialData.map((item, index) => (
 
-                                            <div>
+                                            <div key={index}>
                                                 <div style={{ width: '100%' }}>
                                                     <img src={item.image} alt="vaar image" style={{ width: "100%" }} />
                                                 </div>
