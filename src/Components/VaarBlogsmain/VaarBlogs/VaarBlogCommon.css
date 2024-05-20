@@ -71,13 +71,13 @@ p {
     }
 }
 
-@media (min-width:700px) and (max-width:2000px) {
+@media (min-width:901px) and (max-width:2000px) {
     .blog-content-container {
         padding: 0rem 10rem;
     }
 }
 
-@media (max-width:699px) {
+@media (max-width:900px) {
     .blog-content-container {
         padding: 0rem 0rem;
     }
