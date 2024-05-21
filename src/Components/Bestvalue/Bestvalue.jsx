@@ -131,7 +131,7 @@ function Bestvalue() {
                         {/* <h1 style={{textAlign:"center", fontWeight:"300", fontSize:"50px"}}>Blogs</h1> */}
 
                         {/* <div className="section-padding"></div> */}
-                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604",marginBottom:"10px" }}>LEATEST IN THE INDUSTRY</p>
+                        <p className=' text-start' style={{ textTransform: "uppercase", color: "#D4F604",marginBottom:"10px" }}>LATEST IN THE INDUSTRY</p>
                         {/* <hr /> */}
 
 
