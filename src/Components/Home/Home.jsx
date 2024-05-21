@@ -103,18 +103,19 @@ function Home() {
                             <div className='container text-center'>
 
                                 <div className='content-container-responsive' id='hello'>
-                                    <TypeAnimation
+                                    <h4 style={{display: 'block', fontSize: "50px", fontWeight: "400", textAlign: "start"}}>It’s time to level the playing field.</h4>
+                                    {/* <TypeAnimation
                                         sequence={[
-                                            // Same substring at the start will only be typed out once, initially
+                                            Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
-                                            6000, // wait 1s before replacing "Mice" with "Hamsters"
+                                            // 6000, // wait 1s before replacing "Mice" with "Hamsters"
 
                                         ]}
                                         wrapper="p"
                                         speed={200}
                                         style={{ display: 'block', fontSize: "50px", fontWeight: "400px", textAlign: "start" }}
                                         repeat={Infinity}
-                                    />
+                                    /> */}
                                     {/* <h1 className='main-global-heading ' style={{ fontWeight: "300", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">Real-estate, simplified</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
                                     {/* <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "start", fontSize: "50px" }} data-aos="fade-down">It’s time to level the playing field.</h1> */}
@@ -211,11 +212,20 @@ function Home() {
                                 <div className='content-container-responsive' id='hello'>
                                     {/* <h1 className='main-global-heading' id='mobile' style={{ fontWeight: "400", textAlign: "center", fontSize: "8vw" }} data-aos="fade-down">It’s time to level the playing field.</h1> */}
                                     {/* <p data-aos="fade-up" style={{ fontWeight: "200", textAlign: "start" }}>Vaar enables portfolio investment in <span><i>prime, income-generating</i></span> real estate. We believe diversification in real assets should be easy and that it has a place in portfolios of all sizes.</p> */}
-                                    <TypeAnimation
+                                    <h4  style={{
+                                            fontSize: '2em',
+
+                                            display: 'block',
+                                            // fontSize: '10vw',
+                                            fontWeight: '400',
+                                            // lineHeight: '50px',
+                                            textAlign: 'center',
+                                        }}>It’s time to level the playing field.</h4>
+                                    {/* <TypeAnimation
                                         sequence={[
-                                            // Same substring at the start will only be typed out once, initially
+                                            Same substring at the start will only be typed out once, initially
                                             'It’s time to level the playing field.',
-                                            6000, // wait 1s before replacing "Mice" with "Hamsters"
+                                            6000, wait 1s before replacing "Mice" with "Hamsters"
 
                                         ]}
                                         wrapper="p"
@@ -225,14 +235,14 @@ function Home() {
                                             fontSize: '2em',
 
                                             display: 'block',
-                                            // fontSize: '10vw',
+                                            fontSize: '10vw',
                                             fontWeight: '400px',
                                             lineHeight: '50px',
                                             textAlign: 'center',
                                         }}
                                         repeat={Infinity}
-                                    // hideCursor={true}
-                                    />
+                                    hideCursor={true}
+                                    /> */}
 
                                     <br />
                                     <div >
