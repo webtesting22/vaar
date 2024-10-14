@@ -233,44 +233,23 @@ function Vaar() {
             </div>
             <div className="padding-slite"></div>
 
-            <section>
+            {/* <section>
                 <div className='container'>
-                    {/* <div className="section-padding"></div> */}
-                    {/* <div className='container only-mobile-heading'>
-                        <h1 style={{ fontSize: "18px", fontWeight: "700", color: "white" }}>Our Team</h1>
-                        <hr className='team-hr mb-4' />
-                    </div> */}
+                  
                     <hr className='top-section-heading-hr' />
                     <h1 style={{ textAlign: "start", fontSize: "50px", fontWeight: "300", paddingBottom: "3rem", color: "white" }} >Team</h1>
                     <div className='container only-for-pc team-navigation'>
-                        {/* <Row>
-                {teamMembers.map((item, index) => (
-                    <Col key={index} lg={4} md={6} style={{ margin: "auto" }}>
-                        <img src={item.img} alt={item.name} style={{ textAlign: "center", width: "100%" }} />
-                        <div style={{backgroundColor:"rgb(27, 27, 27)", padding:"20px 10px"}}>
-                            <h2 style={{ fontSize: "23px", color: "#ffffff" }}>{item.name}</h2>
-                            <span style={{ fontSize: "14px", color: "#ffffff" }}>{item.position}</span>
-                        </div>
-                        <div className="team-section-padding"></div>
-                    </Col>
-
-                ))}
-
-            </Row> */}
+                      
                         <Swiper
                             slidesPerView={4}
                             spaceBetween={30}
                             pagination={{
                                 clickable: true,
                             }}
-                            // autoplay={{
-                            //     delay: 2500,
-                            //     disableOnInteraction: true,
-                            // }}
+                            
                             navigation={true}
                             modules={[Pagination, Autoplay, Navigation]}
                             className="mySwiper"
-                        // modules={[pagination]}
                         >
                             {teamMembers.map((item, index) => (
                                 <SwiperSlide>
@@ -305,9 +284,9 @@ function Vaar() {
                         <Swiper
                             spaceBetween={30}
                             pagination={{
-                                clickable: true, // Enable clickable dots
+                                clickable: true, 
                             }}
-                            // modules={[Pagination,Autoplay]}
+                         
                             modules={[Autoplay, Pagination]}
                             className="mySwiper"
                         >
@@ -331,7 +310,7 @@ function Vaar() {
                         </Swiper>
                     </div>
                 </div>
-            </section>
+            </section> */}
             <SignupSection />
         </>
     )
